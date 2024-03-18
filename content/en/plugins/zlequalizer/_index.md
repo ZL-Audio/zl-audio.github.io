@@ -1,6 +1,6 @@
 ---
 title: ZL Equalizer
-description: 16-band minimum-phase digital dynamic equalizer
+description: 16-band minimum-phase dynamic digital equalizer
 weight: 1
 ---
 
