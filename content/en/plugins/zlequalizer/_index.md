@@ -9,7 +9,7 @@ weight: 1
 ___
 
 
-# About
+## About
 
 ZL Equalizer is a minimal-phase equalizer plugin with the following key features:
 
@@ -18,7 +18,7 @@ ZL Equalizer is a minimal-phase equalizer plugin with the following key features
 - **Adjustable Dynamics:** Adjustable threshold, attack, release, and side-chain frequency, etc.
 - **Carefully Designed Interface:** Interactive spectrum graph, smart collision detection, and smooth animations.
 
-# Installation
+## Installation
 
 Visit [this link](https://github.com/ZL-Audio/ZLEqualizer/releases) and download the installer which matches your OS:
 
@@ -36,21 +36,21 @@ GPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 
 **You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.**
 
-# User Interface
+## User Interface
 
 The user interface consists of a top panel, a main panel, and a bottom panel.
 
-## Common Components
+### Common Components
 
-### Button
+#### Button
 
 Click the button to switch between the "pressed" and "released" states.
 
-### Rotary/Horizontal/Vertical Slider
+#### Rotary/Horizontal/Vertical Slider
 
 Values can be adjusted by dragging/clicking with the mouse or scrolling the mouse wheel.
 
-## Top Panel
+### Top Panel
 
 ___
 
@@ -63,7 +63,7 @@ Double-clicking the icon toggles between dark and light color modes.
 
 ___
 
-### Collision Detection Setting
+#### Collision Detection Setting
 
 You can open the collision detection setting panel by clicking `Collision` and close it by clicking somewhere else.
 
@@ -101,7 +101,7 @@ ___
 
 ___
 
-### Output Setting
+#### Output Setting
 
 You can open the output detection setting panel by clicking `Output` and close it by clicking somewhere else.
 
@@ -139,7 +139,7 @@ ___
 
 ___
 
-### Dynamic Setting
+#### Dynamic Setting
 
 You can open the dynamic detection setting panel by clicking `Dynamic` and close it by clicking somewhere else.
 
@@ -167,7 +167,7 @@ ___
 
 ___
 
-### Analyzer Setting
+#### Analyzer Setting
 
 You can open the analyzer setting panel by clicking `Analyzer` and close it by clicking somewhere else.
 
@@ -203,11 +203,11 @@ ___
 ___
 
 
-## Bottom Panel
+### Bottom Panel
 
 The bottom panel controls the parameters of the currently selected frequency band. Components will be introduced in the order from left to right, and from top to bottom.
 
-### Left Panel
+#### Left Panel
 ___
 <p float="left">
   <img src="images/fad-powerswitch.svg" width="2.5%"/>
@@ -294,7 +294,7 @@ ___
 
 - Click: [turns off](#states-of-bands) the selected frequency band and resets all parameters to default values.
 
-### Right Panel
+#### Right Panel
 
 ___
 <p float="left">
@@ -363,11 +363,11 @@ Adjust the Q value of the bandpass filter applied to the side-chain audio. When 
 
 ___
 
-## Main Panel
+### Main Panel
 
 The main panel consists of grid lines, a spectrum graph, a single frequency band response curve, an overall response curve, and a dB scale on the right side.
 
-### Double-Click to Add a Frequency Band
+#### Double-Click to Add a Frequency Band
 
 If there is at least one frequency band in the [off](#states-of-bands) state when you double-click the spectrum, a frequency band will be turned on with the corresponding frequency/gain:
 
@@ -377,7 +377,7 @@ If there is at least one frequency band in the [off](#states-of-bands) state whe
 - 5000Hz <= Frequency < 15000Hz: Adds a High Shelf filter.
 - 15000Hz <= Frequency: Adds a Low Pass filter.
 
-### Frequency Band Drag Button
+#### Frequency Band Drag Button
 
 When a frequency band is not in the [off](#states-of-bands) state, a draggable button appears at the corresponding frequency/gain position. You can adjust the frequency and gain by dragging the button, and adjust the Q value with your mouse wheel.
 
@@ -390,23 +390,23 @@ Additionally, if the dynamic function of this frequency band is not disabled:
 - A draggable square-shaped button will appear at the corresponding position of the side-chain bandpass filter, enabling you to adjust the frequency of the bandpass filter by dragging this button. After selecting it, you can adjust the Q value of the bandpass filter by scrolling the mouse wheel.
 
 
-### Multi-band Selection
+#### Multi-band Selection
 
 You can use your mouse to drag and select multiple frequency bands simultaneously on the spectrum graph. After that, you can click on the spectrum graph (outside the button area) to cancel the selection.
 
 When multiple frequency bands are selected, adjusting the frequency, gain, or bandwidth of one frequency band will also affect the corresponding parameters of the other selected frequency bands.
 
-## Decibel Scale
+### Decibel Scale
 
 You can choose the maximum decibel for the decibel scale. After that, the maximum gain of filters (when you drag buttons) is limited to that range.
 
-# Appendix
+## Appendix
 
-## Automation
+### Automation
 
 **DO NOT activate automation on any parameters** (except bypass, dynamic bypass, and output gain). Automation may make the plugin crash.
 
-## States of Bands
+### States of Bands
 
 The frequency band can be in one of the following states:
 
@@ -414,7 +414,7 @@ The frequency band can be in one of the following states:
 - Bypassed: The response curve is displayed on the spectrum graph without affecting the overall response curve or the audio signal.
 - On: The response curve is displayed on the spectrum graph and affects both the overall response curve and the audio signal.
 
-## Dynamic and Threshold Learning
+### Dynamic and Threshold Learning
 
 The dynamic effect calculates the instantaneous loudness of the side-chain (filtered by the bandpass filter) at a constant rate (not less than 1000 times per second) and adjusts the filter state as follows:
 
@@ -427,7 +427,7 @@ When threshold learning is on, the plugin collects the side-chain's instantaneou
 The threshold calculation is in the absolute mode by default. When the relative mode is activated, the dynamic effect will calculate the difference between the instantaneous loudness of the side-chain (filtered by the bandpass filter) and the overall instantaneous loudness of the side-chain. The threshold learning will work in the same mode.
 
 
-# Acknowledgment
+## Acknowledgment
 
 Thank [JUCE](https://github.com/juce-framework/JUCE) framework and [JUCE Forum](https://forum.juce.com/)。
 
@@ -435,7 +435,7 @@ Thank Martin Vicanek and Nigel Redmon for sharing the filter parameter calculati
 
 Thank all plugin users for their support, feedback, and suggestions.
 
-# Disclaimer
+## Disclaimer
 
 This disclaimer comes from section 15 and section 16 of [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
