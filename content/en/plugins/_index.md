@@ -8,4 +8,18 @@ menu:
 
 cascade:
   - type: "docs"
+
+no_list: true
+
 ---
+
+___
+
+**[ZL Equalizer](/plugins/zlequalizer)**
+
+16-band minimum-phase dynamic digital equalizer
+
+<img src="/images/zlequalizer/dark_crop.png" width="50%" />
+
+___
+

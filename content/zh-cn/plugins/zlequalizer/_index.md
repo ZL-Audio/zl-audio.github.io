@@ -4,7 +4,7 @@ description: 十六频段 最小相位 动态数字均衡器
 weight: 1
 ---
 
-<img src="images/dark_crop.png" width="99%" />
+<img src="/images/zlequalizer/dark_crop.png" width="99%" />
 
 ___
 
@@ -55,8 +55,8 @@ ZL Equalizer 按照 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) 进行
 ___
 
 <p float="left">
-  <img src="images/zlaudio.svg" width="5.5%" />
-  <img src="images/logo.svg" width="2.5%" />
+  <img src="/images/zlequalizer/zlaudio.svg" width="5.5%" />
+  <img src="/images/zlequalizer/logo.svg" width="2.5%" />
 </p>
 
 双击该图标可以在黑暗/明亮颜色模式之间切换。
@@ -206,7 +206,7 @@ ___
 #### 左侧面板
 ___
 <p float="left">
-  <img src="images/fad-powerswitch.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-powerswitch.svg" width="2.5%"/>
 </p>
 
 - 按下：[旁路](#频段的状态)当前频段效果。
@@ -215,7 +215,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/fad-solo.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-solo.svg" width="2.5%"/>
 </p>
 
 - 按下：监听当前频段所作用的音频。
@@ -264,7 +264,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/fad-modsine.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-modsine.svg" width="2.5%"/>
 </p>
 
 - 按下：打开当前频段的[动态](#动态与阈值学习)功能。
@@ -273,7 +273,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/fad-preset-a.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-preset-a.svg" width="2.5%"/>
 </p>
 
 - 按下：打开当前频段的[动态阈值学习](#动态与阈值学习)。
@@ -282,7 +282,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/xmark.svg" width="2%"/>
+  <img src="/images/zlequalizer/xmark.svg" width="2%"/>
 </p>
 
 - 单击：[关闭](#频段的状态)当前频段并将所有参数设置为默认值。
@@ -294,7 +294,7 @@ ___
 
 ___
 <p float="left">
-  <img src="images/fad-powerswitch.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-powerswitch.svg" width="2.5%"/>
 </p>
 
 - 按下：旁路当前频段动态效果。
@@ -303,7 +303,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/fad-solo.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-solo.svg" width="2.5%"/>
 </p>
 
 - 按下：监听当前频段所使用侧链的音频。
@@ -312,7 +312,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/right-to-bracket-solid.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/right-to-bracket-solid.svg" width="2.5%"/>
 </p>
 
 - 按下：将[动态](#动态与阈值学习)阈值设置为相对模式。
@@ -321,7 +321,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/fad-side.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-side.svg" width="2.5%"/>
 </p>
 
 - 按下：使用外部侧链（该设置同时作用于所有频段）。

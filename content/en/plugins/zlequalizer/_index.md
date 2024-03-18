@@ -4,7 +4,7 @@ description: 16-band minimum-phase dynamic digital equalizer
 weight: 1
 ---
 
-<img src="images/dark_crop.png" width="99%" />
+<img src="/images/zlequalizer/dark_crop.png" width="99%" />
 
 ___
 
@@ -55,8 +55,8 @@ Values can be adjusted by dragging/clicking with the mouse or scrolling the mous
 ___
 
 <p float="left">
-  <img src="images/zlaudio.svg" width="5.5%" />
-  <img src="images/logo.svg" width="2.5%" />
+  <img src="/images/zlequalizer/zlaudio.svg" width="5.5%" />
+  <img src="/images/zlequalizer/logo.svg" width="2.5%" />
 </p>
 
 Double-clicking the icon toggles between dark and light color modes.
@@ -210,7 +210,7 @@ The bottom panel controls the parameters of the currently selected frequency ban
 #### Left Panel
 ___
 <p float="left">
-  <img src="images/fad-powerswitch.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-powerswitch.svg" width="2.5%"/>
 </p>
 
 - Press: [bypass](#states-of-bands) the selected band。
@@ -219,7 +219,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/fad-solo.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-solo.svg" width="2.5%"/>
 </p>
 
 - Press: solo the audio affected by the selected frequency band.
@@ -271,7 +271,7 @@ You can select the band by using the left arrows and right arrows.
 ___
 
 <p float="left">
-  <img src="images/fad-modsine.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-modsine.svg" width="2.5%"/>
 </p>
 
 - Press: turn on the [dynamic](#dynamic-and-threshold-learning) effect for the selected frequency band.
@@ -280,7 +280,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/fad-preset-a.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-preset-a.svg" width="2.5%"/>
 </p>
 
 - Press: enables [dynamic threshold learning](#dynamic-and-threshold-learning) for the selected frequency band.
@@ -289,7 +289,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/xmark.svg" width="2%"/>
+  <img src="/images/zlequalizer/xmark.svg" width="2%"/>
 </p>
 
 - Click: [turns off](#states-of-bands) the selected frequency band and resets all parameters to default values.
@@ -298,7 +298,7 @@ ___
 
 ___
 <p float="left">
-  <img src="images/fad-powerswitch.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-powerswitch.svg" width="2.5%"/>
 </p>
 
 - Press: bypass the [dynamic](#dynamic-and-threshold-learning) effect for the selected frequency band.
@@ -307,7 +307,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/fad-solo.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-solo.svg" width="2.5%"/>
 </p>
 
 - Press: solo the side-chain audio of the selected band。
@@ -316,7 +316,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/right-to-bracket-solid.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/right-to-bracket-solid.svg" width="2.5%"/>
 </p>
 
 - Press: set the [dynamic](#dynamic-and-threshold-learning) threshold to the relative mode.
@@ -325,7 +325,7 @@ ___
 ___
 
 <p float="left">
-  <img src="images/fad-side.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-side.svg" width="2.5%"/>
 </p>
 
 - Press: use external side-chain (this setting applies to all frequency bands).
