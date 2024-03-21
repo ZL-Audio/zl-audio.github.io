@@ -11,7 +11,7 @@ ___
 
 ## About
 
-ZL Equalizer is a minimal-phase equalizer plugin with the following key features:
+ZL Equalizer is a minimum-phase equalizer plugin with the following key features:
 
 - **Multiple Filter Settings:** Supports 16 frequency bands, 8 filter types, 5 stereo modes, and 7 variable slopes.
 - **High-Quality Sound:** With 64-bit floating-point processing and decramping technique, outstanding performance is ensured in both low end and high end.
