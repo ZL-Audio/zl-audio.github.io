@@ -426,6 +426,8 @@ ___
 
 感谢所有软件使用者以及提供的意见和建议。
 
+欢迎在[此处](https://github.com/ZL-Audio/ZLEqualizer/issues)提出意见或建议。
+
 ## 免责声明
 
 该免责声明来自 [由 源译识 翻译的 GPLv3 协议](https://atomgit.com/translation/Contransus) 第十五、十六项条款。

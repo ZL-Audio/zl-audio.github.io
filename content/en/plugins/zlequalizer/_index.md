@@ -435,6 +435,8 @@ Thank Martin Vicanek and Nigel Redmon for sharing the filter parameter calculati
 
 Thank all plugin users for their support, feedback, and suggestions.
 
+Feel free to leave feedback or suggestions at [issues](https://github.com/ZL-Audio/ZLEqualizer/issues).
+
 ## Disclaimer
 
 This disclaimer comes from section 15 and section 16 of [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
