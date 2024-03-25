@@ -430,7 +430,7 @@ ___
 
 感谢所有软件使用者以及提供的意见和建议。
 
-欢迎在[此处](https://github.com/ZL-Audio/ZLEqualizer/issues)留下意见或建议。
+欢迎在[此处](https://github.com/ZL-Audio/ZLEqualizer/discussions)留下意见或建议。
 
 ## 免责声明
 
