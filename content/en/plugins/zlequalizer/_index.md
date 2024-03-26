@@ -135,7 +135,9 @@ ___
 - You can also click on the label on the left to switch options
 
 
-> Auto gain compensation calculates the difference between the loudness of the main-chain signal before/after filters and applies corresponding gain. Therefore, **AGC will affect the dynamic of the main-chain signal**.
+> AGC calculates the difference between the loudness of the main-chain signal before/after filters and applies corresponding gain. Therefore, **AGC will affect the dynamic of the main-chain signal**.
+> 
+> When AGC is on, output main-chain singal will pass through a hard clipper at 0 dB.
 
 ___
 
