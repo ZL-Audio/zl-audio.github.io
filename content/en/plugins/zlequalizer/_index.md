@@ -259,13 +259,13 @@ ___
 
 **Gain**
 
-When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the gain of the base filter by dragging/clicking with the left mouse button and scrolling the mouse wheel. To adjust the gain of the target filter, use the right mouse button (or Ctrl/Command + left mouse button) for dragging/clicking, and Ctrl/Command + scrolling the mouse wheel.
+When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the gain of the base filter by dragging/clicking with the left mouse button. To adjust the gain of the target filter, use the right mouse button for dragging/clicking.
 
 ___
 
 **Bandwidth (Q)**
 
-When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the Q value of the base filter by dragging/clicking with the left mouse button and scrolling the mouse wheel. For adjusting the Q value of the target filter, use the right mouse button (or Ctrl/Command + left mouse button) for dragging/clicking, and Ctrl/Command + scrolling the mouse wheel.
+When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the Q value of the base filter by dragging/clicking with the left mouse button. For adjusting the Q value of the target filter, use the right mouse button for dragging/clicking.
 
 ___
 
@@ -385,7 +385,7 @@ If there is at least one frequency band in the [off](#states-of-bands) state whe
 
 #### Frequency Band Drag Button
 
-When a frequency band is not in the [off](#states-of-bands) state, a draggable button appears at the corresponding frequency/gain position. You can adjust the frequency and gain by dragging the button, and adjust the Q value with your mouse wheel.
+When a frequency band is not in the [off](#states-of-bands) state, a draggable button appears at the corresponding frequency/gain position. You can adjust the frequency and gain by dragging the button, and adjust the Q value with your mouse wheel. You can fix the freq/gain by pressing Ctrl/Command and dragging with left/right mouse button.
 
 When you select the frequency band, the button will be highlighted, and an additional control window will appear. Through this window, you can quickly bypass/solo the selected band and adjust the filter type.
 
