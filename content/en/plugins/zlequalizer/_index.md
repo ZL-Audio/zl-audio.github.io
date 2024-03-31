@@ -410,7 +410,15 @@ You can choose the maximum decibel for the decibel scale. After that, the maximu
 
 ### Automation
 
-You can automate any ava
+You can automate any parameters (**EXCEPT** solo, dynamic on and dynamic threshold learning). Attention:
+
+> The modulation speed of automation is not less than 1000 times per second, but much slower than once per sample.
+>
+> When the plugin window is open, filter parameter modulation may cause interface lag.
+>
+> The plugin does not smooth modulation internally. Therefore, rough modulation and filter type, slope, stereo mode modulation may cause noise.
+>
+> When you modulates multiple filters, DO NOT select them on the spectrum.
 
 ### States of Bands
 
