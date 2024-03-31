@@ -52,7 +52,7 @@ Click the button to switch between the "pressed" and "released" states.
 
 #### Rotary/Horizontal/Vertical Slider
 
-Values can be adjusted by dragging/clicking with the mouse or scrolling the mouse wheel.
+Values can be adjusted by dragging/clicking with the mouse or scrolling the mouse wheel. You can enable mouse wheel fine adjustment with Ctrl/Command.
 
 ### Top Panel
 
@@ -259,13 +259,13 @@ ___
 
 **Gain**
 
-When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the gain of the base filter by dragging/clicking with the left mouse button. To adjust the gain of the target filter, use the right mouse button for dragging/clicking.
+When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the gain of the base filter by dragging/clicking with the left mouse button. To adjust the gain of the target filter, use the right mouse button for dragging/clicking. To adjust the gain of the base filter and the target filter, use the mousewheel.
 
 ___
 
 **Bandwidth (Q)**
 
-When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the Q value of the base filter by dragging/clicking with the left mouse button. For adjusting the Q value of the target filter, use the right mouse button for dragging/clicking.
+When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the Q value of the base filter by dragging/clicking with the left mouse button. For adjusting the Q value of the target filter, use the right mouse button for dragging/clicking. To adjust the Q values of the base filter and the target filter, use the mousewheel.
 
 ___
 
