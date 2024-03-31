@@ -410,7 +410,7 @@ You can choose the maximum decibel for the decibel scale. After that, the maximu
 
 ### Automation
 
-**DO NOT activate automation on any parameters** (except bypass, dynamic bypass, and output gain). Automation may make the plugin crash.
+You can automate any ava
 
 ### States of Bands
 
