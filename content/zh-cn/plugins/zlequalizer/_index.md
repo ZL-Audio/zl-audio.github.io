@@ -24,11 +24,11 @@ ZL Equalizer 是一款最小相位均衡器插件，其主要特性有：
 前往[此链接](https://github.com/ZL-Audio/ZLEqualizer/releases)下载对应您操作系统的安装器：
 - 后缀名为`.dmg`：macOS 系统安装器（包含 VST3 和 AU）
 - 后缀名为`.exe`：Windows 系统安装器（包含 VST3）
-- 后缀名为`.zip`：Linux 系统安装器（包含 VST3）。请注意，在 Linux 上您需要自行将 `*.vst3` 文件移动到正确的文件夹，例如`~/.vst3`。
+- 后缀名为`.zip`：Linux 系统安装器（包含 VST3 和 LV2）。请注意，在 Linux 上您需要自行将 `*.vst3` 文件移动到正确的文件夹，例如`~/.vst3`。
 
 请注意，所有的安装器均未经过公证，您需要自行选择是否信任上述链接中的安装器。当然，您也可以通过项目源码自行构建该插件。
 
-> 在 macOS 系统上，该插件需要 Metal 支持。
+> 在 macOS 系统上，该插件需要 Metal 支持。由于某些未知原因，该插件无法在 macOS 11 之前的系统上运行。
 >
 > 在 Windows 系统上，该插件需要 Direct2D 支持。
 > 
