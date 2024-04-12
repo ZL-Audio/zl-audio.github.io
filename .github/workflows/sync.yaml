@@ -48,11 +48,12 @@ jobs:
           replace: "../../images"
           include: "gitee_repo/plugins/**.md"
           regex: false
-      - uses: fregante/setup-git-user@v2
       - name: Sync to Gitee
         shell: bash
         run: |
           cd gitee_repo
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
           remote_repo="https://${{ github.actor }}:${{ secrets.GITEE_PAT }}@gitee.com/ZL-Audio/ZLWiki.git"
           git init
           git add -A
