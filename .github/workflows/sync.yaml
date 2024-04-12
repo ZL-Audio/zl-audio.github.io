@@ -52,6 +52,7 @@ jobs:
       - name: Sync to Gitee
         shell: bash
         run: |
+          sudo apt install rename
           cd gitee_repo
           find -iname "_index.md" | rename -v "index.md"
           remote_repo="https://${{ github.actor }}:${{ secrets.GITEE_PAT }}@gitee.com/ZL-Audio/ZLWiki.git"
