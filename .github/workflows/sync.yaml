@@ -33,18 +33,29 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Create Gitee Repo
+        shell: bash
+        run: |
+          mkdir gitee_repo
+          mkdir gitee_repo/plugins
+          mv -v "content/zh-cn/plugins"/* "gitee_repo/plugins/"
+          mv -v "static"/*  "gitee_repo/"
+          rm "gitee_repo/plugins/_index.md"
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v3
         with:
           find: "/images"
-          replace: "../../../../static/images"
-          include: "**.md"
+          replace: "../../images"
+          include: "gitee_repo/plugins/**.md"
           regex: false
       - uses: fregante/setup-git-user@v2
       - name: Sync to Gitee
         shell: bash
         run: |
+          cd gitee_repo
+          find -iname "_index.md" | rename -v "index.md"
           remote_repo="https://${{ github.actor }}:${{ secrets.GITEE_PAT }}@gitee.com/ZL-Audio/ZLWiki.git"
+          git init
           git add -A
           git commit -m "sync to gitee"
           git remote add gitee "${remote_repo}"
