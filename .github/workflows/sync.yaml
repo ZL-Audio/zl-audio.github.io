@@ -44,6 +44,8 @@ jobs:
         shell: bash
         run: |
           remote_repo="https://${{ github.actor }}:${{ secrets.GITEE_PAT }}@gitee.com/ZL-Audio/ZLWiki.git"
+          git add -A
+          git commit -m "sync to gitee"
           git remote add gitee "${remote_repo}"
           git show-ref
           git branch --verbose
