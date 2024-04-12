@@ -55,7 +55,7 @@ jobs:
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
           remote_repo="https://${{ github.actor }}:${{ secrets.GITEE_PAT }}@gitee.com/ZL-Audio/ZLWiki.git"
-          git init
+          git init --initial-branch=main
           git add -A
           git commit -m "sync to gitee"
           git remote add gitee "${remote_repo}"
