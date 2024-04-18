@@ -30,9 +30,9 @@ ZL Equalizer 是一款最小相位均衡器插件，其主要特性有：
 
 > 在 macOS 系统上，该插件需要 Metal 支持。由于某些未知原因，该插件无法在 macOS 11 之前的系统上运行。
 >
-> 在 Windows 系统上，该插件需要 Direct2D 支持。
+> 在 Windows 系统上，该插件需要 Direct2D 支持。该插件与 Windows 10 及之后版本兼容。
 > 
-> 在 Linux 系统上，该插件**无法提供**硬件加速渲染，可能导致用户界面冻结。
+> 在 Linux 系统上，该插件**无法提供**硬件加速渲染，可能导致用户界面冻结。该插件与 Linux 主流发行版兼容。
 
 ZL Equalizer 按照 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) 进行许可。
 

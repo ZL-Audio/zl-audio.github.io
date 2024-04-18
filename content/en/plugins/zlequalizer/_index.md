@@ -30,9 +30,9 @@ Please note that all installers **have not been notarized**. You should decide w
 
 > On macOS, the plugin requires Metal support. For some unknown reason, the plugin is not compatible with macOS earlier than macOS 11.
 >
-> On Windows, the plugin requires Direct2D support.
+> On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
 >
-> On Linux, the plugin **DOES NOT HAVE** hardware acceleration, which may lead to UI freezing.
+> On Linux, the plugin **DOES NOT HAVE** hardware acceleration, which may lead to UI freezing. The plugin is compatible with Mainstream Linux distributions.
 
 ZL Equalizer is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
