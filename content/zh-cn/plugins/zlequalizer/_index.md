@@ -59,7 +59,7 @@ ZL Equalizer 按照 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) 进行
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/zlaudio.svg" width="5.5%" />
+  <img src="/images/zlequalizer/zlaudio.svg" width="44pt" />
   <img src="/images/zlequalizer/logo.svg" width="20pt" />
 </p>
 
@@ -482,7 +482,7 @@ ___
   <img src="/images/zlequalizer/xmark.svg" width="16pt"/>
 </p>
 
-- 舍弃所有未保存设置并关闭外观设置面板并。
+- 舍弃所有未保存设置并关闭外观设置面板。
 
 ___
 
