@@ -137,7 +137,7 @@ prism_syntax_highlighting = false
 
 # User interface configuration
 [params.ui]
-#  Set to true to disable breadcrumb navigation.
+# Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
 # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
 navbar_logo = true
@@ -147,6 +147,8 @@ navbar_translucent_over_cover_disable = false
 sidebar_menu_compact = false
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
 sidebar_search_disable = true
+# Set to true to enable dark mode.
+showLightDarkModeMenu = true
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
