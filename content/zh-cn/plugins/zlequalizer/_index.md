@@ -60,10 +60,10 @@ ___
 
 <p float="left">
   <img src="/images/zlequalizer/zlaudio.svg" width="5.5%" />
-  <img src="/images/zlequalizer/logo.svg" width="2.5%" />
+  <img src="/images/zlequalizer/logo.svg" width="20pt" />
 </p>
 
-双击该图标可以在黑暗/明亮颜色模式之间切换。
+双击该图标可以在明亮、黑暗和自定义颜色模式之间切换。
 
 ___
 
@@ -126,6 +126,15 @@ ___
 
 ___
 
+**静态增益补偿（SGC）**
+
+- OFF：关闭静态增益补偿
+- ON：打开静态增益补偿
+- 可以通过单击左侧标签快速切换
+
+> 静态增益补偿通过滤波器参数估计增益补偿。因此，静态增益补偿**不准确**，但**不会影响主链信号的动态**。
+
+___
 
 **自动增益补偿（AGC）**
 
@@ -205,6 +214,10 @@ ___
 
 ___
 
+#### 外观设置
+
+在自定义颜色模式下，单击`UI`后将打开[外观设置面板](#外观设置面板)。
+
 ### 下方面板
 
 下方面板控制当前所选中频段的参数。下面将按照从左至右、从上至下的顺序介绍。
@@ -212,7 +225,7 @@ ___
 #### 左侧面板
 ___
 <p float="left">
-  <img src="/images/zlequalizer/fad-powerswitch.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
 </p>
 
 - 按下：[旁路](#频段的状态)当前频段效果。
@@ -221,7 +234,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-solo.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-solo.svg" width="20pt"/>
 </p>
 
 - 按下：监听当前频段所作用的音频。
@@ -270,7 +283,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-modsine.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-modsine.svg" width="20pt"/>
 </p>
 
 - 按下：打开当前频段的[动态](#动态与阈值学习)功能。
@@ -279,7 +292,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-preset-a.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-preset-a.svg" width="20pt"/>
 </p>
 
 - 按下：打开当前频段的[动态阈值学习](#动态与阈值学习)。
@@ -288,7 +301,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/xmark.svg" width="2%"/>
+  <img src="/images/zlequalizer/xmark.svg" width="16pt"/>
 </p>
 
 - 单击：[关闭](#频段的状态)当前频段并将所有参数设置为默认值。
@@ -300,7 +313,7 @@ ___
 
 ___
 <p float="left">
-  <img src="/images/zlequalizer/fad-powerswitch.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
 </p>
 
 - 按下：旁路当前频段动态效果。
@@ -309,7 +322,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-solo.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-solo.svg" width="20pt"/>
 </p>
 
 - 按下：监听当前频段所使用侧链的音频。
@@ -318,7 +331,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/right-to-bracket-solid.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/right-to-bracket-solid.svg" width="20pt"/>
 </p>
 
 - 按下：将[动态](#动态与阈值学习)阈值设置为相对模式。
@@ -327,7 +340,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-side.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-side.svg" width="20pt"/>
 </p>
 
 - 按下：使用外部侧链（该设置同时作用于所有频段）。
@@ -397,6 +410,81 @@ ___
 #### 分贝刻度尺
 
 您可以单击分贝刻度尺最上方的刻度并选择分贝刻度尺的最大分贝。通过控制分贝刻度尺，您可以控制 拖动频段拖拽按钮 时每个频段的最大增益。
+
+### 外观设置面板
+
+外观设置面板控制频谱图颜色、滑块操作等设置。下面将按照从上至下的顺序介绍。
+
+___
+
+以下外观设置仅对自定义颜色模式生效：
+
+您可以通过单击左侧色块来调整颜色，通过拖动右侧滑块来改变透明度。
+
+**主链输入信号颜色（Pre Colour）**
+
+**主链输出信号颜色（Post Colour）**
+
+**侧链信号颜色（Side Colour）**
+
+**网格线颜色（Grid Colour）**
+
+___
+
+以下外观设置对所有颜色模式生效：
+
+**鼠标滚轮敏感度（Mouse-Wheel Sensitivity）**
+
+- Rough：未按下 Ctrl/Command 时鼠标滚轮的敏感度
+- Fine：按下 Ctrl/Command 时鼠标滚轮的敏感度
+
+**旋钮操作方式（Rotary Slider Style）**
+
+- Circular：鼠标旋转控制旋钮
+- Horizontal：鼠标水平滑动控制旋钮
+- Vertical：鼠标竖直滑动控制旋钮
+- Horiz + Vert：鼠标水平/竖直滑动控制旋钮
+- Distance：仅对水平滑动和竖直滑动生效。该数值越大，鼠标可以滑动的距离越长。
+
+**刷新率（Refresh Rate）**
+
+- 控制响应曲线的刷新率。该数值越大，拖拽按钮或打开动态时响应曲线的变化越平滑，CPU 和 GPU 负担越大。
+
+**频谱图设置**
+
+- Tilt：控制（额外的）频谱图倾斜斜率
+- Speed：控制（额外的）频谱图衰减速度
+
+**曲线粗细度**
+
+- Single：单个频段响应曲线的粗细
+- Sum：整体响应曲线的粗细
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/save-line.svg" width="18pt"/>
+</p>
+
+- 保存当前外观设置。
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/loop-left-line.svg" width="18pt"/>
+</p>
+
+- 舍弃所有未保存设置并载入上一次保存的设置。
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/xmark.svg" width="16pt"/>
+</p>
+
+- 舍弃所有未保存设置并关闭外观设置面板并。
+
+___
 
 ## 附录
 
