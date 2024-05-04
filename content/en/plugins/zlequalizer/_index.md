@@ -59,11 +59,11 @@ Values can be adjusted by dragging/clicking with the mouse or scrolling the mous
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/zlaudio.svg" width="5.5%" />
-  <img src="/images/zlequalizer/logo.svg" width="2.5%" />
+  <img src="/images/zlequalizer/zlaudio.svg" width="44pt" />
+  <img src="/images/zlequalizer/logo.svg" width="20pt" />
 </p>
 
-Double-clicking the icon toggles between dark and light color modes.
+Double-clicking the icon toggles between light, dark, and custom colour modes.
 
 ___
 
@@ -127,6 +127,16 @@ The ratio of the actual gain over the displayed gain of all 'gain type' filters 
 
 ___
 
+**Static Gain Compensation（SGC）**
+
+- OFF: turn off SGC
+- ON: turn on SGC
+- You can also click on the label on the left to switch options
+
+
+> SGC estimates the amount of compensation from filters' parameters. SGC is **inaccurate**. However, it **will NOT affect the dynamic of the main-chain signal**.
+
+___
 
 **Auto Gain Compensation (AGC)**
 
@@ -135,9 +145,9 @@ ___
 - You can also click on the label on the left to switch options
 
 
-> AGC calculates the difference between the loudness of the main-chain signal before/after filters and applies corresponding gain. Therefore, **AGC will affect the dynamic of the main-chain signal**.
+> AGC calculates the difference between the loudness of the main-chain signal before/after filters and applies the corresponding gain. Therefore, **AGC will affect the dynamic of the main-chain signal**.
 > 
-> When AGC is on, output main-chain singal will pass through a hard clipper at 0 dB.
+> When AGC is on, the output main-chain signal will pass through a hard clipper at 0 dB.
 
 ___
 
@@ -208,6 +218,11 @@ ___
 
 ___
 
+#### UI setting
+
+Under custom colour mode, You can open the [UI setting panel](#ui-setting-panel) by clicking `UI`.
+
+___
 
 ### Bottom Panel
 
@@ -216,7 +231,7 @@ The bottom panel controls the parameters of the currently selected frequency ban
 #### Left Panel
 ___
 <p float="left">
-  <img src="/images/zlequalizer/fad-powerswitch.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
 </p>
 
 - Press: [bypass](#states-of-bands) the selected band。
@@ -225,7 +240,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-solo.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-solo.svg" width="20pt"/>
 </p>
 
 - Press: solo the audio affected by the selected frequency band.
@@ -265,7 +280,7 @@ ___
 
 **Bandwidth (Q)**
 
-When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the Q value of the base filter by dragging/clicking with the left mouse button. For adjusting the Q value of the target filter, use the right mouse button for dragging/clicking. To adjust the Q values of the base filter and the target filter, use the mousewheel.
+When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the Q value of the base filter by dragging/clicking with the left mouse button. For adjusting the Q value of the target filter, use the right mouse button for dragging/clicking. To adjust the Q values of the base filter and the target filter, use the mouse-wheel.
 
 ___
 
@@ -277,7 +292,7 @@ You can select the band by using the left arrows and right arrows.
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-modsine.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-modsine.svg" width="20pt"/>
 </p>
 
 - Press: turn on the [dynamic](#dynamic-and-threshold-learning) effect for the selected frequency band.
@@ -286,7 +301,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-preset-a.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-preset-a.svg" width="20pt"/>
 </p>
 
 - Press: enables [dynamic threshold learning](#dynamic-and-threshold-learning) for the selected frequency band.
@@ -295,7 +310,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/xmark.svg" width="2%"/>
+  <img src="/images/zlequalizer/xmark.svg" width="16pt"/>
 </p>
 
 - Click: [turns off](#states-of-bands) the selected frequency band and resets all parameters to default values.
@@ -304,7 +319,7 @@ ___
 
 ___
 <p float="left">
-  <img src="/images/zlequalizer/fad-powerswitch.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
 </p>
 
 - Press: bypass the [dynamic](#dynamic-and-threshold-learning) effect for the selected frequency band.
@@ -313,7 +328,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-solo.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-solo.svg" width="20pt"/>
 </p>
 
 - Press: solo the side-chain audio of the selected band。
@@ -322,7 +337,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/right-to-bracket-solid.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/right-to-bracket-solid.svg" width="20pt"/>
 </p>
 
 - Press: set the [dynamic](#dynamic-and-threshold-learning) threshold to the relative mode.
@@ -331,7 +346,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-side.svg" width="2.5%"/>
+  <img src="/images/zlequalizer/fad-side.svg" width="20pt"/>
 </p>
 
 - Press: use external side-chain (this setting applies to all frequency bands).
@@ -406,11 +421,87 @@ When multiple frequency bands are selected, adjusting the frequency, gain, or ba
 
 You can choose the maximum decibel for the decibel scale. After that, the maximum gain of filters (when you drag buttons) is limited to that range.
 
+### UI Setting Panel
+
+The UI setting panel controls spectrum colours, slider operations, etc. Components will be introduced in the order from top to bottom.
+
+___
+
+The following settings only apply to the custom colour mode:
+
+You can adjust the color by clicking on the left color block and change the transparency by dragging the right slider.
+
+**Main-Chain Input Signal Spectrum Colour (Pre Colour)**
+
+**Main-Chain Output Signal Spectrum Colour (Post Colour)**
+
+**Side-Chain Signal Spectrum Colour (Side Colour)**
+
+**Grid Lines Colour (Grid Colour)**
+
+___
+
+The following settings apply to all three colour modes:
+
+**Mouse-Wheel Sensitivity**
+
+- Rough: mouse-wheel sensitivity when Ctrl/Command is not pressed
+- Fine: mouse-wheel sensitivity when Ctrl/Command is pressed
+
+**Rotary Slider Style**
+
+- Circular: A rotary control that you move by dragging the mouse in a circular motion, like a knob
+- Horizontal: A rotary control that you move by dragging the mouse left-to-right
+- Vertical: A rotary control that you move by dragging the mouse up-and-down
+- Horiz + Vert: A rotary control that you move by dragging the mouse up-and-down or left-to-right
+- Distance: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
+
+**Refresh Rate**
+
+- The refresh rate of the response curve(s). The higher this value, the smoother the response curve(s) when dragging the buttons or enabling dynamic, but the higher the CPU and GPU load. When the CPU or GPU load is too high, the response curve may get distorted when dragging the button.
+
+**FFT Setting**
+
+- Tilt: extra tilting slope of the FFT
+- Speed: extra decay speed of the FFT
+
+**Curve Thickness**
+
+- Single: the thickness of the response curves of single bands
+- Sum: the thickness of the overall response curves
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/save-line.svg" width="18pt"/>
+</p>
+
+- Save the current setting.
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/loop-left-line.svg" width="18pt"/>
+</p>
+
+- Discard all unsaved settings and load the previously saved settings.
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/xmark.svg" width="16pt"/>
+</p>
+
+- Discard all unsaved settings and close the UI setting panel.
+
+___
+
+
 ## Appendix
 
 ### Automation
 
-You can automate any parameters (**EXCEPT** solo, dynamic on and dynamic threshold learning). Attention:
+You can automate any parameters (**EXCEPT** solo, dynamic on, and dynamic threshold learning). Attention:
 
 > The modulation speed of automation is not less than 1000 times per second, but much slower than once per sample.
 >
@@ -418,7 +509,7 @@ You can automate any parameters (**EXCEPT** solo, dynamic on and dynamic thresho
 >
 > The plugin does not smooth modulation internally. Therefore, rough modulation and filter type, slope, stereo mode modulation may cause noise.
 >
-> When you modulates multiple filters, DO NOT select them on the spectrum.
+> When you modulate multiple filters, DO NOT select them on the spectrum.
 
 ### States of Bands
 
