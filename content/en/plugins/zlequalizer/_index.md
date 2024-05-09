@@ -23,7 +23,7 @@ ZL Equalizer is a minimum-phase equalizer plugin with the following key features
 Visit [this link](https://github.com/ZL-Audio/ZLEqualizer/releases) and download the installer which matches your OS:
 
 - If the file has a `.tgz` extension, it is for macOS (in VST3 & AU). You need to unzip it to get the `.pkg` installer.
-- If the file has a `.exe` extension, it is for Windows (in VST3).
+- If the file has a `.exe` extension, it is for Windows (in VST3 & LV2).
 - If the file has a `.zip` extension, it is for Linux (in VST3 & LV2). On Linux, you have to move the `*.vst3` file manually to the correct folder, e.g., `~/.vst3`.
 
 Please note that all installers **have not been notarized**. You should decide whether to trust the installers from the provided link. Alternatively, you can build the plugin from the project source code.
