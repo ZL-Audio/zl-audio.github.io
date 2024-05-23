@@ -17,7 +17,7 @@ ___
 
 **[ZL Equalizer](/plugins/zlequalizer)**
 
-16-band minimum-phase dynamic digital equalizer
+16-band dynamic digital equalizer
 
 <img src="/images/zlequalizer/dark_crop.png" width="50%" />
 

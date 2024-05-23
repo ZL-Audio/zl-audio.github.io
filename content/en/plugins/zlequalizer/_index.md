@@ -1,6 +1,6 @@
 ---
 title: ZL Equalizer
-description: 16-band minimum-phase dynamic digital equalizer
+description: 16-band dynamic digital equalizer
 weight: 1
 ---
 
@@ -11,7 +11,7 @@ ___
 
 ## About
 
-ZL Equalizer is a minimum-phase equalizer plugin with the following key features:
+ZL Equalizer is an equalizer plugin with the following key features:
 
 - **Multiple Filter Settings:** Supports 16 frequency bands, 8 filter types, 5 stereo modes, 7 variable slopes and 2 filter structures.
 - **High-Quality Sound:** With 64-bit floating-point processing and de-cramping technique, outstanding performance is ensured in both low-end and high-end.
