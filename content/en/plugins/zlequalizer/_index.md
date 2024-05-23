@@ -85,7 +85,7 @@ ___
 **Default Dynamic Link (Dyn Link)**
 
 - OFF: turn off the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned off by default)
-- ON: turn on the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned off by default)
+- ON: turn on the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned on by default)
 - You can also click on the label on the left to switch options
 
 > When the dynamic link for a band is on, adjusting the frequency or Q value of the main filter will correspondingly adjust the frequency or Q value of the side-chain band-pass filter. You can control the dynamic link of each band using the [dynamic link button](#frequency-band-drag-button).
