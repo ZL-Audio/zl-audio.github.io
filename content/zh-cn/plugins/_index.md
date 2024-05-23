@@ -17,7 +17,7 @@ ___
 
 **[ZL Equalizer](/plugins/zlequalizer)**
 
-十六频段 最小相位 动态数字均衡器
+十六频段 动态数字均衡器
 
 <img src="/images/zlequalizer/dark_crop.png" width="50%" />
 
