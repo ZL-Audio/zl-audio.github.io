@@ -13,7 +13,7 @@ ___
 
 ZL Equalizer is a minimum-phase equalizer plugin with the following key features:
 
-- **Multiple Filter Settings:** Supports 16 frequency bands, 8 filter types, 5 stereo modes, and 7 variable slopes.
+- **Multiple Filter Settings:** Supports 16 frequency bands, 8 filter types, 5 stereo modes, 7 variable slopes and 2 filter structures.
 - **High-Quality Sound:** With 64-bit floating-point processing and de-cramping technique, outstanding performance is ensured in both low-end and high-end.
 - **Adjustable Dynamics:** Adjustable threshold, attack, release, and side-chain frequency, etc.
 - **Carefully Designed Interface:** Interactive spectrum graph, smart collision detection, and smooth animations.
@@ -64,6 +64,31 @@ ___
 </p>
 
 Double-clicking the icon toggles between light, dark, and custom colour modes.
+
+___
+
+#### General Setting
+
+You can open the general setting panel by clicking `General` and close it by clicking somewhere else.
+
+The components of this setting panel are:
+
+___
+
+**Filter Structure**
+
+- Minimum Phase: [Minimum Phase Filter](#filter-structure)
+- State Variable: [State Variable Filter](#filter-structure)
+
+___
+
+**Default Dynamic Link (Dyn Link)**
+
+- OFF: turn off the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned off by default)
+- ON: turn on the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned off by default)
+- You can also click on the label on the left to switch options
+
+> When the dynamic link for a band is on, adjusting the frequency or Q value of the main filter will correspondingly adjust the frequency or Q value of the side-chain band-pass filter. You can control the dynamic link of each band using the [dynamic link button](#frequency-band-drag-button).
 
 ___
 
@@ -180,6 +205,17 @@ ___
 **Smooth**
 
 - the smoothness of attack/release
+
+___
+
+**High Quality (HQ)**
+
+- OFF: turn off the high-quality
+- ON: turn on the high-quality
+- You can also click on the label on the left to switch options
+
+
+> When high-quality is on, [dynamic](#dynamic-and-threshold-learning) will adjust the filter state per sample, which smooths dynamic effects and reduces artifacts. However, high-quality will **significantly increase** the processing time of [dynamic](#dynamic-and-threshold-learning).
 
 ___
 
@@ -409,6 +445,7 @@ Additionally, if the dynamic function of this frequency band is not disabled:
 
 - A draggable diamond-shaped button will appear at the corresponding position of the target filter, allowing you to adjust the frequency and gain of the target filter by dragging this button. After selecting it, you can adjust the Q value of the target filter by scrolling the mouse wheel.
 - A draggable square-shaped button will appear at the corresponding position of the side-chain bandpass filter, enabling you to adjust the frequency of the bandpass filter by dragging this button. After selecting it, you can adjust the Q value of the bandpass filter by scrolling the mouse wheel.
+- A dynamic link button will appear above the side-chain band-pass filter. You can enable/disable the dynamic link of that band by clicking this button.
 
 
 #### Multi-band Selection
@@ -417,7 +454,7 @@ You can use your mouse to drag and select multiple frequency bands simultaneousl
 
 When multiple frequency bands are selected, adjusting the frequency, gain, or bandwidth of one frequency band will also affect the corresponding parameters of the other selected frequency bands.
 
-### Decibel Scale
+#### Decibel Scale
 
 You can choose the maximum decibel for the decibel scale. After that, the maximum gain of filters (when you drag buttons) is limited to that range.
 
@@ -530,6 +567,11 @@ The dynamic effect calculates the instantaneous loudness of the side-chain (filt
 When threshold learning is on, the plugin collects the side-chain's instantaneous loudness. When threshold learning is turned off, the plugin sets the threshold to the median of the side-chain instantaneous loudness values and sets the knee width to half of the difference between the 95th and 5th percentiles.
 
 The threshold calculation is in the absolute mode by default. When the relative mode is activated, the dynamic effect will calculate the difference between the instantaneous loudness of the side-chain (filtered by the bandpass filter) and the overall instantaneous loudness of the side-chain. The threshold learning will work in the same mode.
+
+### Filter Structure
+
+- Minimum Phase: The most common filter structure, also known as analog or zero delay. Low-order minimum phase filters (6 dB/oct and 12 dB/oct) cause small phase shifts. Therefore, when the signal processed by low-order minimum phase filters is mixed with the original or highly correlated signals, phase cancellation issues are almost inaudible. However, when frequency and gain are rapidly modulated, this type of filter is more likely to become unstable and produce audible artifacts.
+- State Variable: This type of filter is more stable when frequency and gain are rapidly modulated. However, the phase shift caused by this filter is significant. It is not recommended to mix the processed signal with the original or highly correlated signals.
 
 
 ## Acknowledgment
