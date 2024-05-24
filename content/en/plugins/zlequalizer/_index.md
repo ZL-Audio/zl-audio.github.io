@@ -538,13 +538,13 @@ ___
 
 ### Automation
 
-You can automate any parameters (**EXCEPT** solo, dynamic on, and dynamic threshold learning). Attention:
+You can automate frequency, gain, Q value, dynamic threshold, knee width, attack, and release parameters. Attention:
 
 > The modulation speed of automation is not less than 1000 times per second, but much slower than once per sample.
 >
 > When the plugin window is open, filter parameter modulation may cause interface lag.
 >
-> The plugin does not smooth modulation internally. Therefore, rough modulation and filter type, slope, stereo mode modulation may cause noise.
+> The plugin does not smooth modulation internally. Therefore, extremely fast modulation and modulation of other parameters may cause noise.
 >
 > When you modulate multiple filters, DO NOT select them on the spectrum.
 
@@ -553,7 +553,7 @@ You can automate any parameters (**EXCEPT** solo, dynamic on, and dynamic thresh
 The frequency band can be in one of the following states:
 
 - Off: By default, all frequency bands are closed, not affecting the spectrum graph, the overall response curve, or the audio signal.
-- Bypassed: The response curve is displayed on the spectrum graph without affecting the overall response curve or the audio signal.
+- Bypassed: The response curve is displayed on the spectrum graph without affecting the overall response curve.
 - On: The response curve is displayed on the spectrum graph and affects both the overall response curve and the audio signal.
 
 ### Dynamic and Threshold Learning
@@ -571,7 +571,7 @@ The threshold calculation is in the absolute mode by default. When the relative 
 ### Filter Structure
 
 - Minimum Phase: The most common filter structure, also known as analog or zero delay. Low-order minimum phase filters (6 dB/oct and 12 dB/oct) cause small phase shifts. Therefore, when the signal processed by low-order minimum phase filters is mixed with the original or highly correlated signals, phase cancellation issues are almost inaudible. However, when frequency and gain are rapidly modulated, this type of filter is more likely to become unstable and produce audible artifacts.
-- State Variable: This type of filter is more stable when frequency and gain are rapidly modulated. However, the phase shift caused by this filter is significant. It is not recommended to mix the processed signal with the original or highly correlated signals.
+- State Variable: This type of filter is more stable when frequency and gain are rapidly modulated. However, the phase shift caused by this type of filter is significant. It is not recommended to mix the processed signal with the original or highly correlated signals. What's more, this type of filter will also affect the phase when it is bypassed.
 
 
 ## Acknowledgment
