@@ -77,8 +77,8 @@ ___
 
 **Filter Structure**
 
-- Minimum Phase: [Minimum Phase Filter](#filter-structure)
-- State Variable: [State Variable Filter](#filter-structure)
+- Transposed DF-II: [Transposed Direct Form II](#filter-structure)
+- State Variable: [State Variable](#filter-structure)
 
 ___
 
@@ -570,8 +570,8 @@ The threshold calculation is in the absolute mode by default. When the relative 
 
 ### Filter Structure
 
-- Minimum Phase: The most common filter structure, also known as analog or zero delay. Low-order minimum phase filters (6 dB/oct and 12 dB/oct) cause small phase shifts. Therefore, when the signal processed by low-order minimum phase filters is mixed with the original or highly correlated signals, phase cancellation issues are almost inaudible. However, when frequency and gain are rapidly modulated, this type of filter is more likely to become unstable and produce audible artifacts.
-- State Variable: This type of filter is more stable when frequency and gain are rapidly modulated. However, the phase shift caused by this type of filter is significant. It is not recommended to mix the processed signal with the original or highly correlated signals. What's more, this type of filter will also affect the phase when it is bypassed.
+- Transposed DF-II: The most common filter structure of equalizers. Low-order minimum phase filters (6 dB/oct and 12 dB/oct) cause small phase shifts. Therefore, when the signal processed by low-order minimum phase filters is mixed with the original or highly correlated signals, phase cancellation issues are almost inaudible. However, when frequency and gain are rapidly modulated, this type of filter is more likely to become unstable and produce audible artifacts.
+- State Variable: The most common filter structure of crossovers. This type of filter is more stable when frequency and gain are rapidly modulated. However, the phase shift caused by this type of filter is significant. It is not recommended to mix the processed signal with the original or highly correlated signals. What's more, this type of filter will also affect the phase when it is bypassed.
 
 
 ## Acknowledgment
