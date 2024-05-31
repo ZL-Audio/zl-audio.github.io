@@ -293,8 +293,7 @@ ___
 
 **Slope**
 
-There are seven slopes: 6 dB/oct, 12 dB/oct, 24 dB/oct, 36 dB/oct, 48 dB/oct, 72 dB/oct and 96 dB/oct。
-A higher slope will make the filter's response curve change more steeply. Peak, Notch, and Band Pass don't support 6 dB/oct. 
+There are seven slopes: 6 dB/oct, 12 dB/oct, 24 dB/oct, 36 dB/oct, 48 dB/oct, 72 dB/oct and 96 dB/oct. A higher slope will make the filter's response curve change more steeply. Peak, Notch, and Band Pass don't support 6 dB/oct. 
 
 ___
 
