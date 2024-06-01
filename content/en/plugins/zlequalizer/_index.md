@@ -270,8 +270,8 @@ ___
   <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
 </p>
 
-- Press: [bypass](#states-of-bands) the selected band。
-- Release: [turn on](#states-of-bands) the selected band。
+- Press: [bypass](#states-of-bands) the selected band.
+- Release: [turn on](#states-of-bands) the selected band.
 
 ___
 
@@ -366,8 +366,8 @@ ___
   <img src="/images/zlequalizer/fad-solo.svg" width="20pt"/>
 </p>
 
-- Press: solo the side-chain audio of the selected band。
-- Release: stop the solo。
+- Press: solo the side-chain audio of the selected band.
+- Release: stop the solo.
 
 ___
 
@@ -446,6 +446,8 @@ Additionally, if the dynamic function of this frequency band is not disabled:
 - A draggable square-shaped button will appear at the corresponding position of the side-chain bandpass filter, enabling you to adjust the frequency of the bandpass filter by dragging this button. After selecting it, you can adjust the Q value of the bandpass filter by scrolling the mouse wheel.
 - A dynamic link button will appear above the side-chain band-pass filter. You can enable/disable the dynamic link of that band by clicking this button.
 
+When [Filter Parameter Tags Colour](#ui-setting-panel) is not fully transparent, the filter frequency/gain will appear as two tags on the spectrum.
+
 
 #### Multi-band Selection
 
@@ -474,6 +476,8 @@ You can adjust the color by clicking on the left color block and change the tran
 **Side-Chain Signal Spectrum Colour (Side Colour)**
 
 **Grid Lines Colour (Grid Colour)**
+
+**Filter Parameter Tags Colour (Tag Colour)**
 
 ___
 
@@ -575,7 +579,7 @@ The threshold calculation is in the absolute mode by default. When the relative 
 
 ## Acknowledgment
 
-Thank [JUCE](https://github.com/juce-framework/JUCE) framework and [JUCE Forum](https://forum.juce.com/)。
+Thank [JUCE](https://github.com/juce-framework/JUCE) framework and [JUCE Forum](https://forum.juce.com/).
 
 Thank Martin Vicanek and Nigel Redmon for sharing the filter parameter calculation method and filter cascade method.
 
