@@ -20,7 +20,7 @@ ZL Equalizer is an equalizer plugin with the following key features:
 
 ## Installation
 
-Visit [this link](https://github.com/ZL-Audio/ZLEqualizer/releases) and download the installer which matches your OS:
+Visit [this link](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) and download the installer which matches your OS:
 
 - If the file has a `.dmg` extension, it is for macOS (in VST3 & AU). You need to open it to get the `.pkg` installer.
 - If the file has a `.exe` extension, it is for Windows (in VST3 & LV2).
