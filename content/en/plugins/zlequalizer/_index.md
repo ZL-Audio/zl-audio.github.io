@@ -20,13 +20,13 @@ ZL Equalizer is an equalizer plugin with the following key features:
 
 ## Installation
 
-Visit [this link](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) and download the installer which matches your OS:
+Visit [this link](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) and download the installer that matches your OS:
 
-- If the file has a `.dmg` extension, it is for macOS (in VST3 & AU). You need to open it to get the `.pkg` installer.
-- If the file has a `.exe` extension, it is for Windows (in VST3 & LV2).
+- If the file has a `.dmg` extension, it is for macOS (in VST3, AU & AAX). You need to open it to get the `.pkg` installer.
+- If the file has a `.exe` extension, it is for Windows (in VST3, LV2 & AAX).
 - If the file has a `.zip` extension, it is for Linux (in VST3 & LV2). On Linux, you have to move the `*.vst3` file manually to the correct folder, e.g., `~/.vst3`.
 
-Please note that all installers **have not been notarized**. You should decide whether to trust the installers from the provided link. Alternatively, you can build the plugin from the project source code.
+Please note that all installers **have not been notarized**. You should decide whether to trust the installers from the provided link. Alternatively, you can build the plugin from the project source code (except AAX format).
 
 > On macOS, the plugin requires Metal support. For some unknown reason, the plugin is not compatible with macOS earlier than macOS 11. Besides that, you may refer to [Safely open apps on your Mac](https://support.apple.com/en-us/102445) if you are confused by the alert given by your OS.
 >
@@ -79,6 +79,16 @@ ___
 
 - Transposed DF-II: [Transposed Direct Form II](#filter-structure)
 - State Variable: [State Variable](#filter-structure)
+
+___
+
+**Zero Latency (Zero LAT)**
+
+- OFF: turn off zero latency
+- ON: turn on zero latency
+- You can also click on the label on the left to switch options
+
+> When zero latency is on (and lookahead is zero), the plugin latency is zero. However, the buffer size will slightly affect dynamic effects and parameter automation.
 
 ___
 
