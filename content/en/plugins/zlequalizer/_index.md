@@ -130,7 +130,9 @@ ___
 
 ___
 
-> Collision detection compares the main-chain signal and the side-chain signal in real-time. 
+> Collision detection compares the main-chain signal and the side-chain signal in real-time.
+> 
+> Generally, it should only be used when the plugin uses an external side-chain signal. When the plugin uses the internal side-chain, collision areas can be perceived as the spectrum peaks of the main-chain signal.
 > 
 > Collision detection uses an independent spectrum graph, which is not affected by `Analyzer` settings.
 > 
