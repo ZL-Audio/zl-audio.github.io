@@ -589,7 +589,11 @@ ___
 
 感谢所有软件使用者以及提供的意见和建议。
 
-欢迎在[此处](https://github.com/ZL-Audio/ZLEqualizer/discussions)留下意见或建议。
+## 反馈
+
+如果您有一般性的建议或疑问，可以在[讨论区](https://github.com/ZL-Audio/ZLEqualizer/discussions)提出。
+
+如果您有针对性的错误报告或功能要求，可以在[问题区](https://github.com/ZL-Audio/ZLEqualizer/issues)提出。
 
 ## 免责声明
 

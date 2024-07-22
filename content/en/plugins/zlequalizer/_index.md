@@ -597,7 +597,11 @@ Thank Martin Vicanek and Nigel Redmon for sharing the filter parameter calculati
 
 Thank all plugin users for their support, feedback, and suggestions.
 
-Feel free to leave feedback or suggestions at [here](https://github.com/ZL-Audio/ZLEqualizer/discussions).
+## Feedback
+
+If you have general suggestions or questions, you can open a discussion [here](https://github.com/ZL-Audio/ZLEqualizer/discussions).
+
+If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLEqualizer/issues).
 
 ## Disclaimer
 
