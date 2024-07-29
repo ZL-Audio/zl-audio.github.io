@@ -180,7 +180,7 @@ ___
 **Balance**
 
 
-- The smaller the balance, the less transient signal and the more steady signal, and vice versa.
+The smaller the balance, the less transient signal and the more steady signal, and vice versa.
 
 ___
 
@@ -235,7 +235,7 @@ ___
   <img src="/images/zlequalizer/save-line.svg" width="18pt"/>
 </p>
 
-- Save the current setting.
+Save the current setting.
 
 ___
 
@@ -243,7 +243,7 @@ ___
   <img src="/images/zlequalizer/loop-left-line.svg" width="18pt"/>
 </p>
 
-- Discard all unsaved settings and load the previously saved settings.
+Discard all unsaved settings and load the previously saved settings.
 
 ___
 
@@ -251,7 +251,7 @@ ___
   <img src="/images/zlequalizer/xmark.svg" width="16pt"/>
 </p>
 
-- Discard all unsaved settings and close the UI setting panel.
+Discard all unsaved settings and close the UI setting panel.
 
 ___
 

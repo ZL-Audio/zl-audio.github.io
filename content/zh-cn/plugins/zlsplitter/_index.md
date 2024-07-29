@@ -178,7 +178,7 @@ ___
 
 **平衡（Balance）**
 
-- 平衡越小，瞬态信号越少，稳态信号越多，反之亦然。
+平衡越小，瞬态信号越少，稳态信号越多，反之亦然。
 
 ___
 
@@ -234,7 +234,7 @@ ___
   <img src="/images/zlequalizer/save-line.svg" width="18pt"/>
 </p>
 
-- 保存当前外观设置。
+保存当前外观设置。
 
 ___
 
@@ -242,7 +242,7 @@ ___
   <img src="/images/zlequalizer/loop-left-line.svg" width="18pt"/>
 </p>
 
-- 舍弃所有未保存设置并载入上一次保存的设置。
+舍弃所有未保存设置并载入上一次保存的设置。
 
 ___
 
@@ -250,7 +250,7 @@ ___
   <img src="/images/zlequalizer/xmark.svg" width="16pt"/>
 </p>
 
-- 舍弃所有未保存设置并关闭外观设置面板。
+舍弃所有未保存设置并关闭外观设置面板。
 
 ___
 
