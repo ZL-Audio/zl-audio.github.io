@@ -157,7 +157,7 @@ ___
 
 > When the filter structure is SVF, the filter will change the phase significantly. Under such situation, you should not mix the output with the original signal directly or cascade multiple low/high splitters.
 
-> When the filter structure is FIR, the filter will NOT change the phase. However, it will cause a latency, the amount of which depends on the sample rate and the filter slope.
+> When the filter structure is FIR, the filter will NOT change the phase. However, it will cause latency, the amount of which depends on the sample rate and the filter slope.
 
 ___
 
