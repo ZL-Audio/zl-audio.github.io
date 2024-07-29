@@ -19,14 +19,13 @@ ___
 
 16-band dynamic digital equalizer
 
-<img src="/images/zlequalizer/dark_crop.png" width="50%" />
+<img src="/images/zlequalizer/dark_crop.png" style="height:400px; max-width: 100%; width: auto" />
 
 ___
 
-**ZL Splitter**
+**[ZL Splitter](/plugins/zlsplitter)**
 
-Coming soon
+Multi-functional audio splitter
 
-<!-- <img src="/images/zlequalizer/dark_crop.png" width="50%" /> -->
-
+<img src="/images/zlsplitter/dark_crop.png" style="height:200px; max-width: 100%; width: auto"/>
 ___
