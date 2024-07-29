@@ -210,7 +210,7 @@ You can adjust the colour by clicking on the left colour block.
 
 **Background Colour**
 
-For optimal display, please set Text/Background to colours with high contrast.
+For better accessibility, please set Text/Background to colours with high contrast.
 
 **Shadow Colour**
 
