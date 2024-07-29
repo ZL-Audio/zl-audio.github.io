@@ -41,7 +41,7 @@ Please note that all installers **have not been notarized**. You should decide w
 >
 > On Linux, the plugin **DOES NOT HAVE** hardware acceleration, which may lead to UI freezing. The plugin is compatible with Mainstream Linux distributions.
 
-ZL Equalizer is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
+ZL Splitter is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 GPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 
@@ -66,8 +66,8 @@ Values can be adjusted by dragging/clicking with the mouse or scrolling the mous
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/zlaudio.svg" width="44pt" />
-  <img src="/images/zlequalizer/logo.svg" width="20pt" />
+  <img src="/images/zlsplitter/zlaudio.svg" width="44pt" />
+  <img src="/images/zlsplitter/logo.svg" width="20pt" />
 </p>
 
 Double-clicking the icon to open the [UI setting panel](#ui-setting-panel).
