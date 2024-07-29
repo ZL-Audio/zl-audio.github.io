@@ -4,7 +4,7 @@ description: 16-band dynamic digital equalizer
 weight: 1
 ---
 
-<img src="/images/zlequalizer/dark_crop.png" width="99%" />
+<img src="/images/zlequalizer/dark_crop.png" style="height:400px; max-width: 100%; width: auto" />
 
 ___
 
