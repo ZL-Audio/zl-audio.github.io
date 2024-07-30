@@ -18,11 +18,12 @@ ZL Splitter is a multi-functional audio splitter plugin, which can split the inp
 - low/high signal
 - transient/steady signal
 
+The routing may look like follows:
 ```mermaid
 flowchart LR
     A[Input] -->B(ZL Splitter)
-    B --> C[Output 1] --> C1[Some Effects] --> E[Full Signal]
-    B --> D[Output 2] --> D1[Some Effects] --> E
+    B --> C[Output 1] --> C1(Some Effects) --> E[Full Signal]
+    B --> D[Output 2] --> D1(Some Effects) --> E
 ```
 
 ## Installation
@@ -87,25 +88,25 @@ ___
 
 
 <p float="left">
-  <img src="/images/zlsplitter/leftright.svg" width="20pt"/>
+  <img src="/images/zlsplitter/leftright.svg" width="22pt"/>
 </p>
 
 Left/Right Split
 
 <p float="left">
-  <img src="/images/zlsplitter/midside.svg" width="20pt"/>
+  <img src="/images/zlsplitter/midside.svg" width="22pt"/>
 </p>
 
 Mid/Side Split
 
 <p float="left">
-  <img src="/images/zlsplitter/lowhigh.svg" width="20pt"/>
+  <img src="/images/zlsplitter/lowhigh.svg" width="22pt"/>
 </p>
 
 Low/High Split
 
 <p float="left">
-  <img src="/images/zlsplitter/transientsteady.svg" width="20pt"/>
+  <img src="/images/zlsplitter/transientsteady.svg" width="22pt"/>
 </p>
 
 Transient/Steady Split
@@ -155,7 +156,7 @@ ___
 - SVF：state variable structure
 - FIR：truncated reversed structure
 
-> When the filter structure is SVF, the filter will change the phase significantly. Under such situation, you should not mix the output with the original signal directly or cascade multiple low/high splitters.
+> When the filter structure is SVF, the filter will change the phase significantly. Under such situation, you should not mix the output with the original signal directly or cascade multiple low/high splitters. If you do need to cascade SVF filters, you may refer to [Cascade SVF Filters](#cascade-svf-filters).
 
 > When the filter structure is FIR, the filter will NOT change the phase. However, it will cause latency, the amount of which depends on the sample rate and the filter slope.
 
@@ -164,6 +165,11 @@ ___
 **Filter Slope**
 
 There are three slopes: 12 dB/oct, 24 dB/oct and 48 dB/oct.
+
+___
+
+
+**Cutoff Frequency (Freq)**
 
 ___
 
@@ -255,6 +261,22 @@ Discard all unsaved settings and close the UI setting panel.
 
 ___
 
+
+## Appendix
+
+### Automation
+
+You can automate all parameters. During automation, Mix and Cutoff Frequency of SVF filters change per sample while the other parameters change per buffer.
+
+### Cascade SVF Filters
+
+```mermaid
+flowchart LR
+    A[Input] --> B1(Cutoff Freq f1)
+    B1 --> C[Output 1] --> B2(Cutoff f2) --> O1[Output 1 + Output 2] --> F1[Low]
+    B1 --> D[Output 2] --> B3(Cutoff f2) --> O2[Output 1] --> F2[Mid]
+    B3 --> O3[Output 2] --> F3[High]
+```
 
 ## Acknowledgment
 

@@ -18,11 +18,12 @@ ZL Splitter 是一款多功能音频分离插件，可以将输入信号分离�
 - 低频/高频信号
 - 瞬态/稳态信号
 
+路由可以按照下图设置：
 ```mermaid
 flowchart LR
     A[Input] -->B(ZL Splitter)
-    B --> C[Output 1] --> C1[其他效果器] --> E[完整信号]
-    B --> D[Output 2] --> D1[其他效果器] --> E
+    B --> C[Output 1] --> C1(其他效果器) --> E[完整信号]
+    B --> D[Output 2] --> D1(其他效果器) --> E
 ```
 
 ## 安装
@@ -86,25 +87,25 @@ ___
 
 
 <p float="left">
-  <img src="/images/zlsplitter/leftright.svg" width="20pt"/>
+  <img src="/images/zlsplitter/leftright.svg" width="22pt"/>
 </p>
 
 左/右声道分离
 
 <p float="left">
-  <img src="/images/zlsplitter/midside.svg" width="20pt"/>
+  <img src="/images/zlsplitter/midside.svg" width="22pt"/>
 </p>
 
 中/侧声道分离
 
 <p float="left">
-  <img src="/images/zlsplitter/lowhigh.svg" width="20pt"/>
+  <img src="/images/zlsplitter/lowhigh.svg" width="22pt"/>
 </p>
 
 低频/高频分离
 
 <p float="left">
-  <img src="/images/zlsplitter/transientsteady.svg" width="20pt"/>
+  <img src="/images/zlsplitter/transientsteady.svg" width="22pt"/>
 </p>
 
 瞬态/稳态分离
@@ -154,7 +155,7 @@ ___
 - SVF：状态变量结构
 - FIR：截断反转结构
 
-> 当滤波器为 SVF 结构，该滤波器会产生显著的相位改变。在这种情况下，不应当将输出与原始信号直接混合 或者 级联多个 低频/高频 分离器。
+> 当滤波器为 SVF 结构，该滤波器会产生显著的相位改变。在这种情况下，不应当将输出与原始信号直接混合 或者 级联多个 低频/高频 分离器。如果确实需要级联，可以参照[级联 SVF 滤波器](#级联-svf-滤波器)进行设置。
 
 > 当滤波器为 FIR 结构，该滤波器的不会产生相位改变，但会产生延时。延时的具体大小取决于采样率和滤波器斜率。
 
@@ -163,6 +164,10 @@ ___
 **滤波器斜率**
 
 共有三种滤波器斜率可供选择：12 dB/oct、24 dB/oct、48 dB/oct。
+
+___
+
+**截止频率（Freq）**
 
 ___
 
@@ -254,6 +259,22 @@ ___
 
 ___
 
+## 附录
+
+### 自动化
+
+您可以启用所有参数的自动化。在自动化时，混合（Mix）和 SVF 滤波器的截止频率会每个样本改变一次，其他参数均每个缓冲区改变一次。
+
+
+### 级联 SVF 滤波器
+
+```mermaid
+flowchart LR
+    A[Input] --> B1(截止频率 f1)
+    B1 --> C[Output 1] --> B2(截止频率 f2) --> O1[Output 1 + Output 2] --> F1[低频]
+    B1 --> D[Output 2] --> B3(截止频率 f2) --> O2[Output 1] --> F2[中频]
+    B3 --> O3[Output 2] --> F3[高频]
+```
 
 ## 致谢
 
