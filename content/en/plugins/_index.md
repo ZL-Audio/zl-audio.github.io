@@ -25,7 +25,7 @@ ___
 
 **[ZL Splitter](/plugins/zlsplitter)**
 
-Multi-functional audio splitter
+multifunctional audio splitter
 
 <img src="/images/zlsplitter/dark_crop.png" style="height:200px; max-width: 100%; width: auto"/>
 
