@@ -40,6 +40,10 @@ ZL Equalizer 按照 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) 进行
 
 **您无需为了接收或运行本程序副本而接受本许可证。仅是因为使用点对点传输接收副本而发生的被覆盖作品的辅助传播，您也无需接受本许可证。然而，除了本许可证以外，没有任何其他文件授权您传播或修改任何被覆盖作品。如果您不接受本许可证，这些行为（传播和修改）即构成版权侵权。因此，如果您修改或传播被覆盖作品，就表示您接受了本许可证。**
 
+<img src="/images/vst3.png" style="width: 120pt; max-width: 100%; height: auto"/>
+
+VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
+
 ## 用户界面
 
 用户界面由上方面板、主面板和下方面板构成。

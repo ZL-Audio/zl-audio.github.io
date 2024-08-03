@@ -40,9 +40,7 @@ GPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 
 **You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.**
 
-<p float="left">
-  <img src="/images/vst3.png" width="80pt" />
-</p>
+<img src="/images/vst3.png" style="width: 120pt; max-width: 100%; height: auto"/>
 
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
