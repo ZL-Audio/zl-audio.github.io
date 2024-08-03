@@ -1,6 +1,6 @@
 ---
 title: ZL Splitter
-description: multi-functional audio splitter
+description: multifunctional audio splitter
 weight: 1
 ---
 
@@ -11,7 +11,7 @@ ___
 
 ## About
 
-ZL Splitter is a multi-functional audio splitter plugin, which can split the input signal into:
+ZL Splitter is a multifunctional audio splitter plugin, which can split the input signal into:
 
 - left/right signal
 - mid/side signal
