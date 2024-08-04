@@ -4,11 +4,11 @@ description: multifunctional audio splitter
 weight: 1
 ---
 
-<img src="/images/zlsplitter/dark_crop.png" style="height:200px; max-width: 100%; width: auto"/>
+<img src="/images/zlsplitter/dark_crop.png" style="width:240px; max-width: 100%; height: auto"/>
 
 ___
 
-## Introduction
+## Introduction Video
 
 {{< youtube "-RVm9mbbQtA" >}}
 
