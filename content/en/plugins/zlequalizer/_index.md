@@ -8,6 +8,9 @@ weight: 1
 
 ___
 
+## Introduction
+
+{{< youtube "bC-mBDumzvU" >}}
 
 ## About
 
