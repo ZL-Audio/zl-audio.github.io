@@ -1,5 +1,4 @@
 ---
-title: ZL Audio Plugins
 linkTitle: Plugins
 
 menu:
