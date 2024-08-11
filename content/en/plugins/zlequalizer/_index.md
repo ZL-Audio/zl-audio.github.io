@@ -70,8 +70,6 @@ ___
   <img src="/images/zlequalizer/logo.svg" width="20pt" />
 </p>
 
-Double-clicking the icon toggles between light, dark, and custom colour modes.
-
 ___
 
 #### General Setting
@@ -152,6 +150,8 @@ ___
 #### Output Setting
 
 You can open the output detection setting panel by clicking `Output` and close it by clicking somewhere else.
+
+When [Gain Tag Colour](#ui-setting-panel) is not fully transparent, the summation of SGC, AGC and Output Gain will show up per 1.5 second.
 
 The components of this setting panel are:
 
@@ -289,8 +289,8 @@ ___
   <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
 </p>
 
-- Press: [bypass](#states-of-bands) the selected band.
-- Release: [turn on](#states-of-bands) the selected band.
+- Press: [turn on](#states-of-bands) the selected band.
+- Release: [bypass](#states-of-bands) the selected band.
 
 ___
 
@@ -376,8 +376,8 @@ ___
   <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
 </p>
 
-- Press: bypass the [dynamic](#dynamic-and-threshold-learning) effect for the selected frequency band.
-- Release: cancel the bypass.
+- Press: cancel the bypass.
+- Release: bypass the [dynamic](#dynamic-and-threshold-learning) effect for the selected frequency band.
 
 ___
 
@@ -472,7 +472,7 @@ When [Filter Parameter Tags Colour](#ui-setting-panel) is not fully transparent,
 
 You can use your mouse to drag and select multiple frequency bands simultaneously on the spectrum graph. After that, you can click on the spectrum graph (outside the button area) to cancel the selection.
 
-When multiple frequency bands are selected, adjusting the frequency, gain, or bandwidth of one frequency band will also affect the corresponding parameters of the other selected frequency bands.
+When multiple frequency bands are selected, bypassing/truning off one frequency band or adjusting the frequency/gain/bandwidth of one frequency band will also affect the corresponding parameters of the other selected frequency bands.
 
 #### Decibel Scale
 
@@ -484,9 +484,17 @@ The UI setting panel controls spectrum colours, slider operations, etc. Componen
 
 ___
 
-The following settings only apply to the custom colour mode:
-
 You can adjust the color by clicking on the left color block and change the transparency by dragging the right slider.
+
+**Text Colour**
+
+**Background Colour**
+
+For better accessibility, please set Text/Background to colours with high contrast.
+
+**Shadow Colour**
+
+**Glow Colour**
 
 **Main-Chain Input Signal Spectrum Colour (Pre Colour)**
 
@@ -497,6 +505,8 @@ You can adjust the color by clicking on the left color block and change the tran
 **Grid Lines Colour (Grid Colour)**
 
 **Filter Parameter Tags Colour (Tag Colour)**
+
+**Gain Tag Colour (Gain Colour)**
 
 ___
 

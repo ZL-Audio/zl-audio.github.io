@@ -1,7 +1,9 @@
 ---
-title: 插件格式
-linkTitle: 插件格式
+title: 插件安装
+linkTitle: 插件安装
 ---
+
+## 插件格式
 
 - VST3：在 macOS、Windows 和 Linux 安装包中提供
 - AU：在 macOS 安装包中提供
