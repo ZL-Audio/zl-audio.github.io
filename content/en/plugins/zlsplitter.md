@@ -280,8 +280,8 @@ You can automate all parameters. During automation, Mix and Cutoff Frequency of 
 ```mermaid
 flowchart LR
     A[Input] --> B1(Cutoff Freq f1)
-    B1 --> C[Output 1] --> B2(Cutoff f2) --> O1[Output 1 + Output 2] --> F1[Low]
-    B1 --> D[Output 2] --> B3(Cutoff f2) --> O2[Output 1] --> F2[Mid]
+    B1 --> C[Output 1] --> B2(Cutoff Freq f2) --> O1[Output 1 + Output 2] --> F1[Low]
+    B1 --> D[Output 2] --> B3(Cutoff Freq f2) --> O2[Output 1] --> F2[Mid]
     B3 --> O3[Output 2] --> F3[High]
 ```
 
