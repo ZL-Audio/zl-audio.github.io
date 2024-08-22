@@ -13,3 +13,7 @@ module:
   hugoVersion:
     extended: true
     min: 0.110.0
+
+services:
+  googleAnalytics:
+    ID: G-4TP4K2P3DD

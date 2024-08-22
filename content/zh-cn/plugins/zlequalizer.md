@@ -9,6 +9,9 @@ weight: 1
 
 ___
 
+## 简介视频
+
+{{< youtube "bC-mBDumzvU" >}}
 
 ## 关于
 
