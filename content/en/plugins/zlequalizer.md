@@ -25,9 +25,9 @@ ZL Equalizer is an equalizer plugin with the following key features:
 
 Visit [this link](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) and download the installer that matches your OS:
 
-- If the file has a `.dmg` extension, it is for macOS (in VST3, AU & AAX). You need to open it to get the `.pkg` installer.
-- If the file has a `.exe` extension, it is for Windows (in VST3, LV2 & AAX).
-- If the file has a `.zip` extension, it is for Linux (in VST3 & LV2). On Linux, you have to move the `*.vst3` file manually to the correct folder, e.g., `~/.vst3`.
+- If the file has a `.dmg` extension, it is for macOS (in `VST3`, `AU` & `AAX`). You need to open it to get the `.pkg` installer.
+- If the file has a `.exe` extension, it is for Windows (in `VST3`, `LV2` & `AAX`).
+- If the file has a `.zip` extension, it is for Linux (in `VST3` & `LV2`). On Linux, you have to move the `*.vst3` file manually to the correct folder, e.g., `~/.vst3`.
 
 Please note that all installers **have not been notarized**. You should decide whether to trust the installers from the provided link. Alternatively, you can build the plugin from the project source code (except AAX format).
 
@@ -36,6 +36,8 @@ Please note that all installers **have not been notarized**. You should decide w
 > On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
 >
 > On Linux, the plugin **DOES NOT HAVE** hardware acceleration, which may lead to UI freezing. The plugin is compatible with Mainstream Linux distributions.
+>
+> The installer can also install a `Standalone` format, which can serve as an independent application. You have to set up routing properly to make it functional.
 
 ZL Equalizer is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
