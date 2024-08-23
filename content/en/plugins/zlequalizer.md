@@ -167,7 +167,7 @@ ___
 
 **Scale**
 
-The ratio of the actual gain over the displayed gain of all 'gain type' filters (Peak, Low Shelf, High Shelf, and Tilt Shelf) (including all [base filters and target filters](#dynamic-and-threshold-learning)).
+The ratio of the actual gain over the displayed gain of all 'gain type' filters (Peak, Low Shelf, High Shelf, and Tilt Shelf) (including all [base filters and target filters](#dynamic-and-automatic-threshold)).
 
 ___
 
@@ -209,14 +209,14 @@ ___
 
 **Lookahead**
 
-- the delay of the [main-chain](#dynamic-and-threshold-learning) signal
+- the delay of the [main-chain](#dynamic-and-automatic-threshold) signal
 - when PDC is supported (hopefully in your DAW), it can be interpreted as the lookahead time of the side-chain signal
 
 ___
 
 **RMS**
 
-- the length of the audio when calculating the [instantaneous loudness](#dynamic-and-threshold-learning)
+- the length of the audio when calculating the [instantaneous loudness](#dynamic-and-automatic-threshold)
 - the actual attack/release will increase (significantly) will RMS increases
 
 ___
@@ -234,7 +234,7 @@ ___
 - You can also click on the label on the left to switch options
 
 
-> When high-quality is on, [dynamic](#dynamic-and-threshold-learning) will adjust the filter state per sample, which smooths dynamic effects and reduces artifacts. However, high-quality will **significantly increase** the processing time of [dynamic](#dynamic-and-threshold-learning).
+> When high-quality is on, [dynamic](#dynamic-and-automatic-threshold) will adjust the filter state per sample, which smooths dynamic effects and reduces artifacts. However, high-quality will **significantly increase** the processing time of [dynamic](#dynamic-and-automatic-threshold).
 
 ___
 
@@ -328,13 +328,13 @@ ___
 
 **Gain**
 
-When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the gain of the base filter by dragging/clicking with the left mouse button. To adjust the gain of the target filter, use the right mouse button for dragging/clicking. To adjust the gain of the base filter and the target filter, use the mousewheel.
+When the [dynamic](#dynamic-and-automatic-threshold) feature is enabled, you can adjust the gain of the base filter by dragging/clicking with the left mouse button. To adjust the gain of the target filter, use the right mouse button for dragging/clicking. To adjust the gain of the base filter and the target filter, use the mousewheel.
 
 ___
 
 **Bandwidth (Q)**
 
-When the [dynamic](#dynamic-and-threshold-learning) feature is enabled, you can adjust the Q value of the base filter by dragging/clicking with the left mouse button. For adjusting the Q value of the target filter, use the right mouse button for dragging/clicking. To adjust the Q values of the base filter and the target filter, use the mouse-wheel.
+When the [dynamic](#dynamic-and-automatic-threshold) feature is enabled, you can adjust the Q value of the base filter by dragging/clicking with the left mouse button. For adjusting the Q value of the target filter, use the right mouse button for dragging/clicking. To adjust the Q values of the base filter and the target filter, use the mouse-wheel.
 
 ___
 
@@ -349,8 +349,8 @@ ___
   <img src="/images/zlequalizer/fad-modsine.svg" width="20pt"/>
 </p>
 
-- Press: turn on the [dynamic](#dynamic-and-threshold-learning) effect for the selected frequency band.
-- Release: turn off the [dynamic](#dynamic-and-threshold-learning) effect for the selected frequency band.
+- Press: turn on the [dynamic](#dynamic-and-automatic-threshold) effect for the selected frequency band.
+- Release: turn off the [dynamic](#dynamic-and-automatic-threshold) effect for the selected frequency band.
 
 ___
 
@@ -358,8 +358,8 @@ ___
   <img src="/images/zlequalizer/fad-preset-a.svg" width="20pt"/>
 </p>
 
-- Press: enables [dynamic threshold learning](#dynamic-and-threshold-learning) for the selected frequency band.
-- Release: disables [dynamic threshold learning](#dynamic-and-threshold-learning) for the selected frequency band and applies the learned threshold.
+- Press: enables [automatic threshold](#dynamic-and-automatic-threshold) for the selected frequency band.
+- Release: disables [automatic threshold](#dynamic-and-automatic-threshold) for the selected frequency band and applies the learned threshold.
 
 ___
 
@@ -377,7 +377,7 @@ ___
 </p>
 
 - Press: cancel the bypass.
-- Release: bypass the [dynamic](#dynamic-and-threshold-learning) effect for the selected frequency band.
+- Release: bypass the [dynamic](#dynamic-and-automatic-threshold) effect for the selected frequency band.
 
 ___
 
@@ -394,8 +394,8 @@ ___
   <img src="/images/zlequalizer/right-to-bracket-solid.svg" width="20pt"/>
 </p>
 
-- Press: set the [dynamic](#dynamic-and-threshold-learning) threshold to the relative mode.
-- Release: set the [dynamic](#dynamic-and-threshold-learning) threshold to the absolute mode.
+- Press: set the [dynamic](#dynamic-and-automatic-threshold) threshold to the relative mode.
+- Release: set the [dynamic](#dynamic-and-automatic-threshold) threshold to the absolute mode.
 
 ___
 
@@ -428,13 +428,13 @@ ___
 
 **Side-chain Bandpass Frequency (Freq)**
 
-Adjust the center frequency of the bandpass filter applied to the side-chain audio. When the [dynamic](#dynamic-and-threshold-learning) effect is turned on, this frequency will be automatically adjusted to fit the audio affected by the main-chain filter.
+Adjust the center frequency of the bandpass filter applied to the side-chain audio. When the [dynamic](#dynamic-and-automatic-threshold) effect is turned on, this frequency will be automatically adjusted to fit the audio affected by the main-chain filter.
 
 ___
 
 **Side-chain Bandpass Bandwidth (Q)**
 
-Adjust the Q value of the bandpass filter applied to the side-chain audio. When the [dynamic](#dynamic-and-threshold-learning) effect is turned on, this Q value will be automatically adjusted to fit the audio affected by the main-chain filter.
+Adjust the Q value of the bandpass filter applied to the side-chain audio. When the [dynamic](#dynamic-and-automatic-threshold) effect is turned on, this Q value will be automatically adjusted to fit the audio affected by the main-chain filter.
 
 ___
 
@@ -553,7 +553,7 @@ ___
   <img src="/images/zlequalizer/loop-left-line.svg" width="18pt"/>
 </p>
 
-- Discard all unsaved settings and load the previously saved settings.
+- Load the default settings of some colours.
 
 ___
 
@@ -588,7 +588,7 @@ The frequency band can be in one of the following states:
 - Bypassed: The response curve is displayed on the spectrum graph without affecting the overall response curve.
 - On: The response curve is displayed on the spectrum graph and affects both the overall response curve and the audio signal.
 
-### Dynamic and Threshold Learning
+### Dynamic and Automatic Threshold
 
 The dynamic effect calculates the instantaneous loudness of the side-chain (filtered by the bandpass filter) at a constant rate (not less than 1000 times per second) and adjusts the filter state as follows:
 
@@ -596,7 +596,11 @@ The dynamic effect calculates the instantaneous loudness of the side-chain (filt
 - When side-chain instantaneous loudness >= (threshold + knee width), the filter is in the target filter state.
 - When (threshold - knee width) < side-chain instantaneous loudness < (threshold + knee width), the filter parameters will be a mix of the baseline filter parameters and the target filter parameters with a proportion. And the filter state will be re-calculated. The closer the side-chain instantaneous loudness is to (threshold - knee width), the closer the filter state is to the baseline filter, and vice versa.
 
-When threshold learning is on, the plugin collects the side-chain's instantaneous loudness. When threshold learning is turned off, the plugin sets the threshold to the median of the side-chain instantaneous loudness values and sets the knee width to half of the difference between the 95th and 5th percentiles.
+When automatic threshold is on, the plugin collects the side-chain's instantaneous loudness and adjusts the threshold. The actual threshold is the automatic threshold + displayed threshold + 40.
+
+When automatic threshold is turned off, the plugin sets the threshold to the median of the side-chain instantaneous loudness values and sets the knee width to half of the difference between the 95th and 5th percentiles.
+
+When automatic threshold is off, the actual threshold is equal to the displayed threshold.
 
 The threshold calculation is in the absolute mode by default. When the relative mode is activated, the dynamic effect will calculate the difference between the instantaneous loudness of the side-chain (filtered by the bandpass filter) and the overall instantaneous loudness of the side-chain. The threshold learning will work in the same mode.
 
