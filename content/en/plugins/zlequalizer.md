@@ -219,7 +219,7 @@ ___
 **RMS**
 
 - the length of the audio when calculating the [instantaneous loudness](#dynamic-and-automatic-threshold)
-- the actual attack/release will increase (significantly) will RMS increases
+- the actual attack/release will increase (significantly) when RMS increases
 
 ___
 
