@@ -25,19 +25,11 @@ ZL Equalizer 是一款均衡器插件，其主要特性有：
 ## 安装
 
 前往[此链接](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载对应您操作系统的安装器：
-- 后缀名为`.dmg`：macOS 系统安装器（包含 `VST3`、`AU` 和 `AAX`）。您需要打开以得到`.pkg`安装器。
+- 后缀名为`.dmg`：macOS 系统安装器（包含 `VST3`、`AU` 和 `AAX`）。
 - 后缀名为`.exe`：Windows 系统安装器（包含 `VST3`、`LV2` 和 `AAX`）。
-- 后缀名为`.zip`：Linux 系统安装器（包含 `VST3` 和 `LV2`）。请注意，在 Linux 上您需要自行将 `*.vst3` 文件移动到正确的文件夹，例如`~/.vst3`。
+- 后缀名为`.zip`：Linux 系统安装器（包含 `VST3` 和 `LV2`）。
 
-请注意，所有的安装器均未经过公证，您需要自行选择是否信任上述链接中的安装器。当然，您也可以通过项目源码自行构建该插件（AAX 格式除外）。
-
-> 在 macOS 系统上，该插件需要 Metal 支持。由于某些未知原因，该插件无法在 macOS 12 之前的系统上运行（但应当可以在 macOS 10.15.4 上本地构建）。除此以外，如果您对安装过程中的警告信息感到困惑，请参阅[在 Mac 上安全地打开 App](https://support.apple.com/zh-cn/102445)。
->
-> 在 Windows 系统上，该插件需要 Direct2D 支持。该插件与 Windows 10 及之后版本兼容。
-> 
-> 在 Linux 系统上，该插件**无法提供**硬件加速渲染，可能导致用户界面冻结。该插件与 Linux 主流发行版兼容。
->
-> 安装器同样可以安装 `Standalone` 格式，即能独立运行的软件。您需要合适地设置音频路由以使其工作。
+更多信息请阅读帮助中的[插件安装](../help/plugin_installation)页面。
 
 ZL Equalizer 按照 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) 进行许可。
 

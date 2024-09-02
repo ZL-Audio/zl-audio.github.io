@@ -37,16 +37,19 @@ jobs:
         shell: bash
         run: |
           mkdir gitee_repo
+          mkdir gitee_repo/help
           mkdir gitee_repo/plugins
+          mv -v "content/zh-cn/help"/* "gitee_repo/help/"
           mv -v "content/zh-cn/plugins"/* "gitee_repo/plugins/"
           mv -v "static"/*  "gitee_repo/"
+          rm "gitee_repo/help/_index.md"
           rm "gitee_repo/plugins/_index.md"
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v3
         with:
           find: "/images"
           replace: "../images"
-          include: "gitee_repo/plugins/**.md"
+          include: "gitee_repo/**.md"
           regex: false
       - name: Sync to Gitee
         shell: bash
