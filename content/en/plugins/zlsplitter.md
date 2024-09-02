@@ -33,17 +33,11 @@ flowchart LR
 
 Visit [this link](https://github.com/ZL-Audio/ZLSplitter/releases/latest) and download the installer that matches your OS:
 
-- If the file has a `.dmg` extension, it is for macOS (in VST3, AU). You need to open it to get the `.pkg` installer.
-- If the file has a `.exe` extension, it is for Windows (in VST3, LV2).
-- If the file has a `.zip` extension, it is for Linux (in VST3 & LV2). On Linux, you have to move the `*.vst3` file manually to the correct folder, e.g., `~/.vst3`.
+- If the file has a `.dmg` extension, it is for macOS (in `VST3` & `AU`).
+- If the file has a `.exe` extension, it is for Windows (in `VST3` & `LV2`).
+- If the file has a `.zip` extension, it is for Linux (in `VST3` & `LV2`).
 
-Please note that all installers **have not been notarized**. You should decide whether to trust the installers from the provided link. Alternatively, you can build the plugin from the project source code (except AAX format).
-
-> On macOS, the plugin requires Metal support. For some unknown reason, the plugin is not compatible with macOS earlier than macOS 12 (hopefully you can build it locally on macOS 10.15.4). Besides that, you may refer to [Safely open apps on your Mac](https://support.apple.com/en-us/102445) if you are confused by the alert given by your OS.
->
-> On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
->
-> On Linux, the plugin **DOES NOT HAVE** hardware acceleration, which may lead to UI freezing. The plugin is compatible with Mainstream Linux distributions.
+For more information, please refer to the [Plugin Installation](../help/plugin_installation) page.
 
 ZL Splitter is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
