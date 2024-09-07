@@ -5,6 +5,8 @@ linkTitle: 插件安装
 
 ## 插件格式
 
+- VST(VST2)：不提供
+    - 现已无法从 Steinberg 获得发行许可。如果您确有需要，请自行从代码进行构建。
 - VST3：在 macOS、Windows 和 Linux 安装包中提供
 - AU：在 macOS 安装包中提供
 - LV2：在 Windows 和 Linux 安装包中提供

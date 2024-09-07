@@ -5,6 +5,8 @@ linkTitle: Plugin Installation
 
 ## Plugin Formats
 
+- VST(VST2): not included
+    - It is no longer possible to get permission from Steinberg. If you do need such format, you have to build it by yourself.
 - VST3: included in macOS, Windows and Linux installers
 - AU: included in macOS installers
 - LV2: included in Windows and Linux installers
