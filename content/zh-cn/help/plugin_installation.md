@@ -6,12 +6,12 @@ linkTitle: 插件安装
 ## 插件格式
 
 - VST(VST2)：不提供
-    - 现已无法从 Steinberg 获得发行许可。如果您确有需要，请自行从代码进行构建。
+    - 现已无法从 Steinberg 获得发行许可。如果确有需要，请自行从代码进行构建。
 - VST3：在 macOS、Windows 和 Linux 安装包中提供
 - AU：在 macOS 安装包中提供
 - LV2：在 Windows 和 Linux 安装包中提供
 - AAX：在 macOS 和 Windows 安装包中提供
-    - 因为该格式的插件需要额外的签名，部分安装包可能不包括该格式或不更新该格式
+    - 因为该格式的插件需要额外的签名，部分安装包可能不包括/不更新该格式
 - CLAP：不提供，等待 JUCE 官方支持
 - Standalone：在部分插件的 macOS、Windows 和 Linux 安装包中提供
     - 该格式为独立运行的软件，需要设置音频路由以使其工作
