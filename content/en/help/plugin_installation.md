@@ -30,7 +30,7 @@ The macOS installer is packaged in a `.dmg` file. You need to open it to use the
 
 On macOS, the plugin requires Metal support. For some unknown reasons, the plugin is not compatible with macOS prior to macOS 12. Besides that, you may refer to [Safely open apps on your Mac](https://support.apple.com/en-us/102445) if you are confused by the alert given by your OS.
 
-If you wish to run it on a system prior to macOS 12, you can build the plugin locally (minimum macOS 10.15.4) or upgrade your system. If you cannot upgrade your system through official macOS support, you may update/upgrade it with [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) (use at your own risk).
+If you wish to run it on a system prior to macOS 12, you can build the plugin locally (minimum macOS 10.15.4) or upgrade your system. If you cannot upgrade your system through official macOS support, you may upgrade it with [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) (use at your own risk).
 
 ## Windows Installation
 
