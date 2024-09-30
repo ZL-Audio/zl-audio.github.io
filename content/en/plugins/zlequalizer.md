@@ -8,6 +8,9 @@ weight: 1
 
 ___
 
+Nominations for KVR Audio Readers' Choice Awards 2024 are currently open! If you like this plugin, please nominate/vote it at the [voting page](http://www.kvraudio.com/readers-choice-awards/2024/?utm_source=kvr_all_kvr_admins_mailing&utm_medium=email&utm_campaign=2024-09-30-ad-8124&utm_content=voting%20page). Thank you so much.
+
+
 ## Introduction Video
 
 {{< youtube "bC-mBDumzvU" >}}
