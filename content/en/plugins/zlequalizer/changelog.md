@@ -14,7 +14,7 @@ Visit [this link](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) and d
 - If the file has a `.exe` extension, it is for Windows (in `VST3`, `LV2` & `AAX`).
 - If the file has a `.zip` extension, it is for Linux (in `VST3` & `LV2`).
 
-For more information, please refer to the [Plugin Installation](../help/plugin_installation) page.
+For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
 ZL Equalizer is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
