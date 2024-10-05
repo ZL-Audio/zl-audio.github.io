@@ -608,9 +608,26 @@ The threshold calculation is in the absolute mode by default. When the relative 
 
 ### Filter Structure
 
-- Minimum Phase: The most common filter structure of equalizers (Transposed-Direct-Form II). Low-order minimum phase filters (6 dB/oct and 12 dB/oct) cause small phase shifts. Therefore, when the signal processed by low-order minimum phase filters is mixed with the original or highly correlated signals, phase cancellation issues are almost inaudible. However, when frequency and gain are rapidly modulated, this type of filter is more likely to become unstable and produce audible artifacts.
-- State Variable: The most common filter structure of crossovers. This type of filter is more stable when frequency and gain are rapidly modulated. However, the phase shift caused by this type of filter is significant. It is not recommended to mix the processed signal with the original or highly correlated signals. What's more, this type of filter will also affect the phase when it is bypassed.
-- Parallel: Under this filter structure, the Low Shelf (maximum 12 dB/oct) / High Sehlf (maximum 12 dB/oct) / Peak (maximum 24 dB/oct) filters are processed in Parallel while the remaining filters are still in Minimum Phase. For those parallel filters, the frequency response is DIFFERENT from the displayed curves. Besides that, Parallel filters perform dynamic processing in a different way, which is more efficient than Minimum Phase filters (especially under High Quality).
-- Matched Phase: All filters are still in Minimum Phase. Additionally, it uses a short FIR filter to match the magnitude/phase response of analog prototypes. This short FIR filter causes about 21 ms latency (up to about 64 ms if left/right or mid/side are used). I would advise against modulating parameters of filters with this structure.
-- Mixed Phase: All filters are still in Minimum Phase. Additionally, it uses a short FIR filter to match the magnitude response of analog prototypes and reduces phase shift at high-end. This short FIR filter causes about 43 ms latency (up to about 130 ms if left/right or mid/side are used). I would strongly advise against modulating parameters of filters with this structure.
-- Linear Phase: It has analog prototype magnitude response and zero phase response. This FIR filter causes about 341 ms latency (up to about 1024 ms if left/right or mid/side are used). You should NOT modulate parameters of filters. Dynamic effect does not work.
+#### Minimum Phase
+
+The most common filter structure of equalizers (Transposed-Direct-Form II). Low-order minimum phase filters (6 dB/oct and 12 dB/oct) cause small phase shifts. Therefore, when the signal processed by low-order minimum phase filters is mixed with the original or highly correlated signals, phase cancellation issues are almost inaudible. However, when frequency and gain are rapidly modulated, this type of filter is more likely to become unstable and produce audible artifacts.
+
+#### State Variable
+
+The most common filter structure of crossovers. This type of filter is more stable when frequency and gain are rapidly modulated. However, the phase shift caused by this type of filter is significant. It is not recommended to mix the processed signal with the original or highly correlated signals. What's more, this type of filter will also affect the phase when it is bypassed.
+
+#### Parallel
+
+Under this filter structure, the Low Shelf (maximum 12 dB/oct) / High Sehlf (maximum 12 dB/oct) / Peak (maximum 24 dB/oct) filters are processed in Parallel while the remaining filters are still in Minimum Phase. For those parallel filters, the frequency response is DIFFERENT from the displayed curves. Besides that, Parallel filters perform dynamic processing in a different way, which is more efficient than Minimum Phase filters (especially under High Quality).
+
+#### Matched Phase
+
+All filters are still in Minimum Phase. Additionally, it uses a short FIR filter to match the magnitude/phase response of analog prototypes. This short FIR filter causes about 21 ms latency (up to about 64 ms if left/right or mid/side are used). I would advise against modulating parameters of filters with this structure.
+
+#### Mixed Phase
+
+All filters are still in Minimum Phase. Additionally, it uses a short FIR filter to match the magnitude response of analog prototypes and reduces phase shift at high-end. This short FIR filter causes about 43 ms latency (up to about 130 ms if left/right or mid/side are used). I would strongly advise against modulating parameters of filters with this structure.
+
+#### Linear Phase
+
+It has analog prototype magnitude response and zero phase response. This FIR filter causes about 341 ms latency (up to about 1024 ms if left/right or mid/side are used). You should NOT modulate parameters of filters. Dynamic effect does not work.
