@@ -1,6 +1,6 @@
 ---
 title: 安装说明
-description:
+description: 如何安装 ZL Equalizer
 weight: 1
 ---
 

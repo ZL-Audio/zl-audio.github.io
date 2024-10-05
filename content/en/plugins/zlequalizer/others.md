@@ -1,6 +1,6 @@
 ---
-title: Postscript
-description:
+title: Appendix
+description: Acknowledgment, Feedback and Disclaimer
 weight: 3
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: Manual
-description:
+description: How to use ZL Equalizer
 weight: 2
 ---
 
 Nominations for KVR Audio Readers' Choice Awards 2024 are currently open! If you like this plugin, please nominate/vote it at the [voting page](http://www.kvraudio.com/readers-choice-awards/2024/?utm_source=kvr_all_kvr_admins_mailing&utm_medium=email&utm_campaign=2024-09-30-ad-8124&utm_content=voting%20page). Thank you so much.
 
 <img src="/images/zlequalizer/dark_crop.png" style="width:750px; max-width: 100%; height: auto" />
+
 ___
 
 ## About
@@ -22,7 +23,7 @@ ZL Equalizer is an equalizer plugin with the following key features:
 
 The user interface consists of a top panel, a main panel, and a bottom panel.
 
-### Common Components
+### Components
 
 #### Button
 
@@ -557,10 +558,7 @@ ___
 
 ___
 
-
-## Appendix
-
-## Shortcuts
+### Shortcuts
 
 Generally, you can enable fine-adjustment with Shift and enable special adjustment with Ctrl/Command. If the direction of mouse-wheel is reversed when Shift is pressed, you can reverse it again to put it back to normal.
 
@@ -570,7 +568,7 @@ Generally, you can enable fine-adjustment with Shift and enable special adjustme
 - you can add a dynamic band by double-clicking with Ctrl/Command
 - you can turn on/off dynamic of a band by double-clicking with Ctrl/Command on the band button
 
-### Automation
+## Automation
 
 You can automate frequency, gain, Q value, dynamic threshold, knee width, attack, and release parameters. Attention:
 
@@ -582,7 +580,7 @@ You can automate frequency, gain, Q value, dynamic threshold, knee width, attack
 >
 > When you modulate multiple filters, DO NOT select them on the spectrum.
 
-### States of Bands
+## States of Bands
 
 The frequency band can be in one of the following states:
 
@@ -590,7 +588,7 @@ The frequency band can be in one of the following states:
 - Bypassed: The response curve is displayed on the spectrum graph without affecting the overall response curve.
 - On: The response curve is displayed on the spectrum graph and affects both the overall response curve and the audio signal.
 
-### Dynamic and Automatic Threshold
+## Dynamic and Automatic Threshold
 
 The dynamic effect calculates the instantaneous loudness of the side-chain (filtered by the bandpass filter) at a constant rate (not less than 1000 times per second) and adjusts the filter state as follows:
 
@@ -606,7 +604,7 @@ When automatic threshold is off, the actual threshold is equal to the displayed 
 
 The threshold calculation is in the absolute mode by default. When the relative mode is activated, the dynamic effect will calculate the difference between the instantaneous loudness of the side-chain (filtered by the bandpass filter) and the overall instantaneous loudness of the side-chain. The threshold learning will work in the same mode.
 
-### Filter Structure
+## Filter Structure
 
 #### Minimum Phase
 

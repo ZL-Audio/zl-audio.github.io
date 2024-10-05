@@ -1,6 +1,6 @@
 ---
 title: 附言
-description:
+description: 致谢、反馈和免责声明
 weight: 3
 ---
 
