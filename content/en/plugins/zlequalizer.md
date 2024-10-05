@@ -8,7 +8,25 @@ weight: 1
 
 ___
 
+## New features in the 0.4.0 version
+
 Nominations for KVR Audio Readers' Choice Awards 2024 are currently open! If you like this plugin, please nominate/vote it at the [voting page](http://www.kvraudio.com/readers-choice-awards/2024/?utm_source=kvr_all_kvr_admins_mailing&utm_medium=email&utm_campaign=2024-09-30-ad-8124&utm_content=voting%20page). Thank you so much.
+
+- add parallel filter structure
+- add match-phase filter structure
+- add mixed-phase filter structure
+- add linear-phase filter structure
+- add & change shortcuts
+  - fine-adjust dragger with Shift
+  - find-adjust slider with Shift (changed from Ctrl/Command)
+  - add a dynamic filter with Ctrl/Command + mouse double-clicking
+  - turn on/off dynamic with Ctrl/Command + mouse double-clicking on the dragger
+- change real curves to ideal curves
+- change default FFT order to 12 to increase low-frequency details
+- add phase-flip button and change the `Output` panel layout
+- add more freedom to the plugin window size
+- improve DSP & GUI stability
+- improve DSP & GUI performance
 
 
 ## Introduction Video
@@ -19,7 +37,7 @@ Nominations for KVR Audio Readers' Choice Awards 2024 are currently open! If you
 
 ZL Equalizer is an equalizer plugin with the following key features:
 
-- **Multiple Filter Settings:** Supports 16 frequency bands, 8 filter types, 5 stereo modes, 7 variable slopes and 2 filter structures.
+- **Multiple Filter Settings:** Supports 16 frequency bands, 8 filter types, 5 stereo modes, 7 variable slopes and 6 filter structures.
 - **High-Quality Sound:** With 64-bit floating-point processing and de-cramping technique, outstanding performance is ensured in both low-end and high-end.
 - **Adjustable Dynamics:** Adjustable threshold, attack, release, and side-chain frequency, etc.
 - **Carefully Designed Interface:** Interactive spectrum graph, smart collision detection, and smooth animations.
@@ -603,9 +621,12 @@ The threshold calculation is in the absolute mode by default. When the relative 
 
 ### Filter Structure
 
-- Transposed DF-II: The most common filter structure of equalizers. Low-order minimum phase filters (6 dB/oct and 12 dB/oct) cause small phase shifts. Therefore, when the signal processed by low-order minimum phase filters is mixed with the original or highly correlated signals, phase cancellation issues are almost inaudible. However, when frequency and gain are rapidly modulated, this type of filter is more likely to become unstable and produce audible artifacts.
+- Minimum Phase: The most common filter structure of equalizers (Transposed-Direct-Form II). Low-order minimum phase filters (6 dB/oct and 12 dB/oct) cause small phase shifts. Therefore, when the signal processed by low-order minimum phase filters is mixed with the original or highly correlated signals, phase cancellation issues are almost inaudible. However, when frequency and gain are rapidly modulated, this type of filter is more likely to become unstable and produce audible artifacts.
 - State Variable: The most common filter structure of crossovers. This type of filter is more stable when frequency and gain are rapidly modulated. However, the phase shift caused by this type of filter is significant. It is not recommended to mix the processed signal with the original or highly correlated signals. What's more, this type of filter will also affect the phase when it is bypassed.
-
+- Parallel: Under this filter structure, the Low Shelf (maximum 12 dB/oct) / High Sehlf (maximum 12 dB/oct) / Peak (maximum 24 dB/oct) filters are processed in Parallel while the remaining filters are still in Minimum Phase. For those parallel filters, the frequency response is DIFFERENT from the displayed curves. Besides that, Parallel filters perform dynamic processing in a different way, which is more efficient than Minimum Phase filters (especially under High Quality).
+- Matched Phase: All filters are still in Minimum Phase. Additionally, it uses a short FIR filter to match the magnitude/phase response of analog prototypes. This short FIR filter causes about 21 ms latency (up to about 64 ms if left/right or mid/side are used). I would advise against modulating parameters of filters with this structure.
+- Mixed Phase: All filters are still in Minimum Phase. Additionally, it uses a short FIR filter to match the magnitude response of analog prototypes and reduces phase shift at high-end. This short FIR filter causes about 43 ms latency (up to about 130 ms if left/right or mid/side are used). I would strongly advise against modulating parameters of filters with this structure.
+- Linear Phase: It has analog prototype magnitude response and zero phase response. This FIR filter causes about 341 ms latency (up to about 1024 ms if left/right or mid/side are used). You should NOT modulate parameters of filters. Dynamic effect does not work.
 
 ## Acknowledgment
 
@@ -614,6 +635,12 @@ Thank [JUCE](https://github.com/juce-framework/JUCE) framework and [JUCE Forum](
 Thank Martin Vicanek and Nigel Redmon for sharing the filter parameter calculation method and filter cascade method.
 
 Thank all plugin users for their support, feedback, and suggestions.
+
+This plugin is inspired by other equalizer plugins, such as:
+
+- [FabFilter Pro-Q 3](https://www.fabfilter.com/products/pro-q-3-equalizer-plug-in)
+- [Three-Body Technology Kirchhoff-EQ](https://www.threebodytech.com/en/products/kirchhoffeq)
+- [TDR Nova](https://www.tokyodawn.net/tdr-nova/)
 
 ## Feedback
 
