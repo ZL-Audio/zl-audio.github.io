@@ -48,7 +48,7 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@v3
         with:
           find: "/images"
-          replace: "../images"
+          replace: "../../images"
           include: "gitee_repo/**.md"
           regex: false
       - name: Sync to Gitee

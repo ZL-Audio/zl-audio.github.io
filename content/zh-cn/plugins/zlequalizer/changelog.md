@@ -6,6 +6,10 @@ weight: 1
 
 KVR Audio 2024 读者之选 提名已经开始！如果您喜欢这个插件，请在[投票页](http://www.kvraudio.com/readers-choice-awards/2024/?utm_source=kvr_all_kvr_admins_mailing&utm_medium=email&utm_campaign=2024-09-30-ad-8124&utm_content=voting%20page)提名或投票。万分感谢！
 
+## 简介视频
+
+{{< youtube "bC-mBDumzvU" >}}
+
 ## 安装
 
 前往[此链接](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载对应您操作系统的安装器：

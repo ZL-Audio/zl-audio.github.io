@@ -1,7 +1,7 @@
 ---
 title: ZL Splitter
 description: 多功能音频分离器
-weight: 1
+weight: 2
 ---
 
 <img src="/images/zlsplitter/dark_crop.png" style="width:240px; max-width: 100%; height: auto"/>

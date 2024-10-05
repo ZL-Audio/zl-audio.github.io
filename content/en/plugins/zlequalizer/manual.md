@@ -9,11 +9,6 @@ Nominations for KVR Audio Readers' Choice Awards 2024 are currently open! If you
 <img src="/images/zlequalizer/dark_crop.png" style="width:750px; max-width: 100%; height: auto" />
 ___
 
-
-## Introduction Video
-
-{{< youtube "bC-mBDumzvU" >}}
-
 ## About
 
 ZL Equalizer is an equalizer plugin with the following key features:

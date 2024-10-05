@@ -10,10 +10,6 @@ KVR Audio 2024 读者之选 提名已经开始！如果您喜欢这个插件，�
 
 ___
 
-## 简介视频
-
-{{< youtube "bC-mBDumzvU" >}}
-
 ## 关于
 
 ZL Equalizer 是一款均衡器插件，其主要特性有：
