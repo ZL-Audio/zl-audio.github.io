@@ -1,32 +1,13 @@
 ---
-title: ZL Equalizer
-description: 16-band dynamic digital equalizer
-weight: 1
+title: Manual
+description:
+weight: 2
 ---
-
-<img src="/images/zlequalizer/dark_crop.png" style="width:750px; max-width: 100%; height: auto" />
-
-___
-
-## New features in the 0.4.0 version
 
 Nominations for KVR Audio Readers' Choice Awards 2024 are currently open! If you like this plugin, please nominate/vote it at the [voting page](http://www.kvraudio.com/readers-choice-awards/2024/?utm_source=kvr_all_kvr_admins_mailing&utm_medium=email&utm_campaign=2024-09-30-ad-8124&utm_content=voting%20page). Thank you so much.
 
-- add parallel filter structure
-- add match-phase filter structure
-- add mixed-phase filter structure
-- add linear-phase filter structure
-- add & change shortcuts
-  - fine-adjust dragger with Shift
-  - find-adjust slider with Shift (changed from Ctrl/Command)
-  - add a dynamic filter with Ctrl/Command + mouse double-clicking
-  - turn on/off dynamic with Ctrl/Command + mouse double-clicking on the dragger
-- change real curves to ideal curves
-- change default FFT order to 12 to increase low-frequency details
-- add phase-flip button and change the `Output` panel layout
-- add more freedom to the plugin window size
-- improve DSP & GUI stability
-- improve DSP & GUI performance
+<img src="/images/zlequalizer/dark_crop.png" style="width:750px; max-width: 100%; height: auto" />
+___
 
 
 ## Introduction Video
@@ -37,30 +18,10 @@ Nominations for KVR Audio Readers' Choice Awards 2024 are currently open! If you
 
 ZL Equalizer is an equalizer plugin with the following key features:
 
-- **Multiple Filter Settings:** Supports 16 frequency bands, 8 filter types, 5 stereo modes, 7 variable slopes and 6 filter structures.
+- **Multiple Filter Settings:** Supports 6 filter structures, 16 frequency bands, 8 filter types, 5 stereo modes, 7 variable slopes.
 - **High-Quality Sound:** With 64-bit floating-point processing and de-cramping technique, outstanding performance is ensured in both low-end and high-end.
 - **Adjustable Dynamics:** Adjustable threshold, attack, release, and side-chain frequency, etc.
 - **Carefully Designed Interface:** Interactive spectrum graph, smart collision detection, and smooth animations.
-
-## Installation
-
-Visit [this link](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) and download the installer that matches your OS:
-
-- If the file has a `.dmg` extension, it is for macOS (in `VST3`, `AU` & `AAX`).
-- If the file has a `.exe` extension, it is for Windows (in `VST3`, `LV2` & `AAX`).
-- If the file has a `.zip` extension, it is for Linux (in `VST3` & `LV2`).
-
-For more information, please refer to the [Plugin Installation](../help/plugin_installation) page.
-
-ZL Equalizer is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
-
-GPLv3 Section 9 *Acceptance Not Required for Having Copies*:
-
-**You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.**
-
-<img src="/images/vst3.png" style="width: 120pt; max-width: 100%; height: auto"/>
-
-VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
 ## User Interface
 
@@ -74,7 +35,7 @@ Click the button to switch between the "pressed" and "released" states.
 
 #### Rotary/Horizontal/Vertical Slider
 
-Values can be adjusted by dragging/clicking with the mouse or scrolling the mouse wheel. You can enable mouse wheel fine adjustment with Ctrl/Command.
+Values can be adjusted by dragging/clicking with the mouse or scrolling the mouse wheel. You can change the way of dragging.
 
 ### Top Panel
 
@@ -97,8 +58,12 @@ ___
 
 **Filter Structure**
 
-- Transposed DF-II: [Transposed Direct Form II](#filter-structure)
+- Minimum Phase: [Minimum Phase](#filter-structure)
 - State Variable: [State Variable](#filter-structure)
+- Parallel: [Parallel](#filter-structure)
+- Matched Phase: [Matched Phase](#filter-structure)
+- Mixed Phase: [Mixed Phase](#filter-structure)
+- Linear Phase: [Linear Phase](#filter-structure)
 
 ___
 
@@ -172,11 +137,23 @@ The components of this setting panel are:
 
 ___
 
-**Switch (ALL)**
+<p float="left">
+  <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
+</p>
 
-- OFF: bypass the plugin
-- ON: turn on the plugin
-- You can also click on the label on the left to switch options
+
+- Press: bypass the plugin
+- Release: turn on the plugin
+
+___
+
+
+<p float="left">
+  <img src="/images/zlequalizer/fad-phase.svg" width="20pt"/>
+</p>
+
+- Press: flip the phase of the output signal
+- Release: don't flip the phase
 
 ___
 
@@ -186,27 +163,26 @@ The ratio of the actual gain over the displayed gain of all 'gain type' filters 
 
 ___
 
-**Static Gain Compensation（SGC）**
+**Static Gain Compensation（S）**
 
-- OFF: turn off SGC
-- ON: turn on SGC
-- You can also click on the label on the left to switch options
-
+- Press: turn on Static Gain Compensation
+- Release: turn off Static Gain Compensation
 
 > SGC estimates the amount of compensation from filters' parameters. SGC is **inaccurate**. However, it **will NOT affect the dynamic of the main-chain signal**.
 
 ___
 
-**Auto Gain Compensation (AGC)**
+**Auto Gain Compensation (A)**
 
-- OFF: turn off AGC
-- ON: turn on AGC
-- You can also click on the label on the left to switch options
+- Press: turn on Auto Gain Compensation
+- Release: turn off Auto Gain Compensation
 
 
 > AGC calculates the difference between the loudness of the main-chain signal before/after filters and applies the corresponding gain. Therefore, **AGC will affect the dynamic of the main-chain signal**.
 > 
 > When AGC is on, the output main-chain signal will pass through a hard clipper at 0 dB.
+>
+> AGC does not have effect under [Linear Phase](#filter-structure).
 
 ___
 
@@ -469,7 +445,7 @@ If there is at least one frequency band in the [off](#states-of-bands) state whe
 
 #### Frequency Band Drag Button
 
-When a frequency band is not in the [off](#states-of-bands) state, a draggable button appears at the corresponding frequency/gain position. You can adjust the frequency and gain by dragging the button, and adjust the Q value with your mouse wheel. You can fix the freq/gain by pressing Ctrl/Command and dragging with left/right mouse button.
+When a frequency band is not in the [off](#states-of-bands) state, a draggable button appears at the corresponding frequency/gain position. You can adjust the frequency and gain by dragging the button, and adjust the Q value with your mouse wheel.
 
 When you select the frequency band, the button will be highlighted, and an additional control window will appear. Through this window, you can quickly bypass/solo the selected band and adjust the filter type.
 
@@ -529,8 +505,14 @@ The following settings apply to all three colour modes:
 
 **Mouse-Wheel Sensitivity**
 
-- Rough: mouse-wheel sensitivity when Ctrl/Command is not pressed
-- Fine: mouse-wheel sensitivity when Ctrl/Command is pressed
+- Rough: mouse-wheel sensitivity when Shift is not pressed
+- Fine: mouse-wheel sensitivity when Shift is pressed
+- Reverse: whether reverse the direction of mouse-wheel when Shift is pressed
+
+**Mouse-Drag Sensitivity**
+
+- Rough: mouse-drag sensitivity when Shift is not pressed
+- Fine: mouse-drag sensitivity when Shift is pressed
 
 **Rotary Slider Style**
 
@@ -583,6 +565,16 @@ ___
 
 ## Appendix
 
+## Shortcuts
+
+Generally, you can enable fine-adjustment with Shift and enable special adjustment with Ctrl/Command. If the direction of mouse-wheel is reversed when Shift is pressed, you can reverse it again to put it back to normal.
+
+- when using the mouse to drag / the mouse-wheel to adjust sliders, you can enable fine-adjustment with Shift
+- when dragging the band button, you can enable fine-dragging with Shift
+- when dragging the band button, you can fix frequency with Ctrl/Command + left-click and fix gain with Ctrl/Command + right-click
+- you can add a dynamic band by double-clicking with Ctrl/Command
+- you can turn on/off dynamic of a band by double-clicking with Ctrl/Command on the band button
+
 ### Automation
 
 You can automate frequency, gain, Q value, dynamic threshold, knee width, attack, and release parameters. Attention:
@@ -627,31 +619,3 @@ The threshold calculation is in the absolute mode by default. When the relative 
 - Matched Phase: All filters are still in Minimum Phase. Additionally, it uses a short FIR filter to match the magnitude/phase response of analog prototypes. This short FIR filter causes about 21 ms latency (up to about 64 ms if left/right or mid/side are used). I would advise against modulating parameters of filters with this structure.
 - Mixed Phase: All filters are still in Minimum Phase. Additionally, it uses a short FIR filter to match the magnitude response of analog prototypes and reduces phase shift at high-end. This short FIR filter causes about 43 ms latency (up to about 130 ms if left/right or mid/side are used). I would strongly advise against modulating parameters of filters with this structure.
 - Linear Phase: It has analog prototype magnitude response and zero phase response. This FIR filter causes about 341 ms latency (up to about 1024 ms if left/right or mid/side are used). You should NOT modulate parameters of filters. Dynamic effect does not work.
-
-## Acknowledgment
-
-Thank [JUCE](https://github.com/juce-framework/JUCE) framework and [JUCE Forum](https://forum.juce.com/).
-
-Thank Martin Vicanek and Nigel Redmon for sharing the filter parameter calculation method and filter cascade method.
-
-Thank all plugin users for their support, feedback, and suggestions.
-
-This plugin is inspired by other equalizer plugins, such as:
-
-- [FabFilter Pro-Q 3](https://www.fabfilter.com/products/pro-q-3-equalizer-plug-in)
-- [Three-Body Technology Kirchhoff-EQ](https://www.threebodytech.com/en/products/kirchhoffeq)
-- [TDR Nova](https://www.tokyodawn.net/tdr-nova/)
-
-## Feedback
-
-If you have general suggestions or questions, you can open a discussion [here](https://github.com/ZL-Audio/ZLEqualizer/discussions).
-
-If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLEqualizer/issues).
-
-## Disclaimer
-
-This disclaimer comes from section 15 and section 16 of [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
-
-**THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.**
-
-**IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.**
