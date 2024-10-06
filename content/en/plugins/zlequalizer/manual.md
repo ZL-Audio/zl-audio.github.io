@@ -628,4 +628,4 @@ All filters are still in Minimum Phase. Additionally, it uses a short FIR filter
 
 #### Linear Phase
 
-It has analog prototype magnitude response and zero phase response. This FIR filter causes about 341 ms latency (up to about 1024 ms if left/right or mid/side are used). You should NOT modulate parameters of filters. Dynamic effect does not work.
+It has analog prototype magnitude response and zero phase response. This FIR filter causes about 171 ms latency (up to about 512 ms if left/right or mid/side are used). You should NOT modulate parameters of filters. Dynamic effect does not work.
