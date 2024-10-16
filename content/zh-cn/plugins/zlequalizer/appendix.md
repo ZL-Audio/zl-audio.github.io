@@ -18,6 +18,12 @@ weight: 3
 - [三体声音科技 Kirchhoff-EQ](https://www.threebodytech.com/cn/products/kirchhoffeq)
 - [TDR Nova](https://www.tokyodawn.net/tdr-nova/)
 
+该插件的开发受到了如下软件的帮助：
+
+- C/C++ IDE [CLion](https://www.jetbrains.com/clion/)
+- [REAPER](https://www.reaper.fm/)
+- [Plugin Doctor](https://ddmf.eu/plugindoctor/)
+
 ## 反馈
 
 如果您有一般性的建议或疑问，可以在[讨论区](https://github.com/ZL-Audio/ZLEqualizer/discussions)提出。

@@ -18,6 +18,12 @@ This plugin is inspired by other equalizer plugins, such as:
 - [Three-Body Technology Kirchhoff-EQ](https://www.threebodytech.com/en/products/kirchhoffeq)
 - [TDR Nova](https://www.tokyodawn.net/tdr-nova/)
 
+The development of this plugin is assisted by the following software:
+
+- C/C++ IDE [CLion](https://www.jetbrains.com/clion/)
+- [REAPER](https://www.reaper.fm/)
+- [Plugin Doctor](https://ddmf.eu/plugindoctor/)
+
 ## Feedback
 
 If you have general suggestions or questions, you can open a discussion [here](https://github.com/ZL-Audio/ZLEqualizer/discussions).
