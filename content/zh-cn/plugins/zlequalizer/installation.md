@@ -1,3 +1,8 @@
+
+
+
+
+
 ---
 title: 安装说明
 description: 如何安装 ZL Equalizer
@@ -31,11 +36,12 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
-### 0.4.2（即将到来）
+### 0.4.2
 
 - 增加并改变 滑块数值输入快捷键
   - Ctrl/Command + 鼠标双击 打开数值编辑器
 - 更正 调整`Scale`时错误的曲线显示
+- 更正 macOS 兼容性问题（现在插件应当兼容 macOS 10.13 及以上版本）
 - 提高 混合相位模式的频移连续性
 
 ### 0.4.1

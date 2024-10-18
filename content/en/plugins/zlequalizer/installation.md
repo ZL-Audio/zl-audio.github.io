@@ -32,13 +32,13 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
-### 0.4.2 (upcoming)
+### 0.4.2
 
 - add & change slider value editor shortcuts
   - open value editor with Ctrl/Command + mouse double-clicking for ALL sliders
 - fix incorrect curve display when adjusting `Scale`
+- fix macOS compatibility issue (now it should support macOS 10.13 and above)
 - improve `mixed phase` phase shift continuity
-
 
 ### 0.4.1
 
