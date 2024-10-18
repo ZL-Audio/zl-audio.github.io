@@ -28,9 +28,9 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 macOS 安装器被封装在 `.dmg` 中。您需要打开以得到 `.pkg` 安装器。
 
-在 macOS 系统上，插件需要 Metal 支持。由于某些未知原因，插件可能无法在 macOS 13 之前的系统上运行。除此以外，如果您对安装过程中的警告信息感到困惑，请参阅[在 Mac 上安全地打开 App](https://support.apple.com/zh-cn/102445)。
+在 macOS 系统上，插件需要 Metal 支持。插件无法在 macOS 10.13 之前的系统上运行，与 macOS 13 之前的系统无法保证兼容性。除此以外，如果您对安装过程中的警告信息感到困惑，请参阅[在 Mac 上安全地打开 App](https://support.apple.com/zh-cn/102445)。
 
-如果您希望在 macOS 13 之前的系统上运行，您可以尝试本地构建该插件（本地构建系统版本最低为 macOS 10.15.4）或者更新系统。如果您无法通过 macOS 官方渠道更新系统，您可以尝试通过 [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) 更新系统（使用风险自负）。
+如果您无法通过 macOS 官方渠道更新系统，您可以尝试通过 [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) 更新系统（使用风险自负）。
 
 ## Windows 安装
 
