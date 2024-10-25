@@ -1,8 +1,3 @@
-
-
-
-
-
 ---
 title: 安装说明
 description: 如何安装 ZL Equalizer
@@ -35,6 +30,13 @@ ZL Equalizer 按照 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) 进行
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
 ## 更新日志
+
+### 0.4.3/0.5.0 即将到来
+
+- 增加 UI 按钮的改变至默认窗口大小功能
+- 更正 在加载插件后采样率改变导致的错误延时
+- 更正 `Standalone`中无法打开弹出菜单的问题
+- 提高 高采样率下 匹配相位 和 混合相位 的效果
 
 ### 0.4.2
 

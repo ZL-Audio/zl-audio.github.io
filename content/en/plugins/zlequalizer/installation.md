@@ -32,6 +32,13 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
+### 0.4.3/0.5.0 upcoming
+
+- add the resizing to default size function to UI button
+- fix incorrect latency when the samplerate changes after loading the plugin
+- fix combobox displays in `Standalone`
+- improve `matched phase` `mixed phase` under high samplerates
+
 ### 0.4.2
 
 - add & change slider value editor shortcuts
