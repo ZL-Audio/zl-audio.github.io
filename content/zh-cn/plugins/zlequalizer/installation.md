@@ -37,6 +37,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - 更正 在加载插件后采样率改变导致的错误延时
 - 更正 `Standalone`中无法打开弹出菜单的问题
 - 提高 高采样率下 匹配相位 和 混合相位 的效果
+- 提高 频谱分析高频精确度
 
 ### 0.4.2
 

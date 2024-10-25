@@ -38,6 +38,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - fix incorrect latency when the samplerate changes after loading the plugin
 - fix combobox displays in `Standalone`
 - improve `matched phase` `mixed phase` under high samplerates
+- improve spectrum display accuracy in the high-end
 
 ### 0.4.2
 
