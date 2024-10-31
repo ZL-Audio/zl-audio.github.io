@@ -34,6 +34,8 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ### 0.4.3/0.5.0 upcoming
 
+- change the top panel layout (move global bypass and sgc buttons outside)
+- change the UI setting panel layout
 - add the resizing to default size function to UI button
 - fix incorrect latency when the samplerate changes after loading the plugin
 - fix combobox displays in `Standalone`
