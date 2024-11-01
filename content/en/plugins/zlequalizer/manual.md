@@ -147,7 +147,7 @@ ___
 
 ___
 
-s**Smooth**
+**Smooth**
 
 - the smoothness of attack/release
 
