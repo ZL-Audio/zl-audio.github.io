@@ -42,6 +42,8 @@ ___
   <img src="/images/zlequalizer/logo.svg" width="20pt" />
 </p>
 
+You can open the [UI setting panel](#ui-setting-panel) by double-clicking the logo. You can reset the window size by double-clicking the logo with Crtl/Command.
+
 ___
 
 #### General Setting
@@ -123,69 +125,6 @@ ___
 
 ___
 
-#### Output Setting
-
-You can open the output detection setting panel by clicking `Output` and close it by clicking somewhere else.
-
-When [Gain Tag Colour](#ui-setting-panel) is not fully transparent, the summation of SGC, AGC and Output Gain will show up per 1.5 second.
-
-The components of this setting panel are:
-
-___
-
-<p float="left">
-  <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
-</p>
-
-
-- Press: bypass the plugin
-- Release: turn on the plugin
-
-___
-
-
-<p float="left">
-  <img src="/images/zlequalizer/fad-phase.svg" width="20pt"/>
-</p>
-
-- Press: flip the phase of the output signal
-- Release: don't flip the phase
-
-___
-
-**Scale**
-
-The ratio of the actual gain over the displayed gain of all 'gain type' filters (Peak, Low Shelf, High Shelf, and Tilt Shelf) (including all [base filters and target filters](#dynamic-and-automatic-threshold)).
-
-___
-
-**Static Gain Compensation（S）**
-
-- Press: turn on Static Gain Compensation
-- Release: turn off Static Gain Compensation
-
-> SGC estimates the amount of compensation from filters' parameters. SGC is **inaccurate**. However, it **will NOT affect the dynamic of the main-chain signal**.
-
-___
-
-**Auto Gain Compensation (A)**
-
-- Press: turn on Auto Gain Compensation
-- Release: turn off Auto Gain Compensation
-
-
-> AGC calculates the difference between the loudness of the main-chain signal before/after filters and applies the corresponding gain. Therefore, **AGC will affect the dynamic of the main-chain signal**.
-> 
-> When AGC is on, the output main-chain signal will pass through a hard clipper at 0 dB.
->
-> AGC does not have effect under [Linear Phase](#filter-structure).
-
-___
-
-**Output Gain**
-
-___
-
 #### Dynamic Setting
 
 You can open the dynamic detection setting panel by clicking `Dynamic` and close it by clicking somewhere else.
@@ -208,7 +147,7 @@ ___
 
 ___
 
-**Smooth**
+s**Smooth**
 
 - the smoothness of attack/release
 
@@ -241,9 +180,7 @@ ___
 - FRZ: freeze the spectrum
 - You can also click on the label on the left to switch options
 
-
 ___
-
 
 **Decay Speed**
 
@@ -260,9 +197,68 @@ ___
 
 ___
 
-#### UI setting
+#### Output Setting
 
-Under custom colour mode, You can open the [UI setting panel](#ui-setting-panel) by clicking `UI`.
+You can open the output detection setting panel by clicking `Output` and close it by clicking somewhere else.
+
+When [Gain Tag Colour](#ui-setting-panel) is not fully transparent, the summation of SGC, AGC, Output Gain and the Scale will show up per 1.5 second.
+
+The components of this setting panel are:
+
+___
+
+**Scale**
+
+The ratio of the actual gain over the displayed gain of all 'gain type' filters (Peak, Low Shelf, High Shelf, and Tilt Shelf) (including all [base filters and target filters](#dynamic-and-automatic-threshold)).
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/fad-phase.svg" width="20pt"/>
+</p>
+
+- Press: flip the phase of the output signal
+- Release: don't flip the phase
+
+___
+
+**Auto Gain Compensation (A)**
+
+- Press: turn on Auto Gain Compensation
+- Release: turn off Auto Gain Compensation
+
+
+> AGC calculates the difference between the loudness of the main-chain signal before/after filters and applies the corresponding gain. Therefore, **AGC will affect the dynamic of the main-chain signal**.
+> 
+> When AGC is on, the output main-chain signal will pass through a hard clipper at 0 dB.
+>
+> AGC does not have effect under [Linear Phase](#filter-structure).
+
+___
+
+**Output Gain**
+
+___
+
+
+#### Top-Right Buttons
+
+**Static Gain Compensation（S）**
+
+- Press: turn on Static Gain Compensation
+- Release: turn off Static Gain Compensation
+
+> SGC estimates the amount of compensation from filters' parameters. SGC is **inaccurate**. However, it **will NOT affect the dynamic of the main-chain signal**.
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
+</p>
+
+
+- Press: bypass the plugin
+- Release: turn on the plugin
 
 ___
 
@@ -469,7 +465,7 @@ You can choose the maximum decibel for the decibel scale. After that, the maximu
 
 The UI setting panel controls spectrum colours, slider operations, etc. Components will be introduced in the order from top to bottom.
 
-___
+#### Colour
 
 You can adjust the color by clicking on the left color block and change the transparency by dragging the right slider.
 
@@ -495,7 +491,15 @@ For better accessibility, please set Text/Background to colours with high contra
 
 **Gain Tag Colour (Gain Colour)**
 
-___
+**Colour Map 1**
+
+- The colour map of the curves of each single filter.
+
+**Colour Map 2**
+
+- The colour map of the curves of Stereo/Left/Right/Mid/Side.
+
+#### Control
 
 The following settings apply to all three colour modes:
 
@@ -518,6 +522,13 @@ The following settings apply to all three colour modes:
 - Horiz + Vert: A rotary control that you move by dragging the mouse up-and-down or left-to-right
 - Distance: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
 
+**Slider Double Click**
+
+- Return Default: when you double-click the slider, it returns to the default value; when you double-click the slider with Ctrl/Command, it opens the value editor.
+- Open Editor: when you double-click the slider, it opens the value editor; when you double-click the slider with Ctrl/Command, it returns to the default value.
+
+#### Other
+
 **Refresh Rate**
 
 - The refresh rate of the response curve(s). The higher this value, the smoother the response curve(s) when dragging the buttons or enabling dynamic, but the higher the CPU and GPU load. When the CPU or GPU load is too high, the response curve may get distorted when dragging the button.
@@ -526,11 +537,18 @@ The following settings apply to all three colour modes:
 
 - Tilt: extra tilting slope of the FFT
 - Speed: extra decay speed of the FFT
+- Resolution: resolution of the FFT (takes effect after restarting the DAW)
+
+Higher resolution increases the low-frequency details of the spectrum with the cost of increasing computation on the background thread. Although it does not affect the audio thread, you may need to choose a lower resolution if you see the spectrum is lagging.
 
 **Curve Thickness**
 
 - Single: the thickness of the response curves of single bands
 - Sum: the thickness of the overall response curves
+
+**Default Pass Filter Slope**
+
+#### Bottom Buttons
 
 ___
 
