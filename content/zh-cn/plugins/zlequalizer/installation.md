@@ -36,6 +36,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - 改变 上方面板 布局（将 插件旁路 和 静态增益补偿 按钮移至外部）
 - 改版 外观设置面板 布局
 - 增加 UI 按钮的改变至默认窗口大小功能
+- 增加 默认 高通/低通滤波器斜率 和 旋钮双击 到 外观设置面板
 - 更正 在加载插件后采样率改变导致的错误延时
 - 更正 `Standalone`中无法打开弹出菜单的问题
 - 提高 高采样率下 匹配相位 和 混合相位 的效果

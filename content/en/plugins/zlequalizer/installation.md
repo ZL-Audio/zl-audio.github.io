@@ -37,6 +37,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - change the top panel layout (move global bypass and sgc buttons outside)
 - change the UI setting panel layout
 - add the resizing to default size function to UI button
+- add default pass filter order & slider doube clicking to the UI setting panel
 - fix incorrect latency when the samplerate changes after loading the plugin
 - fix combobox displays in `Standalone`
 - improve `matched phase` `mixed phase` under high samplerates
