@@ -32,7 +32,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
-### 0.4.3/0.5.0 upcoming
+### 0.4.3
 
 - change the top panel layout (move global bypass and sgc buttons outside)
 - change the UI setting panel layout

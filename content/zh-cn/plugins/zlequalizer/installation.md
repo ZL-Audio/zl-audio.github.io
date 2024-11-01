@@ -31,7 +31,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
-### 0.4.3/0.5.0 即将到来
+### 0.4.3
 
 - 改变 上方面板 布局（将 插件旁路 和 静态增益补偿 按钮移至外部）
 - 改版 外观设置面板 布局
