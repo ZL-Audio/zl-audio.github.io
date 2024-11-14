@@ -30,6 +30,10 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
+### 0.5.0 (upcoming)
+
+- fix uninitialized static gain compensation in some edge cases
+
 ### 0.4.3
 
 - change the top panel layout (move global bypass and sgc buttons outside)

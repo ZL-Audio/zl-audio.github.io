@@ -29,6 +29,10 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
+### 0.5.0（即将到来）
+
+- 更正 少数情况下未初始化的静态增益补偿
+
 ### 0.4.3
 
 - 改变 上方面板 布局（将 插件旁路 和 静态增益补偿 按钮移至外部）
