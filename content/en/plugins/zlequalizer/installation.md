@@ -33,6 +33,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 ### 0.5.0 (upcoming)
 
 - fix uninitialized static gain compensation in some edge cases
+- fix data race in some edge cases
 
 ### 0.4.3
 
