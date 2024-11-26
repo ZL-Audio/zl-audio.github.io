@@ -29,7 +29,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
-### 0.5.0（即将到来）
+### 0.4.4
 
 - 更正 少数情况下未初始化的静态增益补偿
 - 更正 少数情况下可能的数据争用
