@@ -29,6 +29,16 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
+### 0.5.0（即将到来）
+
+- 增加 UI 设置导入/导出
+
+### 0.4.5
+
+- 更正 0.4.4 版本中 nlopt 库的链接问题（该问题导致 Linux 和 macOS 插件无法加载）
+- 更正 安装器中错误的许可（许可已经变更为 AGPLv3）
+- 提高 信号处理的稳定性
+
 ### 0.4.4
 
 - 更正 少数情况下未初始化的静态增益补偿

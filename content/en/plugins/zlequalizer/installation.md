@@ -30,6 +30,16 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
+### 0.5.0 (upcoming)
+
+- add UI setting import/export
+
+### 0.4.5
+
+- fix nlopt library linking issue in version 0.4.4
+- fix incorrect licenses in installers (licenses have been changed to AGPLv3)
+- improve DSP stability
+
 ### 0.4.4
 
 - fix uninitialized static gain compensation in some edge cases
