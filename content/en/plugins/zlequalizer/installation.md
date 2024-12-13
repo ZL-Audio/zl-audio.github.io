@@ -33,6 +33,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 ### 0.5.0 (upcoming)
 
 - add UI setting import/export
+- improve GUI performance
 
 ### 0.4.5
 
