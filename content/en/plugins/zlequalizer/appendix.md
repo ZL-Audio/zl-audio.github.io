@@ -26,13 +26,15 @@ The development of this plugin is assisted by the following software:
 
 ## Feedback
 
+You have to register a GitHub account before sending feedbacks.
+
 If you have general suggestions or questions, you can open a discussion [here](https://github.com/ZL-Audio/ZLEqualizer/discussions).
 
 If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLEqualizer/issues).
 
 ## Disclaimer
 
-This disclaimer comes from section 15 and section 16 of [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
+This disclaimer comes from section 15 and section 16 of [AGPLv3 License](https://www.gnu.org/licenses/agpl-3.0.en.html).
 
 **THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.**
 

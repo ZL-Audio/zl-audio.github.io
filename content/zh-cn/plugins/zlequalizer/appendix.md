@@ -26,13 +26,15 @@ weight: 3
 
 ## 反馈
 
+在反馈钱，您需要注册 GitHub 账号。
+
 如果您有一般性的建议或疑问，可以在[讨论区](https://github.com/ZL-Audio/ZLEqualizer/discussions)提出。
 
 如果您有针对性的错误报告或功能要求，可以在[问题区](https://github.com/ZL-Audio/ZLEqualizer/issues)提出。
 
 ## 免责声明
 
-该免责声明来自 [由 源译识 翻译的 GPLv3 协议](https://atomgit.com/translation/Contransus) 第十五、十六项条款。
+该免责声明来自 [由 源译识 翻译的 AGPLv3 协议](https://atomgit.com/translation/Contransus) 第十五、十六项条款。
 
 **在适用法律允许的范围内，本程序没有任何保证。除非另有书面说明，否则版权持有人和/或其他各方按“原样”提供本程序，而不提供任何明示担保或默示保证，包括但不限于对适销性和特定用途适用性的默示保证。关于本程序的质量和性能的全部风险皆由您承担。如果本程序确有缺陷，您将承担所有必要的服务、维修或修正的费用。**
 

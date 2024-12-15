@@ -31,6 +31,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ### 0.5.0（即将到来）
 
+- 增加 EQ 匹配
 - 增加 UI 设置导入/导出
 - 提高 图形界面 的性能
 
