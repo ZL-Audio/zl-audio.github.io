@@ -1,8 +1,8 @@
----
-title: Manual
-description: How to use ZL Equalizer
-weight: 2
----
+# Manual
+
+How to use ZL Equalizer
+
+
 
 <img src="/images/zlequalizer/dark_crop.png" style="width:750px; max-width: 100%; height: auto" />
 
@@ -46,7 +46,13 @@ ___
 
 #### Match Setting
 
-You can open the match analyzer panel and the match control panel by clicking `Match` and close them by clicking `Match` again.
+You can open the [match analyzer](#match-analyzer) and the [match control panel](#match-control-panel) by clicking `Match` and close them by clicking `Match` again.
+
+When those two panels are visible, you cannot interact with the spectrum and the original [left panel](#left-panel) and [right panel](#right-panel) are hidden. At the same time, the refresh rate will be halved to reduce rendering pressure. 
+
+Input/Target/Difference curves are kept alive only when those two panels are visible. Once you close those two panels or close the plugin window, the curves will get reset.
+
+For more information, please refer to the [EQ Match](#eq-match) section.
 
 ___
 
@@ -425,6 +431,77 @@ Adjust the Q value of the bandpass filter applied to the side-chain audio. When 
 
 ___
 
+#### Match Control Panel
+
+___
+
+**Target Curve**
+
+There are three target curves:
+
+- Side: the side chain signal (make sure you have enabled side-chain in the [right panel](#right-panel)
+- Preset: load from a preset file
+- Flat: flat -4.5 dB/oct line
+
+___
+
+**Weight**
+
+Adjust the loudness-weighting parameters of the curve learning model. The model will learn more from the louder signal if the weight is larger.
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/play-fill.svg" width="20pt"/>
+</p>
+
+- Press: start the curve learning
+- Release: pause the curve learning
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/save-line.svg" width="20pt"/>
+</p>
+
+- Click: save the current target curve as a preset file
+
+___
+
+**Smooth**
+
+Adjust the smoothness of the difference curve. When 0 < `Smooth` < 0.5, you can increase the smoothness of the difference curve by increasing the value. When 0.5 < `Smooth` < 1, you can scale the difference curve increasing the value.
+
+___
+
+**Slope**
+
+Adjust the slope of the diffference curve.
+
+___
+
+**Fitting Algorithm Choice**
+
+- LD: local gradient-based algorithm
+- GN: global gradient-free algorithm
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/play-fill.svg" width="20pt"/>
+</p>
+
+- Click: start the fitting
+
+___
+
+**Num Band**
+
+Adjust the number of bands used for fitting.
+
+___
+
+
 ### Main Panel
 
 The main panel consists of grid lines, a spectrum graph, a single frequency band response curve, an overall response curve, and a dB scale on the right side.
@@ -454,7 +531,6 @@ Additionally, if the dynamic function of this frequency band is not disabled:
 
 When [Filter Parameter Tags Colour](#ui-setting-panel) is not fully transparent, the filter frequency/gain will appear as two tags on the spectrum.
 
-
 #### Multi-band Selection
 
 You can use your mouse to drag and select multiple frequency bands simultaneously on the spectrum graph. After that, you can click on the spectrum graph (outside the button area) to cancel the selection.
@@ -464,6 +540,10 @@ When multiple frequency bands are selected, bypassing/truning off one frequency 
 #### Decibel Scale
 
 You can choose the maximum decibel for the decibel scale. After that, the maximum gain of filters (when you drag buttons) is limited to that range.
+
+#### Match Analyzer
+
+When match analyzer is visible, it will display three curves in corresponding colour: input curve (thin, in Pre Colour), target curve (thin, in Side Colour) and difference curve (thick, in the third colour of Colour Map 2).
 
 ### UI Setting Panel
 
@@ -651,3 +731,5 @@ All filters are still in Minimum Phase. Additionally, it uses a short FIR filter
 #### Linear Phase
 
 It has analog prototype magnitude response and zero phase response. This FIR filter causes about 171 ms latency (up to about 512 ms if left/right or mid/side are used). You should NOT modulate parameters of filters. Dynamic effect does not work.
+
+## EQ Match
