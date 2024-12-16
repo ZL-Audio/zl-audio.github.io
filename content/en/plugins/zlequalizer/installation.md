@@ -30,7 +30,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
-### 0.5.0 (upcoming)
+### 0.5.0
 
 - add EQ match
 - add UI setting import/export

@@ -44,6 +44,12 @@ You can open the [UI setting panel](#ui-setting-panel) by double-clicking the lo
 
 ___
 
+#### Match Setting
+
+You can open the match analyzer panel and the match control panel by clicking `Match` and close them by clicking `Match` again.
+
+___
+
 #### General Setting
 
 You can open the general setting panel by clicking `General` and close it by clicking somewhere else.

@@ -27,7 +27,7 @@ ZL Equalizer 按照 [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) 进�
 
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
-## 更新日志
+## 更新日
 
 ### 0.5.0（即将到来）
 
