@@ -48,11 +48,11 @@ ___
 
 You can open the [match analyzer](#match-analyzer) and the [match control panel](#match-control-panel) by clicking `Match` and close them by clicking `Match` again.
 
-When those two panels are visible, you cannot interact with the spectrum and the original [left panel](#left-panel) and [right panel](#right-panel) are hidden. At the same time, the refresh rate will be halved to reduce rendering pressure. 
+When those two panels are visible, you cannot interact with the spectrum and the [left panel](#left-panel) and [right panel](#right-panel) are hidden. At the same time, the refresh rate will be halved to reduce rendering pressure. 
 
-Input/Target/Difference curves are kept alive only when those two panels are visible. Once you close those two panels or close the plugin window, the curves will get reset.
+Input/Target/Difference curves are kept alive only when those two panels are visible. Once you close those two panels (by clicking `Match`) or close the plugin window, the curves will get reset.
 
-For more information, please refer to the [Equalizer Match](#equalizer-match) section.
+For more information, please refer to [Equalization Match](#equalization-match).
 
 ___
 
@@ -739,7 +739,7 @@ All filters are still in Minimum Phase. Additionally, it uses a short FIR filter
 
 It has analog prototype magnitude response and zero phase response. This FIR filter causes about 171 ms latency (up to about 512 ms if left/right or mid/side are used). You should NOT modulate parameters of filters. Dynamic effect does not work.
 
-## Equalizer Match
+## Equalization Match
 
 EQ match uses several filters to match the frequency spectrum of the input signal to the frequency spectrum of the target signal. The steps are listed as follows:
 
