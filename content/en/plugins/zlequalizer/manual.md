@@ -40,7 +40,7 @@ ___
   <img src="/images/zlequalizer/logo.svg" width="20pt" />
 </p>
 
-You can open the [UI setting panel](#ui-setting-panel) by double-clicking the logo. You can reset the window size by double-clicking the logo with Crtl/Command.
+You can open the [UI setting panel](#ui-setting-panel) by double-clicking the logo. You can reset the window size by double-clicking the logo with Ctrl/Command.
 
 ___
 
@@ -439,8 +439,8 @@ ___
 
 There are three target curves:
 
-- Side: the side chain signal (make sure you have enabled side-chain in the [right panel](#right-panel)
-- Preset: load from a preset file
+- Side: the side chain signal (make sure you have enabled external side-chain in the [right panel](#right-panel))
+- Preset: load from a preset file (`.csv` file)
 - Flat: flat -4.5 dB/oct line
 
 ___
@@ -464,26 +464,26 @@ ___
   <img src="/images/zlequalizer/save-line.svg" width="20pt"/>
 </p>
 
-- Click: save the current target curve as a preset file
+- Click: save the current target curve as a preset file (`.csv` file)
 
 ___
 
 **Smooth**
 
-Adjust the smoothness of the difference curve. When 0 < `Smooth` < 0.5, you can increase the smoothness of the difference curve by increasing the value. When 0.5 < `Smooth` < 1, you can scale the difference curve increasing the value.
+Adjust the smoothness of the difference curve. When 0 < `Smooth` < 0.5, you can increase the smoothness of the difference curve by increasing the value. When 0.5 < `Smooth` < 1, you can scale the difference curve by increasing the value.
 
 ___
 
 **Slope**
 
-Adjust the slope of the diffference curve.
+Adjust the slope of the difference curve.
 
 ___
 
 **Fitting Algorithm Choice**
 
 - LD: local gradient-based algorithm
-- GN: global gradient-free algorithm
+- GN: global gradient-free algorithm (recommended)
 
 ___
 
@@ -551,7 +551,7 @@ The UI setting panel controls spectrum colours, slider operations, etc. Componen
 
 #### Colour
 
-You can adjust the color by clicking on the left color block and change the transparency by dragging the right slider.
+You can adjust the colour by clicking on the left colour block and change the transparency by dragging the right slider.
 
 **Text Colour**
 
@@ -582,6 +582,14 @@ For better accessibility, please set Text/Background to colours with high contra
 **Colour Map 2**
 
 - The colour map of the curves of Stereo/Left/Right/Mid/Side.
+
+**Import**
+
+- import colour settings
+
+**Export**
+
+- export colour settings
 
 #### Control
 
@@ -733,3 +741,9 @@ All filters are still in Minimum Phase. Additionally, it uses a short FIR filter
 It has analog prototype magnitude response and zero phase response. This FIR filter causes about 171 ms latency (up to about 512 ms if left/right or mid/side are used). You should NOT modulate parameters of filters. Dynamic effect does not work.
 
 ## EQ Match
+
+EQ match uses several filters to match the frequency spectrum of the input signal to the frequency spectrum of the target signal. The steps are listed as follows:
+
+1. Choose the target signal (learned from side-chain, loaded from presets or set as flat).
+2. Start the learning. The curve learning model learns both the input signal and the side-chain signal. As the same time, it also calculates the difference between two signals. The difference is centered so that it is affected by the loudness of two signals. During this step you can see three curves on the spectrum (input curve, target curve and difference curve). You may stop the learning when the difference curve becomes stable.
+3. Start the fitting. The curve fitting model with uses filters to match the difference curves. Unless the computing resource is very limited, the `GN` algorithm is recommended. Once the fitting process is completed, the fitting model will set filter parameters.

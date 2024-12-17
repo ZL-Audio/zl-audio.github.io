@@ -1,5 +1,6 @@
 public/
 resources/
 node_modules/
+.obsidian/
 package-lock.json
 .hugo_build.lock
