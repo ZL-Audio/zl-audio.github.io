@@ -52,7 +52,7 @@ When those two panels are visible, you cannot interact with the spectrum and the
 
 Input/Target/Difference curves are kept alive only when those two panels are visible. Once you close those two panels or close the plugin window, the curves will get reset.
 
-For more information, please refer to the [EQ Match](#eq-match) section.
+For more information, please refer to the [Equalizer Match](#equalizer-match) section.
 
 ___
 
@@ -439,9 +439,9 @@ ___
 
 There are three target curves:
 
-- Side: the side chain signal (make sure you have enabled external side-chain in the [right panel](#right-panel))
-- Preset: load from a preset file (`.csv` file)
-- Flat: flat -4.5 dB/oct line
+- Side: learned from the side chain signal (make sure you have enabled external side-chain in the [right panel](#right-panel))
+- Preset: loaded from a preset file (`.csv` file)
+- Flat: set as a flat -4.5 dB/oct line
 
 ___
 
@@ -501,7 +501,6 @@ Adjust the number of bands used for fitting.
 
 ___
 
-
 ### Main Panel
 
 The main panel consists of grid lines, a spectrum graph, a single frequency band response curve, an overall response curve, and a dB scale on the right side.
@@ -543,7 +542,7 @@ You can choose the maximum decibel for the decibel scale. After that, the maximu
 
 #### Match Analyzer
 
-When match analyzer is visible, it will display three curves in corresponding colour: input curve (thin, in Pre Colour), target curve (thin, in Side Colour) and difference curve (thick, in the third colour of Colour Map 2).
+When match analyzer is visible, it will display three curves: input curve (thin, in Pre Colour), target curve (thin, in Side Colour) and difference curve (thick, in the third colour of Colour Map 2).
 
 ### UI Setting Panel
 
@@ -740,10 +739,10 @@ All filters are still in Minimum Phase. Additionally, it uses a short FIR filter
 
 It has analog prototype magnitude response and zero phase response. This FIR filter causes about 171 ms latency (up to about 512 ms if left/right or mid/side are used). You should NOT modulate parameters of filters. Dynamic effect does not work.
 
-## EQ Match
+## Equalizer Match
 
 EQ match uses several filters to match the frequency spectrum of the input signal to the frequency spectrum of the target signal. The steps are listed as follows:
 
 1. Choose the target signal (learned from side-chain, loaded from presets or set as flat).
-2. Start the learning. The curve learning model learns both the input signal and the side-chain signal. As the same time, it also calculates the difference between two signals. The difference is centered so that it is affected by the loudness of two signals. During this step you can see three curves on the spectrum (input curve, target curve and difference curve). You may stop the learning when the difference curve becomes stable.
-3. Start the fitting. The curve fitting model with uses filters to match the difference curves. Unless the computing resource is very limited, the `GN` algorithm is recommended. Once the fitting process is completed, the fitting model will set filter parameters.
+2. Start the learning. The curve learning model learns both the input signal and the side-chain signal. At the same time, it also calculates the difference between two signals. The difference is centered so that it is not affected by the loudness of two signals. During this step you can see three curves on the spectrum (input curve, target curve and difference curve). You may pause the learning when the difference curve becomes stable.
+3. Start the fitting. The curve fitting model with uses filters to match the difference curves. Unless the computing resource is very limited, the `GN` algorithm is recommended. Once the fitting process is completed, the fitting model will set filter parameters. You may change the number of bands afterwards.
