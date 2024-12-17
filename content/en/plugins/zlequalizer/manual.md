@@ -741,7 +741,7 @@ It has analog prototype magnitude response and zero phase response. This FIR fil
 
 ## Equalization Match
 
-EQ match uses several filters to match the frequency spectrum of the input signal to the frequency spectrum of the target signal. The steps are listed as follows:
+Equalization Match uses several filters to match the frequency spectrum of the input signal to the frequency spectrum of the target signal. The steps are listed as follows:
 
 1. Choose the target signal (learned from side-chain, loaded from presets or set as flat).
 2. Start the learning. The curve learning model learns both the input signal and the side-chain signal. At the same time, it also calculates the difference between two signals. The difference is centered so that it is not affected by the loudness of two signals. During this step you can see three curves on the spectrum (input curve, target curve and difference curve). You may pause the learning when the difference curve becomes stable.
