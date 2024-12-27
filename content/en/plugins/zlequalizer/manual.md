@@ -81,17 +81,7 @@ ___
 - ON: turn on zero latency
 - You can also click on the label on the left to switch options
 
-> When zero latency is on (and lookahead is zero), the plugin latency is zero. However, the buffer size will slightly affect dynamic effects and parameter automation.
-
-___
-
-**Default Dynamic Link (Dyn Link)**
-
-- OFF: turn off the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned off by default)
-- ON: turn on the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned on by default)
-- You can also click on the label on the left to switch options
-
-> When the dynamic link for a band is on, adjusting the frequency or Q value of the main filter will correspondingly adjust the frequency or Q value of the side-chain band-pass filter. You can control the dynamic link of each band using the [dynamic link button](#frequency-band-drag-button).
+> When zero latency is on (and lookahead is zero), the extra latency is zero. However, the buffer size will slightly affect dynamic effects and parameter automation. The plugin will still have latency if the plugin is in `Matched Phase`, `Mixed Phase`, or `Linear Phase`.
 
 ___
 
@@ -480,6 +470,19 @@ Adjust the slope of the difference curve.
 
 ___
 
+**Low Cut**
+
+Adjust the low-frequency area that the fitting model will ignore.
+
+___
+
+**High Cut**
+
+Adjust the high-frequency area that the fitting model will ignore.
+
+___
+
+
 **Fitting Algorithm Choice**
 
 - LD: local gradient-based algorithm
@@ -534,7 +537,7 @@ When [Filter Parameter Tags Colour](#ui-setting-panel) is not fully transparent,
 
 You can use your mouse to drag and select multiple frequency bands simultaneously on the spectrum graph. After that, you can click on the spectrum graph (outside the button area) to cancel the selection.
 
-When multiple frequency bands are selected, bypassing/truning off one frequency band or adjusting the frequency/gain/bandwidth of one frequency band will also affect the corresponding parameters of the other selected frequency bands.
+When multiple frequency bands are selected, bypassing/turning off one frequency band or adjusting the frequency/gain/bandwidth of one frequency band will also affect the corresponding parameters of the other selected frequency bands.
 
 #### Decibel Scale
 
@@ -542,7 +545,7 @@ You can choose the maximum decibel for the decibel scale. After that, the maximu
 
 #### Match Analyzer
 
-When match analyzer is visible, it will display three curves: input curve (thin, in Pre Colour), target curve (thin, in Side Colour) and difference curve (thick, in the third colour of Colour Map 2).
+When the match analyzer is visible, it will display three curves: input curve (thin, in Pre Colour), target curve (thin, in Side Colour), and difference curve (thick, in the third colour of Colour Map 2).
 
 ### UI Setting Panel
 
@@ -582,17 +585,15 @@ For better accessibility, please set Text/Background to colours with high contra
 
 - The colour map of the curves of Stereo/Left/Right/Mid/Side.
 
-**Import**
+**Import Colours**
 
 - import colour settings
 
-**Export**
+**Export Colours**
 
 - export colour settings
 
 #### Control
-
-The following settings apply to all three colour modes:
 
 **Mouse-Wheel Sensitivity**
 
@@ -618,6 +619,14 @@ The following settings apply to all three colour modes:
 - Return Default: when you double-click the slider, it returns to the default value; when you double-click the slider with Ctrl/Command, it opens the value editor.
 - Open Editor: when you double-click the slider, it opens the value editor; when you double-click the slider with Ctrl/Command, it returns to the default value.
 
+**Import Controls**
+
+- import control settings
+
+**Export Controls**
+
+- export control settings
+
 #### Other
 
 **Refresh Rate**
@@ -626,11 +635,11 @@ The following settings apply to all three colour modes:
 
 **FFT Setting**
 
-- Tilt: extra tilting slope of the FFT
-- Speed: extra decay speed of the FFT
+- Tilt: the extra tilting slope of the FFT
+- Speed: the extra decay speed of the FFT
 - Resolution: resolution of the FFT (takes effect after restarting the DAW)
 
-Higher resolution increases the low-frequency details of the spectrum with the cost of increasing computation on the background thread. Although it does not affect the audio thread, you may need to choose a lower resolution if you see the spectrum is lagging.
+Higher resolution increases the low-frequency details of the spectrum with the cost of increasing computation on the background thread. Although it does not affect the audio thread, you may need to choose a lower resolution if the spectrum is lagging.
 
 **Curve Thickness**
 
@@ -638,6 +647,14 @@ Higher resolution increases the low-frequency details of the spectrum with the c
 - Sum: the thickness of the overall response curves
 
 **Default Pass Filter Slope**
+
+**Default Dynamic Link (Dyn Link)**
+
+- OFF: turn off the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned off by default)
+- ON: turn on the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned on by default)
+- You can also click on the label on the left to switch options
+
+> When the dynamic link for a band is on, adjusting the frequency or Q value of the main filter will correspondingly adjust the frequency or Q value of the side-chain band-pass filter. You can control the dynamic link of each band using the [dynamic link button](#frequency-band-drag-button).
 
 #### Bottom Buttons
 
