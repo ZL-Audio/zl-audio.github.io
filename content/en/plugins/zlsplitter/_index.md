@@ -1,7 +1,7 @@
 ---
 title: ZL Splitter
 description: multifunctional audio splitter
-weight: 1
+weight: 2
 ---
 
 <img src="/images/zlsplitter/dark_crop.png" style="width:240px; max-width: 100%; height: auto"/>
@@ -20,6 +20,7 @@ ZL Splitter is a multifunctional audio splitter plugin, which can split the inpu
 - mid/side signal
 - low/high signal
 - transient/steady signal
+- peak/steady signal
 
 The routing may look like follows:
 ```mermaid
@@ -176,6 +177,8 @@ ___
 
 #### Transient/Steady Split
 
+Unlike Peak/Steady Split, Transient/Steady Split uses a FFT based model to split transient/steady signal. They do not share parameters.
+
 ___
 
 **Strength**
@@ -204,6 +207,35 @@ ___
 
 ___
 
+#### Peak/Steady Split
+
+Unlike Transient/Steady Split, Peak/Steady Split uses a compressor-like model to split peak/steady signal. They do not share parameters.
+
+____
+
+**Attack**
+
+The larger the attack, the slower the starting of peak signal.
+
+____
+
+**Balance**
+
+The smaller the balance, the less peak signal and the more steady signal, and vice versa.
+
+___
+
+**Hold**
+
+The larger the hold, the slower the decay of peak signal.
+
+___
+
+**Smooth**
+
+The larger the smooth, the less the frequency of the change of peak/steady.
+
+___
 
 ### UI Setting Panel
 
