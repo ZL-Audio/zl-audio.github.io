@@ -31,7 +31,7 @@ Click the button to switch between the "pressed" and "released" states.
 
 You can adjust values by clicking/dragging the left button of the mouse or scrolling the mouse wheel. For rotary sliders, you can modify the way the mouse dragging works.
 
-You can reset values to the defaults or open the value editor by double-clicking the mouse. For more details, see [UI Control Settings](#Control). To avoid changing the original value, you can double-click the right button of the mouse.
+You can reset values to the defaults or open the value editor by double-clicking the mouse. For more details, see [UI Control Settings](#control). To avoid changing the original value, you can double-click the right button of the mouse.
 
 ### Top Panel
 
