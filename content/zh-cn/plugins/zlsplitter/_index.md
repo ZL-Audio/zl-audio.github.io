@@ -113,6 +113,13 @@ ___
 
 瞬态/稳态分离
 
+
+<p float="left">
+  <img src="/images/zlsplitter/peaksteady.svg" width="22pt"/>
+</p>
+
+峰值/稳态分离
+
 ___
 
 ### 左侧面板

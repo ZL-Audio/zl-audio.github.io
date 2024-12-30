@@ -113,6 +113,12 @@ Low/High Split
 
 Transient/Steady Split
 
+<p float="left">
+  <img src="/images/zlsplitter/peaksteady.svg" width="22pt"/>
+</p>
+
+Peak/Steady Split
+
 ___
 
 ### Left Panel
