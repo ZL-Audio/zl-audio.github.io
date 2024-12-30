@@ -29,7 +29,9 @@ Click the button to switch between the "pressed" and "released" states.
 
 #### Rotary/Horizontal/Vertical Slider
 
-Values can be adjusted by dragging/clicking with the mouse or scrolling the mouse wheel. You can change the way of dragging.
+You can adjust values by clicking/dragging the left button of the mouse or scrolling the mouse wheel. For rotary sliders, you can modify the way the mouse dragging works.
+
+You can reset values to the defaults or open the value editor by double-clicking the mouse. For more details, see [UI Control Settings](#Control). To avoid changing the original value, you can double-click the right button of the mouse.
 
 ### Top Panel
 
@@ -485,8 +487,9 @@ ___
 
 **Fitting Algorithm Choice**
 
-- LD: local gradient-based algorithm
-- GN: global gradient-free algorithm (recommended)
+- `LD`: local gradient-based algorithm (fast)
+- `GN`: global gradient-free algorithm (recommended)
+- `GN+`: global gradient-free algorithm (slow, allows filters to have higher slopes)
 
 ___
 
@@ -495,6 +498,8 @@ ___
 </p>
 
 - Click: start the fitting
+
+`Running` will show up on the spectrum when the fitting is in progress.
 
 ___
 
