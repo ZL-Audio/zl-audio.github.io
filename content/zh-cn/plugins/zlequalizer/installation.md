@@ -38,7 +38,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - 更正 错误的监听显示（见#138）
 - 更正 鼠标双击行为（见#141）
 - 提高 监听显示效果
-- 提高 图形界面 的性能（尤其当您）
+- 提高 图形界面 的性能（尤其当您打开外观设置界面）
 
 ### 0.4.5
 
