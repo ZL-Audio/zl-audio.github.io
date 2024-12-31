@@ -50,7 +50,7 @@ ___
 
 You can open the [match analyzer](#match-analyzer) and the [match control panel](#match-control-panel) by clicking `Match` and close them by clicking `Match` again.
 
-When those two panels are visible, you cannot interact with the spectrum and the [left panel](#left-panel) and [right panel](#right-panel) are hidden. At the same time, the refresh rate will be halved to reduce rendering pressure. 
+When those two panels are visible, you cannot interact with the spectrum, and the [left panel](#left-panel) and [right panel](#right-panel) are hidden. At the same time, the refresh rate will be halved to reduce rendering pressure. 
 
 Input/Target/Difference curves are kept alive only when those two panels are visible. Once you close those two panels (by clicking `Match`) or close the plugin window, the curves will get reset.
 
@@ -68,12 +68,12 @@ ___
 
 **Filter Structure**
 
-- Minimum Phase: [Minimum Phase](#filter-structure)
-- State Variable: [State Variable](#filter-structure)
-- Parallel: [Parallel](#filter-structure)
-- Matched Phase: [Matched Phase](#filter-structure)
-- Mixed Phase: [Mixed Phase](#filter-structure)
-- Linear Phase: [Linear Phase](#filter-structure)
+- `Minimum Phase`: [Minimum Phase](#minimum-phase)
+- `State Variable`: [State Variable](#state-variable)
+- `Parallel`: [Parallel](#parallel)
+- `Matched Phase`: [Matched Phase](#matched-phase)
+- `Mixed Phase`: [Mixed Phase](#mixed-phase)
+- `Linear Phase`: [Linear Phase](#linear-phase)
 
 ___
 
@@ -234,7 +234,7 @@ ___
 > 
 > When AGC is on, the output main-chain signal will pass through a hard clipper at 0 dB.
 >
-> AGC does not have effect under [Linear Phase](#filter-structure).
+> AGC does not have effect under [Linear Phase](#linear-phase).
 
 ___
 
