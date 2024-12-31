@@ -261,18 +261,13 @@ For better accessibility, please set Text/Background to colours with high contra
 
 **Glow Colour**
 
-**Mouse-Wheel Sensitivity**
+**Import Colours**
 
-- Rough: mouse-wheel sensitivity when Ctrl/Command is not pressed
-- Fine: mouse-wheel sensitivity when Ctrl/Command is pressed
+- import colour settings (`.xml` file)
 
-**Rotary Slider Style**
+**Import Controls**
 
-- Circular: A rotary control that you move by dragging the mouse in a circular motion, like a knob
-- Horizontal: A rotary control that you move by dragging the mouse left-to-right
-- Vertical: A rotary control that you move by dragging the mouse up-and-down
-- Horiz + Vert: A rotary control that you move by dragging the mouse up-and-down or left-to-right
-- Distance: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
+- import control settings (`.xml` file)
 
 ___
 
@@ -280,7 +275,7 @@ ___
   <img src="/images/zlequalizer/save-line.svg" width="18pt"/>
 </p>
 
-Save the current setting.
+- Save the current setting.
 
 ___
 
@@ -288,7 +283,7 @@ ___
   <img src="/images/zlequalizer/loop-left-line.svg" width="18pt"/>
 </p>
 
-Discard all unsaved settings and load the previously saved settings.
+- Load the default settings of some colours.
 
 ___
 
@@ -296,7 +291,7 @@ ___
   <img src="/images/zlequalizer/xmark.svg" width="16pt"/>
 </p>
 
-Discard all unsaved settings and close the UI setting panel.
+- Discard all unsaved settings and close the UI setting panel.
 
 ___
 

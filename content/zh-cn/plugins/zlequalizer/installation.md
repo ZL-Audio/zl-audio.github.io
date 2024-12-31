@@ -27,13 +27,18 @@ ZL Equalizer 按照 [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) 进�
 
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
-## 更新日
+## 更新日志
 
-### 0.5.0（即将到来）
+### 0.5.0
 
+- 破坏性：更改 （默认）动态链接 至外观设置（该参数现在被所有插件实例共享）
 - 增加 EQ 匹配
 - 增加 UI 设置导入/导出
-- 提高 图形界面 的性能
+- 更正 错误的通道设置（见#138）
+- 更正 错误的监听显示（见#138）
+- 更正 鼠标双击行为（见#141）
+- 提高 监听显示效果
+- 提高 图形界面 的性能（尤其当您）
 
 ### 0.4.5
 

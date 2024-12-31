@@ -32,9 +32,14 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ### 0.5.0
 
-- add EQ match
+- BREAKING: change (default) dynamic link to UI setting (the parameter is now shared across all instances)
+- add Equalization Match (See the manual for details)
 - add UI setting import/export
-- improve GUI performance
+- fix incorrect channel layout (See #138)
+- fix incorrect solo display (See #138)
+- fix double-click behaviour (See #141)
+- improve solo display
+- improve GUI performance (especially when you open the UI setting panel)
 
 ### 0.4.5
 

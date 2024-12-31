@@ -259,18 +259,13 @@ ___
 
 **发光颜色（Glow Colour）**
 
-**鼠标滚轮敏感度（Mouse-Wheel Sensitivity）**
+**导入（Import Colours）**
 
-- Rough：未按下 Ctrl/Command 时鼠标滚轮的敏感度
-- Fine：按下 Ctrl/Command 时鼠标滚轮的敏感度
+- 导入颜色设置（`.xml` 文件）
 
-**旋钮操作方式（Rotary Slider Style）**
+**导入（Import Controls）**
 
-- Circular：鼠标旋转控制旋钮
-- Horizontal：鼠标水平滑动控制旋钮
-- Vertical：鼠标竖直滑动控制旋钮
-- Horiz + Vert：鼠标水平/竖直滑动控制旋钮
-- Distance：将旋钮从最小值拖动至最大值鼠标需要移动的相对距离。不对 Circular 方式生效。
+- 导入控制设置（`.xml` 文件）
 
 ___
 
@@ -278,7 +273,7 @@ ___
   <img src="/images/zlequalizer/save-line.svg" width="18pt"/>
 </p>
 
-保存当前外观设置。
+- 保存当前外观设置。
 
 ___
 
@@ -286,7 +281,7 @@ ___
   <img src="/images/zlequalizer/loop-left-line.svg" width="18pt"/>
 </p>
 
-舍弃所有未保存设置并载入上一次保存的设置。
+- 载入部分默认设置。
 
 ___
 
@@ -294,7 +289,7 @@ ___
   <img src="/images/zlequalizer/xmark.svg" width="16pt"/>
 </p>
 
-舍弃所有未保存设置并关闭外观设置面板。
+- 舍弃所有未保存设置并关闭外观设置面板。
 
 ___
 

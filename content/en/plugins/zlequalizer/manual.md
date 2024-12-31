@@ -592,11 +592,11 @@ For better accessibility, please set Text/Background to colours with high contra
 
 **Import Colours**
 
-- import colour settings
+- import colour settings (`.xml` file)
 
 **Export Colours**
 
-- export colour settings
+- export colour settings (`.xml` file)
 
 #### Control
 
@@ -626,11 +626,11 @@ For better accessibility, please set Text/Background to colours with high contra
 
 **Import Controls**
 
-- import control settings
+- import control settings (`.xml` file)
 
 **Export Controls**
 
-- export control settings
+- export control settings (`.xml` file)
 
 #### Other
 
