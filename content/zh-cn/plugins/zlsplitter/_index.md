@@ -38,7 +38,7 @@ flowchart LR
 - 后缀名为`.exe`：Windows 系统安装器（包含 `VST3` 和 `LV2`）。
 - 后缀名为`.zip`：Linux 系统安装器（包含 `VST3` 和 `LV2`）。
 
-更多信息请阅读帮助中的[插件安装](../help/plugin_installation)页面。
+更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
 
 ZL Splitter 按照 [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) 进行许可。
 

@@ -38,7 +38,7 @@ Visit [this link](https://github.com/ZL-Audio/ZLSplitter/releases/latest) and do
 - If the file has a `.exe` extension, it is for Windows (in `VST3` & `LV2`).
 - If the file has a `.zip` extension, it is for Linux (in `VST3` & `LV2`).
 
-For more information, please refer to the [Plugin Installation](../help/plugin_installation) page.
+For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
 ZL Splitter is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html).
 
