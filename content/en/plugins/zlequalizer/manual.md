@@ -82,7 +82,7 @@ ___
 
 ___
 
-### Collision Detection Setting
+### Collision Setting
 
 You can open the collision detection setting panel by clicking `Collision` and close it by clicking somewhere else.
 
@@ -688,7 +688,7 @@ ___
 
 ___
 
-### Shortcuts
+## Shortcuts
 
 Generally, you can enable fine-adjustment with Shift and enable special adjustment with Ctrl/Command. If the direction of mouse-wheel is reversed when Shift is pressed, you can reverse it again to put it back to normal.
 
