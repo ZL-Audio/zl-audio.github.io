@@ -16,12 +16,7 @@ ZL Equalizer is an equalizer plugin with the following key features:
 - **High-Quality Sound:** With 64-bit floating-point processing and de-cramping technique, outstanding performance is ensured in both low-end and high-end.
 - **Adjustable Dynamics:** Adjustable threshold, attack, release, and side-chain frequency, etc.
 - **Carefully Designed Interface:** Interactive spectrum graph, smart collision detection, and smooth animations.
-
-## User Interface
-
-The user interface consists of a top panel, a main panel, and a bottom panel.
-
-### Components
+## Components
 
 #### Button
 
@@ -33,7 +28,7 @@ You can adjust values by clicking/dragging the left button of the mouse or scrol
 
 You can reset values to the defaults or open the value editor by double-clicking the mouse. For more details, see [UI Control Settings](#control). To avoid changing the original value, you can double-click the right button of the mouse.
 
-### Top Panel
+## Top Panel
 
 ___
 
@@ -46,7 +41,7 @@ You can open the [UI setting panel](#ui-setting-panel) by double-clicking the lo
 
 ___
 
-#### Match Setting
+### Match Setting
 
 You can open the [match analyzer](#match-analyzer) and the [match control panel](#match-control-panel) by clicking `Match` and close them by clicking `Match` again.
 
@@ -58,7 +53,7 @@ For more information, please refer to [Equalization Match](#equalization-match).
 
 ___
 
-#### General Setting
+### General Setting
 
 You can open the general setting panel by clicking `General` and close it by clicking somewhere else.
 
@@ -87,7 +82,7 @@ ___
 
 ___
 
-#### Collision Detection Setting
+### Collision Detection Setting
 
 You can open the collision detection setting panel by clicking `Collision` and close it by clicking somewhere else.
 
@@ -127,7 +122,7 @@ ___
 
 ___
 
-#### Dynamic Setting
+### Dynamic Setting
 
 You can open the dynamic detection setting panel by clicking `Dynamic` and close it by clicking somewhere else.
 
@@ -166,7 +161,7 @@ ___
 
 ___
 
-#### Analyzer Setting
+### Analyzer Setting
 
 You can open the analyzer setting panel by clicking `Analyzer` and close it by clicking somewhere else.
 
@@ -199,7 +194,7 @@ ___
 
 ___
 
-#### Output Setting
+### Output Setting
 
 You can open the output detection setting panel by clicking `Output` and close it by clicking somewhere else.
 
@@ -243,7 +238,7 @@ ___
 ___
 
 
-#### Top-Right Buttons
+### Top-Right Buttons
 
 **Static Gain Compensation（S）**
 
@@ -264,11 +259,11 @@ ___
 
 ___
 
-### Bottom Panel
+## Bottom Panel
 
 The bottom panel controls the parameters of the currently selected frequency band. Components will be introduced in the order from left to right, and from top to bottom.
 
-#### Left Panel
+### Left Panel
 ___
 <p float="left">
   <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
@@ -354,7 +349,7 @@ ___
 
 - Click: [turns off](#states-of-bands) the selected frequency band and resets all parameters to default values.
 
-#### Right Panel
+### Right Panel
 
 ___
 <p float="left">
@@ -423,7 +418,7 @@ Adjust the Q value of the bandpass filter applied to the side-chain audio. When 
 
 ___
 
-#### Match Control Panel
+### Match Control Panel
 
 ___
 
@@ -472,19 +467,6 @@ Adjust the slope of the difference curve.
 
 ___
 
-**Low Cut**
-
-Adjust the low-frequency area that the fitting model will ignore.
-
-___
-
-**High Cut**
-
-Adjust the high-frequency area that the fitting model will ignore.
-
-___
-
-
 **Fitting Algorithm Choice**
 
 - `LD`: local gradient-based algorithm (fast)
@@ -509,11 +491,11 @@ Adjust the number of bands used for fitting. When the fitting is completed, the 
 
 ___
 
-### Main Panel
+## Main Panel
 
-The main panel consists of grid lines, a spectrum graph, a single frequency band response curve, an overall response curve, and a dB scale on the right side.
+The main panel consists of grid lines, a spectrum graph, single frequency band response curves, an overall response curve, and a dB scale on the right side.
 
-#### Double-Click to Add a Frequency Band
+#### Add a Frequency Band
 
 If there is at least one frequency band in the [off](#states-of-bands) state when you double-click the spectrum, a frequency band will be turned on with the corresponding frequency/gain:
 
@@ -523,7 +505,9 @@ If there is at least one frequency band in the [off](#states-of-bands) state whe
 - 5000Hz <= Frequency < 15000Hz: Adds a High Shelf filter.
 - 15000Hz <= Frequency: Adds a Low Pass filter.
 
-#### Frequency Band Drag Button
+If you double-click the spectrum with Ctrl/Command, the dynamic of the new band will be turned on.
+
+#### Drag a Frequency Band
 
 When a frequency band is not in the [off](#states-of-bands) state, a draggable button appears at the corresponding frequency/gain position. You can adjust the frequency and gain by dragging the button, and adjust the Q value with your mouse wheel.
 
@@ -538,7 +522,7 @@ Additionally, if the dynamic function of this frequency band is not disabled:
 
 When [Filter Parameter Tags Colour](#ui-setting-panel) is not fully transparent, the filter frequency/gain will appear as two tags on the spectrum.
 
-#### Multi-band Selection
+#### Select Multiple Bands
 
 You can use your mouse to drag and select multiple frequency bands simultaneously on the spectrum graph. After that, you can click on the spectrum graph (outside the button area) to cancel the selection.
 
@@ -550,9 +534,24 @@ You can choose the maximum decibel for the decibel scale. After that, the maximu
 
 #### Match Analyzer
 
-When the match analyzer is visible, it will display three curves: input curve (thin, in Pre Colour), target curve (thin, in Side Colour), and difference curve (thick, in the third colour of Colour Map 2).
+When the match analyzer is visible, it will display three curves: the input curve (thin, in Pre Colour), the target curve (thin, in Side Colour), and the difference curve (thick, in the third colour of Colour Map 2).
 
-### UI Setting Panel
+The difference curve is displayed in the current decibel scale. The number of bands promoted by the fitting model is also affected by the current decibel scale.
+
+There are also three draggable buttons:
+
+- low-cut button: shows on the left and controls the low-frequency area ignored by the fitting model
+- high-cut button: shows on the right and controls the high-frequency area ignored by the fitting model
+- shift button: shows in the middle and controls the shift of the difference curve
+
+You can also manually draw the difference curve:
+
+- Command/Ctrl + left-mouse drag: draw the difference curve at the mouse position
+- Command/Ctrl + Shift + left-mouse drag: set the difference curve to zero at the mouse position
+- Command/Ctrl + right-mouse drag: reset the difference curve at the mouse position
+- Shift + left-mouse double-click: reset the difference curve
+
+## UI Setting Panel
 
 The UI setting panel controls spectrum colours, slider operations, etc. Components will be introduced in the order from top to bottom.
 
@@ -767,4 +766,5 @@ Equalization Match uses several filters to match the frequency spectrum of the i
 
 1. Choose the target signal (learned from side-chain, loaded from presets, or set as flat).
 2. Start the learning. The curve learning model learns both the input signal and the side-chain signal. At the same time, it also calculates the difference between two signals. The difference is centered so that it is not affected by the loudness of the two signals. During this step, you can see three curves on the spectrum (input curve, target curve and difference curve). You may pause the learning when the difference curve becomes stable.
-3. Start the fitting. The curve fitting model uses several filters to match the difference curves. Unless the computing resource is very limited, the `GN` algorithm is recommended. Once the fitting process is completed, the fitting model will set filter parameters. You may change the number of bands afterward.
+3. Adjust the difference. Adjust the current difference curve by adjusting `Smooth`, adjusting `Slope`, dragging the shift button, or drawing manually.
+4. Start the fitting. The curve fitting model uses several filters to match the difference curves. Unless the computing resource is very limited, the `GN` algorithm is recommended. Once the fitting process is completed, the fitting model will set filter parameters. You may change the number of bands afterward.
