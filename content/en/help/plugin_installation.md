@@ -45,3 +45,18 @@ If your hardware system is not well-suited for JUCE's Direct2D feature, or if yo
 The Linux plugins are compressed in a `.zip` file. You need to unzip it and manually move the `*.vst3` file to the correct folder, such as `~/.vst3`.
 
 On Linux, the plugin does not have hardware acceleration. The plugin is compatible with Mainstream Linux distributions.
+
+## Subscribe to Release Notifications
+
+> If you want to subscribe to release notifications of a plugin (including pre-releases):
+
+1. Register a GitHub account and set your email address.
+2. Go to the plugin's project page, e.g., https://github.com/ZL-Audio/ZLEqualizer.
+3. On the right-top corner, there is a `Watch` button. Click the button, select `Custom`, tick `Releases`, and click `Apply`.
+4. Done!
+
+> If you want to unsubscribe, do the opposite:
+
+1. Go to the plugin's project page, e.g., https://github.com/ZL-Audio/ZLEqualizer.
+2. On the right-top corner, there is a `Watch` button. Click the button and select `Ignore`.
+3. Done!
