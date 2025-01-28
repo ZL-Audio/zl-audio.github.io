@@ -30,14 +30,22 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
+### 0.5.1 (upcoming)
+
+- add FFT db scale choise (see #147 and the manual)
+- fix macOS standalone audio input permission request (see #146)
+- fix curve db scale (see #148)
+- fix multi-band selection (see #149)
+- improve GUI performance
+
 ### 0.5.0
 
 - BREAKING: change (default) dynamic link to UI setting (the parameter is now shared across all instances)
-- add Equalization Match (See the manual for details)
+- add Equalization Match (see the manual for details)
 - add UI setting import/export
-- fix incorrect channel layout (See #138)
-- fix incorrect solo display (See #138)
-- fix double-click behaviour (See #141)
+- fix incorrect channel layout (see #138)
+- fix incorrect solo display (see #138)
+- fix double-click behaviour (see #141)
 - improve solo display
 - improve GUI performance (especially when you open the UI setting panel)
 
