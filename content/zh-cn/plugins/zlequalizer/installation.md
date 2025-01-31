@@ -32,6 +32,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 ### 0.5.1（即将到来）
 
 - 增加 FFT 分贝刻度尺选择 (见#147 和 用户手册）
+- 增加 监听快捷键（通过鼠标右键双击频段按钮）
 - 更正 macOS 独立格式音频输入权限请求 (见#146）
 - 更正 曲线分贝刻度尺 (见#148）
 - 更正 多频段框选（见#149）

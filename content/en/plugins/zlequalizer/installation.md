@@ -32,7 +32,8 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ### 0.5.1 (upcoming)
 
-- add FFT db scale choise (see #147 and the manual)
+- add FFT db scale choice (see #147 and the manual)
+- add solo shortcuts (by right-mouse-button double-clicking with Ctrl/Command on the band button)
 - fix macOS standalone audio input permission request (see #146)
 - fix curve db scale (see #148)
 - fix multi-band selection (see #149)
