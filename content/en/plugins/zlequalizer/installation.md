@@ -32,12 +32,16 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ### 0.5.1 (upcoming)
 
+- change the external side-chain button position to the top-right corner
+- change several button icons
 - add FFT db scale choice (see #147 and the manual)
 - add solo shortcuts (by right-mouse-button double-clicking with Ctrl/Command on the band button)
+- add side-chain swap (see the manual)
 - fix macOS standalone audio input permission request (see #146)
 - fix curve db scale (see #148)
 - fix multi-band selection (see #149)
 - improve GUI performance
+- improve stability
 
 ### 0.5.0
 
