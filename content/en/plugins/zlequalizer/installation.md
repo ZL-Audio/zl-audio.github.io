@@ -32,6 +32,9 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ### 0.5.1 (upcoming)
 
+- BREAKING: smooth filter frequency/gain/Q changes
+	- quick move/automation of frequency/gain/Q will have fewer artifacts
+	- dynamic high-quality mode may sound a bit different
 - change the external side-chain button position to the top-right corner
 - change several button icons
 - add FFT db scale choice (see #147 and the manual)
@@ -41,6 +44,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - fix curve db scale (see #148)
 - fix multi-band selection (see #149)
 - improve GUI performance
+- improve DSP performance (especially for high-order filters and dynamic filters)
 - improve stability
 
 ### 0.5.0

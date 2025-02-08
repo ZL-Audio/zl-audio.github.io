@@ -31,6 +31,9 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ### 0.5.1（即将到来）
 
+- 破坏性：平滑 滤波器 频率/增益/Q 的数值变化
+	- 频率/增益/Q 的 快速变化/自动化 会产生更少的噪声
+	- 动态高质量处理可能会产生少许变化
 - 更改 外部侧链 按钮的位置至右上角
 - 更改 若干按钮的图标
 - 增加 FFT 分贝刻度尺选择 (见#147 和 用户手册）
@@ -40,6 +43,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - 更正 曲线分贝刻度尺 (见#148）
 - 更正 多频段框选（见#149）
 - 提高 图形界面 的性能
+- 提高 信号处理 的性能（尤其是 高阶滤波器 和 动态滤波器）
 - 提高 稳定性
 
 ### 0.5.0
