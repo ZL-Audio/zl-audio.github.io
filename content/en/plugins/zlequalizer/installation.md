@@ -30,11 +30,12 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
-### 0.5.1 (upcoming)
+### 0.6.0 (upcoming)
 
+- BREAKING: use the new compressor model
+	- dynamic filters will sound a bit different
 - BREAKING: smooth filter frequency/gain/Q changes
 	- quick move/automation of frequency/gain/Q will have fewer artifacts
-	- dynamic high-quality mode may sound a bit different
 - change the external side-chain button position to the top-right corner
 - change several button icons
 - add FFT db scale choice (see #147 and the manual)
