@@ -32,8 +32,9 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ### 0.6.0 (upcoming)
 
-- BREAKING: use the new compressor model
+- BREAKING: use the new compressor model from ZL Compressor
 	- dynamic filters will sound a bit different
+	- dynamic filters (especially if under dynamic high-quality mode) become more efficient
 - BREAKING: smooth filter frequency/gain/Q changes
 	- quick move/automation of frequency/gain/Q will have fewer artifacts
 - change the external side-chain button position to the top-right corner

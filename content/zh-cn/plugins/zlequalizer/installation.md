@@ -31,8 +31,9 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ### 0.6.0（即将到来）
 
-- 破坏性：使用新的压缩器模型
+- 破坏性：使用 ZL Compressor 的新压缩器模型
 	- 动态滤波器会产生少许变化
+	- 动态滤波器（尤其如果在高质量模式下）会更加高效
 - 破坏性：平滑 滤波器 频率/增益/Q 的数值变化
 	- 频率/增益/Q 的 快速变化/自动化 会产生更少的噪声
 - 更改 外部侧链 按钮的位置至右上角
