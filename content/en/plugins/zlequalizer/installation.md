@@ -38,7 +38,9 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - BREAKING: smooth filter frequency/gain/Q changes
 	- quick move/automation of frequency/gain/Q will have fewer artifacts
 - change the external side-chain button position to the top-right corner
-- change several button icons
+	- since it is not a per-band parameter, top-right corner seems to be a better place
+- change several button icons (see the manual)
+	- the old ones are not intuitive enough
 - add FFT db scale choice (see #147 and the manual)
 - add solo shortcuts (by right-mouse-button double-clicking with Ctrl/Command on the band button)
 - add side-chain swap (see the manual)
