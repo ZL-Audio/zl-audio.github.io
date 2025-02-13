@@ -18,7 +18,7 @@ Visit [this link](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) and d
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
-ZL Equalizer is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html).
+ZL Equalizer is Free and Open-source. ZL Equalizer is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html), except for the [logo of ZL Audio](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/zlaudio.svg) and the [logo of ZL Equalizer](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/logo.svg). 
 
 AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 
