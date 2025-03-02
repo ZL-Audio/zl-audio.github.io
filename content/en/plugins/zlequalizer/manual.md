@@ -240,8 +240,7 @@ ___
   <img src="/images/zlequalizer/loudness-match.svg" width="20pt"/>
 </p>
 
-- Press: when you press it, it starts to collect the loudness of the input signal and the output signal
-	- the output signal here is affected by all filters and the SGC, but NOT affected by AGC or output gain
+- Press: when you press it, it starts to measure the integrated loudness of the input signal and the output signal
 - Release: when you release it, it turns AGC off and updates the `Output Gain` to the difference between two loudness values
 
 ___
@@ -380,8 +379,8 @@ ___
   <img src="/images/zlequalizer/fad-powerswitch.svg" width="20pt"/>
 </p>
 
-- Press: cancel the bypass.
-- Release: bypass the [dynamic](#dynamic-and-automatic-threshold) effect for the selected frequency band.
+- Press: cancel the bypass
+- Release: bypass the [dynamic](#dynamic-and-automatic-threshold) effect for the selected frequency band
 
 ___
 
@@ -389,8 +388,8 @@ ___
   <img src="/images/zlequalizer/fad-solo.svg" width="20pt"/>
 </p>
 
-- Press: solo the side-chain audio of the selected band.
-- Release: stop the solo.
+- Press: solo the side-chain audio of the selected band
+- Release: stop the solo
 
 ___
 
@@ -398,8 +397,8 @@ ___
   <img src="/images/zlequalizer/relative.svg" width="20pt"/>
 </p>
 
-- Press: set the [dynamic](#dynamic-and-automatic-threshold) threshold to the relative mode.
-- Release: set the [dynamic](#dynamic-and-automatic-threshold) threshold to the absolute mode.
+- Press: set the [dynamic](#dynamic-and-automatic-threshold) threshold to the relative mode
+- Release: set the [dynamic](#dynamic-and-automatic-threshold) threshold to the absolute mode
 
 ___
 
@@ -727,11 +726,9 @@ Generally, you can enable fine-adjustment with Shift and enable special adjustme
 
 You can automate frequency, gain, Q value, dynamic threshold, knee width, attack, and release parameters. Attention:
 
-> The modulation speed of automation is not less than 1000 times per second, but much slower than once per sample.
+> The modulation speed of automation is once per block. However, the filter parameters (`Freq`, `Gain`, and `Q`) modulation changes filter states per sample.
 >
 > When the plugin window is open, filter parameter modulation may cause interface lag.
->
-> The plugin does not smooth modulation internally. Therefore, extremely fast modulation and modulation of other parameters may cause noise.
 >
 > When you modulate multiple filters, DO NOT select them on the spectrum.
 
