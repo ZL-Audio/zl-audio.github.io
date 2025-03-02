@@ -38,7 +38,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 	- dynamic filters will produce expected results under extreme knee width settings (see #156)
 - BREAKING: smooth filter frequency/gain/Q changes
 	- quick move/automation of frequency/gain/Q will have fewer artifacts
-	- automation will take more CPU usage cause it now changes filters per sample
+	- filter parameter automation will take more CPU usage cause it now changes filters per sample (see the manual)
 - change the external side-chain button position to the top-right corner
 	- since it is not a per-band parameter, top-right corner seems to be a better place
 - change several button icons (see the manual)

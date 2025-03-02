@@ -219,7 +219,9 @@ ___
 
 ___
 
-**Auto Gain Compensation (A)**
+<p float="left">
+  <img src="/images/zlequalizer/auto-gain-compensation.svg" width="20pt"/>
+</p>
 
 - Press: turn on Auto Gain Compensation
 - Release: turn off Auto Gain Compensation
@@ -233,6 +235,17 @@ ___
 
 ___
 
+
+<p float="left">
+  <img src="/images/zlequalizer/loudness-match.svg" width="20pt"/>
+</p>
+
+- Press: when you press it, it starts to collect the loudness of the input signal and the output signal
+	- the output signal here is affected by all filters and the SGC, but NOT affected by AGC or output gain
+- Release: when you release it, it turns AGC off and updates the `Output Gain` to the difference between two loudness values
+
+___
+
 **Output Gain**
 
 ___
@@ -240,12 +253,23 @@ ___
 
 ### Top-Right Buttons
 
-**Static Gain Compensation（S）**
+<p float="left">
+  <img src="/images/zlequalizer/static-gain-compensation.svg" width="20pt"/>
+</p>
 
 - Press: turn on Static Gain Compensation
 - Release: turn off Static Gain Compensation
 
 > SGC estimates the amount of compensation from filters' parameters. SGC is **inaccurate**. However, it **will NOT affect the dynamic of the main-chain signal**.
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer/external-side.svg" width="20pt"/>
+</p>
+
+- Press: use external side-chain
+- Release: use internal side-chain
 
 ___
 
@@ -371,7 +395,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/right-to-bracket-solid.svg" width="20pt"/>
+  <img src="/images/zlequalizer/relative.svg" width="20pt"/>
 </p>
 
 - Press: set the [dynamic](#dynamic-and-automatic-threshold) threshold to the relative mode.
@@ -380,11 +404,12 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer/fad-side.svg" width="20pt"/>
+  <img src="/images/zlequalizer/swap.svg" width="20pt"/>
 </p>
 
-- Press: use external side-chain (this setting applies to all frequency bands).
-- Release: use internal side-chain (this setting applies to all frequency bands).
+- Press: swap the side-chain
+	- if the filter is in Left/Right, the side-chain is from Right/Left
+	- if the filter is in Mid/Side, the side-chain is from Side/Mid
 
 ___
 
