@@ -230,8 +230,6 @@ ___
 > AGC calculates the difference between the loudness of the main-chain signal before/after filters and applies the corresponding gain. Therefore, **AGC will affect the dynamic of the main-chain signal**.
 > 
 > When AGC is on, the output main-chain signal will pass through a hard clipper at 0 dB.
->
-> AGC does not have effect under [Linear Phase](#linear-phase).
 
 ___
 
