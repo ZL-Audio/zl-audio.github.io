@@ -35,6 +35,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - 破坏性：使用 ZL Compressor 的新压缩器模型
 	- 动态滤波器会产生少许变化
 	- 动态滤波器（尤其如果在高质量模式下）会更加高效
+	- 动态滤波器在极端的膝宽设置下会产生符合预期的效果 (见#156）
 - 破坏性：平滑 滤波器 频率/增益/Q 的数值变化
 	- 频率/增益/Q 的 快速变化/自动化 会产生更少的噪声
 - 更改 外部侧链 按钮的位置至右上角
@@ -42,6 +43,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - 更改 若干按钮的图标（见用户手册）
 	- 之前的图标不够直观
 - 增加 FFT 分贝刻度尺选择 (见#147 和 用户手册）
+- 增加 响度匹配（见#154 和 用户手册）
 - 增加 监听快捷键（通过鼠标右键双击频段按钮）
 - 增加 侧链交换（见用户手册）
 - 更正 macOS 独立格式音频输入权限请求 (见#146）
