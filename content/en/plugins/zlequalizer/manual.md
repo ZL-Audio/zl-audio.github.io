@@ -655,6 +655,10 @@ For better accessibility, please set Text/Background to colours with high contra
 
 #### Other
 
+**Rendering Engine**
+
+- The rendering engine used to render the user interface. It is recommended to set it to Core Graphics Renderer / Direct2D on macOS / Windows.
+
 **Refresh Rate**
 
 - The refresh rate of the response curve(s). The higher this value, the smoother the response curve(s) when dragging the buttons or enabling dynamic, but the higher the CPU and GPU load. When the CPU or GPU load is too high, the response curve may get distorted when dragging the button.
@@ -676,11 +680,18 @@ Higher resolution increases the low-frequency details of the spectrum with the c
 
 **Default Dynamic Link (Dyn Link)**
 
-- OFF: turn off the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned off by default)
-- ON: turn on the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned on by default)
+- `OFF`: turn off the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned off by default)
+- `ON`: turn on the default dynamic link (for bands of which the dynamic is enabled afterward, the dynamic link will be turned on by default)
 - You can also click on the label on the left to switch options
 
 > When the dynamic link for a band is on, adjusting the frequency or Q value of the main filter will correspondingly adjust the frequency or Q value of the side-chain band-pass filter. You can control the dynamic link of each band using the [dynamic link button](#frequency-band-drag-button).
+
+
+**Tooltip**
+
+- `OFF`: turn off tooltips
+- `ON`: turn on tooltips
+- You can select the language through the right-hand pop-up menu. If `System` is chosen, the plugin will attempt to use the system's display language if possible.
 
 #### Bottom Buttons
 
