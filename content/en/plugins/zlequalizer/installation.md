@@ -33,16 +33,18 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 ### 0.6.0 (upcoming)
 
 - BREAKING: use the new compressor model from ZL Compressor
-	- dynamic filters will sound a bit different
-	- dynamic filters (especially if under dynamic high-quality mode) become more efficient
-	- dynamic filters will produce expected results under extreme knee width settings (see #156)
+  - dynamic filters will sound a bit different
+  - dynamic filters (especially if under dynamic high-quality mode) become more efficient
+  - dynamic filters will produce expected results under extreme knee width settings (see #156)
 - BREAKING: smooth filter frequency/gain/Q changes
-	- quick move/automation of frequency/gain/Q will have fewer artifacts
-	- filter parameter automation will take more CPU usage cause it now changes filters per sample (see the manual)
+  - quick move/automation of frequency/gain/Q will have fewer artifacts
+  - filter parameter automation will take more CPU usage cause it now changes filters per sample (see the manual)
 - change the external side-chain button position to the top-right corner
-	- since it is not a per-band parameter, top-right corner seems to be a better place
+  - since it is not a per-band parameter, top-right corner seems to be a better place
 - change several button icons (see the manual)
-	- the old ones are not intuitive enough
+  - the old ones are not intuitive enough
+- add English 简体中文 繁體中文 Italiano 日本語 Deutsch Español tooltips
+  - 日本語 Deutsch Español tooltips are translated by ChatGPT. I cannot ensure the accuracy of the translation. If you observe incorrect translations, please report them to me or submit a pull request.
 - add FFT db scale choice (see #147 and the manual)
 - add loudness match (see #154 and the manual)
 - add solo shortcuts (by right-mouse-button double-clicking with Ctrl/Command on the band button)

@@ -43,6 +43,8 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 	- 由于该参数不属于每个频段，右上角应当是更好的位置
 - 更改 若干按钮的图标（见用户手册）
 	- 之前的图标不够直观
+- 增加 English 简体中文 繁體中文 Italiano 日本語 Deutsch Español 提示
+  - 日本語 Deutsch Español 提示由 ChatGPT 翻译。我无法保证翻译的正确性。如果您注意到翻译错误，请向我反馈或者提交 pull request。
 - 增加 FFT 分贝刻度尺选择 (见#147 和 用户手册）
 - 增加 响度匹配（见#154 和 用户手册）
 - 增加 监听快捷键（通过鼠标右键双击频段按钮）
