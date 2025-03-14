@@ -74,8 +74,8 @@ ___
 
 **Zero Latency (Zero LAT)**
 
-- OFF: turn off zero latency
-- ON: turn on zero latency
+- `OFF`: turn off zero latency
+- `ON`: turn on zero latency
 - You can also click on the label on the left to switch options
 
 > When zero latency is on (and lookahead is zero), the extra latency is zero. However, the buffer size will slightly affect dynamic effects and parameter automation. The plugin will still have latency if the plugin is in `Matched Phase`, `Mixed Phase`, or `Linear Phase`.
@@ -92,8 +92,8 @@ ___
 
 **Switch (DET)**
 
-- OFF: turn off the collision detection
-- ON: turn on the collision detection
+- `OFF`: turn off the collision detection
+- `ON`: turn on the collision detection
 - You can also click on the label on the left to switch options
 
 ___
@@ -172,9 +172,9 @@ ___
 **FFT Mode**
 
 - `Pre`, `Post`, and `Side` represents the input main-chain signal, the output main-chain signal, and the side-chain signal
-- OFF: turn off the spectrum
-- ON: turn on the spectrum
-- FRZ: freeze the spectrum
+- `OFF`: turn off the spectrum
+- `ON`: turn on the spectrum
+- `FRZ`: freeze the spectrum
 - You can also click on the label on the left to switch options
 
 ___
@@ -188,9 +188,9 @@ ___
 **Slope**
 
 - affects the spectrum display (not the actual signal)
-- 0 dB/oct: no tilting, white noise displays as a horizon line
-- 3 dB/oct: pink noise displays as a horizon line
-- 4.5 dB/oct: default value, which represents perceived loudness better
+- `0 dB/oct`: no tilting, white noise displays as a horizon line
+- `3 dB/oct`: pink noise displays as a horizon line
+- `4.5 dB/oct`: default value, which represents perceived loudness better
 
 ___
 
@@ -307,19 +307,19 @@ ___
 **Filter Type**
 
 
-There are a total of eight filter types: Peak, Low Shelf, Low Pass, High Shelf, High Pass, Notch, Band Pass, and Tilt Shelf.
+There are a total of eight filter types: `Peak`, `Low Shelf`, `Low Pass`, `High Shelf`, `High Pass`, `Notch`, `Band Pass`, and `Tilt Shelf`.
 
 ___
 
 **Slope**
 
-There are seven slopes: 6 dB/oct, 12 dB/oct, 24 dB/oct, 36 dB/oct, 48 dB/oct, 72 dB/oct and 96 dB/oct. A higher slope will make the filter's response curve change more steeply. Peak, Notch, and Band Pass don't support 6 dB/oct. 
+There are seven slopes: `6 dB/oct`, `12 dB/oct`, `24 dB/oct`, `36 dB/oct`, `48 dB/oct`, `72 dB/oct`, and `96 dB/oct`. A higher slope will make the filter's response curve change more steeply. `Peak`, `Notch`, and `Band Pass` don't support `6 dB/oct`. 
 
 ___
 
 **Stereo Modes**
 
-There are five stereo modes: Stereo, Left, Right, Mid, and Side.
+There are five stereo modes: `Stereo`, `Left`, `Right`, `Mid`, and `Side`.
 
 ___
 
@@ -448,9 +448,9 @@ ___
 
 There are three target curves:
 
-- Side: learned from the side chain signal (make sure you have enabled external side-chain in the [right panel](#right-panel))
-- Preset: loaded from a preset file (`.csv` file)
-- Flat: set as a flat -4.5 dB/oct line
+- `Side`: learned from the side chain signal (make sure you have enabled external side-chain in the [right panel](#right-panel))
+- `Preset`: loaded from a preset file (`.csv` file)
+- `Flat`: set as a flat -4.5 dB/oct line
 
 ___
 
@@ -634,16 +634,16 @@ For better accessibility, please set Text/Background to colours with high contra
 
 **Rotary Slider Style**
 
-- Circular: A rotary control that you move by dragging the mouse in a circular motion, like a knob
-- Horizontal: A rotary control that you move by dragging the mouse left-to-right
-- Vertical: A rotary control that you move by dragging the mouse up-and-down
-- Horiz + Vert: A rotary control that you move by dragging the mouse up-and-down or left-to-right
+- `Circular`: A rotary control that you move by dragging the mouse in a circular motion, like a knob
+- `Horizontal`: A rotary control that you move by dragging the mouse left-to-right
+- `Vertical`: A rotary control that you move by dragging the mouse up-and-down
+- `Horiz + Vert`: A rotary control that you move by dragging the mouse up-and-down or left-to-right
 - Distance: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
 
 **Slider Double Click**
 
-- Return Default: when you double-click the slider, it returns to the default value; when you double-click the slider with Ctrl/Command, it opens the value editor.
-- Open Editor: when you double-click the slider, it opens the value editor; when you double-click the slider with Ctrl/Command, it returns to the default value.
+- `Return Default`: when you double-click the slider, it returns to the default value; when you double-click the slider with Ctrl/Command, it opens the value editor.
+- `Open Editor`: when you double-click the slider, it opens the value editor; when you double-click the slider with Ctrl/Command, it returns to the default value.
 
 **Import Controls**
 
@@ -657,7 +657,7 @@ For better accessibility, please set Text/Background to colours with high contra
 
 **Rendering Engine**
 
-- The rendering engine used to render the user interface. It is recommended to set it to Core Graphics Renderer / Direct2D on macOS / Windows.
+- The rendering engine used to render the user interface. By default, it is set as `Auto` so that it can choose the best available rendering engine.
 
 **Refresh Rate**
 
