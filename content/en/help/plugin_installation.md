@@ -38,8 +38,6 @@ The Windows installer file extension is `.exe`.
 
 On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
 
-If your hardware system is not well-suited for JUCE's Direct2D feature, or if you are using Windows 7, you can try the installer with `Software` in the file name. This installer sets up the plugin to use software rendering. Please note that software rendering may result in worse performance in the user interface compared to hardware rendering.
-
 ## Linux Installation
 
 The Linux plugins are compressed in a `.zip` file. You need to unzip it and manually move the `*.vst3` file to the correct folder, such as `~/.vst3`.
