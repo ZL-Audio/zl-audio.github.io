@@ -18,7 +18,7 @@ ___
 
 16-band dynamic digital equalizer
 
-<img src="/images/zlequalizer/dark_crop.png" style="width:750px; max-width: 100%; height: auto" />
+<img src="/images/zlequalizer/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 
 ___
 
