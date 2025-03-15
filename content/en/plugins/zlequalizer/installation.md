@@ -30,7 +30,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
-### 0.6.0 (upcoming)
+### 0.6.0
 
 - BREAKING: use the new compressor model from ZL Compressor
   - dynamic filters will sound a bit different

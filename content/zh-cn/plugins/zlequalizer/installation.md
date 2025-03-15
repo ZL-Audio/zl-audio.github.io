@@ -30,7 +30,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 ## 更新日志
 
 
-### 0.6.0（即将到来）
+### 0.6.0
 
 - 破坏性：使用 ZL Compressor 的新压缩器模型
 	- 动态滤波器会产生少许变化
