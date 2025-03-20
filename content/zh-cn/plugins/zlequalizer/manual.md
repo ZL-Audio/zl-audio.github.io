@@ -264,6 +264,7 @@ ___
 <p float="left">
   <img src="/images/zlequalizer/external-side.svg" width="20pt"/>
 </p>
+
 - 按下：使用外部侧链
 - 弹起：使用内部侧链
 
