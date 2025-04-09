@@ -29,6 +29,25 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
+### 0.6.1
+
+DSP
+
+- 提高 左右/中侧 处理的性能
+
+GUI
+
+- 更改 顶部面板的样式（顶部面板在未打开时会变为半透明）
+- 增加 多频段 目标 增益/Q值 改变（见#187）
+- 增加 频率旋钮 音高输入支持
+- 增加 浮动窗口 频率输入支持
+- 更正 浮动窗口 显示问题（见#187）
+- 提高 浮动窗口 性能
+
+Multilingual
+
+- 更正 Italiano 翻译 由 [pms967](https://github.com/pms967) (already in 0.6.0, I forgot to mention it)
+- 更正 日本語 翻译 由 [ikumi90s](https://github.com/ikumi90s)
 
 ### 0.6.0
 

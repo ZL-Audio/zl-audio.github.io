@@ -30,6 +30,26 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
+### 0.6.1
+
+DSP
+
+- improve LR/MS mode performance
+
+GUI
+
+- change top panels look and feel (now the panels are become half transparent when they are not open)
+- add multi-band target gain/Q changes (see #187)
+- add pitch note supports for slider text editors
+- add text editor supports for pop-up floating window frequency value
+- fix pop-up floating window visibility issues (see #187)
+- improve pop-up floating window performance
+
+Multilingual
+
+- fix Italiano translations by [pms967](https://github.com/pms967) (already in 0.6.0, I forgot to mention it)
+- fix 日本語 translations by [ikumi90s](https://github.com/ikumi90s)
+
 ### 0.6.0
 
 - BREAKING: use the new compressor model from ZL Compressor
