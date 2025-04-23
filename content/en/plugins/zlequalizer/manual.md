@@ -448,7 +448,7 @@ ___
 
 There are three target curves:
 
-- `Side`: learned from the side chain signal (make sure you have enabled external side-chain in the [right panel](#right-panel))
+- `Side`: learned from the side-chain signal (to learn external side-chain signal, make sure you have enabled external side-chain in the [top-right buttons](#top-right-buttons))
 - `Preset`: loaded from a preset file (`.csv` file)
 - `Flat`: set as a flat -4.5 dB/oct line
 
