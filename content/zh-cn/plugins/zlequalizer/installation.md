@@ -29,6 +29,16 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
+### 0.6.2
+
+DSP
+
+- 提高 匹配相位、混合相位、线性相位 性能
+
+GUI
+
+- 更正 在部分宿主中重新打开窗口导致界面冻结（见#194）
+
 ### 0.6.1
 
 DSP

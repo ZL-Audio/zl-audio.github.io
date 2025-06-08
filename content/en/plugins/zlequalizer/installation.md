@@ -30,6 +30,16 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
+### 0.6.2
+
+DSP
+
+- improve `Matched Phase`, `Mixed Phase`, `Linear Phase` performance
+
+GUI
+
+- fix hang-up when re-opening GUI window in some hosts (see #194)
+
 ### 0.6.1
 
 DSP
