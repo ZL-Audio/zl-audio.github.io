@@ -28,7 +28,7 @@ All installers have not been notarized. You should decide whether to trust the i
 
 The macOS installer is packaged in a `.dmg` file. You need to open it to use the `.pkg` installer.
 
-If there are multiple `.pkg` installers, the one with `x86` is for Intel-chip macOS machines and the one with `arm` is for M-chip macOS machines.
+If there are two `.dmg` files, the one with `x86` is for Intel-chip macOS machines and the one with `arm` is for Apple-M-chip macOS machines.
 
 On macOS, the plugin requires Metal support. The plugin is not compatible with macOS prior to macOS 10.13 and is not guaranteed to be compatible with macOS prior to macOS 13. Besides that, you may refer to [Safely open apps on your Mac](https://support.apple.com/en-us/102445) if you are confused by the alert given by your OS.
 
@@ -38,7 +38,7 @@ If you cannot upgrade your system through official macOS support, you may upgrad
 
 The Windows installer file extension is `.exe`.
 
-If there are multiple `.exe` installers, the one with `x86` is for x86-64 architecture Windows machines and the one with `arm` is for ARM64 architecture Windows machines. You may check it through `Setting` - `System` - `About` - `Device specifications` - `System Type`.
+If there are two `.exe` installers, the one with `x86` is for x86-64 architecture Windows machines and the one with `arm` is for ARM64 architecture Windows machines. You may check it through `Setting` - `System` - `About` - `Device specifications` - `System Type`.
 
 On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
 
@@ -46,9 +46,9 @@ On Windows, the plugin requires Direct2D support. The plugin is compatible with 
 
 The Linux plugins are compressed in a `.zip` file. You need to unzip it and manually move the `*.vst3` file to the correct folder, such as `~/.vst3`.
 
-If there are multiple `.zip` files, the one with `x86` is for x86-64 architecture Linux machines and the one with `arm` is for ARM64 architecture Linux machines.
+If there are two `.zip` files, the one with `x86` is for x86-64 architecture Linux machines and the one with `arm` is for ARM64 architecture Linux machines.
 
-On Linux, the plugin does not have hardware acceleration. The plugin is compatible with Mainstream Linux distributions.
+On Linux, the plugin does not have hardware acceleration. The plugin is built on Ubuntu 22.04 with dynamic linked dependencies. Therefore, I cannot guarantee its compatibility with Linux distributions. I would recommend building the plugin from source code.
 
 ## Subscribe to Release Notifications
 

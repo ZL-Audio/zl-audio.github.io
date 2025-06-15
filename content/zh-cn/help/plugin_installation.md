@@ -28,6 +28,8 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 macOS 安装器被封装在 `.dmg` 中。您需要打开以得到 `.pkg` 安装器。
 
+如果有两个 `.dmg` 文件，文件名中含有 `x86` 的是为载有 Intel 芯片的 macOS 系统 而 文件名中含有 `arm` 的是为载有 Apple M 芯片的 macOS 系统。
+
 在 macOS 系统上，插件需要 Metal 支持。插件无法在 macOS 10.13 之前的系统上运行，与 macOS 13 之前的系统无法保证兼容性。除此以外，如果您对安装过程中的警告信息感到困惑，请参阅[在 Mac 上安全地打开 App](https://support.apple.com/zh-cn/102445)。
 
 如果您无法通过 macOS 官方渠道更新系统，您可以尝试通过 [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) 更新系统（使用风险自负）。
@@ -36,10 +38,14 @@ macOS 安装器被封装在 `.dmg` 中。您需要打开以得到 `.pkg` 安装�
 
 Windows 安装器后缀名为 `.exe`。
 
+如果有两个 `.exe` 安装器，文件名中含有 `x86` 的是为 x86-64 架构的 Windows 系统 而 文件名中含有 `arm` 的是为 ARM64 架构的 Windows 系统。您可以通过 `设置` - `系统` - `关于` - `设备规格` - `系统类型` 查看。
+
 在 Windows 系统上，插件需要 Direct2D 支持。插件与 Windows 10 及之后版本兼容。
 
 ## Linux 安装
 
 Linux 插件被压缩在 `.zip` 中。您需要解压后自行将 `*.vst3` 文件移动到正确的文件夹，例如`~/.vst3`。
 
-在 Linux 系统上，插件无法提供硬件渲染。插件与 Linux 主流发行版兼容。
+如果有两个 `.zip` 文件，文件名中含有 `x86` 的是为 x86-64 架构的 Linux 系统 而 文件名中含有 `arm` 的是为 ARM64 架构的 Linux 系统。
+
+在 Linux 系统上，插件无法提供硬件渲染。插件在 Ubuntu 22.04 上编译（动态链接依赖）。因此，我无法保证其与 Linux 发行版的兼容性。我推荐您从源码编译插件。
