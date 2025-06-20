@@ -22,6 +22,14 @@ ___
 
 ___
 
+**[ZL Compressor](/plugins/zlcompressor)**
+
+dynamic range compressor
+
+<img src="/images/zlcompressor/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
+
+___
+
 **[ZL Splitter](/plugins/zlsplitter)**
 
 multifunctional audio splitter

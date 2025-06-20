@@ -1,7 +1,7 @@
 ---
 title: ZL Splitter
 description: multifunctional audio splitter
-weight: 2
+weight: 3
 ---
 
 <img src="/images/zlsplitter/dark_crop.png" style="width:240px; max-width: 100%; height: auto"/>
