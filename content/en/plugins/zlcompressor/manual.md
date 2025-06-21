@@ -250,3 +250,23 @@ ___
 ___
 ## Side-chain Equalizer
 
+The side-chain equalizer allows you to visually equalize the side-chain signal. It features a spectrum graph where you can add and manipulate filter bands.
+
+**Add a Band**
+
+If there is at least one frequency band in the off state when you double-click the spectrum, a frequency band will be turned on with the corresponding frequency/gain:
+
+- Frequency < 20Hz: Adds a High Pass filter.
+- 20Hz <= Frequency < 50Hz: Adds a Low Shelf filter.
+- 50Hz <= Frequency < 5000Hz: Adds a Peak filter.
+- 5000Hz <= Frequency < 15000Hz: Adds a High Shelf filter.
+- 15000Hz <= Frequency: Adds a Low Pass filter.
+
+**Drag a Band**
+
+When a frequency band is not in the off state, a draggable button appears at the corresponding frequency/gain position. You can adjust the frequency and gain by dragging the button, and adjust the Q value with your mouse wheel.
+
+When you select the frequency band via clicking the button:
+
+- an additional control window will appear near the button, through which you can quickly bypass/close the selected band, choose the filter type, and adjust the filter slope.
+- the frequency/gain values will appear at the top-left corner, through which you can view/edit the frequency/gain values of the selected band
