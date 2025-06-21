@@ -12,13 +12,10 @@ ___
 
 ZL Compressor is a dynamic range compressor with the following key features:
 
-- **Versatile Compression Styles:** Sculpt your sound with three distinct compression architectures. The **Clean** style engages a modern **VCA feed-forward** design, delivering surgical and transparent gain reduction. Switch to **Classic** to harness the aggressive, colorful character of a vintage **FET feedback** design. For smooth, effortless leveling with a touch of warmth, the **Optical** mode emulates the program-dependent characteristics of light-sensitive resistors.
-
-- **Comprehensive Side-chain Control:** Utilize the full **8-band equalizer** to make the compressor react to specific frequencies. The **stereo mode** and adjustable **stereo link** provides control over how the compressor responds to stereo material. With an integrated **lookahead** function, you can ensure that even the fastest transients are caught with surgical precision.
-
-- **Uncompromising Performance:** With up to **8 times over-sampling**, ZL Compressor virtually eliminates aliasing artifacts, ensuring a clean and pure sound even under heavy gain reduction. The highly efficient compression algorithm has been optimized for low CPU usage, allowing you to run multiple instances in your projects without sacrificing performance.
-
-- **Intuitive and Insightful Interface:** The large, accurate **Peak/RMS analyzer** gives you a clear visual representation of your audio's dynamics, while the **interactive spectrum analyzer** allows you to control your side-chain EQ in real-time. This combination of visual feedback and precise control empowers you to make better mixing decisions, faster.
+- **Four Versatile Compression Styles:** Choose from four distinct modes. **Clean** offers a transparent, modern VCA design. **Classic** delivers the character of a feedback FET compressor. **Optical** provides smooth, warm leveling inspired by light-sensitive circuits. **Vocal** is specifically tailored to enhance and control vocal tracks.
+- **Advanced Side-chain Control:** Utilize the full **8-band Equalizer** to make the compressor react to specific frequencies. Fine-tune the stereo image with an adjustable **stereo link**. Catch the fastest transients with predictive **lookahead**.
+- **Pristine Audio Performance:** Eliminate aliasing artifacts with up to **8x oversampling**, ensuring pure sound even at extreme settings. The CPU-efficient algorithm lets you run multiple instances without overloading your project.
+- **Intuitive Visual Interface:** Instantly see your audio's dynamics on the large **Peak/RMS analyzer** and adjust the side-chain directly on the **interactive spectrum display**. This clear visual feedback helps you make better mixing decisions, faster.
 
 ## Top Panel
 
@@ -28,6 +25,8 @@ ___
   <img src="/images/zlcompressor/zlaudio.svg" width="44pt" />
   <img src="/images/zlcompressor/logo.svg" width="20pt" />
 </p>
+
+Work in progress.
 
 ___
 
@@ -110,13 +109,144 @@ In the bottom-right corner, you can select the magnitude type (`Peak` and `RMS`)
 
 ### Cumulative Analyzer
 
-The cumulative analyzer on the left shows the cumulative RMS values of the input main-chain signal and the output main-chain signal.
+The cumulative analyzer on the left shows the cumulative RMS values of the input main-chain signal and the output main-chain signal. You can double-click to reset this analyzer.
 
 ### Computer Display
 
+The computer display shows the curve that is used to calculate the gain reduction value.
+
 ## Bottom Panel
 
+___
+
+**Knee**
+
+Controls the knee width of the gain reduction computer. A wider knee makes the transition between the uncompressed state and the compressed state smoother.
+
+___
+
+**Curve**
+
+Controls the non-linearity behavior of compressed state.
+
+___
+
+**Threshold**
+
+___
+
+**Ratio**
+
+___
+
+**Compression Style**
+
+- `Clean`: feedforward design with exponential decayed attack/release stages, which offers transparent, precise dynamic control.
+- `Classic`: feedback design with exponential decayed attack/release stages, which offers smooth, glued dynamic control
+- `Optical`: feedforward design with linear decayed attack/release, which offers smooth, precise dynamic control
+- `Vocal`: feedback design with linear decayed attack/release, which offers gentle, buttery dynamic control
+
+___
+
+**Pump**
+
+Controls the behavior of the attack stage. Larger `Pump` makes the attack more aggressive, which introduces the pumping effect.
+
+___
+
+**Smooth**
+
+Controls the behavior of the release stage.  Larger `Smooth` makes the start of the release stage slower.
+
+___
+
+**Attack**
+
+___
+
+**Release**
+
+___
+
+**Range**
+
+Controls the gain reduction range. The actual value is affected by the **Wet**.
+
+___
+
+**Hold**
+
+Controls the minimum amount of time where gain reduction is prevented from decreasing. During this time, compression can react to new peaks but cannot release.
+
+___
+
+**Makeup**
+
+Controls the makeup gain that is applied after the compression. The actual value is affected by the **Wet**.
+
+___
+
+**Wet**
+
+Controls the percent of wet signal.
+
+___
 ## Side-chain Panel
 
+___
+
+<p float="left">
+  <img src="/images/zlcompressor/midside.svg" width="20pt"/>
+</p>
+
+Set the stereo mode to Mid/Side.
+
+
+<p float="left">
+  <img src="/images/zlcompressor/leftright.svg" width="20pt"/>
+</p>
+
+Set the stereo mode to Left/Right.
+
+___
+
+<p float="left">
+  <img src="/images/zlcompressor/shuffle.svg" width="20pt"/>
+</p>
+
+- Press: swap the side-chain stereo mode
+	- if the stereo mode is Left/Right, the side-chain is from Right/Left
+	- if the stereo mode is Mid/Side, the side-chain is from Side/Mid
+
+___
+
+**Stereo Wet**
+
+Controls the percent of wet signal for each stereo channel. The actual value is affected by the **Wet**.
+
+___
+
+**Gain**
+
+Controls the gain of the side-chain signal.
+
+___
+
+<p float="left">
+  <img src="/images/zlcompressor/external-side.svg" width="20pt"/>
+</p>
+
+- Press: use external side-chain signal
+- Release: use internal side-chain signal
+
+___
+
+<p float="left">
+  <img src="/images/zlcompressor/headphones.svg" width="20pt"/>
+</p>
+
+- Press: listen to the side-chain signal
+
+___
 ## Side-chain Equalizer
 
