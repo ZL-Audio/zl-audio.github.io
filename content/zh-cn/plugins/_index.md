@@ -22,6 +22,14 @@ ___
 
 ___
 
+**[ZL Compressor](/plugins/zlcompressor)**
+
+动态范围压缩器
+
+<img src="/images/zlcompressor/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
+
+___
+
 **[ZL Splitter](/plugins/zlsplitter)**
 
 多功能音频分离器
