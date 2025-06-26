@@ -45,11 +45,28 @@ ___
 
 **Lookahead**
 
-The delay of the main-chain signal. When PDC is supported (in almost all DAWs), it can be interpreted as the lookahead time of the side-chain signal.
+Controls the delay of the main-chain signal (in millisecond). If PDC is supported (in almost all DAWs), it can be interpreted as the lookahead time of the side-chain signal.
 
 You may hear clicks/pops when you change this parameter. Please **DO NOT** automate this parameter.
 
 ___
+
+<p float="left">
+  <img src="/images/zlcompressor/change.svg" width="20pt"/>
+</p>
+
+- Press: output delta signal (the difference between the uncompressed main signal and the compressed main signal)
+
+___
+
+<p float="left">
+  <img src="/images/zlcompressor/mode_off_on.svg" width="20pt"/>
+</p>
+
+- Release: bypass plugin
+
+___
+
 
 ## Left Side Panel
 
@@ -168,6 +185,26 @@ ___
 
 ___
 
+<p float="left">
+  <img src="/images/zlcompressor/rms.svg" width="20pt"/>
+</p>
+
+- Press: enable RMS compression
+- Release: disable RMS compression
+
+RMS compression reacts to a short-term loudness and lets peaks go through, which helps to achieve a more transparent and natural-sounding compression.
+
+___
+
+<p float="left">
+  <img src="/images/zlcompressor/arrow_menu_open.svg" width="20pt"/>
+</p>
+
+- Press: open [RMS Panel](#rms-panel)
+- Release: close [RMS Panel](#rms-panel)
+
+___
+
 **Range**
 
 Controls the gain reduction range. The actual value is affected by the **Wet**.
@@ -183,6 +220,16 @@ ___
 **Makeup**
 
 Controls the makeup gain that is applied after the compression. The actual value is affected by the **Wet**.
+
+___
+
+<p float="left">
+  <img src="/images/zlcompressor/learn.svg" width="20pt"/>
+</p>
+
+- Press: when you press it, it starts to measure the integrated loudness of the input signal and the output signal
+- Release: when you release it, it updates the `Makeup` to the difference between two loudness values
+- during the learning process, you cannot modify **Makeup** and **Wet**
 
 ___
 
@@ -270,3 +317,23 @@ When you select the frequency band via clicking the button:
 
 - an additional control window will appear near the button, through which you can quickly bypass/close the selected band, choose the filter type, and adjust the filter slope.
 - the frequency/gain values will appear at the top-left corner, through which you can view/edit the frequency/gain values of the selected band
+
+## RMS Panel
+
+___
+
+**RMS Length**
+
+Controls the RMS time length (in millisecond).
+
+___
+
+**RMS Speed**
+
+Controls the relative attack/release speed of RMS compression.
+
+___
+
+**RMS Mix**
+
+Controls the mix percent of RMS compression.
