@@ -228,7 +228,7 @@ ___
 </p>
 
 - Press: when you press it, it starts to measure the integrated loudness of the input signal and the output signal
-- Release: when you release it, it updates the `Makeup` to the difference between two loudness values
+- Release: when you release it, it updates the **Makeup** to the difference between two loudness values
 - during the learning process, you cannot modify **Makeup** and **Wet**
 
 ___
@@ -324,7 +324,7 @@ ___
 
 **RMS Length**
 
-Controls the RMS time length (in millisecond).
+Controls the RMS window length (in millisecond).
 
 ___
 
