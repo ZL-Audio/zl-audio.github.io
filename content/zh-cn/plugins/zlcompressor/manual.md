@@ -64,7 +64,7 @@ ___
   <img src="/images/zlcompressor/mode_off_on.svg" width="20pt"/>
 </p>
 
-- 释放：旁痛插件
+- 释放：旁通插件
 
 ___
 
