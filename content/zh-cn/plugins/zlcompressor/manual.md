@@ -51,12 +51,29 @@ ZL Compressor 是一款动态范围压缩器，其主要特性有：
 
 -----
 
+
+<p float="left">
+  <img src="/images/zlcompressor/change.svg" width="20pt"/>
+</p>
+
+- 按下：输出差值信号（未压缩主链信号 和 压缩后主链信号 的 差值）
+
+___
+
+<p float="left">
+  <img src="/images/zlcompressor/mode_off_on.svg" width="20pt"/>
+</p>
+
+- 释放：旁痛插件
+
+___
+
 ## 左侧面板
 
 -----
 
 <p float="left">
-<img src="/images/zlcompressor/rms\_analyzer.svg" width="20pt">
+<img src="/images/zlcompressor/rms_analyzer.svg" width="20pt">
 </p>
 
   - 按下：打开 [累积分析器](#累积分析器)
@@ -105,7 +122,7 @@ ZL Compressor 是一款动态范围压缩器，其主要特性有：
 
 在左下角，您可以选择分析器的时间窗口长度（`6 s`, `9 s`, `12 s`, 和 `18 s`）。为确保视觉流畅，`6 s` 和 `9 s` 设置在 60 Hz 或更高的刷新率下表现最佳。
 
-在右下角，您可以选择幅值类型（`Peak` (峰值) 和 `RMS` (均方根)）以及分析器的最小分贝值（`-9`, `-18`, `-36`, `-54`, 和 `-72`）。
+在右下角，您可以选择幅值类型为 峰值（`Peak`）或 均方根（`RMS`），并选择分析器的最小分贝值（`-9`, `-18`, `-36`, `-54`, 和 `-72`）。
 
 ### 累积分析器
 
