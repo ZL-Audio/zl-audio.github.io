@@ -288,6 +288,12 @@ ___
 
 ___
 
+**Link**
+
+Controls the link between two stereo channels.
+
+___
+
 **Stereo Wet**
 
 Controls the percent of wet signal for each stereo channel. The actual value is affected by the **Wet**.
