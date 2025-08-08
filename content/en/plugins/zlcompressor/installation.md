@@ -10,15 +10,18 @@ weight: 1
 
 ## Installation
 
-Visit [this link](https://github.com/ZL-Audio/ZLCompressor/releases/latest) and download the installer that matches your OS:
+Down the installer that matches your OS & architecture:
 
-- If the file has a `.dmg` extension, it is for macOS (in `VST3` & `AU`).
-- If the file has a `.exe` extension, it is for Windows (in `VST3` & `LV2`).
-- If the file has a `.zip` extension, it is for Linux (in `VST3` & `LV2`).
+- macOS Intel-chip or macOS Apple-M-chip with **Rosetta Mode**:  [ZL.Compressor-0.2.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-macOS-x86.dmg)
+- macOS Apple-M-chip: [ZL.Compressor-0.2.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-macOS-arm.dmg)
+- Windows x86-64 architecture: [ZL.Compressor-0.2.0-Windows-x86.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Windows-x86.exe)
+- Windows ARM64 architecture: [ZL.Compressor-0.2.0-Windows-arm.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Windows-arm.exe)
+- Linux x86-64 architecture: [ZL.Compressor-0.2.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Linux-x86.zip)
+- Linux ARM64 architecture: [ZL.Compressor-0.2.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Linux-arm.zip)
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
-ZL Compressor is Free and Open-source. ZL Compressor is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html), except for the [logo of ZL Audio](https://github.com/ZL-Audio/ZLCompressor/blob/main/assets/zlaudio.svg) and the [logo of ZL Compressor](https://github.com/ZL-Audio/ZLCompressor/blob/main/assets/logo.svg). 
+ZL Compressor is Free and Open-source. ZL Compressor is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html), except for the [logo of ZL Audio](https://github.com/ZL-Audio/ZLCompressor/blob/main/assets/zlaudio.svg) and the [logo of ZL Compressor](https://github.com/ZL-Audio/ZLCompressor/blob/main/assets/logo.svg). You can obtain the corresponding source code at https://github.com/ZL-Audio/ZLCompressor or https://gitee.com/ZL-Audio/ZLCompressor.
 
 AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 
@@ -29,6 +32,19 @@ AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
 ## Changelog
+
+### 0.2.0
+
+New Features
+
+- add tooltips
+- add side-chain filter solo (double-click on the dragger)
+- add soft clipper
+
+Bug fixes and Improvements
+
+- fix potential overflow in `Vocal` style
+- improve stability
 
 ### 0.1.2
 
