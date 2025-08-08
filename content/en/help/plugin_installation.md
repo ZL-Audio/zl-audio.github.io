@@ -28,7 +28,7 @@ All installers have not been notarized. You should decide whether to trust the i
 
 The macOS installer is packaged in a `.dmg` file. You need to open it to use the `.pkg` installer.
 
-If there are two `.dmg` files, the one with `x86` is for Intel-chip macOS machines and the one with `arm` is for Apple-M-chip macOS machines.
+If there are two `.dmg` files, the one with `x86` is for Intel-chip macOS machines and the one with `arm` is for Apple-M-chip macOS machines. However, if you are using Rosetta Mode on Apple-M-chip macOS machines, you have to use the one with `x86`, which may cause degraded performance.
 
 On macOS, the plugin requires Metal support. The plugin is not compatible with macOS prior to macOS 10.13 and is not guaranteed to be compatible with macOS prior to macOS 13. Besides that, you may refer to [Safely open apps on your Mac](https://support.apple.com/en-us/102445) if you are confused by the alert given by your OS.
 
