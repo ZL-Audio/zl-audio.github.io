@@ -10,7 +10,7 @@ weight: 1
 
 ## Installation
 
-Down the installer that matches your OS & architecture:
+You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLCompressor/releases/latest) or use the direct download link below. Please download the installer that matches your OS & architecture:
 
 - macOS Intel-chip or macOS Apple-M-chip with **Rosetta Mode**:  [ZL.Compressor-0.2.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-macOS-x86.dmg)
 - macOS Apple-M-chip: [ZL.Compressor-0.2.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-macOS-arm.dmg)
