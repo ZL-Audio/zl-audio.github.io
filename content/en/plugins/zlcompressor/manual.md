@@ -30,6 +30,12 @@ You can open the [UI setting panel](#ui-setting-panel) by double-clicking the 
 
 ___
 
+**Clipper**
+
+Controls the relative drive of the clipper.
+
+___
+
 **Oversample**
 
 There are four over-sampling options:
@@ -345,6 +351,10 @@ When you select the frequency band via clicking the button:
 - an additional control window will appear near the button, through which you can quickly bypass/close the selected band, choose the filter type, and adjust the filter slope.
 - the frequency/gain values will appear at the top-left corner, through which you can view/edit the frequency/gain values of the selected band
 
+**Solo a Band**
+
+You can solo a band by double-clicking on the draggable button and exit the solo by clicking the spectrum. Solo will also be turned off if you close the equalizer window or close the plugin window.
+
 **Right Click Menu**
 
 When you right-click on a frequency band, the right-click menu will appear, through which you can invert the gain of the current band, or copy/paste filters (even across plugins).
@@ -466,8 +476,11 @@ For better analyzer display, set this as 1/n of your monitor refresh rate. For e
 
 **Curve Thickness**
 
-thickness of the magnitude analyzer
+Controls thickness of the magnitude analyzer
 
+**Tooltip**
+
+Choose the tooltip language. It will take effect when the plugin window is re-opened.
 #### Bottom Buttons
 
 
