@@ -4,9 +4,9 @@ description: How to install ZL Compressor
 weight: 1
 ---
 
-<!-- ## Introduction Video
+## Introduction Video
 
-{{< youtube "bC-mBDumzvU" >}} -->
+{{< youtube "WDxXEAfy4rg" >}}
 
 ## Installation
 

@@ -3,6 +3,9 @@ title: 安装说明
 description: 如何安装 ZL Compressor
 weight: 1
 ---
+## 简介视频
+
+{{< youtube "WDxXEAfy4rg" >}}
 
 ## 安装
 

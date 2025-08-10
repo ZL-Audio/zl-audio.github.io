@@ -12,10 +12,10 @@ ___
 
 ZL Compressor is a dynamic range compressor with the following key features:
 
-- **Four Versatile Compression Styles:** Choose from four distinct modes. **Clean** offers a transparent, modern VCA design. **Classic** delivers the character of a feedback FET compressor. **Optical** provides smooth, warm leveling inspired by light-sensitive circuits. **Vocal** is specifically tailored to enhance and control vocal tracks.
-- **Advanced Side-chain Control:** Utilize the full **8-band Equalizer** to make the compressor react to specific frequencies. Fine-tune the stereo image with an adjustable **stereo link**. Catch the fastest transients with predictive **lookahead**.
-- **Pristine Audio Performance:** Eliminate aliasing artifacts with up to **8x oversampling**, ensuring pure sound even at extreme settings. The CPU-efficient algorithm lets you run multiple instances without overloading your project.
-- **Intuitive Visual Interface:** Instantly see your audio's dynamics on the large **Peak/RMS analyzer** and adjust the side-chain directly on the **interactive spectrum display**. This clear visual feedback helps you make better mixing decisions, faster.
+- **Intuitive GUI feedback**: Real-time Peak & RMS display; Hardware-accelerated rendering.
+- **Optimized CPU usage**: Efficient lookahead & up to 8x over-sampling.
+- **Versatile Compressor Settings**: Four compression styles & Extensive compression parameters; Post compression clipper.
+- **Advanced Side-chain Control**: 8-band parametric equalizer; Stereo mode & link control.
 
 ## Top Panel
 
