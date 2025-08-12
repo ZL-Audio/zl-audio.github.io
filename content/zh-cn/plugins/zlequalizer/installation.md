@@ -10,14 +10,17 @@ weight: 1
 
 ## 安装
 
-前往[此链接](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载对应您操作系统的安装器：
-- 后缀名为`.dmg`：macOS 系统安装器（包含 `VST3`、`AU` 和 `AAX`）。
-- 后缀名为`.exe`：Windows 系统安装器（包含 `VST3`、`LV2` 和 `AAX`）。
-- 后缀名为`.zip`：Linux 系统安装器（包含 `VST3` 和 `LV2`）。
+您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的操作系统和架构对应的安装器。
+
+| 操作系统        | x86-64<br>Intel 芯片<br>AMD 芯片（大多数）                                                                                                        | ARM64<br>Apple M 芯片<br>Qualcomm 芯片                                                                                                   |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **macOS**   | [ZL.Equalizer-0.6.2-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-macOS-x86.dmg)     | [ZL.Equalizer-0.6.2-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-macOS-arm.dmg) |
+| **Windows** | [ZL.Equalizer-0.6.2-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Windows-x86.exe) | N/A (In Schedule)                                                                                                                    |
+| **Linux**   | [ZL.Equalizer-0.6.2-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-x86.zip)     | [ZL.Equalizer-0.6.2-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-arm.zip) |
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
 
-ZL Euqalizer 是**自由开源**的软件。除了 [ZL Audio 标志](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/zlaudio.svg) 和 [ZL Equalizer 标志](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/logo.svg)，ZL Equalizer 按照 [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) 进行许可。
+ZL Equalizer 是**自由开源**的软件。除了 [ZL Audio 标志](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/zlaudio.svg) 和 [ZL Equalizer 标志](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/logo.svg)，ZL Equalizer 按照 [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) 进行许可。您可以在 https://github.com/ZL-Audio/ZLEqualizer 或者 https://gitee.com/ZL-Audio/ZLEqualizer 获得源码。
 
 以下提醒来自 [由 源译识 翻译的 AGPLv3](https://atomgit.com/translation/Contransus) 第九项条款。
 
