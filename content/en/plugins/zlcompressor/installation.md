@@ -12,12 +12,11 @@ weight: 1
 
 You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLCompressor/releases/latest) or use the direct download link below. Please download the installer that matches your OS & architecture:
 
-- macOS Intel-chip or macOS Apple-M-chip with **Rosetta Mode**:  [ZL.Compressor-0.2.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-macOS-x86.dmg)
-- macOS Apple-M-chip: [ZL.Compressor-0.2.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-macOS-arm.dmg)
-- Windows x86-64 architecture: [ZL.Compressor-0.2.0-Windows-x86.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Windows-x86.exe)
-- Windows ARM64 architecture: [ZL.Compressor-0.2.0-Windows-arm.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Windows-arm.exe)
-- Linux x86-64 architecture: [ZL.Compressor-0.2.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Linux-x86.zip)
-- Linux ARM64 architecture: [ZL.Compressor-0.2.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Linux-arm.zip)
+| Operating System | x86-64<br>Intel Chip<br>AMD Chip (mostly)                                                                                                   | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **macOS**        | [ZL.Compressor-0.2.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-macOS-x86.dmg)     | [ZL.Compressor-0.2.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-macOS-arm.dmg)     |
+| **Windows**      | [ZL.Compressor-0.2.0-Windows-x86.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Windows-x86.exe) | [ZL.Compressor-0.2.0-Windows-arm.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Windows-arm.exe) |
+| **Linux**        | [ZL.Compressor-0.2.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Linux-x86.zip)     | [ZL.Compressor-0.2.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Linux-arm.zip)     |
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
