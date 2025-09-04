@@ -12,11 +12,11 @@ weight: 1
 
 您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的操作系统和架构对应的安装器。
 
-| 操作系统        | x86-64<br>Intel 芯片<br>AMD 芯片（大多数）                                                                                                        | ARM64<br>Apple M 芯片<br>Qualcomm 芯片                                                                                                   |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **macOS**   | [ZL.Equalizer-0.6.2-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-macOS-x86.dmg)     | [ZL.Equalizer-0.6.2-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-macOS-arm.dmg) |
-| **Windows** | [ZL.Equalizer-0.6.2-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Windows-x86.exe) | N/A (In Schedule)                                                                                                                    |
-| **Linux**   | [ZL.Equalizer-0.6.2-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-x86.zip)     | [ZL.Equalizer-0.6.2-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-arm.zip) |
+| 操作系统        | x86-64<br>Intel 芯片<br>AMD 芯片（大多数）                                                                                                        | ARM64<br>Apple M 芯片<br>Qualcomm 芯片                                                                                                       |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **macOS**   | [ZL.Equalizer-0.6.2-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-macOS-x86.dmg)     | [ZL.Equalizer-0.6.2-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-macOS-arm.dmg)     |
+| **Windows** | [ZL.Equalizer-0.6.2-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Windows-x86.exe) | [ZL.Equalizer-0.6.2-Windows-arm.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Windows-arm.exe) |
+| **Linux**   | [ZL.Equalizer-0.6.2-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-x86.zip)     | [ZL.Equalizer-0.6.2-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-arm.zip)     |
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
 
