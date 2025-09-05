@@ -74,7 +74,7 @@ ___
 
 ## Left Panel
 
-When the mouse is moved to the left side of the plugin window, the left panel will show up, from which you can choose the splitting mode. You can close it by clicking on the [Analyzer Panel](#analyzer-panel).
+When the mouse is moved to the left side of the plugin window, the left panel will show up, from which you can choose and adjust the splitting mode. You can close it by clicking on the [Analyzer Panel](#analyzer-panel).
 
 ___
 
@@ -247,6 +247,8 @@ ___
 - You can choose the time length at the bottom-left corner
 - You can choose the magnitude type at the bottom-right corner
 - You can choose the minimum dB scale at the bottom-right corner
+
+___
 
 ## UI Setting Panel
 
