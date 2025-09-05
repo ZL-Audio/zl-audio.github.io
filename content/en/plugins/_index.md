@@ -34,6 +34,6 @@ ___
 
 multifunctional audio splitter
 
-<img src="/images/zlsplitter/dark_crop.png" style="width:240px; max-width: 100%; height: auto"/>
+<img src="/images/zlsplitter/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 
 ___
