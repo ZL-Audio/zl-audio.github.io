@@ -13,9 +13,9 @@ weight: 1
 
 | 操作系统        | x86-64<br>Intel 芯片<br>AMD 芯片（大多数）                                                                                                           | ARM64<br>Apple M 芯片<br>Qualcomm 芯片                                                                                                          |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**   | [ZL.Compressor-0.2.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-macOS-x86.dmg)     | [ZL.Compressor-0.2.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-macOS-arm.dmg)     |
-| **Windows** | [ZL.Compressor-0.2.0-Windows-x86.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Windows-x86.exe) | [ZL.Compressor-0.2.0-Windows-arm.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Windows-arm.exe) |
-| **Linux**   | [ZL.Compressor-0.2.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Linux-x86.zip)     | [ZL.Compressor-0.2.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.0/ZL.Compressor-0.2.0-Linux-arm.zip)     |
+| **macOS**   | [ZL.Compressor-0.2.1-macOS-x86.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.1/ZL.Compressor-0.2.1-macOS-x86.dmg)     | [ZL.Compressor-0.2.1-macOS-arm.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.1/ZL.Compressor-0.2.1-macOS-arm.dmg)     |
+| **Windows** | [ZL.Compressor-0.2.1-Windows-x86.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.1/ZL.Compressor-0.2.1-Windows-x86.exe) | [ZL.Compressor-0.2.1-Windows-arm.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.1/ZL.Compressor-0.2.1-Windows-arm.exe) |
+| **Linux**   | [ZL.Compressor-0.2.1-Linux-x86.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.1/ZL.Compressor-0.2.1-Linux-x86.zip)     | [ZL.Compressor-0.2.1-Linux-arm.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.2.1/ZL.Compressor-0.2.1-Linux-arm.zip)     |
 
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
@@ -32,18 +32,31 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
+## 0.2.1
+
+新功能
+
+- 增加频谱图冻结（鼠标悬停）
+- 增加多频段框选
+- 增加多频段复制/粘贴
+
+修复与改进
+
+- 修复 鼠标滚轮可能导致的错误 6dB 斜率
+- 提高 超采样性能（大幅）
+
 ### 0.2.0
 
 新功能
 
-- 增加功能提示
-- 增加侧链滤波器监听（双击频段拖拽按钮）
-- 增加软削波器
+- 增加 功能提示
+- 增加 侧链滤波器监听（双击频段拖拽按钮）
+- 增加 软削波器
 
 修复与改进
 
 - 修复 压缩风格 `Vocal` 可能出现的浮点溢出
-- 提高稳定性
+- 提高 稳定性
 
 ### 0.1.2
 
