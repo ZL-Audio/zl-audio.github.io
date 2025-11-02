@@ -14,13 +14,12 @@ ZL Equalizer 2 is a dynamic equalizer plugin with the following key features:
 
 - **Unmatched Versatility**: Sculpt your sound with 6 filter structures, 8 filter types, 5 stereo modes, 7 variable slopes, and up to 24 frequency bands.
 - **Integrated Dynamic Control**: Go beyond static EQ with adjustable threshold, attack, release, and side-chain filters for powerful dynamic equalization.
-- **Pristine 64-bit Audio**: 64-bit floating-point processing and advanced de-cramping technique deliver outstanding performance, ensuring exceptional clarity from the deepest lows to the highest highs.
+- **Pristine Precision**: 64-bit floating-point processing and advanced de-cramping technique deliver outstanding performance, ensuring exceptional clarity from the deepest lows to the highest highs.
 - **Intuitive Workflow**: A carefully designed interface with an interactive spectrum graph, smart collision detection, and smooth animations makes equalization fast and fluid.
 
 ## Top Panel
 
 ___
-
 
 <p float="left">
   <img src="/images/zlequalizer2/zlaudio.svg" width="20pt" />
@@ -196,7 +195,24 @@ ___
 
 ## UI Setting Panel
 
-## Shortcuts
+## UI Controls
+
+Generally, you can enable fine-adjustment with `Shift` and enable special adjustment with `Ctrl/Command`. If the direction of the mouse wheel is reversed when `Shift` is pressed, you can reverse it again (in the UI Setting Panel) to put it back to normal.
+
+**Sliders**
+
+- You can enable fine-adjustment with `Shift` when using the mouse to drag / the mouse wheel to adjust sliders.
+- You can use the left/right mouse button to control the first/second value when there are two values on the slider.
+
+**Filter Buttons**
+
+- You can drag a button to change the frequency/gain value.
+- You can use the mouse wheel to change the Q value.
+- You can enable fine-adjustment with `Shift` when using the mouse to drag a button.
+- You can drag with the left mouse button + `Ctrl/Command` down while fixing the frequency.
+- You can drag with the right mouse button + `Ctrl/Command` down while fixing the frequency.
+- You can double-click the button to enter/exit the solo status.
+- You can double-click with `Ctrl/Command` to turn on/off the dynamic behavior.
 
 ## Filter Structure
 
@@ -246,3 +262,6 @@ This mode provides **almost zero phase response**.
 * **Cons:** Adds a **very high latency** of about 171 ms (up to 342 ms for L/R & M/S processing). May cause audible pre-ringing. Dynamic filters stay in `Minimum Phase`.
 
 > **Warning:** **Do not automate** filter parameters in this mode.
+
+
+## Dynamic Filter
