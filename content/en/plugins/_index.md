@@ -14,11 +14,11 @@ no_list: true
 
 ___
 
-**[ZL Equalizer](/plugins/zlequalizer)**
+**[ZL Equalizer 2](/plugins/zlequalizer2)**
 
-16-band dynamic digital equalizer
+dynamic digital equalizer
 
-<img src="/images/zlequalizer/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
+<img src="/images/zlequalizer2/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 
 ___
 
@@ -35,5 +35,11 @@ ___
 multifunctional audio splitter
 
 <img src="/images/zlsplitter/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
+
+___
+
+**[ZL Equalizer (legacy)](/plugins/zlequalizer)**
+
+16-band dynamic digital equalizer
 
 ___

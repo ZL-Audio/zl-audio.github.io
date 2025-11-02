@@ -1,5 +1,5 @@
 ---
-title: ZL Equalizer
-weight: 1
+title: ZL Equalizer (legacy)
+weight: 99
 ---
 

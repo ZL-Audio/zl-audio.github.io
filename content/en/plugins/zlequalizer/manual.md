@@ -16,6 +16,7 @@ ZL Equalizer is an equalizer plugin with the following key features:
 - **High-Quality Sound:** With 64-bit floating-point processing and de-cramping technique, outstanding performance is ensured in both low-end and high-end.
 - **Adjustable Dynamics:** Adjustable threshold, attack, release, and side-chain frequency, etc.
 - **Carefully Designed Interface:** Interactive spectrum graph, smart collision detection, and smooth animations.
+
 ## Components
 
 #### Button
