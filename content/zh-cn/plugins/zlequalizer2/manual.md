@@ -1,6 +1,6 @@
 ---
-title: Manual
-description: How to use ZL Equalizer 2
+title: 用户手册
+description: 如何使用 ZL Equalizer 2
 weight: 2
 ---
 
@@ -8,16 +8,19 @@ weight: 2
 
 ___
 
-## About
+## 关于
 
-ZL Equalizer 2 is a dynamic equalizer plugin with the following key features:
+ZL Equalizer 2 是一款动态均衡器插件，具有以下主要特点：
 
-- **Unmatched Versatility**: Sculpt your sound with 6 filter structures, 8 filter types, 5 stereo modes, 7 variable slopes, and up to 24 frequency bands.
-- **Integrated Dynamic Control**: Go beyond static EQ with adjustable threshold, attack, release, and side-chain filters for powerful dynamic equalization.
-- **Pristine Precision**: 64-bit floating-point processing and advanced de-cramping technique deliver outstanding performance, ensuring exceptional clarity from the deepest lows to the highest highs.
-- **Intuitive Workflow**: A carefully designed interface with an interactive spectrum graph, smart collision detection, and smooth animations makes equalization fast and fluid.
+- **多样的功能**：通过 6 种滤波器结构、8 种滤波器类型、5 种立体声模式、7 种可变斜率和多达 24 个频段来雕刻您的声音。
+    
+- **丰富的动态**：超越静态 EQ，具有可调的阈值、启动时间、释放时间和侧链滤波器，可实现强大的动态均衡。
+    
+- **纯净的精度**：64 位浮点处理和先进的去“痉挛”技术（de-cramping）提供了卓越的性能，确保了从最低的低频到最高的（高）频都有出色的清晰度。
+    
+- **直观的界面**：精心设计的界面，具有交互式频谱图、智能碰撞检测和流畅的动画，使均衡操作快速而流畅。
 
-## Top Panel
+## 顶部面板
 
 ___
 
@@ -78,9 +81,9 @@ ___
 
 ___
 
-## Center Panel
+## 中心面板
 
-## Bottom Panel
+## 底部面板
 
 #### Left Panel
 

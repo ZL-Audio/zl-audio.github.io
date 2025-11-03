@@ -80,6 +80,41 @@ ___
 
 ## Center Panel
 
+The center panel consists of a spectrum analyzer, filter response curves, filter buttons, a floating window, and a decibel scale.
+
+#### Spectrum Analyzer
+
+The spectrum analyzer shows the spectrum of the input/output/side-chain signal and collision areas (optional). You can control it via the [Analyzer Setting Panel](#analyzer-setting-panel).
+
+#### Filter Response Curves
+
+The filter response curves show the magnitude response of each single band and the magnitude response of each stereo placement.
+
+#### Filter Buttons
+
+The filter buttons are attached to filter response curves. You can drag them to change filter parameters. See more info in [UI Controls](#ui-controls).
+
+When you double-click (with/without `Ctrl/Command` down) on the spectrum, a band will be added at the corresponding position (with/without dynamic behavior enabled) with a filter button.
+
+#### Floating Window
+
+The floating window is attached to the filter button of the selected band. You can control some filter parameters through this window.
+
+| Icon                                                         | Filter Type  | Icon                                                      | Stereo Placement |
+| ------------------------------------------------------------ | ------------ | --------------------------------------------------------- | ---------------- |
+| <img src="/images/zlequalizer2/peak.svg" width="20pt"/>      | `Peak`       | <img src="/images/zlequalizer2/stereo.svg" width="20pt"/> | `Stereo`         |
+| <img src="/images/zlequalizer2/lowshelf.svg" width="20pt"/>  | `Low Shelf`  | <img src="/images/zlequalizer2/left.svg" width="20pt"/>   | `Left`           |
+| <img src="/images/zlequalizer2/lowpass.svg" width="20pt"/>   | `Low Pass`   | <img src="/images/zlequalizer2/right.svg" width="20pt"/>  | `Right`          |
+| <img src="/images/zlequalizer2/highshelf.svg" width="20pt"/> | `High Shelf` | <img src="/images/zlequalizer2/mid.svg" width="20pt"/>    | `Mid`            |
+| <img src="/images/zlequalizer2/highpass.svg" width="20pt"/>  | `High Pass`  | <img src="/images/zlequalizer2/side.svg" width="20pt"/>   | `Side`           |
+| <img src="/images/zlequalizer2/notch.svg" width="20pt"/>     | `Notch`      |                                                           |                  |
+| <img src="/images/zlequalizer2/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                           |                  |
+| <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                           |                  |
+
+#### Decibel Scale
+
+You can choose the decibel scale of magnitude response curves (through a combobox at the top-right) and the decibel scale of the spectrum analyzer (through a combobox at the bottom-right).
+
 ## Bottom Panel
 
 #### Left Panel
@@ -120,7 +155,7 @@ ___
 
 **`FREQ`**
 
-Control the frequency.
+Control the frequency. The maximum value of the frequency is affected by the sample rate.
 
 ___
 
