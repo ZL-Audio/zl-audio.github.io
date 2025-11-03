@@ -14,11 +14,11 @@ no_list: true
 
 ___
 
-**[ZL Equalizer](/plugins/zlequalizer)**
+**[ZL Equalizer 2](/plugins/zlequalizer2)**
 
-十六频段 动态数字均衡器
+数字动态均衡器
 
-<img src="/images/zlequalizer/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
+<img src="/images/zlequalizer2/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 
 ___
 
@@ -37,3 +37,10 @@ ___
 <img src="/images/zlsplitter/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 
 ___
+
+**[ZL Equalizer](/plugins/zlequalizer)**
+
+十六频段 动态数字均衡器
+
+___
+
