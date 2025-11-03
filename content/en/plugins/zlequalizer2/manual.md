@@ -82,17 +82,187 @@ ___
 
 ## Bottom Panel
 
+### Left Panel
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
+</p>
+
+- Release: bypass the band.
+
+---
+
+**Band Selection**
+
+Select the current band.
+
+___
+
+**Filter Type**
+
+Choose the filter type: `Peak`, `Low Shelf`, `Low Pass`, `High Shelf`, `High Pass`, `Notch`, `Band Pass`, and `Tilt Shelf`.
+
+---
+
+**Slope**
+
+Choose the filter slope: `6 dB/oct`, `12 dB/oct`, `24 dB/oct`, `36 dB/oct`, `48 dB/oct`, `72 dB/oct`, and `96 dB/oct`. A higher slope will make the filter’s response curve change more steeply. `Peak`, `Notch`, and `Band Pass` don’t support `6 dB/oct`.
+
+---
+
+**Stereo Modes**
+
+Choose the stereo mode: `Stereo`, `Left`, `Right`, `Mid`, and `Side`.
+
+___
+
+**`FREQ`**
+
+Control the frequency.
+
+___
+
+**`GAIN`**
+
+Control the base gain and the target gain. See more info in [Dynamic Filter](#dynamic-filter).
+
+___
+
+**`Q`**
+
+Control the quality factor.
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer2/dynamic.svg" width="20pt"/>
+</p>
+
+- Press: turn on the dynamic behavior of the band
+- Release: turn off the dynamic behavior of the band
+
+___
+
+
+<p float="left">
+  <img src="/images/zlequalizer2/close.svg" width="20pt"/>
+</p>
+
+- Click: turn off the band
+
+___
+
+### Right Panel
+
+___
+
+
+<p float="left">
+  <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
+</p>
+
+- Release: bypass the dynamic behavior. See more info in [Dynamic Filter](#dynamic-filter).
+
+___
+
+
+<p float="left">
+  <img src="/images/zlequalizer2/circle_a.svg" width="20pt"/>
+</p>
+
+- Press: turn on the dynamic learning behavior. See more info in [Dynamic Filter](#dynamic-filter).
+- Release: turn off the dynamic learning behavior and set the `Threshold` and `Knee`
+
+___
+
+
+<p float="left">
+  <img src="/images/zlequalizer2/circle_r.svg" width="20pt"/>
+</p>
+
+- Press: turn on the dynamic relative behavior. See more info in [Dynamic Filter](#dynamic-filter).
+
+___
+
+
+<p float="left">
+  <img src="/images/zlequalizer2/shuffle.svg" width="20pt"/>
+</p>
+
+- Press: change the side-chain stereo mode. When pressed, if the band is in `Left`/`Right`/`Mid`/`Side`, the side-chain band will be in `Right`/`Left`/`Side`/`Mid`.
+
+___
+
+`Threshold`
+
+See more info in [Dynamic Filter](#dynamic-filter).
+
+___
+
+`Knee`
+
+See more info in [Dynamic Filter](#dynamic-filter).
+
+___
+
+`Attack`
+
+See more info in [Dynamic Filter](#dynamic-filter).
+
+___
+
+`Release`
+
+See more info in [Dynamic Filter](#dynamic-filter).
+
+___
+
+
+<p float="left">
+  <img src="/images/zlequalizer2/link.svg" width="20pt"/>
+</p>
+
+- Press: link the band with the side-chain band. See more info in [Dynamic Filter](#dynamic-filter).
+
+___
+
+**Side-chain Filter Type**
+
+Choose the side-chain filter type: `BP (Band Pass)`, `LP (Low Pass)`, and `HP (High Pass)`.
+
+___
+
+**Side-chain Filter Slope**
+
+Choose the side-chain filter slope: `6 dB/oct`, `12 dB/oct`, `24 dB/oct`, `36 dB/oct`, `48 dB/oct`, `72 dB/oct`, and `96 dB/oct`.
+
+___
+
+**`FREQ`**
+
+Control the side-chain filter frequency.
+
+___
+
+**`Q`**
+
+Control the side-chain filter quality factor.
+
+___
+
 ## Output Setting Panel
 
 ___
 
-**GAIN**
+**`GAIN`**
 
 Control the additional output gain.
 
 ___
 
-**SCALE**
+**`SCALE`**
 
 Control the scale of all filters' base & target gain.
 
@@ -139,7 +309,7 @@ ___
 
 ___
 
-**Lookahead**
+**`Lookahead`**
 
 Control the lookahead of the side-chain signal.
 
@@ -149,7 +319,7 @@ Control the lookahead of the side-chain signal.
 
 ___
 
-**Pre/Post/Side**
+**`Pre/Post/Side`**
 
 - Press: turn on the Pre/Post/Side analyzer
 - Release: turn off the Pre/Post/Side analyzer
@@ -185,7 +355,7 @@ ___
 
 ___
 
-**Strength**
+**`Strength`**
 
 Control the collision detection strength.
 
@@ -193,7 +363,116 @@ ___
 
 ## EQ Match Panel
 
+Work in progress.
+
 ## UI Setting Panel
+
+The UI setting panel controls analyzer colours, slider operations, etc. Components will be introduced in the order from top to bottom.
+
+#### Color
+
+You can adjust the colour by clicking on the left colour block and change the transparency by dragging the right slider.
+
+**Text Color**
+
+**Background Color**
+
+For better accessibility, please set Text/Background to colours with high contrast.
+
+**Shadow Color**
+
+**Glow Color**
+
+**Pre Color**
+
+**Post Color**
+
+**Side Color**
+
+**Collision Color**
+
+**Grid Color**
+
+**Color Map 1**
+
+- The colour map of the curves of each single filter.
+
+**Color Map 2**
+
+- The colour map of the curves of Stereo/Left/Right/Mid/Side.
+
+**Import Colors**
+
+- Import colour settings (`.xml` file)
+
+**Export Colors**
+
+- Export colour settings (`.xml` file)
+
+#### Control
+
+**Wheel Sensitivity**
+
+- Rough: mouse-wheel sensitivity when `Shift` is not pressed
+- Fine: mouse-wheel sensitivity when `Shift` is pressed
+- Reverse: whether to reverse the direction of mouse-wheel when `Shift` is pressed
+
+**Drag Sensitivity**
+
+- Rough: mouse-drag sensitivity when `Shift` is not pressed
+- Fine: mouse-drag sensitivity when `Shift` is pressed
+
+**Rotary Slider Style**
+
+- `Circular`: A rotary control that you move by dragging the mouse in a circular motion, like a knob
+- `Horizontal`: A rotary control that you move by dragging the mouse left-to-right
+- `Vertical`: A rotary control that you move by dragging the mouse up-and-down
+- `Horiz + Vert`: A rotary control that you move by dragging the mouse up-and-down or left-to-right
+- Distance: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
+
+**Slider Double Click**
+
+- `Return Default`: when you double-click the slider, it returns to the default value; when you double-click the slider with Ctrl/Command, it opens the value editor.
+- `Open Editor`: when you double-click the slider, it opens the value editor; when you double-click the slider with Ctrl/Command, it returns to the default value.
+
+**Import Controls**
+
+- Import control settings (`.xml` file)
+
+**Export Controls**
+
+- Export control settings (`.xml` file)
+
+#### Other
+
+**Refresh Rate**
+
+In general, 30 Hz is enough for an equalizer plugin.
+
+For a better analyzer display, set this to 1/n of your monitor refresh rate. For example,
+- If your monitor refresh rate is 120 Hz, set it to 120 Hz, 60 Hz (1/2), or 30 (1/4) Hz. DO NOT set it to 90 Hz.
+- If your monitor refresh rate is 90 Hz, set it to 90 Hz or 30 Hz (1/3). DO NOT set it to 60 Hz.
+
+
+**FFT  Setting**
+
+- Tilt: the extra tilting slope of the FFT
+- Speed: the extra decay speed of the FFT
+
+**Curve Thickness**
+
+Control the thickness of the curve of each band & each stereo mode.
+
+**Tooltip**
+
+Choose the tooltip language. It will take effect when the plugin window is reopened.
+
+**Font**
+
+Choose the font size mode.
+
+- `Scale`: the font size scales with the window size. Control the relative ratio.
+- `Static`: the font size is fixed. Control the actual font size.
 
 ## UI Controls
 
@@ -265,3 +544,33 @@ This mode provides **almost zero phase response**.
 
 
 ## Dynamic Filter
+
+### How the Dynamic Filter Works
+
+A dynamic filter automatically turns an EQ band up or down for you, but only when specific frequencies get too loud or too quiet.
+
+### Core Dynamic Behavior
+
+When dynamic mode is enabled, the filter listens to a specific frequency range, i.e., the side-chain signal filtered by the side-chain filter. The settings tell it when to react and how fast.
+
+* `Threshold`: This is the trigger level.
+    * When the signal's volume crosses above `Threshold`, the filter starts to change to the **target gain**. The reaction speed is controlled by `Attack`.
+    * When the signal's volume falls below `Threshold`, the filter starts to change to the **base gain**. The reset speed is controlled by `Release`.
+* `Knee`: This controls how smoothly the filter reacts as the signal approaches the `Threshold`.
+    * A hard knee (low value) is like a switch: the filter stays at **base gain** until the signal exactly crosses the `Threshold`.
+    * A soft knee (high value) is like a dimmer: the filter *gently* moves to **target gain** as the signal gets close to the `Threshold`, resulting in a more gradual and transparent effect.
+
+Please do keep in mind that the definition of `Threshold` and `Knee` is different from traditional compressors.
+
+### Dynamic Learning
+
+Setting the `Threshold` and `Knee` perfectly can be tricky, especially if the track's volume changes.
+
+When you enable **Dynamic Learning**, the plugin does the work for you. It **continuously analyzes the incoming signal** and automatically sets the `Threshold` and `Knee` in real-time. This keeps the dynamic processing adapted to the signal.
+
+### Dynamic Relative
+
+This mode completely changes what the filter listens to.
+
+* **Normal Mode** is triggered by the absolute volume: Is the filtered side-chain loud in absolute terms?
+* **Relative Mode** is triggered by the relative volume: Is the filtered side-chain louder than the whole side-chain?
