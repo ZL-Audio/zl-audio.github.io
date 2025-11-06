@@ -26,11 +26,7 @@ The development of this plugin is assisted by the following software:
 
 ## Feedback
 
-You have to register a GitHub account before sending feedbacks.
-
-If you have general suggestions or questions, you can open a discussion [here](https://github.com/ZL-Audio/ZLEqualizer/discussions).
-
-If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLEqualizer/issues).
+ZL Equalizer is in the **legacy** state and won't accept feedback.
 
 ## Disclaimer
 

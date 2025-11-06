@@ -26,11 +26,7 @@ weight: 3
 
 ## 反馈
 
-在反馈钱，您需要注册 GitHub 账号。
-
-如果您有一般性的建议或疑问，可以在[讨论区](https://github.com/ZL-Audio/ZLEqualizer/discussions)提出。
-
-如果您有针对性的错误报告或功能要求，可以在[问题区](https://github.com/ZL-Audio/ZLEqualizer/issues)提出。
+ZL Equalizer 已处于过时状态，不再接收反馈。
 
 ## 免责声明
 
