@@ -10,7 +10,7 @@ weight: 1
 
 ## Installation
 
-You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) or use the direct download link below. Please download the installer that matches your OS & architecture:
+Please download the installer that matches your OS & architecture:
 
 | Operating System | x86-64<br>Intel Chip<br>AMD Chip (mostly)                                                                                                | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                   |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
