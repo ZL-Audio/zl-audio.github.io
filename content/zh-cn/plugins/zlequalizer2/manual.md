@@ -10,14 +10,11 @@ ___
 
 ## 关于
 
-ZL Equalizer 2 是一款动态均衡器插件，具有以下主要特点：
+ZL Equalizer 2 是一款动态均衡器插件，具有以下主要功能：
 
 - **多样的功能**：通过 6 种滤波器结构、8 种滤波器类型、5 种立体声模式、7 种可变斜率和多达 24 个频段来雕刻您的声音。
-    
 - **丰富的动态**：超越静态 EQ，具有可调的阈值、启动时间、释放时间和侧链滤波器，可实现强大的动态均衡。
-    
 - **纯净的精度**：64 位浮点处理和先进的去“痉挛”技术（de-cramping）提供了卓越的性能，确保了从最低的低频到最高的（高）频都有出色的清晰度。
-    
 - **直观的界面**：精心设计的界面，具有交互式频谱图、智能碰撞检测和流畅的动画，使均衡操作快速而流畅。
 
 ## 顶部面板
@@ -29,13 +26,13 @@ ___
   <img src="/images/zlequalizer2/logo.svg" width="20pt" />
 </p>
 
-You can open the [UI Setting Panel](#ui-setting-panel) by double-clicking the logo.
+双击徽标可打开[用户界面设置面板](#用户界面设置)。
 
 ___
 
-**Analyzer**
+**Analyzer (分析仪)**
 
-You can open the [Analyzer Setting Panel](#analyzer-setting-panel) by clicking the text.
+点击“Analyzer”文本可打开[分析仪设置面板](#分析仪设置面板)。
 
 ___
 
@@ -43,24 +40,24 @@ ___
   <img src="/images/zlequalizer2/match.svg" width="20pt"/>
 </p>
 
-You can open the [EQ Match Panel](#eq-match-panel) by clicking the icon.
+点击图标可打开[均衡匹配面板](#均衡匹配面板)。
 
 ___
 
-**Filter Structure**
+**Filter Structure (滤波器结构)**
 
-- `Minimum Phase`: [Minimum Phase](#minimum-phase)
-- `State Variable`: [State Variable](#state-variable)
-- `Parallel`: [Parallel](#parallel)
-- `Matched Phase`: [Matched Phase](#matched-phase)
-- `Mixed Phase`: [Mixed Phase](#mixed-phase)
-- `Zero Phase`: [Zero Phase](#zero-phase)
+- `Minimum Phase`: [最小相位](#最小相位-minimum-phase)
+- `State Variable`: [状态变量](#状态变量-state-variable)
+- `Parallel`: [并行](#并行-parallel)
+- `Matched Phase`: [匹配相位](#匹配相位-matched-phase)
+- `Mixed Phase`: [混合相位](#混合相位-mixed-phase)
+- `Zero Phase`: [零相位](#零相位-zero-phase)
 
 ___
 
-**Output Panel**
+**Output Panel (输出面板)**
 
-You can open the [Output Setting Panel](#output-setting-panel) by clicking the text. It shows the current filter gain scale & total output gain.
+点击“Output”文本可打开[输出设置面板](#输出设置面板)。它会显示当前的滤波器增益缩放和总输出增益。
 
 ___
 
@@ -68,8 +65,8 @@ ___
   <img src="/images/zlequalizer2/external-side.svg" width="20pt"/>
 </p>
 
-- Press: use the external side-chain
-- Release: use the internal side-chain
+- 按下：使用外部侧链
+- 释放：使用内部侧链
 
 ___
 
@@ -77,15 +74,84 @@ ___
   <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
 </p>
 
-- Release: bypass the plugin
+- 释放：旁通插件
 
 ___
 
-## 中心面板
+## 中间面板
+
+中间面板由频谱分析仪、滤波器响应曲线、滤波器按钮、一个浮动窗口和分贝刻度组成。
+
+#### 频谱分析仪
+
+频谱分析仪显示输入/输出/侧链信号的频谱和碰撞区域（可选）。您可以通过[分析仪设置面板](#分析仪设置面板)来控制它。
+
+#### 滤波器响应曲线
+
+滤波器响应曲线显示每个单独频段的幅度响应以及每种立体声布局的幅度响应。
+
+#### 滤波器按钮
+
+滤波器按钮附着在滤波器响应曲线上。您可以拖动它们来更改滤波器参数。更多信息请参见[界面控件](#界面控件)。
+
+当您在频谱上双击（无论是否按下 `Ctrl/Command`），将在相应位置添加一个频段（无论是否开启动态行为），并带有一个滤波器按钮。
+
+#### 浮动窗口
+
+浮动窗口附着在所选频段的滤波器按钮上。您可以通过此窗口控制一些滤波器参数。
+
+| 图标 | 滤波器类型 | 图标 | 立体声位置 |
+| :--- | :--- | :--- | :--- |
+| <img src="/images/zlequalizer2/peak.svg" width="20pt"/> | `峰值 (Peak)` | <img src="/images/zlequalizer2/stereo.svg" width="20pt"/> | `立体声 (Stereo)` |
+| <img src="/images/zlequalizer2/lowshelf.svg" width="20pt"/> | `低搁架 (Low Shelf)` | <img src="/images/zlequalizer2/left.svg" width="20pt"/> | `左声道 (Left)` |
+| <img src="/images/zlequalizer2/lowpass.svg" width="20pt"/> | `低通 (Low Pass)` | <img src="/images/zlequalizer2/right.svg" width="20pt"/> | `右声道 (Right)` |
+| <img src="/images/zlequalizer2/highshelf.svg" width="20pt"/> | `高搁架 (High Shelf)` | <img src="/images/zlequalizer2/mid.svg" width="20pt"/> | `中置 (Mid)` |
+| <img src="/images/zlequalizer2/highpass.svg" width="20pt"/> | `高通 (High Pass)` | <img src="/images/zlequalizer2/side.svg" width="20pt"/> | `侧边 (Side)` |
+| <img src="/images/zlequalizer2/notch.svg" width="20pt"/> | `带阻 (Notch)` | | |
+| <img src="/images/zlequalizer2/bandpass.svg" width="20pt"/> | `带通 (Band Pass)` | | |
+| <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `倾斜搁架 (Tilt Shelf)` | | |
+
+#### 右键菜单
+
+___
+
+**Invert Gain (反转增益)**
+
+- 点击：反转所选频段的增益
+
+___
+
+**Split L/R (分离 L/R)**
+
+- 点击：将所选频段设置为 `Left`，并添加一个参数相同但模式为 `Right` 的频段
+
+___
+
+**Split M/S (分离 M/S)**
+
+- 点击：将所选频段设置为 `Mid`，并添加一个参数相同但模式为 `Side` 的频段
+
+___
+
+**Copy (复制)**
+
+- 点击：将所有选定频段的滤波器参数复制到剪贴板
+
+___
+
+**Paste (粘贴)**
+
+- 点击：从剪贴板获取滤波器参数并创建这些频段
+
+___
+
+#### 分贝刻度
+
+您可以选择幅度响应曲线的分贝刻度（通过右上方的组合框）和频谱分析仪的分贝刻度（通过右下方的组合框）。
 
 ## 底部面板
 
-#### Left Panel
+#### 左侧面板
 
 ___
 
@@ -93,49 +159,49 @@ ___
   <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
 </p>
 
-- Release: bypass the band.
+- 释放：旁通此频段。
 
 ---
 
-**Band Selection**
+**Band Selection (频段选择)**
 
-Select the current band.
+选择当前频段。
 
 ___
 
-**Filter Type**
+**Filter Type (滤波器类型)**
 
-Choose the filter type: `Peak`, `Low Shelf`, `Low Pass`, `High Shelf`, `High Pass`, `Notch`, `Band Pass`, and `Tilt Shelf`.
+选择滤波器类型：`峰值 (Peak)`、`低搁架 (Low Shelf)`、`低通 (Low Pass)`、`高搁架 (High Shelf)`、`高通 (High Pass)`、`带阻 (Notch)`、`带通 (Band Pass)` 和 `倾斜搁架 (Tilt Shelf)`。
 
 ---
 
-**Slope**
+**Slope (斜率)**
 
-Choose the filter slope: `6 dB/oct`, `12 dB/oct`, `24 dB/oct`, `36 dB/oct`, `48 dB/oct`, `72 dB/oct`, and `96 dB/oct`. A higher slope will make the filter’s response curve change more steeply. `Peak`, `Notch`, and `Band Pass` don’t support `6 dB/oct`.
+选择滤波器斜率：`6 dB/oct`、`12 dB/oct`、`24 dB/oct`、`36 dB/oct`、`48 dB/oct`、`72 dB/oct` 和 `96 dB/oct`。较高的斜率会使滤波器的响应曲线变化更陡峭。`峰值 (Peak)`、`带阻 (Notch)` 和 `带通 (Band Pass)` 不支持 `6 dB/oct`。
 
 ---
 
-**Stereo Modes**
+**Stereo Modes (立体声模式)**
 
-Choose the stereo mode: `Stereo`, `Left`, `Right`, `Mid`, and `Side`.
-
-___
-
-**`FREQ`**
-
-Control the frequency.
+选择立体声模式：`立体声 (Stereo)`、`左声道 (Left)`、`右声道 (Right)`、`中置 (Mid)` 和 `侧边 (Side)`。
 
 ___
 
-**`GAIN`**
+**`FREQ` (频率)**
 
-Control the base gain and the target gain. See more info in [Dynamic Filter](#dynamic-filter).
+控制频率。频率的最大值受采样率影响。
 
 ___
 
-**`Q`**
+**`GAIN` (增益)**
 
-Control the quality factor.
+控制基础增益与目标增益。更多信息请参见[动态滤波器](#动态滤波器)。
+
+___
+
+**`Q` (Q 值)**
+
+控制品质因数 (Q 值)。Q 值越大，带宽越窄。
 
 ___
 
@@ -143,8 +209,7 @@ ___
   <img src="/images/zlequalizer2/dynamic.svg" width="20pt"/>
 </p>
 
-- Press: turn on the dynamic behavior of the band
-- Release: turn off the dynamic behavior of the band
+- 按下：开启动态行为。
 
 ___
 
@@ -153,11 +218,11 @@ ___
   <img src="/images/zlequalizer2/close.svg" width="20pt"/>
 </p>
 
-- Click: turn off the band
+- 点击：关闭此频段。
 
 ___
 
-#### Right Panel
+#### 右侧面板
 
 ___
 
@@ -166,7 +231,7 @@ ___
   <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
 </p>
 
-- Release: bypass the dynamic behavior. See more info in [Dynamic Filter](#dynamic-filter).
+- 释放：旁通动态行为。更多信息请参见[动态滤波器](#动态滤波器)。
 
 ___
 
@@ -175,8 +240,9 @@ ___
   <img src="/images/zlequalizer2/circle_a.svg" width="20pt"/>
 </p>
 
-- Press: turn on the dynamic learning behavior. See more info in [Dynamic Filter](#dynamic-filter).
-- Release: turn off the dynamic learning behavior and set the `Threshold` and `Knee`
+- 按下：开启动态学习行为。
+- 释放：关闭动态学习行为，并设置阈值 (Threshold) 与拐点 (Knee)。
+- 详情参见手册。
 
 ___
 
@@ -185,7 +251,8 @@ ___
   <img src="/images/zlequalizer2/circle_r.svg" width="20pt"/>
 </p>
 
-- Press: turn on the dynamic relative behavior. See more info in [Dynamic Filter](#dynamic-filter).
+- 按下：开启动态相对行为。
+- 详情参见手册。
 
 ___
 
@@ -194,80 +261,79 @@ ___
   <img src="/images/zlequalizer2/shuffle.svg" width="20pt"/>
 </p>
 
-- Press: change the side-chain stereo mode. When pressed, if the band is in `Left`/`Right`/`Mid`/`Side`, the side-chain band will be in `Right`/`Left`/`Side`/`Mid`.
+- 按下：更改侧链立体声模式。按下时，如果频段处于 `Left`/`Right`/`Mid`/`Side`，侧链频段将处于 `Right`/`Left`/`Side`/`Mid`。
 
 ___
 
-`Threshold`
+`Threshold` (阈值)
 
-See more info in [Dynamic Filter](#dynamic-filter).
-
-___
-
-`Knee`
-
-See more info in [Dynamic Filter](#dynamic-filter).
+控制动态行为的阈值。详情参见手册。
 
 ___
 
-`Attack`
+`Knee` (拐点)
 
-See more info in [Dynamic Filter](#dynamic-filter).
-
-___
-
-`Release`
-
-See more info in [Dynamic Filter](#dynamic-filter).
+控制动态行为的拐点宽度。详情参见手册。
 
 ___
 
+`Attack` (攻击时间)
+
+控制动态行为的攻击时间。详情参见手册。
+
+___
+
+`Release` (释放时间)
+
+控制动态行为的释放时间。详情参见手册。
+
+___
 
 <p float="left">
   <img src="/images/zlequalizer2/link.svg" width="20pt"/>
 </p>
 
-- Press: link the band with the side-chain band. See more info in [Dynamic Filter](#dynamic-filter).
+- 按下：将此频段与侧链频段关联。更多信息请参见[动态滤波器](#动态滤波器)。
 
 ___
 
-**Side-chain Filter Type**
+**Side-chain Filter Type (侧链滤波器类型)**
 
-Choose the side-chain filter type: `BP (Band Pass)`, `LP (Low Pass)`, and `HP (High Pass)`.
-
-___
-
-**Side-chain Filter Slope**
-
-Choose the side-chain filter slope: `6 dB/oct`, `12 dB/oct`, `24 dB/oct`, `36 dB/oct`, `48 dB/oct`, `72 dB/oct`, and `96 dB/oct`.
+选择侧链滤波器类型：`BP (带通)`、`LP (低通)` 和 `HP (高通)`。
 
 ___
 
-**`FREQ`**
+**Side-chain Filter Slope (侧链滤波器斜率)**
 
-Control the side-chain filter frequency.
-
-___
-
-**`Q`**
-
-Control the side-chain filter quality factor.
+选择侧链滤波器斜率：`6 dB/oct`、`12 dB/oct`、`24 dB/oct`、`36 dB/oct`、`48 dB/oct`、`72 dB/oct` 和 `96 dB/oct`。
 
 ___
 
-## Output Setting Panel
+**`FREQ` (频率)**
+
+控制侧链滤波器频率。
 
 ___
 
-**`GAIN`**
+**`Q` (Q 值)**
 
-Control the additional output gain.
+控制侧链滤波器 Q 值。
 
 ___
 
-**`SCALE`**
+## 输出设置面板
 
-Control the scale of all filters' base & target gain.
+___
+
+**`GAIN` (增益)**
+
+控制额外的输出增益。
+
+___
+
+**`SCALE` (缩放)**
+
+控制所有滤波器基础增益和目标增益的缩放比例。
 
 ___
 
@@ -275,10 +341,10 @@ ___
   <img src="/images/zlequalizer2/dline_s.svg" width="20pt"/>
 </p>
 
-- Press: turn on Static Gain Compensation
-- Release: turn off Static Gain Compensation
+- 按下：开启静态增益补偿 (SGC)
+- 释放：关闭静态增益补偿 (SGC)
 
-> SGC estimates the amount of compensation from the filters’ parameters. SGC is **inaccurate**. However, it **will NOT affect the dynamic of the main-chain signal**.
+> SGC 根据滤波器参数估算补偿量。SGC 是**不精确的**。但是，它**不会影响主链信号的动态**。
 
 ___
 
@@ -286,8 +352,8 @@ ___
   <img src="/images/zlequalizer2/dline_l.svg" width="20pt"/>
 </p>
 
-- Press: start to measure the integrated loudness of the input signal and the output signal
-- Release: turn AGC off and update the `Output Gain` to the difference between the two loudness values
+- 按下：开始测量输入信号和输出信号的整体响度
+- 释放：关闭 AGC，并更新输出增益为两者响度差值
 
 ___
 
@@ -295,12 +361,12 @@ ___
   <img src="/images/zlequalizer2/dline_a.svg" width="20pt"/>
 </p>
 
-- Press: turn on Auto Gain Compensation
-- Release: turn off Auto Gain Compensation
+- 按下：开启自动增益补偿 (AGC)
+- 释放：关闭自动增益补偿 (AGC)
 
-> AGC calculates the difference between the loudness of the main-chain signal before/after filters and applies the corresponding gain. Therefore, **AGC will affect the dynamic of the main-chain signal**.
-> 
-> When AGC is on, the output main-chain signal will pass through a hard clipper at 0 dB.
+> AGC 计算滤波器前后主链信号的响度差异，并应用相应的增益。因此，**AGC 会影响主链信号的动态**。
+>
+> 当 AGC 开启时，输出的主链信号将通过一个 0 dB 的硬削波器 (hard clipper)。
 
 ___
 
@@ -308,37 +374,39 @@ ___
   <img src="/images/zlequalizer2/phase.svg" width="20pt"/>
 </p>
 
-- Press: flip the phase of the output signal
+- 按下：翻转输出信号的相位
 
 ___
 
-**`Lookahead`**
+**`Lookahead` (前瞻)**
 
-Control the lookahead of the side-chain signal.
+控制侧链信号的前瞻时间。
 
-> **Warning:** **Do not automate** `Lookahead`.
+> **警告：** **请勿自动化** `Lookahead` 参数。
 
-## Analyzer Setting Panel
-
-___
-
-**`Pre/Post/Side`**
-
-- Press: turn on the Pre/Post/Side analyzer
-- Release: turn off the Pre/Post/Side analyzer
+## 分析仪设置面板
 
 ___
 
-**Decay Speed**
+**`Pre/Post/Side` (前/后/侧链)**
+
+- 按下：开启输入/输出/侧链信号频谱分析仪
+- 释放：关闭输入/输出/侧链信号频谱分析仪
 
 ___
 
-**Slope**
+**Decay Speed (衰减速度)**
 
-- affects the spectrum display (not the actual signal)
-- `0 dB/oct`: no tilting, white noise displays as a horizon line
-- `3 dB/oct`: pink noise displays as a horizon line
-- `4.5 dB/oct`: default value, which represents perceived loudness better
+选择频谱分析仪的衰减速度。
+
+___
+
+**Slope (斜率)**
+
+- 影响频谱显示（不影响实际信号）
+- `0 dB/oct`：不倾斜，白噪声显示为一条水平线
+- `3 dB/oct`：粉红噪声显示为一条水平线
+- `4.5 dB/oct`：默认值，能更好地代表感知响度
 
 ---
 
@@ -346,7 +414,7 @@ ___
   <img src="/images/zlequalizer2/freeze.svg" width="20pt"/>
 </p>
 
-- Press: turn on the FFT freezing feature. When you hover the mouse over the analyzer for 2 seconds, the Post/Side analyzer will be frozen until you move the mouse.
+- 按下：开启冻结功能。将鼠标悬停在分析仪上 2 秒钟，输出/侧链分析仪将被冻结，直到您移开鼠标。
 
 ___
 
@@ -354,226 +422,316 @@ ___
   <img src="/images/zlequalizer2/collision.svg" width="20pt"/>
 </p>
 
-- Press: turn on the collision detection.
+- 按下：开启碰撞检测。
 
 ___
 
-**`Strength`**
+**`Strength` (强度)**
 
-Control the collision detection strength.
+控制碰撞检测的强度。
 
 ___
 
-## EQ Match Panel
+## 均衡匹配面板
 
-Work in progress.
+>  **警告**：均衡匹配面板打开后**请勿**变更该插件的采样率，例如改变混音工程采样率或开启该插件的 DAW 超采样。**否则该插件可能会导致 DAW 崩溃**。
 
-## UI Setting Panel
+#### 均衡匹配步骤
 
-The UI setting panel controls analyzer colours, slider operations, etc. Components will be introduced in the order from top to bottom.
+1. 打开均衡匹配面板。它将开始分析源信号和目标信号。
+2. 选择目标信号。源信号必须是主链输入。您可以从侧链输入、一条平坦的线或一个预设中选择目标信号。
+3. 等待差异曲线变得稳定。然后使用 `Shift (偏移)`、`Smooth (平滑度)` 和 `Slope (斜率)` 调整差异曲线。如果需要，您也可以绘制差异曲线。
+4. 开始拟合。拟合过程应在几秒钟内完成。之后，您可以调整用于拟合的频段数量。
 
-#### Color
+#### 均衡匹配分析仪
 
-You can adjust the colour by clicking on the left colour block and change the transparency by dragging the right slider.
+当均衡匹配面板可见时，分析仪会显示三条曲线：
 
-**Text Color**
+- **源曲线**：源信号的平均频谱。
+- **目标曲线**：目标信号的平均频谱。
+- **差异曲线**：源信号和目标信号之间的差异。
 
-**Background Color**
+当启用差异曲线绘制时，您可以：
 
-For better accessibility, please set Text/Background to colours with high contrast.
+- 用鼠标左键拖动画制差异曲线
+- 用鼠标右键拖动重置差异曲线
+- 按住 Shift + 鼠标左键拖动将差异曲线设置为零
+- 用鼠标左键双击重置整条差异曲线
 
-**Shadow Color**
+#### 均衡匹配控制
 
-**Glow Color**
+___
 
-**Pre Color**
+<p float="left">
+  <img src="/images/zlequalizer2/save.svg" width="20pt"/>
+</p>
 
-**Post Color**
+- 点击：将目标曲线保存为预设文件
 
-**Side Color**
+___
 
-**Collision Color**
+<p float="left">
+  <img src="/images/zlequalizer2/draw.svg" width="20pt"/>
+</p>
 
-**Grid Color**
+- 按下：启用差异曲线绘制
 
-**Color Map 1**
+___
 
-- The colour map of the curves of each single filter.
+**Target Signal (目标信号)**
 
-**Color Map 2**
+选择目标信号：
 
-- The colour map of the curves of Stereo/Left/Right/Mid/Side.
+- `Side (侧链)`：让目标曲线成为侧链信号的平均频谱
+- `Flat (平坦)`：将目标曲线设置为一条平坦的线
+- `Preset (预设)`：从预设文件中加载目标曲线
 
-**Import Colors**
+___
 
-- Import colour settings (`.xml` file)
+**Shift (偏移)**
 
-**Export Colors**
+控制差异曲线的垂直偏移。
 
-- Export colour settings (`.xml` file)
+___
 
-#### Control
+**Smooth (平滑度)**
 
-**Wheel Sensitivity**
+控制差异曲线的平滑度。
 
-- Rough: mouse-wheel sensitivity when `Shift` is not pressed
-- Fine: mouse-wheel sensitivity when `Shift` is pressed
-- Reverse: whether to reverse the direction of mouse-wheel when `Shift` is pressed
+- 从 0.0 到 0.5：平滑度增加，差异曲线变得更平滑
+- 从 0.5 到 1.0：平滑度增加，差异曲线按比例缩小
 
-**Drag Sensitivity**
+___
 
-- Rough: mouse-drag sensitivity when `Shift` is not pressed
-- Fine: mouse-drag sensitivity when `Shift` is pressed
+**Slope (斜率)**
 
-**Rotary Slider Style**
+控制差异曲线的（额外）斜率。
 
-- `Circular`: A rotary control that you move by dragging the mouse in a circular motion, like a knob
-- `Horizontal`: A rotary control that you move by dragging the mouse left-to-right
-- `Vertical`: A rotary control that you move by dragging the mouse up-and-down
-- `Horiz + Vert`: A rotary control that you move by dragging the mouse up-and-down or left-to-right
-- Distance: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
+___
 
-**Slider Double Click**
+<p float="left">
+  <img src="/images/zlequalizer2/start.svg" width="20pt"/>
+</p>
 
-- `Return Default`: when you double-click the slider, it returns to the default value; when you double-click the slider with Ctrl/Command, it opens the value editor.
-- `Open Editor`: when you double-click the slider, it opens the value editor; when you double-click the slider with Ctrl/Command, it returns to the default value.
+- 点击：开始拟合过程。
 
-**Import Controls**
+> **警告：** 一旦点击此按钮，**所有**频段将被删除，然后设置为拟合后的参数。
 
-- Import control settings (`.xml` file)
+___
 
-**Export Controls**
+**Number of Bands (频段数量)**
 
-- Export control settings (`.xml` file)
+控制用于拟合的频段数量。您可以在拟合完成后控制此参数。
 
-#### Other
+___
 
-**Refresh Rate**
+## 用户界面设置
 
-In general, 30 Hz is enough for an equalizer plugin.
+用户界面设置面板控制分析仪颜色、滑块操作等。组件将按从上到下的顺序介绍。
 
-For a better analyzer display, set this to 1/n of your monitor refresh rate. For example,
-- If your monitor refresh rate is 120 Hz, set it to 120 Hz, 60 Hz (1/2), or 30 (1/4) Hz. DO NOT set it to 90 Hz.
-- If your monitor refresh rate is 90 Hz, set it to 90 Hz or 30 Hz (1/3). DO NOT set it to 60 Hz.
+#### Color (颜色)
 
+您可以通过点击左侧的色块来调整颜色，并通过拖动右侧的滑块来更改透明度。
 
-**FFT  Setting**
+**Text Color (文本颜色)**
 
-- Tilt: the extra tilting slope of the FFT
-- Speed: the extra decay speed of the FFT
+**Background Color (背景颜色)**
 
-**Curve Thickness**
+为了更好的可访问性，请将文本/背景设置为高对比度的颜色。
 
-Control the thickness of the curve of each band & each stereo mode.
+**Shadow Color (阴影颜色)**
 
-**Tooltip**
+**Glow Color (发光颜色)**
 
-Choose the tooltip language. It will take effect when the plugin window is reopened.
+**Pre Color (输入颜色)**
 
-**Font**
+**Post Color (输出颜色)**
 
-Choose the font size mode.
+**Side Color (侧链颜色)**
 
-- `Scale`: the font size scales with the window size. Control the relative ratio.
-- `Static`: the font size is fixed. Control the actual font size.
+**Collision Color (碰撞颜色)**
 
-## UI Controls
+**Grid Color (网格颜色)**
 
-Generally, you can enable fine-adjustment with `Shift` and enable special adjustment with `Ctrl/Command`. If the direction of the mouse wheel is reversed when `Shift` is pressed, you can reverse it again (in the UI Setting Panel) to put it back to normal.
+**Color Map 1 (色图 1)**
 
-**Sliders**
+- 每个单独滤波器曲线的色图。
 
-- You can enable fine-adjustment with `Shift` when using the mouse to drag / the mouse wheel to adjust sliders.
-- You can use the left/right mouse button to control the first/second value when there are two values on the slider.
+**Color Map 2 (色图 2)**
 
-**Filter Buttons**
+- 立体声/左声道/右声道/中置/侧边曲线的色图。
 
-- You can drag a button to change the frequency/gain value.
-- You can use the mouse wheel to change the Q value.
-- You can enable fine-adjustment with `Shift` when using the mouse to drag a button.
-- You can drag with the left mouse button + `Ctrl/Command` down while fixing the frequency.
-- You can drag with the right mouse button + `Ctrl/Command` down while fixing the frequency.
-- You can double-click the button to enter/exit the solo status.
-- You can double-click with `Ctrl/Command` to turn on/off the dynamic behavior.
+**Import Colors (导入颜色)**
 
-## Filter Structure
+- 导入颜色设置（`.xml` 文件）
 
-#### Minimum Phase
+**Export Colors (导出颜色)**
 
-This is the **standard, classic digital EQ sound**. It's the most common filter type.
-* **Best For:** General EQ tasks.
-* **Pros:** Gentle 6 dB and 12 dB/oct slopes cause very little phase shift, making it safe to blend with your original signal (low risk of cancellation).
-* **Cons:** Aggressive automation of frequency or gain can sometimes cause audible clicks or instability.
-#### State Variable
+- 导出颜色设置（`.xml` 文件）
 
-This is the filter type often used in **synth filters and crossovers**.
-* **Best For:** Creative effects and heavy automation.
-* **Pros:** Extremely stable, even with rapid, complex automation.
-* **Cons:** Causes a significant phase shift. **Avoid mixing this signal with the original** (or other correlated signals) as it will likely cause phase cancellation.
+#### Control (控制)
 
-#### Parallel
+**Wheel Sensitivity (滚轮灵敏度)**
 
-This mode changes how filters work together. **Shelf** (<= 12 dB/oct) and **Peak** (<= 24 dB/oct) filters are processed in parallel.
-* **Best For:** Efficient dynamic EQ processing & Natural sounding.
-* **Pros:** Offers a different character and is more CPU-efficient for dynamic tasks.
-* **Cons:** The parallel processing means the final EQ curve **will look different** from the curves shown on the display.
+- Rough (粗调): 未按下 `Shift` 时的鼠标滚轮灵敏度
+- Fine (微调): 按下 `Shift` 时的鼠标滚轮灵S敏度
+- Reverse (反转): 按下 `Shift` 时是否反转鼠标滚轮的方向
 
-#### Matched Phase
+**Drag Sensitivity (拖动灵敏度)**
 
-This mode adds a special process to the `Minimum Phase` filters to **mimic analog prototype** magnitude & phase response.
-* **Best For:** Getting an **analog** phase and magnitude response.
-* **Latency:** Adds about 11 ms (up to 22 ms for L/R & M/S processing).
-* **Cons**: Dynamic filters stay in `Minimum Phase`.
+- Rough (粗调): 未按下 `Shift` 时的鼠标拖动灵敏度
+- Fine (微调): 按下 `Shift` 时的鼠标拖动灵敏度
 
-> **Warning:** **Do not automate** filter parameters in this mode.
+**Rotary Slider Style (旋转滑块样式)**
 
-#### Mixed Phase
+- `Circular (圆形)`: 通过环形拖动鼠标来移动的旋转控件，像旋钮一样
+- `Horizontal (水平)`: 通过左右拖动鼠标来移动的旋转控件
+- `Vertical (垂直)`: 通过上下拖动鼠标来移动的旋转控件
+- `Horiz + Vert (水平 + 垂直)`: 通过上下或左右拖动鼠标来移动的旋转控件
+- Distance (距离): 鼠标拖动滑块经过其全部范围所需的相对距离。不适用于圆形样式。
 
-This mode adds a special process to the `Minimum Phase` filters to **mimic analog prototype** magnitude response and clean up high-end phase.
-* **Best For:** Getting an **analog** magnitude response without the high-end phase shift (above 5 kHz).
-* **Latency:** Adds about 21 ms (up to 43 ms for L/R & M/S processing).
-* **Cons**: Dynamic filters stay in `Minimum Phase`.
+**Slider Double Click (滑块双击)**
 
-> **Warning:** **Do not automate** filter parameters in this mode.
+- `Return Default (返回默认值)`: 双击滑块时，返回默认值；按住 Ctrl/Command 双击滑块时，打开数值编辑器。
+- `Open Editor (打开编辑器)`: 双击滑块时，打开数值编辑器；按住 Ctrl/Command 双击滑块时，返回默认值。
 
-#### Zero Phase
+**Import Controls (导入控制)**
 
-This mode provides **almost zero phase response**.
-* **Best For:** Surgical mastering tasks where preserving phase relationships is critical.
-* **Pros:** No phase distortion at all for mid/high frequencies (above 200 Hz).
-* **Cons:** Adds a **very high latency** of about 171 ms (up to 342 ms for L/R & M/S processing). May cause audible pre-ringing. Dynamic filters stay in `Minimum Phase`.
+- 导入控制设置（`.xml` 文件）
 
-> **Warning:** **Do not automate** filter parameters in this mode.
+**Export Controls (导出控制)**
 
+- 导出控制设置（`.xml` 文件）
 
-## Dynamic Filter
+#### Other (其它)
 
-#### How the Dynamic Filter Works
+**Refresh Rate (刷新率)**
 
-A dynamic filter automatically turns an EQ band up or down for you, but only when specific frequencies get too loud or too quiet.
+通常，30 Hz 对于均衡器插件来说足够了。
 
-#### Core Dynamic Behavior
+为了获得更好的分析仪显示效果，请将其设置为显示器刷新率的 1/n。例如：
+- 如果您的显示器刷新率是 120 Hz，请将其设置为 120 Hz、60 Hz (1/2) 或 30 (1/4) Hz。不要设置为 90 Hz。
+- 如果您的显示器刷新率是 90 Hz，请将其设置为 90 Hz 或 30 Hz (1/3)。不要设置为 60 Hz。
 
-When dynamic mode is enabled, the filter listens to a specific frequency range, i.e., the side-chain signal filtered by the side-chain filter. The settings tell it when to react and how fast.
+**FFT Setting (FFT 设置)**
 
-* `Threshold`: This is the trigger level.
-    * When the signal's volume crosses above `Threshold`, the filter starts to change to the **target gain**. The reaction speed is controlled by `Attack`.
-    * When the signal's volume falls below `Threshold`, the filter starts to change to the **base gain**. The reset speed is controlled by `Release`.
-* `Knee`: This controls how smoothly the filter reacts as the signal approaches the `Threshold`.
-    * A hard knee (low value) is like a switch: the filter stays at **base gain** until the signal exactly crosses the `Threshold`.
-    * A soft knee (high value) is like a dimmer: the filter *gently* moves to **target gain** as the signal gets close to the `Threshold`, resulting in a more gradual and transparent effect.
+- Tilt (倾斜): FFT 的额外倾斜斜率
+- Speed (速度): FFT 的额外衰减速度
 
-Please do keep in mind that the definition of `Threshold` and `Knee` is different from traditional compressors.
+**Curve Thickness (曲线粗细)**
 
-#### Dynamic Learning
+控制每个频段和每种立体声模式的曲线粗细。
 
-Setting the `Threshold` and `Knee` perfectly can be tricky, especially if the track's volume changes.
+**Tooltip (工具提示)**
 
-When you enable **Dynamic Learning**, the plugin does the work for you. It **continuously analyzes the incoming signal** and automatically sets the `Threshold` and `Knee` in real-time. This keeps the dynamic processing adapted to the signal.
+选择工具提示语言。将在插件窗口重新打开时生效。
 
-#### Dynamic Relative
+**UI Scaling (界面缩放)**
 
-This mode completely changes what the filter listens to.
+选择字体大小模式。
 
-* **Normal Mode** is triggered by the absolute volume: Is the filtered side-chain loud in absolute terms?
-* **Relative Mode** is triggered by the relative volume: Is the filtered side-chain louder than the whole side-chain?
+- `Scale (缩放)`: 字体大小随窗口大小缩放。控制相对比例。
+- `Static (静态)`: 字体大小固定。控制实际字体大小。
+
+## 界面控件
+
+通常，您可以使用 `Shift` 键启用微调，使用 `Ctrl/Command` 键启用特殊调整。如果按下 `Shift` 键时鼠标滚轮的方向相反，您可以在（用户界面设置面板中）再次反转它以使其恢复正常。
+
+**Sliders (滑块)**
+
+- 当使用鼠标拖动 / 鼠标滚轮调整滑块时，您可以使用 `Shift` 键启用微调。
+- 当滑块上有两个值时，您可以使用鼠标左/右键来控制第一个/第二个值。
+
+**Filter Buttons (滤波器按钮)**
+
+- 您可以拖动按钮来更改频率/增益值。
+- 您可以使用鼠标滚轮来更改 Q 值。
+- 当拖动按钮时，您可以使用 `Shift` 键启用微调。
+- 您可以在按下 `Ctrl/Command` 的同时用鼠标左键拖动，以固定频率。
+- 您可以在按下 `Ctrl/Command` 的同时用鼠标右键拖动，以固定频率。
+- 您可以双击按钮进入/退出监听 (solo) 状态。
+- 您可以按住 `Ctrl/Command` 双击以打开/关闭动态行为。
+
+## 滤波器结构
+
+#### 最小相位 (Minimum Phase)
+
+这是**标准、经典的数字 EQ 声音**。它是最常见的滤波器类型。
+
+- 最适用于：常规 EQ 任务。
+- 优点：平缓的 6 dB 和 12 dB/oct 斜率只会引起非常小的相位偏移，使其可以安全地与原始信号混合（相位抵消的风险低）。
+- 缺点：对频率或增益进行激进的自动化有时可能会导致可听见的咔哒声或不稳定。
+
+#### 状态变量 (State Variable)
+
+这种滤波器类型常用于**合成器滤波器和分频器**。
+
+- 最适用于：创意效果和高强度自动化。
+- 优点：即使在快速、复杂的自动化下也极其稳定。
+- 缺点：会导致较大的相位偏移。**避免将此信号与原始信号**（或其他相关信号）混合，因为它很可能会导致相位抵消。
+
+#### 并行 (Parallel)
+
+此模式会改变滤波器协同工作的方式。**搁架 (Shelf)** (<= 12 dB/oct) 和**峰值 (Peak)** (<= 24 dB/oct) 滤波器被并行处理。
+- 最适用于：高效的动态 EQ 处理和自然的声音。
+- 优点：提供不同的特性，并且在处理动态任务时 CPU 效率更高。
+- 缺点：并行处理意味着最终的 EQ 曲线**看起来会与**显示器上显示的曲线不同。
+
+#### 匹配相位 (Matched Phase)
+
+此模式在 `最小相位` 滤波器的基础上增加了一个特殊处理，以**模拟模拟原型的幅度与相位响应**。
+- 最适用于：获得**模拟**的相位和幅度响应。
+- 延迟：增加约 11 毫秒（对于 L/R 和 M/S 处理，最多 22 毫秒）的延迟。
+- 缺点：动态滤波器保持在 `最小相位` 模式。
+
+> **警告：** **请勿在此模式下自动化**滤波器参数。
+
+#### 混合相位 (Mixed Phase)
+
+此模式在 `最小相位` 滤波器的基础上增加了一个特殊处理，以**模拟模拟原型的幅度响应**并清理高频相位。
+- 最适用于：获得**模拟**的幅度响应，同时消除高频（5 kHz 以上）的相位偏移。
+- 延迟：增加约 21 毫秒（对于 L/R 和 M/S 处理，最多 43 毫秒）的延迟。
+- 缺点：动态滤波器保持在 `最小相位` 模式。
+
+> **警告：** **请勿在此模式下自动化**滤波器参数。
+
+#### 零相位 (Zero Phase)
+
+此模式提供**几乎为零的相位响应**。
+- 最适用于：需要严格保持相位关系的精细母带处理任务。
+- 优点：对于中/高频（200 Hz 以上）完全没有相位失真。
+- 缺点：增加**非常高的延迟**，约 171 毫秒（对于 L/R 和 M/S 处理，最多 342 毫秒）。可能会导致可听见的前振铃。动态滤波器保持在 `最小相位` 模式。
+
+> **警告：** **请勿在此模式下自动化**滤波器参数。
+
+## 动态滤波器
+
+#### 动态滤波器工作原理
+
+动态滤波器会自动为您调高或调低某个 EQ 频段，但仅当特定频率变得太响或太安静时才会触发。
+
+#### 核心动态行为
+
+当开启动态模式时，滤波器会监听一个特定的频率范围，即通过侧链滤波器过滤后的侧链信号。相关设置告诉它何时反应以及反应多快。
+
+* `Threshold (阈值)`：这是触发电平。
+    * 当信号音量超过 `阈值` 时，滤波器开始向**目标增益**变化。反应速度由 `Attack (攻击时间)` 控制。
+    * 当信号音量低于 `阈值` 时，滤波器开始向**基础增益**变化。重置速度由 `Release (释放时间)` 控制。
+* `Knee (拐点)`：这控制了当信号接近 `阈值` 时滤波器的反应平滑度。
+    * 硬拐点（低数值）就像一个开关：滤波器保持在**基础增益**，直到信号精确地超过 `阈值`。
+    * 软拐点（高数值）就像一个调光器：当信号接近 `阈值` 时，滤波器*平缓地*移动到**目标增益**，从而产生更渐进、更透明的效果。
+
+请注意，`阈值` 和 `拐点` 的定义与传统压缩器不同。
+
+#### 动态学习
+
+完美地设置 `阈值` 和 `拐点` 可能很棘手，特别是当轨道的音量发生变化时。
+
+当您启用**动态学习**时，插件会为您完成这项工作。它**持续分析输入信号**，并实时自动设置 `阈值` 和 `拐点`。这使动态处理能持续适应信号。
+
+#### 动态相对
+
+此模式完全改变了滤波器的监听内容。
+
+* **普通模式**由绝对音量触发：即“滤波后的侧链”的绝对音量大吗？
+* **相对模式**由相对音量触发：即“滤波后的侧链”是否比“整个侧链”更响？

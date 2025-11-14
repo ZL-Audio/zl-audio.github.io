@@ -31,3 +31,40 @@ AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
 ## Changelog
+
+### 1.0.1
+
+Will be released this week. EQ Match and AAX are back :)
+
+Compared with ZL Equalizer 0.6.2:
+
+New Features
+
+- add more side-chain filters controls (filter type & filer slope)
+- add right-click panel
+- add more controls to the floating window
+- add more shortcuts
+- add UI scaling control
+- add EQ Match drawing control
+
+Bug fixes
+
+- fix wrong octave notes
+- fix incorrect solo display
+- fix incorrect parallel processing in mid/side
+
+Improvements
+
+- improve `Matched Phase` and `Mixed Phase` performance
+- improve general DSP performance
+- improve dynamic processing
+- improve FFT analyzer display
+- improve EQ Match fitting speed
+
+Other Changes
+
+- increase frequency maximum value when the sample rate > 44.1 kHz
+- remove `RMS` & `Smooth` from dynamic parameters
+- remove `Zero Latency` as dynamic won't require extra 1ms latency
+- remove `High Quality` as dynamic always stays in high quality
+- remove EQ Match `Weight` & fitting algorithm control

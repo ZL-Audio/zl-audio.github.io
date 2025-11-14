@@ -111,6 +111,40 @@ The floating window is attached to the filter button of the selected band. You c
 | <img src="/images/zlequalizer2/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                           |                  |
 | <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                           |                  |
 
+#### Right-click Panel
+
+___
+
+**Invert Gain**
+
+- Click: invert gain of the selected band
+
+___
+
+**Split L/R**
+
+- Click: set selected band to `Left` and add a band with same parameters but in `Right`
+
+___
+
+**Split M/S**
+
+- Click: set selected band to `Mid` and add a band with same parameters but in `Side`
+
+___
+
+**Copy**
+
+- Click: copy all selected bands' filter parameters to the clipboard
+
+___
+
+**Paste**
+
+- Click: get filter parameters from the clipboard and create those bands
+
+___
+
 #### Decibel Scale
 
 You can choose the decibel scale of magnitude response curves (through a combobox at the top-right) and the decibel scale of the spectrum analyzer (through a combobox at the bottom-right).
@@ -176,7 +210,6 @@ ___
 </p>
 
 - Press: turn on the dynamic behavior of the band
-- Release: turn off the dynamic behavior of the band
 
 ___
 
@@ -398,21 +431,110 @@ ___
 
 ## EQ Match Panel
 
-Work in progress.
+> **Warning**: Once the EQ Match panel is open, **DO NOT** change the plugin's sample rate (e.g., by changing the project sample rate or enabling DAW oversampling for this plugin). **Otherwise, this plugin may crash the DAW**.
+
+#### EQ Match Steps
+
+1. Open the EQ Match Panel. It will analyze the source signal and the target signal.
+2. Choose the target signal. The source signal must be the main-chain input. You can choose the target signal from the side-chain input, a flat line, or a preset.
+3. Wait till the difference curve becomes stable. Then adjust the difference curve with `Shift`, `Smooth`, and `Slope`. You can also draw the difference curve if you want.
+4. Start the fitting. The fitting process should finish in several seconds. After that, you can adjust the number of bands.
+
+#### EQ Match Analyzer
+
+When the EQ Match Panel is visible, the analyzer displays three curves:
+
+- **Source Curve**: the average spectrum of the source signal.
+- **Target Curve**: the average spectrum of the target signal.
+- **Difference Curve**: the difference between the source signal and the target signal.
+
+When the difference curve drawing is enabled, you can:
+
+- draw the difference curve with the left mouse button dragging
+- reset the difference curve with the right mouse button dragging
+- set the difference curve to zero with Shift + the left mouse button dragging
+- reset the whole difference curve with the left mouse button double-clicking
+
+#### EQ Match Control
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer2/save.svg" width="20pt"/>
+</p>
+
+- Click: save the target curve to a preset file
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer2/draw.svg" width="20pt"/>
+</p>
+
+- Press: enable the difference curve drawing
+
+___
+
+**Target Signal**
+
+Choose the target signal:
+
+- `Side`: let the target curve be the average spectrum of the side-chain signal
+- `Flat`: set the target curve as a flat line
+- `Preset`: load the target curve from a preset file
+
+___
+
+**Shift**
+
+Control the vertical shift of the difference curve.
+
+___
+
+**Smooth**
+
+Control the smoothness of the difference curve.
+
+- from 0.0 to 0.5: the difference curve becomes smoother as the smoothness increases
+- from 0.5 to 1.0: the difference curve scales down as the smoothness increases
+
+___
+
+**Slope**
+
+Control the (additional) slope of the difference curve.
+
+___
+
+<p float="left">
+  <img src="/images/zlequalizer2/start.svg" width="20pt"/>
+</p>
+
+- Click: start the fitting process.
+
+> **Warning:** Once you click this button, **ALL** bands will be deleted and then be set to fitted parameters.
+
+___
+
+**Number of Bands**
+
+Control the number of bands for fitting. You can control it after the fitting is completed.
+
+___
 
 ## UI Setting Panel
 
-The UI setting panel controls analyzer colours, slider operations, etc. Components will be introduced in the order from top to bottom.
+The UI setting panel controls analyzer colors, slider operations, etc. Components will be introduced in the order from top to bottom.
 
 #### Color
 
-You can adjust the colour by clicking on the left colour block and change the transparency by dragging the right slider.
+You can adjust the color by clicking on the left color block and change the transparency by dragging the right slider.
 
 **Text Color**
 
 **Background Color**
 
-For better accessibility, please set Text/Background to colours with high contrast.
+For better accessibility, please set Text/Background to colors with high contrast.
 
 **Shadow Color**
 
@@ -430,19 +552,19 @@ For better accessibility, please set Text/Background to colours with high contra
 
 **Color Map 1**
 
-- The colour map of the curves of each single filter.
+- The color map of the curves of each single filter.
 
 **Color Map 2**
 
-- The colour map of the curves of Stereo/Left/Right/Mid/Side.
+- The color map of the curves of Stereo/Left/Right/Mid/Side.
 
 **Import Colors**
 
-- Import colour settings (`.xml` file)
+- Import color settings (`.xml` file)
 
 **Export Colors**
 
-- Export colour settings (`.xml` file)
+- Export color settings (`.xml` file)
 
 #### Control
 
@@ -502,7 +624,7 @@ Control the thickness of the curve of each band & each stereo mode.
 
 Choose the tooltip language. It will take effect when the plugin window is reopened.
 
-**Font**
+**UI Scaling**
 
 Choose the font size mode.
 
@@ -533,12 +655,14 @@ Generally, you can enable fine-adjustment with `Shift` and enable special adjust
 #### Minimum Phase
 
 This is the **standard, classic digital EQ sound**. It's the most common filter type.
+
 * **Best For:** General EQ tasks.
 * **Pros:** Gentle 6 dB and 12 dB/oct slopes cause very little phase shift, making it safe to blend with your original signal (low risk of cancellation).
 * **Cons:** Aggressive automation of frequency or gain can sometimes cause audible clicks or instability.
 #### State Variable
 
 This is the filter type often used in **synth filters and crossovers**.
+
 * **Best For:** Creative effects and heavy automation.
 * **Pros:** Extremely stable, even with rapid, complex automation.
 * **Cons:** Causes a significant phase shift. **Avoid mixing this signal with the original** (or other correlated signals) as it will likely cause phase cancellation.
@@ -546,6 +670,7 @@ This is the filter type often used in **synth filters and crossovers**.
 #### Parallel
 
 This mode changes how filters work together. **Shelf** (<= 12 dB/oct) and **Peak** (<= 24 dB/oct) filters are processed in parallel.
+
 * **Best For:** Efficient dynamic EQ processing & Natural sounding.
 * **Pros:** Offers a different character and is more CPU-efficient for dynamic tasks.
 * **Cons:** The parallel processing means the final EQ curve **will look different** from the curves shown on the display.
@@ -553,6 +678,7 @@ This mode changes how filters work together. **Shelf** (<= 12 dB/oct) and **Peak
 #### Matched Phase
 
 This mode adds a special process to the `Minimum Phase` filters to **mimic analog prototype** magnitude & phase response.
+
 * **Best For:** Getting an **analog** phase and magnitude response.
 * **Latency:** Adds about 11 ms (up to 22 ms for L/R & M/S processing).
 * **Cons**: Dynamic filters stay in `Minimum Phase`.
@@ -562,6 +688,7 @@ This mode adds a special process to the `Minimum Phase` filters to **mimic analo
 #### Mixed Phase
 
 This mode adds a special process to the `Minimum Phase` filters to **mimic analog prototype** magnitude response and clean up high-end phase.
+
 * **Best For:** Getting an **analog** magnitude response without the high-end phase shift (above 5 kHz).
 * **Latency:** Adds about 21 ms (up to 43 ms for L/R & M/S processing).
 * **Cons**: Dynamic filters stay in `Minimum Phase`.
@@ -571,6 +698,7 @@ This mode adds a special process to the `Minimum Phase` filters to **mimic analo
 #### Zero Phase
 
 This mode provides **almost zero phase response**.
+
 * **Best For:** Surgical mastering tasks where preserving phase relationships is critical.
 * **Pros:** No phase distortion at all for mid/high frequencies (above 200 Hz).
 * **Cons:** Adds a **very high latency** of about 171 ms (up to 342 ms for L/R & M/S processing). May cause audible pre-ringing. Dynamic filters stay in `Minimum Phase`.
