@@ -263,25 +263,25 @@ ___
 
 ___
 
-`Threshold`
+**`Threshold`**
 
 See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
-`Knee`
+**`Knee`**
 
 See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
-`Attack`
+**`Attack`**
 
 See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
-`Release`
+**`Release`**
 
 See more info in [Dynamic Filter](#dynamic-filter).
 
@@ -485,13 +485,13 @@ Choose the target signal:
 
 ___
 
-**Shift**
+**`Shif`**
 
 Control the vertical shift of the difference curve.
 
 ___
 
-**Smooth**
+**`Smooth`**
 
 Control the smoothness of the difference curve.
 
@@ -500,7 +500,7 @@ Control the smoothness of the difference curve.
 
 ___
 
-**Slope**
+**`Slope`**
 
 Control the (additional) slope of the difference curve.
 
@@ -585,7 +585,7 @@ For better accessibility, please set Text/Background to colors with high contras
 - `Horizontal`: A rotary control that you move by dragging the mouse left-to-right
 - `Vertical`: A rotary control that you move by dragging the mouse up-and-down
 - `Horiz + Vert`: A rotary control that you move by dragging the mouse up-and-down or left-to-right
-- Distance: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
+- `Distance`: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
 
 **Slider Double Click**
 
@@ -613,8 +613,8 @@ For a better analyzer display, set this to 1/n of your monitor refresh rate. For
 
 **FFT  Setting**
 
-- Tilt: the extra tilting slope of the FFT
-- Speed: the extra decay speed of the FFT
+- `Tilt`: the extra tilting slope of the FFT
+- `Speed`: the extra decay speed of the FFT
 
 **Curve Thickness**
 

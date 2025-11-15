@@ -94,52 +94,52 @@ ___
 
 滤波器按钮附着在滤波器响应曲线上。您可以拖动它们来更改滤波器参数。更多信息请参见[界面控件](#界面控件)。
 
-当您在频谱上双击（无论是否按下 `Ctrl/Command`），将在相应位置添加一个频段（无论是否开启动态行为），并带有一个滤波器按钮。
+当您在频谱上双击（并按下 `Ctrl/Command`），将在相应位置添加一个频段（并开启动态行为），并带有一个滤波器按钮。
 
 #### 浮动窗口
 
 浮动窗口附着在所选频段的滤波器按钮上。您可以通过此窗口控制一些滤波器参数。
 
-| 图标 | 滤波器类型 | 图标 | 立体声位置 |
-| :--- | :--- | :--- | :--- |
-| <img src="/images/zlequalizer2/peak.svg" width="20pt"/> | `峰值 (Peak)` | <img src="/images/zlequalizer2/stereo.svg" width="20pt"/> | `立体声 (Stereo)` |
-| <img src="/images/zlequalizer2/lowshelf.svg" width="20pt"/> | `低搁架 (Low Shelf)` | <img src="/images/zlequalizer2/left.svg" width="20pt"/> | `左声道 (Left)` |
-| <img src="/images/zlequalizer2/lowpass.svg" width="20pt"/> | `低通 (Low Pass)` | <img src="/images/zlequalizer2/right.svg" width="20pt"/> | `右声道 (Right)` |
-| <img src="/images/zlequalizer2/highshelf.svg" width="20pt"/> | `高搁架 (High Shelf)` | <img src="/images/zlequalizer2/mid.svg" width="20pt"/> | `中置 (Mid)` |
-| <img src="/images/zlequalizer2/highpass.svg" width="20pt"/> | `高通 (High Pass)` | <img src="/images/zlequalizer2/side.svg" width="20pt"/> | `侧边 (Side)` |
-| <img src="/images/zlequalizer2/notch.svg" width="20pt"/> | `带阻 (Notch)` | | |
-| <img src="/images/zlequalizer2/bandpass.svg" width="20pt"/> | `带通 (Band Pass)` | | |
-| <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `倾斜搁架 (Tilt Shelf)` | | |
+| 图标                                                           | 滤波器类型               | 图标                                                        | 立体声位置          |
+| :----------------------------------------------------------- | :------------------ | :-------------------------------------------------------- | :------------- |
+| <img src="/images/zlequalizer2/peak.svg" width="20pt"/>      | `峰值 (Peak)`         | <img src="/images/zlequalizer2/stereo.svg" width="20pt"/> | `立体声 (Stereo)` |
+| <img src="/images/zlequalizer2/lowshelf.svg" width="20pt"/>  | `低搁架 (Low Shelf)`   | <img src="/images/zlequalizer2/left.svg" width="20pt"/>   | `左声道 (Left)`   |
+| <img src="/images/zlequalizer2/lowpass.svg" width="20pt"/>   | `低通 (Low Pass)`     | <img src="/images/zlequalizer2/right.svg" width="20pt"/>  | `右声道 (Right)`  |
+| <img src="/images/zlequalizer2/highshelf.svg" width="20pt"/> | `高搁架 (High Shelf)`  | <img src="/images/zlequalizer2/mid.svg" width="20pt"/>    | `中声道 (Mid)`    |
+| <img src="/images/zlequalizer2/highpass.svg" width="20pt"/>  | `高通 (High Pass)`    | <img src="/images/zlequalizer2/side.svg" width="20pt"/>   | `侧声道 (Side)`   |
+| <img src="/images/zlequalizer2/notch.svg" width="20pt"/>     | `带阻 (Notch)`        |                                                           |                |
+| <img src="/images/zlequalizer2/bandpass.svg" width="20pt"/>  | `带通 (Band Pass)`    |                                                           |                |
+| <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `倾斜搁架 (Tilt Shelf)` |                                                           |                |
 
 #### 右键菜单
 
 ___
 
-**Invert Gain (反转增益)**
+**Invert Gain**
 
 - 点击：反转所选频段的增益
 
 ___
 
-**Split L/R (分离 L/R)**
+**Split L/R**
 
 - 点击：将所选频段设置为 `Left`，并添加一个参数相同但模式为 `Right` 的频段
 
 ___
 
-**Split M/S (分离 M/S)**
+**Split M/S**
 
 - 点击：将所选频段设置为 `Mid`，并添加一个参数相同但模式为 `Side` 的频段
 
 ___
 
-**Copy (复制)**
+**Copy**
 
 - 点击：将所有选定频段的滤波器参数复制到剪贴板
 
 ___
 
-**Paste (粘贴)**
+**Paste**
 
 - 点击：从剪贴板获取滤波器参数并创建这些频段
 
@@ -183,7 +183,7 @@ ___
 
 **Stereo Modes (立体声模式)**
 
-选择立体声模式：`立体声 (Stereo)`、`左声道 (Left)`、`右声道 (Right)`、`中置 (Mid)` 和 `侧边 (Side)`。
+选择立体声模式：`立体声 (Stereo)`、`左声道 (Left)`、`右声道 (Right)`、`中声道 (Mid)` 和 `侧声道 (Side)`。
 
 ___
 
@@ -240,9 +240,8 @@ ___
   <img src="/images/zlequalizer2/circle_a.svg" width="20pt"/>
 </p>
 
-- 按下：开启动态学习行为。
+- 按下：开启动态学习行为。更多信息请参见[动态滤波器](#动态滤波器)。
 - 释放：关闭动态学习行为，并设置阈值 (Threshold) 与拐点 (Knee)。
-- 详情参见手册。
 
 ___
 
@@ -251,8 +250,7 @@ ___
   <img src="/images/zlequalizer2/circle_r.svg" width="20pt"/>
 </p>
 
-- 按下：开启动态相对行为。
-- 详情参见手册。
+- 按下：开启动态相对行为。更多信息请参见[动态滤波器](#动态滤波器)。
 
 ___
 
@@ -265,27 +263,27 @@ ___
 
 ___
 
-`Threshold` (阈值)
+**`Threshold` (阈值)**
 
-控制动态行为的阈值。详情参见手册。
-
-___
-
-`Knee` (拐点)
-
-控制动态行为的拐点宽度。详情参见手册。
+控制动态行为的阈值。更多信息请参见[动态滤波器](#动态滤波器)。
 
 ___
 
-`Attack` (攻击时间)
+**`Knee` (拐点)**
 
-控制动态行为的攻击时间。详情参见手册。
+控制动态行为的拐点宽度。更多信息请参见[动态滤波器](#动态滤波器)。
 
 ___
 
-`Release` (释放时间)
+**`Attack` (触发时间)**
 
-控制动态行为的释放时间。详情参见手册。
+控制动态行为的触发时间。更多信息请参见[动态滤波器](#动态滤波器)。
+
+___
+
+**`Release` (释放时间)**
+
+控制动态行为的释放时间。更多信息请参见[动态滤波器](#动态滤波器)。
 
 ___
 
@@ -488,13 +486,13 @@ ___
 
 ___
 
-**Shift (偏移)**
+**`Shift` (偏移)**
 
 控制差异曲线的垂直偏移。
 
 ___
 
-**Smooth (平滑度)**
+**`Smooth` (平滑度)**
 
 控制差异曲线的平滑度。
 
@@ -503,7 +501,7 @@ ___
 
 ___
 
-**Slope (斜率)**
+**`Slope` (斜率)**
 
 控制差异曲线的（额外）斜率。
 
@@ -559,7 +557,7 @@ ___
 
 **Color Map 2 (色图 2)**
 
-- 立体声/左声道/右声道/中置/侧边曲线的色图。
+- 立体声/左声道/右声道/中声道/侧声道曲线的色图。
 
 **Import Colors (导入颜色)**
 
@@ -588,7 +586,7 @@ ___
 - `Horizontal (水平)`: 通过左右拖动鼠标来移动的旋转控件
 - `Vertical (垂直)`: 通过上下拖动鼠标来移动的旋转控件
 - `Horiz + Vert (水平 + 垂直)`: 通过上下或左右拖动鼠标来移动的旋转控件
-- Distance (距离): 鼠标拖动滑块经过其全部范围所需的相对距离。不适用于圆形样式。
+- `Distance (距离)`: 鼠标拖动滑块经过其全部范围所需的相对距离。不适用于圆形样式。
 
 **Slider Double Click (滑块双击)**
 
@@ -615,8 +613,8 @@ ___
 
 **FFT Setting (FFT 设置)**
 
-- Tilt (倾斜): FFT 的额外倾斜斜率
-- Speed (速度): FFT 的额外衰减速度
+- `Tilt (倾斜)`: FFT 的额外倾斜斜率
+- `Speed (速度)`: FFT 的额外衰减速度
 
 **Curve Thickness (曲线粗细)**
 
