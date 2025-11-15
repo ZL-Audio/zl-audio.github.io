@@ -8,11 +8,16 @@ weight: 3
 
 感谢 [JUCE](https://github.com/juce-framework/JUCE) 框架以及 [JUCE 论坛](https://forum.juce.com/)。
 
-感谢 Dimitrios Giannoulis、Michael Massberg 和 Joshua D for 分享动态范围压缩器算法。
-
 感谢 Martin Vicanek 和 Nigel Redmon 分享滤波器参数计算方法和滤波器级联方法。
 
 感谢所有软件使用者以及提供的意见和建议。
+
+该插件受到了其他均衡插件的启发，例如：
+
+- [FabFilter Pro-Q 3](https://www.fabfilter.com/products/pro-q-3-equalizer-plug-in)
+- [Three-Body Technology Kirchhoff-EQ](https://www.threebodytech.com/en/products/kirchhoffeq)
+- [ToneBoosters Equalizer Pro](https://www.toneboosters.com/tb_equalizer_pro.html)
+- [TDR Nova](https://www.tokyodawn.net/tdr-nova/)
 
 该插件的开发受到了如下软件的帮助：
 
@@ -24,9 +29,9 @@ weight: 3
 
 在反馈前，您需要注册 GitHub 账号。
 
-如果您有一般性的建议或疑问，可以在[讨论区](https://github.com/ZL-Audio/ZLCompressor/discussions)提出。
+如果您有一般性的建议或疑问，可以在[讨论区](https://github.com/ZL-Audio/ZLEqualizer/discussions)提出。
 
-如果您有针对性的错误报告或功能要求，可以在[问题区](https://github.com/ZL-Audio/ZLCompressor/issues)提出。
+如果您有针对性的错误报告或功能要求，可以在[问题区](https://github.com/ZL-Audio/ZLEqualizer/issues)提出。
 
 ## 免责声明
 

@@ -14,9 +14,9 @@ You may download the installer at the [GitHub release page](https://github.com/Z
 
 | Operating System | x86-64<br>Intel Chip<br>AMD Chip (mostly)                                                                                                    | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                       |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**        | [ZL.Equalizer.2-1.0.1-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.1/ZL.Equalizer.2-1.0.1-macOS-x86.dmg)     | [ZL.Equalizer.2-1.0.1-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.1/ZL.Equalizer.2-1.0.1-macOS-arm.dmg)     |
-| **Windows**      | [ZL.Equalizer.2-1.0.1-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.1/ZL.Equalizer.2-1.0.1-Windows-x86.exe) | [ZL.Equalizer.2-1.0.1-Windows-arm.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.1/ZL.Equalizer.2-1.0.1-Windows-arm.exe) |
-| **Linux**        | [ZL.Equalizer.2-1.0.1-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.1/ZL.Equalizer.2-1.0.1-Linux-x86.zip)     | [ZL.Equalizer.2-1.0.1-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.1/ZL.Equalizer.2-1.0.1-Linux-arm.zip)     |
+| **macOS**        | [ZL.Equalizer.2-1.0.2-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.2/ZL.Equalizer.2-1.0.2-macOS-x86.dmg)     | [ZL.Equalizer.2-1.0.2-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.2/ZL.Equalizer.2-1.0.2-macOS-arm.dmg)     |
+| **Windows**      | [ZL.Equalizer.2-1.0.2-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.2/ZL.Equalizer.2-1.0.2-Windows-x86.exe) | [ZL.Equalizer.2-1.0.2-Windows-arm.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.2/ZL.Equalizer.2-1.0.2-Windows-arm.exe) |
+| **Linux**        | [ZL.Equalizer.2-1.0.2-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.2/ZL.Equalizer.2-1.0.2-Linux-x86.zip)     | [ZL.Equalizer.2-1.0.2-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.2/ZL.Equalizer.2-1.0.2-Linux-arm.zip)     |
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
@@ -32,9 +32,13 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
-### 1.0.1
+### 1.0.2
 
-Will be released this week. EQ Match and AAX are back :)
+Bug fixes and Improvements
+
+- improve EQ match stability
+
+### 1.0.1
 
 Compared with ZL Equalizer 0.6.2:
 
