@@ -710,7 +710,7 @@ This mode provides **almost zero phase response**.
 
 #### How the Dynamic Filter Works
 
-A dynamic filter automatically turns an EQ band up or down for you, but only when specific frequencies get too loud or too quiet.
+A dynamic filter automatically turns the gain of a band up or down for you, but only when specific frequencies get too loud or too quiet.
 
 #### Core Dynamic Behavior
 
