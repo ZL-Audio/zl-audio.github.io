@@ -76,7 +76,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 - 当采样率 > 44.1 kHz 时，提高了滤波器频率的最大值
 - 从动态参数中移除了 `RMS` (均方根) 和 `Smooth` (平滑)
-- 移除了 `Zero Latency` (零延迟) 选项，因为动态处理不再需要额外的 1ms 延迟
+- 移除了 `Zero Latency` (零延迟) 选项，因为动态处理不再需要额外的 1 ms 延迟
 - 移除了 `High Quality` (高质量) 选项，因为动态处理现在始终保持高质量
 - 移除了 均衡匹配 的 `Weight` (权重) 和 拟合算法 控制
 - 支持 VST3 参数上下文菜单
