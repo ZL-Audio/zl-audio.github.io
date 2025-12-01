@@ -30,7 +30,26 @@ AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
+## Nightly Release
+
+Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLEqualizer). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLEqualizer/issues).
+
 ## Changelog
+
+### 1.1.0 (upcoming, available in Nightly Release)
+
+BREAKING CHANGES
+
+- fix incorrect stereo dynamic handling
+	- This change will change the previous incorrect stereo dynamic behavior, where the left channel is counted twice in the side-chain.
+
+New Features
+
+- add extra dynamic parameters: RMS `Length`, RMS `Mix` and `Smooth`
+
+Bug fixes and Improvements
+
+- fix displayed values when they are close to zero
 
 ### 1.0.3
 

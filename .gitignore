@@ -4,3 +4,4 @@ node_modules/
 .obsidian/
 package-lock.json
 .hugo_build.lock
+.DS_Store
