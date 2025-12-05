@@ -49,6 +49,8 @@ New Features
 
 Bug fixes and Improvements
 
+- fix incorrect parallel bypass behavior
+- fix floating window overlapping issue
 - fix displayed values when they are close to zero
 
 ### 1.0.3
