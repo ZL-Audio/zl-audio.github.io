@@ -187,6 +187,8 @@ ___
 - `Optical`: feedforward design with linear decayed attack/release, which offers smooth, precise dynamic control
 - `Vocal`: feedback design with linear decayed attack/release, which offers gentle, buttery dynamic control
 
+`Optical` and `Vocal` are not available for `Inflater` and `Expand` directions.
+
 ___
 
 **Pump**
@@ -248,7 +250,7 @@ Controls the makeup gain that is applied after the compression. The actual value
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/dline_lsvg" width="20pt"/>
+  <img src="/images/zlcompressor/dline_l.svg" width="20pt"/>
 </p>
 
 - Press: when you press it, it starts to measure the integrated loudness of the input signal and the output signal
