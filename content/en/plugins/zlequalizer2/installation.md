@@ -41,17 +41,19 @@ Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZL
 BREAKING CHANGES
 
 - fix incorrect stereo dynamic handling
-	- This change will change the previous incorrect stereo dynamic behavior, where the left channel is counted twice in the side-chain.
+	- This fix will correct the previous incorrect stereo dynamic behavior. Please finish your current mixing session before updating if dynamic behavior is used.
 
 New Features
 
 - add extra dynamic parameters: RMS `Length`, RMS `Mix` and `Smooth`
+	- If your current mixing session uses parameters automation of this plugin, this change *might* mess up the automation line.
 
 Bug fixes and Improvements
 
 - fix incorrect parallel bypass behavior
 - fix floating window overlapping issue
 - fix displayed values when they are close to zero
+- fix incorrect copy/paste from ZL Compressor
 
 ### 1.0.3
 

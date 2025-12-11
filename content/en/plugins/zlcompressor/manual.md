@@ -30,6 +30,15 @@ You can open the [UI setting panel](#ui-setting-panel) by double-clicking the 
 
 ___
 
+**Compression Direction**
+
+- `Compress`: downward compression
+- `Inflate`: upward compression
+- `Expand`: downward expansion
+- `Shape`: upward expansion
+
+___
+
 **Clipper**
 
 Controls the relative drive of the clipper.
@@ -58,7 +67,7 @@ You may hear clicks/pops when you change this parameter. Please **DO NOT** autom
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/change.svg" width="20pt"/>
+  <img src="/images/zlcompressor/delta.svg" width="20pt"/>
 </p>
 
 - Press: output delta signal (the difference between the uncompressed main signal and the compressed main signal)
@@ -66,10 +75,12 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/mode_off_on.svg" width="20pt"/>
+  <img src="/images/zlcompressor/bypass.svg" width="20pt"/>
 </p>
 
 - Release: bypass plugin
+
+> WARNING: if you enable the delta signal and bypass the plugin, the plugin will output silence.
 
 ___
 
@@ -79,7 +90,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/rms_analyzer.svg" width="20pt"/>
+  <img src="/images/zlcompressor/dline_rms.svg" width="20pt"/>
 </p>
 
 - Press: open the [cumulative analyzer](#cumulative-analyzer)
@@ -88,7 +99,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/computer.svg" width="20pt"/>
+  <img src="/images/zlcompressor/dline_computer.svg" width="20pt"/>
 </p>
 
 - Press: open the [computer display](#computer-display)
@@ -97,7 +108,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/equalizer.svg" width="20pt"/>
+  <img src="/images/zlcompressor/dline_eq.svg" width="20pt"/>
 </p>
 
 - Press: open the side-chain equalizer
@@ -106,7 +117,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/link.svg" width="20pt"/>
+  <img src="/images/zlcompressor/dline_link.svg" width="20pt"/>
 </p>
 
 - Press: open the side-chain panel
@@ -151,7 +162,13 @@ ___
 
 **Curve**
 
-Controls the non-linearity behavior of compressed state.
+Controls the non-linearity behavior of compressed state. Available for `Compress` and `Shape`.
+
+___
+
+**Floor**
+
+Controls the floor value where it becomes uncompressed state again. Available for `Inflate` and `Expand`.
 
 ___
 
@@ -193,7 +210,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/rms.svg" width="20pt"/>
+  <img src="/images/zlcompressor/dline_r.svg" width="20pt"/>
 </p>
 
 - Press: enable RMS compression
@@ -204,7 +221,7 @@ RMS compression reacts to a short-term loudness and lets peaks go through, which
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/arrow_menu_open.svg" width="20pt"/>
+  <img src="/images/zlcompressor/right_arrow.svg" width="20pt"/>
 </p>
 
 - Press: open [RMS Panel](#rms-panel)
@@ -231,7 +248,7 @@ Controls the makeup gain that is applied after the compression. The actual value
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/learn.svg" width="20pt"/>
+  <img src="/images/zlcompressor/dline_lsvg" width="20pt"/>
 </p>
 
 - Press: when you press it, it starts to measure the integrated loudness of the input signal and the output signal
@@ -322,7 +339,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/headphones.svg" width="20pt"/>
+  <img src="/images/zlcompressor/solo.svg" width="20pt"/>
 </p>
 
 - Press: listen to the side-chain signal
@@ -481,6 +498,15 @@ Controls thickness of the magnitude analyzer
 **Tooltip**
 
 Choose the tooltip language. It will take effect when the plugin window is re-opened.
+
+**UI Scaling**
+
+Choose the font size mode.
+
+- `Scale`: the font size scales with the window size. Control the relative ratio.
+- `Static`: the font size is fixed. Control the actual font size.
+
+
 #### Bottom Buttons
 
 

@@ -59,7 +59,7 @@ ___
 
 
 <p float="left">
-  <img src="/images/zlcompressor/change.svg" width="20pt"/>
+  <img src="/images/zlcompressor/delta.svg" width="20pt"/>
 </p>
 
 - 按下：输出差值信号（未压缩主链信号 和 压缩后主链信号 的 差值）
@@ -67,10 +67,12 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/mode_off_on.svg" width="20pt"/>
+  <img src="/images/zlcompressor/bypass.svg" width="20pt"/>
 </p>
 
 - 释放：旁通插件
+
+> 警告：如果你开启差值信号并旁通插件，插件会输出静音。
 
 ___
 
@@ -79,7 +81,7 @@ ___
 -----
 
 <p float="left">
-<img src="/images/zlcompressor/rms_analyzer.svg" width="20pt">
+<img src="/images/zlcompressor/dline_rms.svg" width="20pt">
 </p>
 
   - 按下：打开 [累积分析器](#累积分析器)
@@ -88,7 +90,7 @@ ___
 -----
 
 <p float="left">
-<img src="/images/zlcompressor/computer.svg" width="20pt"/>
+<img src="/images/zlcompressor/dline_computersvg" width="20pt"/>
 </p>
 
   - 按下：打开 [压缩计算曲线](#压缩计算曲线)
@@ -97,7 +99,7 @@ ___
 -----
 
 <p float="left">
-<img src="/images/zlcompressor/equalizer.svg" width="20pt"/>
+<img src="/images/zlcompressor/dline_eq.svg" width="20pt"/>
 </p>
 
   - 按下：打开[侧链均衡器](#侧链均衡器)
@@ -106,7 +108,7 @@ ___
 -----
 
 <p float="left">
-<img src="/images/zlcompressor/link.svg" width="20pt"/>
+<img src="/images/zlcompressor/dline_link.svg" width="20pt"/>
 </p>
 
   - 按下：打开[侧链面板](#侧链面板)
@@ -195,7 +197,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/rms.svg" width="20pt"/>
+  <img src="/images/zlcompressor/dline_r.svg" width="20pt"/>
 </p>
 
 - 按下：打开 RMS 压缩
@@ -206,7 +208,7 @@ RMS 压缩响应短时响度并且让瞬态通过，从而提供更透明、自�
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/arrow_menu_open.svg" width="20pt"/>
+  <img src="/images/zlcompressor/right_arrow.svg" width="20pt"/>
 </p>
 
 - 按下：打开 [RMS 面板](#rms-面板)
@@ -233,7 +235,7 @@ ___
 -----
 
 <p float="left">
-  <img src="/images/zlcompressor/learn.svg" width="20pt"/>
+  <img src="/images/zlcompressor/dline_l.svg" width="20pt"/>
 </p>
 
 - 按下：当你按下按钮，插件开始测量输入信号与输出信号的整体响度
@@ -325,7 +327,7 @@ ___
 -----
 
 <p float="left">
-<img src="/images/zlcompressor/headphones.svg" width="20pt"/>
+<img src="/images/zlcompressor/solo.svg" width="20pt"/>
 </p>
 
   - 按下：监听侧链信号。
@@ -485,6 +487,14 @@ ___
 **提示（Tooltip）**
 
 选择提示语言。会在插件窗口重新打开后生效。
+
+**UI Scaling (界面缩放)**
+
+选择字体大小模式。
+
+- `Scale (缩放)`: 字体大小随窗口大小缩放。控制相对比例。
+- `Static (静态)`: 字体大小固定。控制实际字体大小。
+
 #### 底部按钮
 
 ___

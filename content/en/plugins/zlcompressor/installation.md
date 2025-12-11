@@ -32,6 +32,25 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Changelog
 
+### 0.3.0
+
+New Features
+
+- add `Inflate`, `Expand` and `Shape` directions (see the manual for details)
+- add UI scaling control & credit info
+
+Bug fixes and Improvements
+
+- fix plugin crashes when it does not have UI preset folder permission
+- fix incorrect rms display
+- improve DSP performance
+
+Other Changes
+
+- support VST3 parameter context menu
+- change several parameter ranges
+- change icons
+
 ### 0.2.1
 
 New Features
