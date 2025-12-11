@@ -22,7 +22,7 @@ ZL Compressor 是一款动态范围压缩器，其主要特性有：
 -----
 
 <p float="left">
-<img src="/images/zlcompressor/zlaudio.svg" width="44pt" />
+<img src="/images/zlcompressor/zlaudio.svg" width="20pt" />
 <img src="/images/zlcompressor/logo.svg" width="20pt" />
 </p>
 

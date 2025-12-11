@@ -22,7 +22,7 @@ ZL Compressor is a dynamic range compressor with the following key features:
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/zlaudio.svg" width="44pt" />
+  <img src="/images/zlcompressor/zlaudio.svg" width="20pt" />
   <img src="/images/zlcompressor/logo.svg" width="20pt" />
 </p>
 
