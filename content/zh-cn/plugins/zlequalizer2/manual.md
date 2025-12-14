@@ -416,6 +416,18 @@ ___
 
 ___
 
+**FFT 分析仪立体声位置**
+
+| 图标                                                        | 立体声位置          |
+| :-------------------------------------------------------- | :------------- |
+| <img src="/images/zlequalizer2/stereo.svg" width="20pt"/> | `立体声 (Stereo)` |
+| <img src="/images/zlequalizer2/left.svg" width="20pt"/>   | `左声道 (Left)`   |
+| <img src="/images/zlequalizer2/right.svg" width="20pt"/>  | `右声道 (Right)`  |
+| <img src="/images/zlequalizer2/mid.svg" width="20pt"/>    | `中声道 (Mid)`    |
+| <img src="/images/zlequalizer2/side.svg" width="20pt"/>   | `侧声道 (Side)`   |
+
+___
+
 <p float="left">
   <img src="/images/zlequalizer2/collision.svg" width="20pt"/>
 </p>

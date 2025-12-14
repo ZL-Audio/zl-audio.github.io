@@ -415,6 +415,18 @@ ___
 
 ___
 
+**FFT Analyzer Stereo Placement**
+
+| Icon                                                      | Stereo Placement |
+| --------------------------------------------------------- | ---------------- |
+| <img src="/images/zlequalizer2/stereo.svg" width="20pt"/> | `Stereo`         |
+| <img src="/images/zlequalizer2/left.svg" width="20pt"/>   | `Left`           |
+| <img src="/images/zlequalizer2/right.svg" width="20pt"/>  | `Right`          |
+| <img src="/images/zlequalizer2/mid.svg" width="20pt"/>    | `Mid`            |
+| <img src="/images/zlequalizer2/side.svg" width="20pt"/>   | `Side`           |
+
+___
+
 <p float="left">
   <img src="/images/zlequalizer2/collision.svg" width="20pt"/>
 </p>
