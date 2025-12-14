@@ -32,6 +32,25 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
+### 1.1.0
+
+破坏性更改
+
+- 修复 错误的立体声动态侧链处理
+	- 这个修复会更正之前错误的立体声动态行为。请在更新前完成开启动态功能的混音工程。
+
+新功能
+
+- 增加 额外的动态参数：RMS `Length`, RMS `Mix` 和 `Smooth`
+- 增加 FFT 分析仪 立体声模式
+
+修复与改进
+
+- 修复 错误的平行滤波器旁通
+- 修复 浮动窗口重叠问题
+- 修复 接近零的参数显示问题
+- 修复 从 ZL Compressor 复制/粘贴 滤波器错误的问题
+
 ### 1.0.3
 
 修复与改进

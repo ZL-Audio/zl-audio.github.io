@@ -32,6 +32,27 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
+### 0.3.0
+
+新功能
+
+- 增加 `Inflat`、`Expand` 和 `Shape` 压缩方向（详见用户手册）
+- 增加 幅值分析仪 立体声模式
+- 增加 界面缩放 控制 和 Credit 信息
+
+修复与改进
+
+- 修复 插件在未获得 UI 预设文件夹权限时的崩溃问题
+- 修复 错误的 RMS 显示
+- 修复 从 ZL Equalizer 复制/粘贴 滤波器错误的问题
+- 提高 DSP 性能
+
+其他更改
+
+- 支持 VST3 参数上下文菜单
+- 更改 若干参数的范围
+- 更改 部分按钮图标
+
 ## 0.2.1
 
 新功能

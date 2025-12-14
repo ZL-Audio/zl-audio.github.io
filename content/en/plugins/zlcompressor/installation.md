@@ -37,12 +37,14 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 New Features
 
 - add `Inflate`, `Expand` and `Shape` directions (see the manual for details)
+- add magnitude analyzer stereo mode
 - add UI scaling control & credit info
 
 Bug fixes and Improvements
 
 - fix plugin crashes when it does not have UI preset folder permission
 - fix incorrect rms display
+- fix incorrect copy/paste filters from ZL Equalizer
 - improve DSP performance
 
 Other Changes

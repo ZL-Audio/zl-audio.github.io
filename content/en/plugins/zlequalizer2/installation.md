@@ -46,14 +46,14 @@ BREAKING CHANGES
 New Features
 
 - add extra dynamic parameters: RMS `Length`, RMS `Mix` and `Smooth`
-	- If your current mixing session uses parameters automation of this plugin, this change *might* mess up the automation line.
+- add FFT analyzer stereo mode
 
 Bug fixes and Improvements
 
 - fix incorrect parallel bypass behavior
 - fix floating window overlapping issue
 - fix displayed values when they are close to zero
-- fix incorrect copy/paste from ZL Compressor
+- fix incorrect copy/paste filters from ZL Compressor
 
 ### 1.0.3
 

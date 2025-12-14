@@ -37,6 +37,8 @@ ___
 - `Expand`: downward expansion
 - `Shape`: upward expansion
 
+When you change it to `Inflate` or `Shape`, Clipper will be set to 100% to soft-clip the output at 0 dB.
+
 ___
 
 **Clipper**
