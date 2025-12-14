@@ -14,9 +14,9 @@ You may download the installer at the [GitHub release page](https://github.com/Z
 
 | Operating System | x86-64<br>Intel Chip<br>AMD Chip (mostly)                                                                                                    | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                       |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**        | [ZL.Equalizer.2-1.0.3-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.3/ZL.Equalizer.2-1.0.3-macOS-x86.dmg)     | [ZL.Equalizer.2-1.0.3-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.3/ZL.Equalizer.2-1.0.3-macOS-arm.dmg)     |
-| **Windows**      | [ZL.Equalizer.2-1.0.3-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.3/ZL.Equalizer.2-1.0.3-Windows-x86.exe) | [ZL.Equalizer.2-1.0.3-Windows-arm.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.3/ZL.Equalizer.2-1.0.3-Windows-arm.exe) |
-| **Linux**        | [ZL.Equalizer.2-1.0.3-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.3/ZL.Equalizer.2-1.0.3-Linux-x86.zip)     | [ZL.Equalizer.2-1.0.3-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.0.3/ZL.Equalizer.2-1.0.3-Linux-arm.zip)     |
+| **macOS**        | [ZL.Equalizer.2-1.1.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-macOS-x86.dmg)     | [ZL.Equalizer.2-1.1.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-macOS-arm.dmg)     |
+| **Windows**      | [ZL.Equalizer.2-1.1.0-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-Windows-x86.exe) | [ZL.Equalizer.2-1.1.0-Windows-arm.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-Windows-arm.exe) |
+| **Linux**        | [ZL.Equalizer.2-1.1.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-Linux-x86.zip)     | [ZL.Equalizer.2-1.1.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-Linux-arm.zip)     |
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
@@ -36,7 +36,7 @@ Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZL
 
 ## Changelog
 
-### 1.1.0 (upcoming, available in Nightly Release)
+### 1.1.0
 
 BREAKING CHANGES
 
