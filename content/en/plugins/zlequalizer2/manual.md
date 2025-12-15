@@ -656,9 +656,10 @@ Generally, you can enable fine-adjustment with `Shift` and enable special adjust
 
 - You can drag a button to change the frequency/gain value.
 - You can use the mouse wheel to change the Q value.
+- You can use the mouse wheel + `Ctrl/Command` to change the slope.
 - You can enable fine-adjustment with `Shift` when using the mouse to drag a button.
 - You can drag with the left mouse button + `Ctrl/Command` down while fixing the frequency.
-- You can drag with the right mouse button + `Ctrl/Command` down while fixing the frequency.
+- You can drag with the right mouse button + `Ctrl/Command` down while fixing the gain.
 - You can double-click the button to enter/exit the solo status.
 - You can double-click with `Ctrl/Command` to turn on/off the dynamic behavior.
 
