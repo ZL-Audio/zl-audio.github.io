@@ -4,9 +4,9 @@ description: How to use ZL Equalizer 2
 weight: 2
 ---
 
-<img src="/images/zlequalizer2/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
+## Tutorial Video
 
-___
+{{< youtube "VzmNqjWfE2Y" >}}
 
 ## About
 

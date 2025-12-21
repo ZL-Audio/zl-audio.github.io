@@ -8,6 +8,10 @@ weight: 1
 
 {{< youtube "bC-mBDumzvU" >}}
 
+## Tutorial Video
+
+{{< youtube "VzmNqjWfE2Y" >}}
+
 ## Installation
 
 You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) or use the direct download link below. Please download the installer that matches your OS & architecture:
