@@ -3,10 +3,9 @@ title: 用户手册
 description: 如何使用 ZL Equalizer 2
 weight: 2
 ---
+## Tutorial Video
 
-<img src="/images/zlequalizer2/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
-
-___
+{{< youtube "VzmNqjWfE2Y" >}}
 
 ## 关于
 
