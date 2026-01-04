@@ -24,7 +24,7 @@ ___
 
 **[ZL Compressor](/plugins/zlcompressor)**
 
-动态范围压缩器
+动态范围处理器
 
 <img src="/images/zlcompressor/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 

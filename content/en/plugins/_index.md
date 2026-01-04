@@ -24,7 +24,7 @@ ___
 
 **[ZL Compressor](/plugins/zlcompressor)**
 
-dynamic range compressor
+dynamic range processor
 
 <img src="/images/zlcompressor/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 
