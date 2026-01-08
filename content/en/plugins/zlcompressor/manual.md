@@ -10,11 +10,11 @@ ___
 
 ## About
 
-ZL Compressor is a dynamic range compressor with the following key features:
+ZL Compressor is a dynamic range processor with the following key features:
 
 - **Intuitive GUI feedback**: Real-time Peak & RMS display; Hardware-accelerated rendering.
 - **Optimized CPU usage**: Efficient lookahead & up to 8x over-sampling.
-- **Versatile Compressor Settings**: Four compression styles & Extensive compression parameters; Post compression clipper.
+- **Versatile Processor Settings**: Four processor styles & Extensive processor parameters; Post processing clipper.
 - **Advanced Side-chain Control**: 8-band parametric equalizer; Stereo mode & link control.
 
 ## Top Panel
@@ -30,14 +30,14 @@ You can open the [UI setting panel](#ui-setting-panel) by double-clicking the 
 
 ___
 
-**Compression Direction**
+**Processing Direction**
 
 - `Compress`: downward compression
 - `Inflate`: upward compression
 - `Expand`: downward expansion
 - `Shape`: upward expansion
 
-When you change it to `Inflate` or `Shape`, Clipper will be set to 100% to soft-clip the output at 0 dB.
+When you change it to `Inflate` or `Shape`, Clipper will be set to 100% to soft-clip the output at 0 dB. You can adjust the clipping value afterward, but be sure to monitor the output levels to prevent damage to your monitoring equipment or your hearing.
 
 ___
 
