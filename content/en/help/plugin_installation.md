@@ -1,6 +1,7 @@
 ---
 title: Plugin Installation
 linkTitle: Plugin Installation
+weight: 1
 ---
 
 ## Plugin Formats

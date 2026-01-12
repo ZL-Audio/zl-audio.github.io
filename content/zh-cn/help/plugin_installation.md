@@ -1,6 +1,7 @@
 ---
 title: 插件安装
 linkTitle: 插件安装
+weight: 1
 ---
 
 ## 插件格式

@@ -1,7 +1,9 @@
 ---
 title: Plugin Uninstallation
 linkTitle: Plugin Uninstallation
+weight: 2
 ---
+
 The following guidance helps you completely uninstall ZL Audio plugins. We are sorry to see you go, but we appreciate you giving ZL Audio plugins a try.
 
 > If you have manually moved the plugin binaries (files ending in `.vst3`, `.lv2`, etc.) to a different location, you will need to locate and delete them from that specific folder instead.

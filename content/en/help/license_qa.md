@@ -1,7 +1,9 @@
 ---
 title: AGPLv3 License Q&A
 linkTitle: AGPLv3 License Q&A
+weight: 3
 ---
+
 The following Q&A is designed to help you understand your rights when using AGPLv3 licensed ZL Audio plugins. For specific legal advice regarding copyright or licensing compliance, please read [AGPLv3](https://opensource.org/license/agpl-v3) carefully and consult a qualified legal professional.
 
 **Q: Does the AGPL license affect the copyright of the music I create?**

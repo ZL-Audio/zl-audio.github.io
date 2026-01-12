@@ -1,7 +1,9 @@
 ---
 title: 插件卸载
 linkTitle: 插件卸载
+weight: 2
 ---
+
 ## 卸载指南
 
 以下指南将帮助您彻底卸载 ZL Audio 插件。很遗憾看到您离开，但非常感谢您试用 ZL Audio 的产品。

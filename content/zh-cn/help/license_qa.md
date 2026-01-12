@@ -1,7 +1,9 @@
 ---
 title: AGPLv3 许可 Q&A
 linkTitle: AGPLv3 许可 Q&A
+weight: 3
 ---
+
 以下问答旨在帮助您了解在使用 AGPLv3 授权的 ZL Audio 插件时的权利。关于版权或许可合规性的具体法律建议，请仔细阅读 [AGPLv3](https://opensource.org/license/agpl-v3) 并咨询合格的法律专业人士。
 
 **Q: AGPL 许可证会影响我创作的音乐的版权吗？**
