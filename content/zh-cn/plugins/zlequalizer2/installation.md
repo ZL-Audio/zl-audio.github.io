@@ -85,7 +85,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 改进
 
-- 改进  匹配相位 和 混合相位 的性能
+- 改进 匹配相位 和 混合相位 的性能
 - 改进 处理性能
 - 改进 动态处理
 - 改进 FFT 分析仪显示

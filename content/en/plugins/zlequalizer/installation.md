@@ -10,6 +10,8 @@ weight: 1
 
 ## Installation
 
+**USE ZL Equalizer 2 IF POSSIBLE**. ZL Equalizer is deprecated and won't receive any future bug fixes and improvements.
+
 Please download the installer that matches your OS & architecture:
 
 | Operating System | x86-64<br>Intel Chip<br>AMD Chip (mostly)                                                                                                | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                   |
