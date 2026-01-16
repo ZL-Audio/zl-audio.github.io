@@ -39,9 +39,14 @@ If you cannot upgrade your system through official macOS support, you may upgrad
 
 The Windows installer file extension is `.exe`.
 
-If there are two `.exe` installers, the one with `x86` is for x86-64 architecture Windows machines and the one with `arm` is for ARM64 architecture Windows machines. You may check it through `Setting` - `System` - `About` - `Device specifications` - `System Type`.
+If there are two `.exe` installers, the one with `x86` is for x86-64 architecture Windows machines. You may check it through `Setting` - `System` - `About` - `Device specifications` - `System Type`.
 
 On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
+
+For Windows on ARM Users, you need to choose the version that matches your DAW, not just your operating system. As of the day of writing:
+
+- Choose the one with `arm` if your DAW is also ARM64, such as Fender Studio Pro (ARM64), Bitwig (ARM64). The plugin will have optimal performance.
+- Choose the one with `x86` if your DAW is x86-64 or ARM64EC, such as Reaper (ARM64EC), Cubase (ARM64EC), FL Studio (x86_64), Ableton (x86_64). The plugin will show degraded performance because of emulation.
 
 ## Linux Installation
 
