@@ -18,58 +18,58 @@ enableGitInfo = true
 
 # You can add your own taxonomies
 [taxonomies]
-tag = "tags"
-category = "categories"
+  tag = "tags"
+  category = "categories"
 
-[params.taxonomy]
-# set taxonomyCloud = [] to hide taxonomy clouds
-taxonomyCloud = ["tags", "categories"]
+  [params.taxonomy]
+  # set taxonomyCloud = [] to hide taxonomy clouds
+  taxonomyCloud = ["tags", "categories"]
 
-# If used, must have same length as taxonomyCloud
-taxonomyCloudTitle = ["Tag Cloud", "Categories"]
+  # If used, must have same length as taxonomyCloud
+  taxonomyCloudTitle = ["Tag Cloud", "Categories"]
 
-# set taxonomyPageHeader = [] to hide taxonomies on the page headers
-taxonomyPageHeader = ["tags", "categories"]
+  # set taxonomyPageHeader = [] to hide taxonomies on the page headers
+  taxonomyPageHeader = ["tags", "categories"]
 
 
-# Highlighting config
-pygmentsCodeFences = true
-pygmentsUseClasses = false
-# Use the new Chroma Go highlighter in Hugo.
-pygmentsUseClassic = false
-#pygmentsOptions = "linenos=table"
-# See https://help.farbox.com/pygments.html
-pygmentsStyle = "tango"
+  # Highlighting config
+  pygmentsCodeFences = true
+  pygmentsUseClasses = false
+  # Use the new Chroma Go highlighter in Hugo.
+  pygmentsUseClassic = false
+  #pygmentsOptions = "linenos=table"
+  # See https://help.farbox.com/pygments.html
+  pygmentsStyle = "tango"
 
 # Configure how URLs look like per section.
 [permalinks]
-blog = "/:section/:year/:month/:day/:slug/"
+  blog = "/:section/:year/:month/:day/:slug/"
 
 # Image processing configuration.
 [imaging]
-resampleFilter = "CatmullRom"
-quality = 75
-anchor = "smart"
+  resampleFilter = "CatmullRom"
+  quality = 75
+  anchor = "smart"
 
 # Language configuration
 
 [languages]
-[languages.en]
-languageName = "English"
-# Weight used for sorting.
-weight = 1
-[languages.en.params]
-title = "Zl Audio"
-description = "ZL Audio makes audio plugins and audio processing tools"
+  [languages.en]
+    languageName = "English"
+    # Weight used for sorting.
+    weight = 1
+  [languages.en.params]
+    title = "Zl Audio"
+    description = "ZL Audio makes audio plugins and audio processing tools"
 
 [languages.zh-cn]
-languageName ="简体中文"
-contentDir = "content/zh-cn"
+  languageName ="简体中文"
+  contentDir = "content/zh-cn"
 [languages.no.params]
-title = "Zl Audio"
-description = "ZL Audio 专注于音频插件和音频处理工具开发"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
+  title = "Zl Audio"
+  description = "ZL Audio 专注于音频插件和音频处理工具开发"
+  time_format_default = "02.01.2006"
+  time_format_blog = "02.01.2006"
 
 [markup]
   [markup.goldmark]
@@ -90,8 +90,8 @@ time_format_blog = "02.01.2006"
 # Everything below this are Site Params
 
 # Comment out if you don't want the "print entire section" link enabled.
-[outputs]
-section = ["HTML", "RSS"]
+# [outputs]
+# section = ["HTML", "RSS"]
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -141,19 +141,19 @@ prism_syntax_highlighting = false
 
 # User interface configuration
 [params.ui]
-# Set to true to disable breadcrumb navigation.
-breadcrumb_disable = false
-# Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
-navbar_logo = true
-# Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
-navbar_translucent_over_cover_disable = false
-# Enable to show the side bar menu in its compact state.
-sidebar_menu_compact = false
-sidebar_menu_foldable = true
-# Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
-sidebar_search_disable = false
-# Set to true to enable dark mode.
-showLightDarkModeMenu = true
+  # Set to true to disable breadcrumb navigation.
+  breadcrumb_disable = false
+  # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
+  navbar_logo = true
+  # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
+  navbar_translucent_over_cover_disable = false
+  # Enable to show the side bar menu in its compact state.
+  sidebar_menu_compact = false
+  sidebar_menu_foldable = true
+  # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
+  sidebar_search_disable = false
+  # Set to true to enable dark mode.
+  showLightDarkModeMenu = true
 
 [services]
   [services.googleAnalytics]
@@ -164,7 +164,7 @@ showLightDarkModeMenu = true
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = false
+  enable = false
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 # yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
 # no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
@@ -173,7 +173,7 @@ enable = false
 # If you want this feature, but occasionally need to remove the Reading time from a single page,
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
-enable = false
+  enable = false
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
@@ -191,7 +191,7 @@ enable = false
   # workspace = "docsy.work"
   [module.hugoVersion]
     extended = true
-    min = "0.110.0"
+    min = "0.152.0"
   [[module.imports]]
     path = "github.com/google/docsy"
     disable = false
