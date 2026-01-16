@@ -35,6 +35,9 @@ macOS 安装器被封装在 `.dmg` 中。您需要打开以得到 `.pkg` 安装�
 
 如果您无法通过 macOS 官方渠道更新系统，您可以尝试通过 [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) 更新系统（使用风险自负）。
 
+> [!WARNING]
+> 在可以预见的未来（macOS 28 发布后），`x86` 版本将不再被提供。
+
 ## Windows 安装
 
 Windows 安装器后缀名为 `.exe`。
@@ -43,11 +46,12 @@ Windows 安装器后缀名为 `.exe`。
 
 在 Windows 系统上，插件需要 Direct2D 支持。插件与 Windows 10 及之后版本兼容。
 
-对于 Windows on ARM 用户，请务必根据您使用的宿主来选择版本，而不仅仅是根据操作系统。 截至本文撰写时：
-
- - 请选择带有 `arm` 的版本：如果您的 DAW 是纯 ARM64 架构，例如 Fender Studio Pro (ARM64)、Bitwig (ARM64)。该版本将提供最佳的原生性能。
- - 请选择带有 `x86` 的版本：如果您的 DAW 是 x86-64 或 ARM64EC 架构，例如 Reaper (ARM64EC)、Cubase (ARM64EC)、FL Studio (x86_64)、Ableton (x86_64)。由于系统需要进行转译，该版本的性能会有所下降。
-
+> [!WARNING]
+> 对于 Windows on ARM 用户，请务必根据您使用的宿主来选择版本，而不仅仅是根据操作系统。以下信息又可能过时，请查看您所使用宿主的官方支持文档。
+>
+ > 请选择带有 `arm` 的版本：如果您的 DAW 是纯 ARM64 架构，例如 Fender Studio Pro (ARM64)、Bitwig (ARM64)。该版本将提供最佳的原生性能。
+ >
+ >请选择带有 `x86` 的版本：如果您的 DAW 是 x86-64 或 ARM64EC 架构，例如 Reaper (ARM64EC)、Cubase (ARM64EC)、FL Studio (x86_64)、Ableton (x86_64)。由于系统需要进行转译，该版本的性能会有所下降。
 
 ## Linux 安装
 
@@ -56,3 +60,6 @@ Linux 插件被压缩在 `.zip` 中。您需要解压后自行将 `*.vst3` 文�
 如果有两个 `.zip` 文件，文件名中含有 `x86` 的是为 x86-64 架构的 Linux 系统 而 文件名中含有 `arm` 的是为 ARM64 架构的 Linux 系统。
 
 在 Linux 系统上，插件无法提供硬件渲染。因为插件在 Ubuntu 22.04 上编译（动态链接依赖），我无法保证其与 Linux 发行版的兼容性。我推荐您从源码编译插件。
+
+> [!WARNING]
+> 在可以预见的未来（Ubuntu 26.04 发布后），插件将在 Ubuntu 24.04 上编译，而这将导致其与之前的 Linux 版本不兼容。

@@ -35,6 +35,9 @@ On macOS, the plugin requires Metal support. The plugin is not compatible with m
 
 If you cannot upgrade your system through official macOS support, you may upgrade it with [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) (use at your own risk).
 
+> [!WARNING]
+> In the foreseeable future (after the release of macOS 28), the `x86` version will be discontinued.
+
 ## Windows Installation
 
 The Windows installer file extension is `.exe`.
@@ -43,10 +46,12 @@ If there are two `.exe` installers, the one with `x86` is for x86-64 architectur
 
 On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
 
-For Windows on ARM Users, you need to choose the version that matches your DAW, not just your operating system. As of the day of writing:
-
-- Choose the one with `arm` if your DAW is also ARM64, such as Fender Studio Pro (ARM64), Bitwig (ARM64). The plugin will have optimal performance.
-- Choose the one with `x86` if your DAW is x86-64 or ARM64EC, such as Reaper (ARM64EC), Cubase (ARM64EC), FL Studio (x86_64), Ableton (x86_64). The plugin will show degraded performance because of emulation.
+> [!WARNING]
+> For Windows on ARM Users, you need to choose the version that matches your DAW. The following information might not be up-to-date, please refer to your DAW official support documentation.
+> 
+> Choose the one with `arm` if your DAW is also ARM64, such as Fender Studio Pro (ARM64), Bitwig (ARM64). The plugin will have optimal performance.
+> 
+ >Choose the one with `x86` if your DAW is x86-64 or ARM64EC, such as Reaper (ARM64EC), Cubase (ARM64EC), FL Studio (x86_64), Ableton (x86_64). The plugin will have degraded performance because of emulation.
 
 ## Linux Installation
 
@@ -55,6 +60,9 @@ The Linux plugins are compressed in a `.zip` file. You need to unzip it and manu
 If there are two `.zip` files, the one with `x86` is for x86-64 architecture Linux machines and the one with `arm` is for ARM64 architecture Linux machines.
 
 On Linux, the plugin does not have hardware acceleration. The plugin is built on Ubuntu 22.04 with dynamic linked dependencies. Therefore, I cannot guarantee its compatibility with Linux distributions. I would recommend building the plugin from source code.
+
+> [!WARNING]
+> In the foreseeable future (after the release of Ubuntu 26.04), the plugin will be built on Ubuntu 24.04, which will make it incompatible with earlier Linux versions.
 
 ## Subscribe to Release Notifications
 
