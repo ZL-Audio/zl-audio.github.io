@@ -32,7 +32,7 @@ The following Q&A is designed to help you understand your rights when using AGPL
 
 **Q: Can I send my modified version of the plugin to a friend?**
 
-> **Yes if you follow AGPLv3**. Please notice that the logos of ZL Audio and plugins are not covered by the license. Therefore, you need to replace them.
+> **Yes if you follow AGPLv3**. Please notice that the logo of ZL Audio and the logos of plugins are not covered by the license. Therefore, you need to replace them.
 
 **Q: Can I build & distribute a new commercial plugin based on the AGPLv3 code?**
 
