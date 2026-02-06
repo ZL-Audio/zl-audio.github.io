@@ -13,9 +13,9 @@ weight: 1
 
 | 操作系统        | x86-64<br>Intel 芯片<br>AMD 芯片（大多数）                                                                                                           | ARM64<br>Apple M 芯片<br>Qualcomm 芯片                                                                                                          |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**   | [ZL.Compressor-0.3.1-macOS-x86.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.3.1/ZL.Compressor-0.3.1-macOS-x86.dmg)     | [ZL.Compressor-0.3.1-macOS-arm.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.3.1/ZL.Compressor-0.3.1-macOS-arm.dmg)     |
-| **Windows** | [ZL.Compressor-0.3.1-Windows-x86.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.3.1/ZL.Compressor-0.3.1-Windows-x86.exe) | [ZL.Compressor-0.3.1-Windows-arm.exe](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.3.1/ZL.Compressor-0.3.1-Windows-arm.exe) |
-| **Linux**   | [ZL.Compressor-0.3.1-Linux-x86.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.3.1/ZL.Compressor-0.3.1-Linux-x86.zip)     | [ZL.Compressor-0.3.1-Linux-arm.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.3.1/ZL.Compressor-0.3.1-Linux-arm.zip)     |
+| **macOS**   | [ZL.Compressor-0.4.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-macOS-x86.dmg)     | [ZL.Compressor-0.4.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-macOS-arm.dmg)     |
+| **Windows** | [ZL.Compressor-0.4.0-Windows-x86.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-Windows-x86.msi) | [ZL.Compressor-0.4.0-Windows-arm.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-Windows-arm.msi) |
+| **Linux**   | [ZL.Compressor-0.4.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-Linux-x86.zip)     | [ZL.Compressor-0.4.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-Linux-arm.zip)     |
 
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
@@ -31,6 +31,20 @@ ZL Compressor 是**自由开源**的软件。除了 [ZL Audio 标志](https://gi
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
 ## 更新日志
+
+### 0.4.0
+
+新功能
+
+- 增加 竖直仪表
+- 增加 无限范围 按钮
+- 增加 负数前瞻（即侧链延迟）
+
+修复与改进
+
+- 改进 用户界面布局
+- 改进 幅值分析仪 显示
+- 改进 频谱分析仪 显示
 
 ### 0.3.1
 
