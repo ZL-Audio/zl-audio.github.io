@@ -36,7 +36,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 新功能
 
-- 增加 竖直仪表
+- 增加 电平表
 - 增加 无限范围 按钮
 - 增加 负数前瞻（即侧链延迟）
 
