@@ -14,9 +14,9 @@ You may download the installer at the [GitHub release page](https://github.com/Z
 
 | Operating System | x86-64<br>Intel Chip<br>AMD Chip (mostly)                                                                                             | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**        | [ZL.Splitter-0.2.1-macOS-x86.dmg](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-macOS-x86.dmg)     | [ZL.Splitter-0.2.1-macOS-arm.dmg](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-macOS-arm.dmg)     |
-| **Windows**      | [ZL.Splitter-0.2.1-Windows-x86.exe](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-Windows-x86.exe) | [ZL.Splitter-0.2.1-Windows-arm.exe](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-Windows-arm.exe) |
-| **Linux**        | [ZL.Splitter-0.2.1-Linux-x86.zip](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-Linux-x86.zip)     | [ZL.Splitter-0.2.1-Linux-arm.zip](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-Linux-arm.zip)     |
+| **macOS**        | [ZL.Splitter-0.3.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-macOS-x86.dmg)     | [ZL.Splitter-0.3.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-macOS-arm.dmg)     |
+| **Windows**      | [ZL.Splitter-0.3.0-Windows-x86.msi](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Windows-x86.msi) | [ZL.Splitter-0.3.0-Windows-arm.msi](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Windows-arm.msi) |
+| **Linux**        | [ZL.Splitter-0.3.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Linux-x86.zip)     | [ZL.Splitter-0.3.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Linux-arm.zip)     |
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
@@ -31,6 +31,18 @@ AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
 ## Changelog
+
+### 0.3.0
+
+New Features
+
+- add wave display panel
+- add more analyzer settings
+
+Bug fixes and Improvements
+
+- improve FFT analyzer display
+- improve magnitude analyzer display
 
 ### 0.2.1
 

@@ -13,9 +13,9 @@ weight: 1
 
 | 操作系统        | x86-64<br>Intel 芯片<br>AMD 芯片（大多数）                                                                                                     | ARM64<br>Apple M 芯片<br>Qualcomm 芯片                                                                                                    |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**   | [ZL.Splitter-0.2.1-macOS-x86.dmg](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-macOS-x86.dmg)     | [ZL.Splitter-0.2.1-macOS-arm.dmg](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-macOS-arm.dmg)     |
-| **Windows** | [ZL.Splitter-0.2.1-Windows-x86.exe](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-Windows-x86.exe) | [ZL.Splitter-0.2.1-Windows-arm.exe](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-Windows-arm.exe) |
-| **Linux**   | [ZL.Splitter-0.2.1-Linux-x86.zip](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-Linux-x86.zip)     | [ZL.Splitter-0.2.1-Linux-arm.zip](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.2.1/ZL.Splitter-0.2.1-Linux-arm.zip)     |
+| **macOS**   | [ZL.Splitter-0.3.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-macOS-x86.dmg)     | [ZL.Splitter-0.3.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-macOS-arm.dmg)     |
+| **Windows** | [ZL.Splitter-0.3.0-Windows-x86.msi](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Windows-x86.msi) | [ZL.Splitter-0.3.0-Windows-arm.msi](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Windows-arm.msi) |
+| **Linux**   | [ZL.Splitter-0.3.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Linux-x86.zip)     | [ZL.Splitter-0.3.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Linux-arm.zip)     |
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
 
@@ -30,6 +30,18 @@ ZL Splitter 是**自由开源**的软件。除了 [ZL Audio 标志](https://gith
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
 ## 更新日志
+
+### 0.3.0
+
+新功能
+
+- 增加 波形 分析仪
+- 增加 更多 分析仪设置
+
+修复与改进
+
+- 优化 频谱 分析仪
+- 增加 幅值 分析仪
 
 ### 0.2.1
 
