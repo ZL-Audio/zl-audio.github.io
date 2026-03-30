@@ -30,6 +30,10 @@ AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
+## Nightly Release
+
+Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLCompressor). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLCompressor/issues).
+
 ## Changelog
 
 ### 0.4.0
