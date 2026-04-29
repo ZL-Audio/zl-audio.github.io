@@ -14,9 +14,9 @@ You may download the installer at the [GitHub release page](https://github.com/Z
 
 | Operating System | x86-64<br>Intel Chip<br>AMD Chip (mostly)                                                                                                    | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                       |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**        | [ZL.Equalizer.2-1.1.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-macOS-x86.dmg)     | [ZL.Equalizer.2-1.1.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-macOS-arm.dmg)     |
-| **Windows**      | [ZL.Equalizer.2-1.1.0-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-Windows-x86.exe) | [ZL.Equalizer.2-1.1.0-Windows-arm.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-Windows-arm.exe) |
-| **Linux**        | [ZL.Equalizer.2-1.1.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-Linux-x86.zip)     | [ZL.Equalizer.2-1.1.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.0/ZL.Equalizer.2-1.1.0-Linux-arm.zip)     |
+| **macOS**        | [ZL.Equalizer.2-1.1.1-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-macOS-x86.dmg)     | [ZL.Equalizer.2-1.1.1-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-macOS-arm.dmg)     |
+| **Windows**      | [ZL.Equalizer.2-1.1.1-Windows-x86.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-Windows-x86.msi) | [ZL.Equalizer.2-1.1.1-Windows-arm.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-Windows-arm.msi) |
+| **Linux**        | [ZL.Equalizer.2-1.1.1-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-Linux-x86.zip)     | [ZL.Equalizer.2-1.1.1-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-Linux-arm.zip)     |
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
@@ -35,6 +35,24 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLEqualizer). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLEqualizer/issues).
 
 ## Changelog
+
+### 1.1.1
+
+Bug fixes
+
+- fix grammar mistakes in tooltips
+- fix external side-chain configuration for Maschine
+
+Improvements
+
+- improve dynamic EQ efficiency
+- improve GUI performance
+
+Other Changes
+
+- add LV2 tags
+- adjust some pop-up panel background
+- change to Windows MSI installer
 
 ### 1.1.0
 
