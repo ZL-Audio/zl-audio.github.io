@@ -45,15 +45,7 @@ The Windows installer file extension is `.msi`.
 
 If there are two `.msi` installers, the one with `x86-64` is for x86-64 architecture Windows machines. You may check it through `Setting` - `System` - `About` - `Device specifications` - `System Type`.
 
-If there are three `.msi` installers, the one with `x86-64-AVX2` is for x86-64 architecture Windows machines which support AVX2, which [includes](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2):
-
-- Intel
-	- Non Celeron or Pentium: Haswell processors (Q2 2013) and newer, except models branded as Celeron and Pentium
-	- Celeron or Pentium: Tiger Lake processors (Q3 2020) and newer
-- AMD
-	- Excavator processors (Q2 2015) and newer.
-
-On Windows machines which support AVX2, `x86-64-AVX2` could use significantly less CPU (up to 50% less) compared to `x86-64`.
+If there are three `.msi` installers, the one with `x86-64-AVX2` is for x86-64 architecture Windows machines which support AVX2, see [AVX2 Support](#avx2-support) for more info.
 
 On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
 
@@ -71,21 +63,23 @@ The Linux plugins are compressed in a `.zip` file. You need to unzip it and manu
 
 If there are two `.zip` files, the one with `x86-64` is for x86-64 architecture Linux machines and the one with `arm64` is for ARM64 architecture Linux machines.
 
-If there are three `.zip` files, the one with `x86-64-AVX2` is for x86-64 architecture Linux machines which support AVX2, which [includes](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2):
-
-- Intel
-	- Non Celeron or Pentium: Haswell processors (Q2 2013) and newer, except models branded as Celeron and Pentium
-	- Celeron or Pentium: Tiger Lake processors (Q3 2020) and newer
-- AMD
-	- Excavator processors (Q2 2015) and newer.
-
-On Linux machines which support AVX2, `x86-64-AVX2` could use significantly less CPU (up to 50% less) compared to `x86-64`.
+If there are three `.zip` files, the one with `x86-64-AVX2` is for x86-64 architecture Linux machines which support AVX2, see [AVX2 Support](#avx2-support) for more info.
 
 On Linux, the plugin does not have hardware acceleration. The plugin is built on Ubuntu 22.04 with dynamic linked dependencies. Therefore, I cannot guarantee its compatibility with Linux distributions. I would recommend building the plugin from source code.
 
 {{% alert title="Warning" color="warning" %}}
 In the foreseeable future (after the release of Ubuntu 26.04), the plugin will be built on Ubuntu 24.04, which will make it incompatible with earlier Linux versions.
 {{% /alert %}}
+
+## AVX2 Support
+
+The following CPUs shall support AVX:
+
+- Intel (Mainstream/Performance): Haswell processors (Q2 2013) and newer, excepting models branded as Celeron and Pentium.
+- Intel (Low-Power/Entry-Level): Tiger Lake Celerons/Pentiums (Q3 2020) AND Alder Lake-N / Gracemont processors (2023) or newer. Explicitly excludes Jasper Lake (Q1 2021) and any older Atom-based architectures.
+- AMD: Excavator processors (Q2 2015) and newer.
+
+On machines which support AVX2, the `x86-64-AVX2` version could use significantly less CPU (up to 50% less) compared to the `x86-64` version.
 
 ## Subscribe to Release Notifications
 
@@ -113,10 +107,6 @@ On macOS, the plugin requires Metal support. The plugin is not compatible with m
 
 If you cannot upgrade your system through official macOS support, you may upgrade it with [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) (use at your own risk).
 
-{{% alert title="Warning" color="warning" %}}
-In the foreseeable future (after the release of macOS 28), the `x86` version will be discontinued.
-{{% /alert %}}
-
 ### Windows Installation
 
 The Windows installer file extension is `.exe`.
@@ -125,14 +115,6 @@ If there are two `.exe` installers, the one with `x86` is for x86-64 architectur
 
 On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
 
-{{% alert title="Warning" color="warning" %}}
-For Windows on ARM Users, you need to choose the version that matches your DAW. The following information might be outdated. Please refer to your DAW official support documentation.
-
-Choose the one with `arm` if your DAW is also ARM64, such as Fender Studio Pro (ARM64), Bitwig (ARM64). The plugin will have optimal performance.
-
-Choose the one with `x86` if your DAW is x86-64 or ARM64EC, such as Reaper (ARM64EC), Cubase (ARM64EC), FL Studio (x86_64), Ableton (x86_64). The plugin will have degraded performance because of emulation.
-{{% /alert %}}
-
 ### Linux Installation
 
 The Linux plugins are compressed in a `.zip` file. You need to unzip it and manually move the `*.vst3` file to the correct folder, such as `~/.vst3`.
@@ -140,7 +122,3 @@ The Linux plugins are compressed in a `.zip` file. You need to unzip it and manu
 If there are two `.zip` files, the one with `x86` is for x86-64 architecture Linux machines and the one with `arm` is for ARM64 architecture Linux machines.
 
 On Linux, the plugin does not have hardware acceleration. The plugin is built on Ubuntu 22.04 with dynamic linked dependencies. Therefore, I cannot guarantee its compatibility with Linux distributions. I would recommend building the plugin from source code.
-
-{{% alert title="Warning" color="warning" %}}
-In the foreseeable future (after the release of Ubuntu 26.04), the plugin will be built on Ubuntu 24.04, which will make it incompatible with earlier Linux versions.
-{{% /alert %}}
