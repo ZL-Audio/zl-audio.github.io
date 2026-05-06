@@ -73,13 +73,14 @@ In the foreseeable future (after the release of Ubuntu 26.04), the plugin will b
 
 ## AVX2 Support
 
-The following CPUs shall support AVX:
+The following CPUs shall support AVX2:
 
-- Intel (Mainstream/Performance): Haswell processors (Q2 2013) and newer, excepting models branded as Celeron and Pentium.
-- Intel (Low-Power/Entry-Level): Tiger Lake Celerons/Pentiums (Q3 2020) AND Alder Lake-N / Gracemont processors (2023) or newer. Explicitly excludes Jasper Lake (Q1 2021) and any older Atom-based architectures.
+- Intel: Haswell processors (Q2 2013) and newer, excepting models branded as Celeron and Pentium (for Celeron and Pentium, please follow the [guidance](https://www.intel.com/content/www/us/en/support/articles/000090473/processors/intel-core-processors.html) to check AVX2 support)
 - AMD: Excavator processors (Q2 2015) and newer.
 
 On machines which support AVX2, the `x86-64-AVX2` version could use significantly less CPU (up to 50% less) compared to the `x86-64` version.
+
+On machines which does not support AVX2, the `x86-64-AVX2` version is highly likely to crash immediately.
 
 ## Subscribe to Release Notifications
 
