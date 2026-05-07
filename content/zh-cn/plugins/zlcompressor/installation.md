@@ -11,11 +11,11 @@ weight: 1
 
 您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLCompressor/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的操作系统和架构对应的安装器。
 
-| 操作系统        | x86-64<br>Intel 芯片<br>AMD 芯片（大多数）                                                                                                           | ARM64<br>Apple M 芯片<br>Qualcomm 芯片                                                                                                          |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**   | [ZL.Compressor-0.4.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-macOS-x86.dmg)     | [ZL.Compressor-0.4.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-macOS-arm.dmg)     |
-| **Windows** | [ZL.Compressor-0.4.0-Windows-x86.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-Windows-x86.msi) | [ZL.Compressor-0.4.0-Windows-arm.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-Windows-arm.msi) |
-| **Linux**   | [ZL.Compressor-0.4.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-Linux-x86.zip)     | [ZL.Compressor-0.4.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.4.0/ZL.Compressor-0.4.0-Linux-arm.zip)     |
+| 操作系统        | x86-64<br>Intel Chip<br>AMD Chip                                                                                                                  | x86-64 AVX2<br>Intel Core 第五代 或 更新<br>AMD Ryzen 或 更新                                                                                                        | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                          |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **macOS**   | [ZL.Compressor-0.5.0-macOS-x86-64.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-macOS-x86-64.dmg)     | N/A                                                                                                                                                         | [ZL.Compressor-0.5.0-macOS-arm64.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-macOS-arm64.dmg)     |
+| **Windows** | [ZL.Compressor-0.5.0-Windows-x86-64.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Windows-x86-64.msi) | [ZL.Compressor-0.5.0-Windows-x86-64-AVX2.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Windows-x86-64-AVX2.msi) | [ZL.Compressor-0.5.0-Windows-arm64.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Windows-arm64.msi) |
+| **Linux**   | [ZL.Compressor-0.5.0-Linux-x86-64.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Linux-x86-64.zip)     | [ZL.Compressor-0.5.0-Linux-x86-64-AVX2.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Linux-x86-64-AVX2.zip)     | [ZL.Compressor-0.5.0-Linux-arm64.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Linux-arm64.zip)     |
 
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
@@ -31,6 +31,24 @@ ZL Compressor 是**自由开源**的软件。除了 [ZL Audio 标志](https://gi
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
 ## 更新日志
+
+### 0.5.0
+
+修复
+
+- 修复 不正确的峰值显示
+- 修复 压缩方向显示
+- 修复 部分语法错误
+- 修复 旋钮的鼠标拖拽敏感度
+
+改进
+
+- 改进 用户界面性能
+- 改进 信号处理性能
+
+其他
+
+- 增加 LV2 标签
 
 ### 0.4.0
 

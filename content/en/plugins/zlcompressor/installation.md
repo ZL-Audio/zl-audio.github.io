@@ -12,7 +12,7 @@ weight: 1
 
 You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLCompressor/releases/latest) or use the direct download link below. Please download the installer that matches your OS & architecture:
 
-| Operating System | x86-64<br>Intel Chip<br>AMD Chip                                                                                                                  | x86-64 AVX2<br>Intel 5th generation and newer<br>AMD Ryzen and newer                                                                                        | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                          |
+| Operating System | x86-64<br>Intel Chip<br>AMD Chip                                                                                                                  | x86-64 AVX2<br>Intel Core 5th generation and newer<br>AMD Ryzen and newer                                                                                   | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                          |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | **macOS**        | [ZL.Compressor-0.5.0-macOS-x86-64.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-macOS-x86-64.dmg)     | N/A                                                                                                                                                         | [ZL.Compressor-0.5.0-macOS-arm64.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-macOS-arm64.dmg)     |
 | **Windows**      | [ZL.Compressor-0.5.0-Windows-x86-64.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Windows-x86-64.msi) | [ZL.Compressor-0.5.0-Windows-x86-64-AVX2.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Windows-x86-64-AVX2.msi) | [ZL.Compressor-0.5.0-Windows-arm64.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Windows-arm64.msi) |
@@ -35,6 +35,24 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLCompressor). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLCompressor/issues).
 
 ## Changelog
+
+### 0.5.0
+
+Bug fixes
+
+- fix incorrect peak display
+- fix compression direction combobox display
+- fix grammar mistakes in tooltips
+- fix mouse dragging sensitivity of rotary sliders
+
+Improvements
+
+- improve DSP performance
+- improve GUI performance
+
+Other Changes
+
+- add LV2 tags
 
 ### 0.4.0
 
