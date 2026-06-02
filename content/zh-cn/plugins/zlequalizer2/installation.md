@@ -12,11 +12,11 @@ weight: 1
 
 您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的操作系统和架构对应的安装器。
 
-| 操作系统        | x86-64<br>Intel 芯片<br>AMD 芯片（大多数）                                                                                                            | ARM64<br>Apple M 芯片<br>Qualcomm 芯片                                                                                                           |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**   | [ZL.Equalizer.2-1.1.1-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-macOS-x86.dmg)     | [ZL.Equalizer.2-1.1.1-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-macOS-arm.dmg)     |
-| **Windows** | [ZL.Equalizer.2-1.1.1-Windows-x86.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-Windows-x86.msi) | [ZL.Equalizer.2-1.1.1-Windows-arm.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-Windows-arm.msi) |
-| **Linux**   | [ZL.Equalizer.2-1.1.1-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-Linux-x86.zip)     | [ZL.Equalizer.2-1.1.1-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.1.1/ZL.Equalizer.2-1.1.1-Linux-arm.zip)     |
+| 操作系统        | x86-64<br>Intel Chip<br>AMD Chip                                                                                                                   | x86-64 AVX2<br>Intel Core 第五代 或 更新<br>AMD Ryzen 或 更新                                                                                                         | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                           |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **macOS**   | [ZL.Equalizer.2-1.2.0-macOS-x86-64.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-macOS-x86-64.dmg)     | N/A                                                                                                                                                          | [ZL.Equalizer.2-1.2.0-macOS-arm64.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-macOS-arm64.dmg)     |
+| **Windows** | [ZL.Equalizer.2-1.2.0-Windows-x86-64.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Windows-x86-64.msi) | [ZL.Equalizer.2-1.2.0-Windows-x86-64-AVX2.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Windows-x86-64-AVX2.msi) | [ZL.Equalizer.2-1.2.0-Windows-arm64.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Windows-arm64.msi) |
+| **Linux**   | [ZL.Equalizer.2-1.2.0-Linux-x86-64.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Linux-x86-64.zip)     | [ZL.Equalizer.2-1.2.0-Linux-x86-64-AVX2.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Linux-x86-64-AVX2.zip)     | [ZL.Equalizer.2-1.2.0-Linux-arm64.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Linux-arm64.zip)     |
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
 
@@ -31,6 +31,23 @@ ZL Equalizer 是**自由开源**的软件。除了 [ZL Audio 标志](https://gi
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
 ## 更新日志
+
+### 1.2.0
+
+破坏性更改
+
+- 更改滤波器去扭曲方法 （Yuriy Ivantsov）
+	- 截止频率在奈奎斯特附近的滤波器响应会略有不同
+
+修复
+
+- 修复 动态滤波器在动态功能关闭后未能更新增益
+- 修复 若干滑块的拖拽灵敏度
+
+改进
+
+- 改进 信号处理 性能
+- 改进 用户界面 性能
 
 ### 1.1.1
 
