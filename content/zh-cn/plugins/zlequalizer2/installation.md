@@ -14,9 +14,9 @@ weight: 1
 
 | 操作系统        | x86-64<br>Intel Chip<br>AMD Chip                                                                                                                   | x86-64 AVX2<br>Intel Core 第五代 或 更新<br>AMD Ryzen 或 更新                                                                                                         | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                           |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **macOS**   | [ZL.Equalizer.2-1.2.0-macOS-x86-64.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-macOS-x86-64.dmg)     | N/A                                                                                                                                                          | [ZL.Equalizer.2-1.2.0-macOS-arm64.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-macOS-arm64.dmg)     |
-| **Windows** | [ZL.Equalizer.2-1.2.0-Windows-x86-64.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Windows-x86-64.msi) | [ZL.Equalizer.2-1.2.0-Windows-x86-64-AVX2.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Windows-x86-64-AVX2.msi) | [ZL.Equalizer.2-1.2.0-Windows-arm64.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Windows-arm64.msi) |
-| **Linux**   | [ZL.Equalizer.2-1.2.0-Linux-x86-64.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Linux-x86-64.zip)     | [ZL.Equalizer.2-1.2.0-Linux-x86-64-AVX2.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Linux-x86-64-AVX2.zip)     | [ZL.Equalizer.2-1.2.0-Linux-arm64.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.0/ZL.Equalizer.2-1.2.0-Linux-arm64.zip)     |
+| **macOS**   | [ZL.Equalizer.2-1.2.1-macOS-x86-64.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-macOS-x86-64.dmg)     | N/A                                                                                                                                                          | [ZL.Equalizer.2-1.2.1-macOS-arm64.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-macOS-arm64.dmg)     |
+| **Windows** | [ZL.Equalizer.2-1.2.1-Windows-x86-64.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Windows-x86-64.msi) | [ZL.Equalizer.2-1.2.1-Windows-x86-64-AVX2.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Windows-x86-64-AVX2.msi) | [ZL.Equalizer.2-1.2.1-Windows-arm64.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Windows-arm64.msi) |
+| **Linux**   | [ZL.Equalizer.2-1.2.1-Linux-x86-64.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Linux-x86-64.zip)     | [ZL.Equalizer.2-1.2.1-Linux-x86-64-AVX2.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Linux-x86-64-AVX2.zip)     | [ZL.Equalizer.2-1.2.1-Linux-arm64.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Linux-arm64.zip)     |
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
 
@@ -31,6 +31,22 @@ ZL Equalizer 是**自由开源**的软件。除了 [ZL Audio 标志](https://gi
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
 ## 更新日志
+
+### 1.2.1
+
+新功能
+
+- 增加滤波器类型 `Flat Tilt`
+
+修复
+
+- 修复未实现的 FFT 频谱冻结功能
+- 修复 Windows 上冲突显示功能
+
+改进
+
+- 改进 信号处理 性能（略微）
+- 改进 频谱仪显示
 
 ### 1.2.0
 
