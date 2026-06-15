@@ -1,0 +1,72 @@
+<div id="installer-table-{{ .Get "plugin" | urlize }}">
+    <p><em>Detecting operating system to display installers...</em></p>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Fetch parameters passed from the markdown file
+    const repo = "{{ .Get "repo" }}";
+    const plugin = "{{ .Get "plugin" }}";
+    const version = "{{ .Get "version" }}";
+    const container = document.getElementById("installer-table-{{ .Get "plugin" | urlize }}");
+
+    // 2. Detect the User's Operating System
+    const ua = navigator.userAgent;
+    let os = "Linux"; // Default fallback
+    let ext = "zip";
+
+    if (ua.indexOf("Win") !== -1) {
+        os = "Windows";
+        ext = "msi";
+    } else if (ua.indexOf("Mac") !== -1 && ua.indexOf("iPhone") === -1 && ua.indexOf("iPad") === -1) {
+        os = "macOS";
+        ext = "dmg";
+    }
+
+    // 3. Define the chip architecture logic based on the OS
+    const osData = {
+        "macOS": [
+            { chip: "x86-64<br><small>Intel Chip</small>", arch: "x86-64" },
+            { chip: "ARM64<br><small>Apple M Chip</small>", arch: "arm64" }
+        ],
+        "Windows": [
+            { chip: "x86-64<br><small>Intel / AMD Chip</small>", arch: "x86-64" },
+            { chip: "x86-64 AVX2<br><small>Intel Core 5th Gen+ / AMD Ryzen+</small>", arch: "x86-64-AVX2" },
+            { chip: "ARM64<br><small>Qualcomm Chip</small>", arch: "arm64" }
+        ],
+        "Linux": [
+            { chip: "x86-64<br><small>Intel / AMD Chip</small>", arch: "x86-64" },
+            { chip: "x86-64 AVX2<br><small>Intel Core 5th Gen+ / AMD Ryzen+</small>", arch: "x86-64-AVX2" },
+            { chip: "ARM64", arch: "arm64" }
+        ]
+    };
+
+    // 4. Construct the HTML table dynamically
+    const baseUrl = `https://github.com/${repo}/releases/download/${version}/`;
+    
+    let tableHTML = `<table>
+        <thead>
+            <tr>
+                <th>Chip</th>
+                <th>${os}</th>
+            </tr>
+        </thead>
+        <tbody>`;
+
+    // Loop through the specific OS's array and build the rows
+    osData[os].forEach(item => {
+        const fileName = `${plugin}-${version}-${os}-${item.arch}.${ext}`;
+        const downloadUrl = `${baseUrl}${fileName}`;
+        
+        tableHTML += `<tr>
+            <td>${item.chip}</td>
+            <td><strong><a href="${downloadUrl}">${fileName}</a></strong></td>
+        </tr>`;
+    });
+
+    tableHTML += `</tbody></table>`;
+    
+    // Inject the generated table into the div
+    container.innerHTML = tableHTML;
+});
+</script>
