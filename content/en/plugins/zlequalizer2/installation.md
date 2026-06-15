@@ -10,7 +10,7 @@ weight: 1
 
 ## Installation
 
-You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) or use the direct download link below. Please download the installer that matches your OS & architecture:
+You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) or use the direct download link below. Please download the installer that matches your chip/architecture:
 
 {{< installers repo="ZL-Audio/ZLEqualizer" plugin="ZL.Equalizer.2" version="1.2.1" >}}
 

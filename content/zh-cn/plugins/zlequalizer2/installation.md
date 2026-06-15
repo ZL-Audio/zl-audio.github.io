@@ -10,13 +10,9 @@ weight: 1
 
 ## 安装
 
-您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的操作系统和架构对应的安装器。
+您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的芯片/架构对应的安装器。
 
-| 操作系统        | x86-64<br>Intel Chip<br>AMD Chip                                                                                                                   | x86-64 AVX2<br>Intel Core 第五代 或 更新<br>AMD Ryzen 或 更新                                                                                                         | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                           |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **macOS**   | [ZL.Equalizer.2-1.2.1-macOS-x86-64.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-macOS-x86-64.dmg)     | N/A                                                                                                                                                          | [ZL.Equalizer.2-1.2.1-macOS-arm64.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-macOS-arm64.dmg)     |
-| **Windows** | [ZL.Equalizer.2-1.2.1-Windows-x86-64.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Windows-x86-64.msi) | [ZL.Equalizer.2-1.2.1-Windows-x86-64-AVX2.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Windows-x86-64-AVX2.msi) | [ZL.Equalizer.2-1.2.1-Windows-arm64.msi](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Windows-arm64.msi) |
-| **Linux**   | [ZL.Equalizer.2-1.2.1-Linux-x86-64.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Linux-x86-64.zip)     | [ZL.Equalizer.2-1.2.1-Linux-x86-64-AVX2.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Linux-x86-64-AVX2.zip)     | [ZL.Equalizer.2-1.2.1-Linux-arm64.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.2.1/ZL.Equalizer.2-1.2.1-Linux-arm64.zip)     |
+{{< installers repo="ZL-Audio/ZLEqualizer" plugin="ZL.Equalizer.2" version="1.2.1" >}}
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
 

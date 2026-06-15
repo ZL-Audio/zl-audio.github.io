@@ -10,13 +10,9 @@ weight: 1
 
 ## Installation
 
-You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLCompressor/releases/latest) or use the direct download link below. Please download the installer that matches your OS & architecture:
+You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLCompressor/releases/latest) or use the direct download link below. Please download the installer that matches your chip/architecture:
 
-| Operating System | x86-64<br>Intel Chip<br>AMD Chip                                                                                                                  | x86-64 AVX2<br>Intel Core 5th generation and newer<br>AMD Ryzen and newer                                                                                   | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                          |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**        | [ZL.Compressor-0.5.0-macOS-x86-64.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-macOS-x86-64.dmg)     | N/A                                                                                                                                                         | [ZL.Compressor-0.5.0-macOS-arm64.dmg](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-macOS-arm64.dmg)     |
-| **Windows**      | [ZL.Compressor-0.5.0-Windows-x86-64.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Windows-x86-64.msi) | [ZL.Compressor-0.5.0-Windows-x86-64-AVX2.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Windows-x86-64-AVX2.msi) | [ZL.Compressor-0.5.0-Windows-arm64.msi](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Windows-arm64.msi) |
-| **Linux**        | [ZL.Compressor-0.5.0-Linux-x86-64.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Linux-x86-64.zip)     | [ZL.Compressor-0.5.0-Linux-x86-64-AVX2.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Linux-x86-64-AVX2.zip)     | [ZL.Compressor-0.5.0-Linux-arm64.zip](https://github.com/ZL-Audio/ZLCompressor/releases/download/0.5.0/ZL.Compressor-0.5.0-Linux-arm64.zip)     |
+{{< installers repo="ZL-Audio/ZLCompressor" plugin="ZL.Compressor" version="0.5.0" >}}
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
