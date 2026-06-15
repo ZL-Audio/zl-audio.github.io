@@ -18,14 +18,23 @@ document.addEventListener("DOMContentLoaded", function() {
     const container = document.getElementById(`installer-table-${containerId}`);
     const toggleBtn = document.getElementById(`toggle-btn-${containerId}`);
 
-    // 1. Detect the User's Operating System
     const ua = navigator.userAgent;
-    let detectedOS = "Linux"; // Default fallback
+    let detectedOS = "Windows";
+    let showingAll = false;
 
-    if (ua.indexOf("Win") !== -1) {
-        detectedOS = "Windows";
-    } else if (ua.indexOf("Mac") !== -1 && ua.indexOf("iPhone") === -1 && ua.indexOf("iPad") === -1) {
-        detectedOS = "macOS";
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(ua)) {
+        showingAll = true;
+        if (/iPhone|iPad|iPod|Mac/i.test(ua)) {
+            detectedOS = "macOS";
+        }
+    } else {
+        if (ua.indexOf("Win") !== -1) {
+            detectedOS = "Windows";
+        } else if (ua.indexOf("Mac") !== -1) {
+            detectedOS = "macOS";
+        } else if (ua.indexOf("Linux") !== -1) {
+            detectedOS = "Linux";
+        }
     }
 
     // 2. Inserted your exact OS Data
