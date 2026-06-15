@@ -1,5 +1,11 @@
-<div id="installer-table-{{ .Get "plugin" | urlize }}">
-    <p><em>Detecting operating system to display installers...</em></p>
+<div class="plugin-installers-wrapper py-2 my-4">
+    <div id="installer-table-{{ .Get "plugin" | urlize }}">
+        <p><em>Detecting operating system to display installers...</em></p>
+    </div>
+    
+    <button id="toggle-btn-{{ .Get "plugin" | urlize }}" class="btn btn-outline-primary mt-3 mb-2">
+        Show all operating systems
+    </button>
 </div>
 
 <script>
@@ -7,20 +13,22 @@ document.addEventListener("DOMContentLoaded", function() {
     const repo = "{{ .Get "repo" }}";
     const plugin = "{{ .Get "plugin" }}";
     const version = "{{ .Get "version" }}";
-    const container = document.getElementById("installer-table-{{ .Get "plugin" | urlize }}");
+    
+    const containerId = "{{ .Get "plugin" | urlize }}";
+    const container = document.getElementById(`installer-table-${containerId}`);
+    const toggleBtn = document.getElementById(`toggle-btn-${containerId}`);
 
+    // 1. Detect the User's Operating System
     const ua = navigator.userAgent;
-    let os = "Linux";
-    let ext = "zip";
+    let detectedOS = "Linux"; // Default fallback
 
     if (ua.indexOf("Win") !== -1) {
-        os = "Windows";
-        ext = "msi";
+        detectedOS = "Windows";
     } else if (ua.indexOf("Mac") !== -1 && ua.indexOf("iPhone") === -1 && ua.indexOf("iPad") === -1) {
-        os = "macOS";
-        ext = "dmg";
+        detectedOS = "macOS";
     }
 
+    // 2. Inserted your exact OS Data
     const osData = {
         "macOS": [
             { chip: "x86-64<br><small>Intel Chip</small>", arch: "x86-64" },
@@ -38,30 +46,65 @@ document.addEventListener("DOMContentLoaded", function() {
         ]
     };
 
-    const baseUrl = `https://github.com/${repo}/releases/download/${version}/`;
-    
-    let tableHTML = `<table>
-        <thead>
-            <tr>
-                <th>Chip</th>
-                <th>${os}</th>
-            </tr>
-        </thead>
-        <tbody>`;
+    // 3. New mapping to fix the "undefined" file extension issue
+    const extensions = {
+        "macOS": "dmg",
+        "Windows": "msi",
+        "Linux": "zip"
+    };
 
-    osData[os].forEach(item => {
-        const fileName = `${plugin}-${version}-${os}-${item.arch}.${ext}`;
-        const downloadUrl = `${baseUrl}${fileName}`;
+    const baseUrl = `https://github.com/${repo}/releases/download/${version}/`;
+    let showingAll = false;
+
+    // 4. Function to build and render the table
+    function renderTable() {
+        // Added standard Bootstrap table classes used by Docsy
+        let tableHTML = `<table class="table table-striped table-bordered">
+            <thead>
+                <tr>`;
         
-        tableHTML += `<tr>
-            <td>${item.chip}</td>
-            <td><strong><a href="${downloadUrl}">${fileName}</a></strong></td>
-        </tr>`;
+        if (showingAll) tableHTML += `<th>OS</th>`;
+        
+        tableHTML += `<th>Chip Architecture</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>`;
+
+        const osList = showingAll ? Object.keys(osData) : [detectedOS];
+
+        osList.forEach(os => {
+            // Retrieve the correct extension for the current OS in the loop
+            const ext = extensions[os]; 
+            
+            osData[os].forEach((item, index) => {
+                const fileName = `${plugin}-${version}-${os}-${item.arch}.${ext}`;
+                const downloadUrl = `${baseUrl}${fileName}`;
+                
+                tableHTML += `<tr>`;
+                
+                if (showingAll && index === 0) {
+                    // Added 'align-middle' so the OS name stays centered next to the rows
+                    tableHTML += `<td rowspan="${osData[os].length}" class="align-middle"><strong>${os}</strong></td>`;
+                }
+                
+                tableHTML += `<td class="align-middle">${item.chip}</td>
+                    <td class="align-middle"><strong><a href="${downloadUrl}">${fileName}</a></strong></td>
+                </tr>`;
+            });
+        });
+
+        tableHTML += `</tbody></table>`;
+        container.innerHTML = tableHTML;
+        
+        toggleBtn.innerText = showingAll ? "Hide other operating systems" : "Show all operating systems";
+    }
+
+    toggleBtn.addEventListener("click", function() {
+        showingAll = !showingAll; 
+        renderTable();            
     });
 
-    tableHTML += `</tbody></table>`;
-    
-    // Inject the generated table into the div
-    container.innerHTML = tableHTML;
+    renderTable();
 });
 </script>
