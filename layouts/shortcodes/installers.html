@@ -6,14 +6,22 @@
     <div id="avx2-help-{{ .Get "plugin" | urlize }}" style="display: none;" class="alert alert-info mt-3 text-sm" role="alert">
         <h5 class="alert-heading h6 mb-2">Unsure if your CPU supports AVX2?</h5>
         
-        <div id="win-instructions-{{ .Get "plugin" | urlize }}" style="display: none;" class="mb-2">
-            <strong class="d-block mb-1">For Windows:</strong>
-            Check your CPU model in <strong>Task Manager</strong> (<code>Ctrl+Shift+Esc</code> &rarr; Performance &rarr; CPU):
-            <ul class="mb-0 mt-1">
-                <li><strong>Intel:</strong> Must include the word <strong>Core</strong>. If it is an i3/i5/i7/i9, the generation number must be <strong>4</strong>000 or higher (e.g., Core i7-<strong>4</strong>770K, Core i9-<strong>14</strong>900K). Newer <strong>Core Ultra</strong> and "i-less" <strong>Core</strong> models are fully supported (e.g., Core Ultra 7 265K, Core 5 120U).</li>
-                <li><strong>AMD:</strong> Must include the word <strong>Ryzen</strong>. All Ryzen processors support AVX2.</li>
-            </ul>
-        </div>
+    <div id="win-instructions-{{ .Get "plugin" | urlize }}" style="display: none;" class="mb-2">
+        <strong class="d-block mb-1">For Windows:</strong>
+        Check your CPU model in <strong>Task Manager</strong> (<code>Ctrl+Shift+Esc</code> &rarr; Performance &rarr; CPU):
+        
+        <ul class="mb-2 mt-1">
+            <li><strong>Intel Core:</strong> i3/i5/i7/i9 from the 4th generation (Haswell, 2013) or newer. Modern <strong>Core Ultra</strong> and "i-less" <strong>Core</strong> models are fully supported. <em>(Pentium and Celeron are typically not supported).</em></li>
+            
+            <li><strong>Intel Xeon:</strong> E5 v3 (Haswell-EP) or newer. Modern Xeon Scalable (Bronze/Silver/Gold/Platinum) are fully supported.</li>
+            
+            <li><strong>AMD Ryzen:</strong> All Ryzen processors (Zen architecture and newer) support AVX2. <em>(Older AMD FX or Athlon processors are not supported).</em></li>
+        </ul>
+
+        <p class="mb-0 text-muted" style="font-size: 0.9em;">
+            <em>If still unsure, check your CPU on <a href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">CPU-Z</a>  or search the exact model name online.</em>
+        </p>
+    </div>
 
         <div id="linux-instructions-{{ .Get "plugin" | urlize }}" style="display: none;" class="mt-2">
             <strong class="d-block mb-1">For Linux:</strong>
