@@ -10,7 +10,7 @@ Please notice: I have already given them a 30-day notice but they fail to comply
 
 ## Case 1
 
-Plugin: Semedo EQ (version 3.1)
+Plugin: Semedo EQ (version 3.1) Link to gumroad: https://cmdo.gumroad.com/l/sefixr
 
 ZL Audio Plugin: ZL Equalizer 2 (version 1.1.0)
 
