@@ -12,7 +12,7 @@ weight: 2
 
 ZL Equalizer 2 is a dynamic equalizer plugin with the following key features:
 
-- **Unmatched Versatility**: Sculpt your sound with 6 filter structures, 9 filter types, 5 stereo modes, 7 variable slopes, and up to 24 frequency bands.
+- **Unmatched Versatility**: Sculpt your sound with 8 filter structures, 9 filter types, 5 stereo modes, 7 variable slopes, and up to 24 frequency bands.
 - **Integrated Dynamic Control**: Go beyond static EQ with adjustable threshold, attack, release, and side-chain filters for powerful dynamic equalization.
 - **Pristine Precision**: 64-bit floating-point processing and advanced de-cramping technique deliver outstanding performance, ensuring exceptional clarity from the deepest lows to the highest highs.
 - **Intuitive Workflow**: A carefully designed interface with an interactive spectrum graph, smart collision detection, and smooth animations makes equalization fast and fluid.
@@ -111,6 +111,7 @@ The floating window is attached to the filter button of the selected band. You c
 | <img src="/images/zlequalizer2/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                           |                  |
 | <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                           |                  |
 | <img src="/images/zlequalizer2/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                           |                  |
+| <img src="/images/zlequalizer2/allpass.svg" width="20pt"/>   | `All Pass`   |                                                           |                  |
 
 #### Right-click Panel
 
@@ -406,6 +407,14 @@ ___
 - `3 dB/oct`: pink noise displays as a horizon line
 - `4.5 dB/oct`: default value, which represents perceived loudness better
 
+___
+
+**Smoothing**
+
+- Control the smoothing value, larger value indicates more smooth spectrum
+- `OCT`: smooth the spectrum in octave
+- `ERB`: smooth the spectrum in ERB (Equivalent Rectangular Bandwidth)
+
 ---
 
 <p float="left">
@@ -493,8 +502,10 @@ ___
 Choose the target signal:
 
 - `Side`: let the target curve be the average spectrum of the side-chain signal
-- `Flat`: set the target curve as a flat line
 - `Preset`: load the target curve from a preset file
+- `Flat`: set the target curve as a flat line
+- `Balanced`: set the target curve as a balanced line
+- `Natural`: set the target curve as a natural line
 
 ___
 
@@ -516,6 +527,12 @@ ___
 **`Slope`**
 
 Control the (additional) slope of the difference curve.
+
+___
+
+**`Limit`**
+
+Choose the limitation of difference curve (applied when fitting).
 
 ___
 
@@ -583,14 +600,15 @@ For better accessibility, please set Text/Background to colors with high contras
 
 **Wheel Sensitivity**
 
-- Rough: mouse-wheel sensitivity when `Shift` is not pressed
-- Fine: mouse-wheel sensitivity when `Shift` is pressed
-- Reverse: whether to reverse the direction of mouse-wheel when `Shift` is pressed
+- `Rough`: mouse-wheel sensitivity when `Shift` is not pressed
+- `Fine`: mouse-wheel sensitivity when `Shift` is pressed
+- `Menu`: mouse-wheel sensitivity when adjust combobox items
+- `Reverse`: whether to reverse the direction of mouse-wheel when `Shift` is pressed
 
 **Drag Sensitivity**
 
-- Rough: mouse-drag sensitivity when `Shift` is not pressed
-- Fine: mouse-drag sensitivity when `Shift` is pressed
+- `Rough`: mouse-drag sensitivity when `Shift` is not pressed
+- `Fine`: mouse-drag sensitivity when `Shift` is pressed
 
 **Rotary Slider Style**
 
@@ -644,6 +662,19 @@ Choose the font size mode.
 - `Scale`: the font size scales with the window size. Control the relative ratio.
 - `Static`: the font size is fixed. Control the actual font size.
 
+**Curve dB Scale**
+
+- `Min`: minimum decibel scale of magnitude response curves
+- `Default`: default decibel scale of magnitude response curves
+- `Max`: maximum decibel scale of magnitude response curves
+
+**Window Size Fix**
+
+Choose whether to turn on Window Size Fix.
+
+- `Off`: plugin window size adjustment will be stored
+- `On`: plugin window size adjustment will NOT be stored
+
 ## UI Controls
 
 Generally, you can enable fine-adjustment with `Shift` and enable special adjustment with `Ctrl/Command`. If the direction of the mouse wheel is reversed when `Shift` is pressed, you can reverse it again (in the UI Setting Panel) to put it back to normal.
@@ -663,6 +694,14 @@ Generally, you can enable fine-adjustment with `Shift` and enable special adjust
 - You can drag with the right mouse button + `Ctrl/Command` down while fixing the gain.
 - You can double-click the button to enter/exit the solo status.
 - You can double-click with `Ctrl/Command` to turn on/off the dynamic behavior.
+
+**Combobox**
+
+- You can use the mouse wheel to change the selected item.
+
+**Window Size**
+
+- You can drag a dragger at the bottom-right corner to adjust plugin window size.
 
 ## Filter Structure
 
