@@ -12,7 +12,7 @@ weight: 1
 
 You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) or use the direct download link below. Please download the installer that matches your chip/architecture:
 
-{{< installers repo="ZL-Audio/ZLEqualizer" plugin="ZL.Equalizer.2" version="1.2.1" >}}
+{{< installers repo="ZL-Audio/ZLEqualizer" plugin="ZL.Equalizer.2" version="1.2.2" >}}
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
@@ -31,6 +31,30 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLEqualizer). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLEqualizer/issues).
 
 ## Changelog
+
+### 1.2.2
+
+New Features
+
+- add support for filter with frequency beyond the Nyquist (now frequency can go up to 30 kHz under sample rate 44.1/48 kHz)
+- add `All Pass` filter type
+- add analyzer smoothing choice
+- add combobox mouse-wheel control
+- add EQ curve dB scale settings (see UI settings)
+- add mousewheel control to gain and scale label
+- add EQ match dB limit choice
+- add two EQ match built-in target curves `Balanced` and `Natural`
+
+Bug fixes
+
+- fix static gain compensation value display
+- fix incorrect loudness matching results
+- fix potential audio glitches after EQ match
+- fix potential crash caused by dynamic `Flat Tilt`
+
+Other Changes
+
+- allow frequency note to be entered as lower case
 
 ### 1.2.1
 

@@ -12,7 +12,7 @@ weight: 1
 
 您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的芯片/架构对应的安装器。
 
-{{< installers repo="ZL-Audio/ZLEqualizer" plugin="ZL.Equalizer.2" version="1.2.1" >}}
+{{< installers repo="ZL-Audio/ZLEqualizer" plugin="ZL.Equalizer.2" version="1.2.2" >}}
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
 
@@ -28,11 +28,35 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
+### 1.2.2
+
+新功能
+
+- 增加 对截止频率超过奈奎斯特的滤波器的支持（现在在采样率 44.1/48 kHz 下，滤波器截止频率最高为 30kHz）
+- 增加 滤波器类型 `All Pass`
+- 增加 分析仪平滑选项
+- 增加 组合框 鼠标滚轮控制
+- 增加 滤波器响应曲线 分贝刻度值设置
+- 增加 增益 和 缩放 鼠标滚轮控制
+- 增加 均衡匹配 分贝限制选择
+- 增加 均衡匹配 的 目标曲线
+
+修复
+
+- 修复 静态增益补偿 的数值显示
+- 修复 错误的响度匹配结果
+- 修复 均衡匹配 导致的爆音
+- 修复 动态 平坦倾斜 可能导致的崩溃
+
+其他更改
+
+- 允许 音高值 通过小写字母输入
+
 ### 1.2.1
 
 新功能
 
-- 增加滤波器类型 `Flat Tilt`
+- 增加 滤波器类型 `Flat Tilt`
 
 修复
 

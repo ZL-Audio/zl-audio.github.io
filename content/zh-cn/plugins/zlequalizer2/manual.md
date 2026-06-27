@@ -110,7 +110,7 @@ ___
 | <img src="/images/zlequalizer2/bandpass.svg" width="20pt"/>  | `带通 (Band Pass)`    |                                                           |                |
 | <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `倾斜搁架 (Tilt Shelf)` |                                                           |                |
 | <img src="/images/zlequalizer2/flattilt.svg" width="20pt"/>  | `平坦倾斜 (Flat Tilt)`  |                                                           |                |
-| <img src="/images/zlequalizer2/allpass.svg" width="20pt"/>   | `全通 (All Pass)`   |                                                           |                |
+| <img src="/images/zlequalizer2/allpass.svg" width="20pt"/>   | `全通 (All Pass)`     |                                                           |                |
 
 #### 右键菜单
 
@@ -602,7 +602,7 @@ ___
 
 - `Rough (粗调)`：未按下 `Shift` 时的鼠标滚轮灵敏度
 - `Fine (微调)`：按下 `Shift` 时的鼠标滚轮灵敏度
-- `Menu (菜单)`：调整组合框 (combobox) 选项时的鼠标滚轮灵敏度
+- `Menu (菜单)`：调整组合框选项时的鼠标滚轮灵敏度
 - `Reverse (反转)`：按下 `Shift` 时是否反转鼠标滚轮的方向
 
 **Drag Sensitivity (拖动灵敏度)**
