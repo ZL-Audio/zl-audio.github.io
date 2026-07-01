@@ -4,24 +4,28 @@
     </div>
     
     <div id="avx2-help-{{ .Get "plugin" | urlize }}" style="display: none;" class="alert alert-info mt-3 text-sm" role="alert">
+        <p class="mb-2">
+            <strong>We highly recommend choosing the AVX2 version if your CPU is compatible. It is significantly faster and more efficient than the legacy non-AVX2 version.
+        </p>
+
         <h5 class="alert-heading h6 mb-2">Unsure if your CPU supports AVX2?</h5>
         
-    <div id="win-instructions-{{ .Get "plugin" | urlize }}" style="display: none;" class="mb-2">
-        <strong class="d-block mb-1">For Windows:</strong>
-        Check your CPU model in <strong>Task Manager</strong> (<code>Ctrl+Shift+Esc</code> &rarr; Performance &rarr; CPU):
-        
-        <ul class="mb-2 mt-1">
-            <li><strong>Intel Core:</strong> i3/i5/i7/i9 from the 4th generation (Haswell, 2013) or newer. Modern <strong>Core Ultra</strong> and "i-less" <strong>Core</strong> models are fully supported. <em>(Pentium and Celeron are typically not supported).</em></li>
+        <div id="win-instructions-{{ .Get "plugin" | urlize }}" style="display: none;" class="mb-2">
+            <strong class="d-block mb-1">For Windows:</strong>
+            Check your CPU model in <strong>Task Manager</strong> (<code>Ctrl+Shift+Esc</code> &rarr; Performance &rarr; CPU):
             
-            <li><strong>Intel Xeon:</strong> E5 v3 (Haswell-EP) or newer. Modern Xeon Scalable (Bronze/Silver/Gold/Platinum) are fully supported.</li>
-            
-            <li><strong>AMD Ryzen:</strong> All Ryzen processors (Zen architecture and newer) support AVX2. <em>(Older AMD FX or Athlon processors are not supported).</em></li>
-        </ul>
+            <ul class="mb-2 mt-1">
+                <li><strong>Intel Core:</strong> i3/i5/i7/i9 from the 4th generation (released in 2013) or newer. Modern <strong>Core Ultra</strong> and "i-less" <strong>Core</strong> models are fully supported. <em>(Pentium and Celeron are typically not supported).</em></li>
+                
+                <li><strong>Intel Xeon:</strong> E5 v3 (Haswell-EP) or newer. Modern Xeon Scalable (Bronze/Silver/Gold/Platinum) are fully supported.</li>
+                
+                <li><strong>AMD Ryzen:</strong> All Ryzen processors (1st generation released in 2017) support AVX2. <em>(Older AMD FX or Athlon processors are not supported).</em></li>
+            </ul>
 
-        <p class="mb-0 text-muted" style="font-size: 0.9em;">
-            <em>If still unsure, check your CPU on <a href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">CPU-Z</a>  or search the exact model name online.</em>
-        </p>
-    </div>
+            <p class="mb-0 text-muted" style="font-size: 0.9em;">
+                <em>If still unsure, install the AVX2 version. Nowadays most modern CPUs support AVX2 without issue.</em>
+            </p>
+        </div>
 
         <div id="linux-instructions-{{ .Get "plugin" | urlize }}" style="display: none;" class="mt-2">
             <strong class="d-block mb-1">For Linux:</strong>
