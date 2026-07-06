@@ -1,0 +1,148 @@
+---
+title: Installation
+description: How to install ZL Compressor
+weight: 1
+---
+
+## Introduction Video
+
+{{< youtube "WDxXEAfy4rg" >}}
+
+## Installation
+
+You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLCompressor/releases/latest) or use the direct download link below. Please download the installer that matches your chip/architecture:
+
+{{< installers repo="ZL-Audio/ZLCompressor" plugin="ZL.Compressor" version="0.5.0" >}}
+
+For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
+
+ZL Compressor is Free and Open-source. ZL Compressor is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html), except for the [logo of ZL Audio](https://github.com/ZL-Audio/ZLCompressor/blob/main/assets/zlaudio.svg) and the [logo of ZL Compressor](https://github.com/ZL-Audio/ZLCompressor/blob/main/assets/logo.svg). You can obtain the corresponding source code at https://github.com/ZL-Audio/ZLCompressor or https://gitee.com/ZL-Audio/ZLCompressor.
+
+AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
+
+**You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.**
+
+<img src="/images/vst3.png" style="width: 120pt; max-width: 100%; height: auto"/>
+
+VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
+
+## Nightly Release
+
+Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLCompressor). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLCompressor/issues).
+
+## Changelog
+
+### 0.5.0
+
+Bug fixes
+
+- fix incorrect peak display
+- fix compression direction combobox display
+- fix grammar mistakes in tooltips
+- fix mouse dragging sensitivity of rotary sliders
+
+Improvements
+
+- improve DSP performance
+- improve GUI performance
+
+Other Changes
+
+- add LV2 tags
+
+### 0.4.0
+
+New Features
+
+- add meter panel
+- add inf range button
+- add negative lookahead (i.e., side-chain delay)
+
+Bug fixes and Improvements
+
+- improve UI layout
+- improve magnitude analyzer display
+- improve spectrum analyzer display
+
+### 0.3.1
+
+New Features
+
+- add `Inflate`, `Expand` and `Shape` directions (see the manual for details)
+- add magnitude analyzer stereo mode
+- add UI scaling control & credit info
+
+Bug fixes and Improvements
+
+- fix plugin crashes when it does not have UI preset folder permission
+- fix incorrect rms display
+- fix displayed values when they are close to zero
+- fix incorrect copy/paste from ZL Equalizer 2
+- improve DSP performance
+
+Other Changes
+
+- support VST3 parameter context menu
+- change several parameter ranges
+- change icons
+
+### 0.2.1
+
+New Features
+
+- add spectrum frozen (hold the mouse over the spectrum)
+- add multiple-band selection
+- add multiple-band copy/paste
+
+Bug fixes and Improvements
+
+- fix wrong 6dB slope choice when using mouse wheel
+- improve over-sampling performance (greatly)
+
+### 0.2.0
+
+New Features
+
+- add tooltips
+- add side-chain filter solo (double-click on the dragger)
+- add soft clipper
+
+Bug fixes and Improvements
+
+- fix potential overflow in `Vocal` style
+- improve stability
+
+### 0.1.2
+
+New Features
+
+- add UI setting panel
+- add two stereo modes (see #20)
+- add filter slope mouse wheel control (+ command/ctrl)
+- add filter invert/copy/paste right click panel
+- add threshold/ratio mousewheel control (on the analyzer)
+
+Bug fixes and Improvements
+
+- fix side wet slider width
+- fix analyzer shaking when bypassed/paused
+- improve slider mousewheel behaviour (see #21)
+- improve FFT analyzer display
+
+Others
+
+- add Windows ARM64 release
+
+### 0.1.1
+
+New Features
+
+- add compression style `Vocal`
+- add RMS release and RMS parameters
+- add loudness match
+
+Bug fixes and Improvements
+
+- fix delayed magnitude analyzer
+- fix incorrect cumulative RMS display
+- improve resizable corner dragger

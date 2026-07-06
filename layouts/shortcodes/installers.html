@@ -1,0 +1,162 @@
+<div class="plugin-installers-wrapper py-2 my-4">
+    <div id="installer-table-{{ .Get "plugin" | urlize }}">
+        <p><em>Detecting operating system to display installers...</em></p>
+    </div>
+    
+    <div id="avx2-help-{{ .Get "plugin" | urlize }}" style="display: none;" class="alert alert-info mt-3 text-sm" role="alert">
+        <p class="mb-2">
+            <strong>We highly recommend choosing the AVX2 version if your CPU is compatible. It is significantly faster and more efficient than the legacy non-AVX2 version.
+        </p>
+
+        <h5 class="alert-heading h6 mb-2">Unsure if your CPU supports AVX2?</h5>
+        
+        <div id="win-instructions-{{ .Get "plugin" | urlize }}" style="display: none;" class="mb-2">
+            <strong class="d-block mb-1">For Windows:</strong>
+            Check your CPU model in <strong>Task Manager</strong> (<code>Ctrl+Shift+Esc</code> &rarr; Performance &rarr; CPU):
+            
+            <ul class="mb-2 mt-1">
+                <li><strong>Intel Core:</strong> i3/i5/i7/i9 from the 4th generation (released in 2013) or newer. Modern <strong>Core Ultra</strong> and "i-less" <strong>Core</strong> models are fully supported. <em>(Pentium and Celeron are typically not supported).</em></li>
+                
+                <li><strong>Intel Xeon:</strong> E5 v3 (Haswell-EP) or newer. Modern Xeon Scalable (Bronze/Silver/Gold/Platinum) are fully supported.</li>
+                
+                <li><strong>AMD Ryzen:</strong> All Ryzen processors (1st generation released in 2017) support AVX2. <em>(Older AMD FX or Athlon processors are not supported).</em></li>
+            </ul>
+
+            <p class="mb-0 text-muted" style="font-size: 0.9em;">
+                <em>If still unsure, install the AVX2 version. Nowadays most modern CPUs support AVX2 without issue.</em>
+            </p>
+        </div>
+
+        <div id="linux-instructions-{{ .Get "plugin" | urlize }}" style="display: none;" class="mt-2">
+            <strong class="d-block mb-1">For Linux:</strong>
+            Run <code>grep avx2 /proc/cpuinfo</code> in your terminal. If it outputs text, AVX2 is supported.
+        </div>
+    </div>
+
+    <button id="toggle-btn-{{ .Get "plugin" | urlize }}" class="btn btn-outline-primary mt-2 mb-2">
+        Show all operating systems
+    </button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const repo = "{{ .Get "repo" }}";
+    const plugin = "{{ .Get "plugin" }}";
+    const version = "{{ .Get "version" }}";
+    
+    const containerId = "{{ .Get "plugin" | urlize }}";
+    const container = document.getElementById(`installer-table-${containerId}`);
+    const toggleBtn = document.getElementById(`toggle-btn-${containerId}`);
+    const avx2Help = document.getElementById(`avx2-help-${containerId}`);
+    
+    const winInstructions = document.getElementById(`win-instructions-${containerId}`);
+    const linuxInstructions = document.getElementById(`linux-instructions-${containerId}`);
+
+    const ua = navigator.userAgent;
+    let detectedOS = "Windows";
+    let showingAll = false;
+
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(ua)) {
+        showingAll = true;
+        if (/iPhone|iPad|iPod|Mac/i.test(ua)) {
+            detectedOS = "macOS";
+        }
+    } else {
+        if (ua.indexOf("Win") !== -1) {
+            detectedOS = "Windows";
+        } else if (ua.indexOf("Mac") !== -1) {
+            detectedOS = "macOS";
+        } else if (ua.indexOf("Linux") !== -1) {
+            detectedOS = "Linux";
+        }
+    }
+
+    const osData = {
+        "macOS": [
+            { chip: "x86-64<br><small>Intel Chip</small>", arch: "x86-64" },
+            { chip: "ARM64<br><small>Apple M Chip</small>", arch: "arm64" }
+        ],
+        "Windows": [
+            { chip: "x86-64<br><small>Intel / AMD (Legacy) Chip</small>", arch: "x86-64" },
+            { chip: "x86-64 AVX2<br><small>Intel Core 4th Gen+ / AMD Ryzen+</small>", arch: "x86-64-AVX2" },
+            { chip: "ARM64<br><small>Qualcomm Chip</small>", arch: "arm64" }
+        ],
+        "Linux": [
+            { chip: "x86-64<br><small>Intel / AMD (Legacy) Chip</small>", arch: "x86-64" },
+            { chip: "x86-64 AVX2<br><small>Intel Core 4th Gen+ / AMD Ryzen+</small>", arch: "x86-64-AVX2" },
+            { chip: "ARM64", arch: "arm64" }
+        ]
+    };
+
+    const extensions = {
+        "macOS": "dmg",
+        "Windows": "msi",
+        "Linux": "zip"
+    };
+
+    const baseUrl = `https://github.com/${repo}/releases/download/${version}/`;
+
+    function renderTable() {
+        let tableHTML = `<table class="table table-striped table-bordered mb-0">
+            <thead>
+                <tr>`;
+        
+        if (showingAll) tableHTML += `<th>OS</th>`;
+        
+        tableHTML += `<th>Chip Architecture</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>`;
+
+        const osList = showingAll ? Object.keys(osData) : [detectedOS];
+
+        osList.forEach(os => {
+            const ext = extensions[os]; 
+            
+            osData[os].forEach((item, index) => {
+                const fileName = `${plugin}-${version}-${os}-${item.arch}.${ext}`;
+                const downloadUrl = `${baseUrl}${fileName}`;
+                
+                tableHTML += `<tr>`;
+                
+                if (showingAll && index === 0) {
+                    tableHTML += `<td rowspan="${osData[os].length}" class="align-middle"><strong>${os}</strong></td>`;
+                }
+                
+                tableHTML += `<td class="align-middle">${item.chip}</td>
+                    <td class="align-middle"><strong><a href="${downloadUrl}">${fileName}</a></strong></td>
+                </tr>`;
+            });
+        });
+
+        tableHTML += `</tbody></table>`;
+        container.innerHTML = tableHTML;
+        
+        toggleBtn.innerText = showingAll ? "Hide other operating systems" : "Show all operating systems";
+
+        if (showingAll) {
+            avx2Help.style.display = "block";
+            winInstructions.style.display = "block";
+            linuxInstructions.style.display = "block";
+        } else if (detectedOS === "Windows") {
+            avx2Help.style.display = "block";
+            winInstructions.style.display = "block";
+            linuxInstructions.style.display = "none";
+        } else if (detectedOS === "Linux") {
+            avx2Help.style.display = "block";
+            winInstructions.style.display = "none";
+            linuxInstructions.style.display = "block";
+        } else {
+            avx2Help.style.display = "none";
+        }
+    }
+
+    toggleBtn.addEventListener("click", function() {
+        showingAll = !showingAll; 
+        renderTable();            
+    });
+
+    renderTable();
+});
+</script>

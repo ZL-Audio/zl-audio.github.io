@@ -1,0 +1,179 @@
+---
+title: Installation
+description: How to install ZL Equalizer 2
+weight: 1
+---
+
+## Introduction Video
+
+{{< youtube "bC-mBDumzvU" >}}
+
+## Installation
+
+You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLEqualizer/releases/latest) or use the direct download link below. Please download the installer that matches your chip/architecture:
+
+{{< installers repo="ZL-Audio/ZLEqualizer" plugin="ZL.Equalizer.2" version="1.2.2" >}}
+
+For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
+
+ZL Equalizer is Free and Open-source. ZL Equalizer is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html), except for the [logo of ZL Audio](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/zlaudio.svg) and the [logo of ZL Equalizer](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/logo.svg). You can obtain the corresponding source code at https://github.com/ZL-Audio/ZLEqualizer or https://gitee.com/ZL-Audio/ZLEqualizer.
+
+AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
+
+**You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.**
+
+<img src="/images/vst3.png" style="width: 120pt; max-width: 100%; height: auto"/>
+
+VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
+
+## Nightly Release
+
+Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLEqualizer). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLEqualizer/issues).
+
+## Changelog
+
+### 1.2.2
+
+New Features
+
+- add support for filter with frequency beyond the Nyquist (now frequency can go up to 30 kHz under sample rate 44.1/48 kHz)
+- add `All Pass` filter type
+- add analyzer smoothing choice
+- add combobox mouse-wheel control
+- add EQ curve dB scale settings (see UI settings)
+- add mousewheel control to gain and scale label
+- add EQ match dB limit choice
+- add two EQ match built-in target curves `Balanced` and `Natural`
+
+Bug fixes
+
+- fix static gain compensation value display
+- fix incorrect loudness matching results
+- fix potential audio glitches after EQ match
+- fix potential crash caused by dynamic `Flat Tilt`
+
+Other Changes
+
+- allow frequency note to be entered as lower case
+
+### 1.2.1
+
+New Features
+
+- add `Flat Tilt` filter type
+
+Bug fixes
+
+- fix the missing FFT frozen feature
+- fix collision detection on Windows
+
+Improvements
+
+- improve DSP performance (slightly)
+- improve spectrum display
+
+### 1.2.0
+
+BREAKING CHANGES
+
+- change filter de-cramping method (proposed by Yuriy Ivantsov)
+  - the filter of which cutoff freq is near the Nyquist will have slightly different response
+
+Bug fixes
+
+- fix dynamic filter might fail to update gain after dynamic is turned off
+- fix mouse dragging sensitivity of several sliders
+
+Improvements
+
+- improve DSP performance
+- improve GUI performance
+
+### 1.1.1
+
+Bug fixes
+
+- fix grammar mistakes in tooltips
+- fix external side-chain configuration for Maschine
+
+Improvements
+
+- improve dynamic EQ efficiency
+- improve GUI performance
+
+Other Changes
+
+- add LV2 tags
+- adjust some pop-up panel background
+- change to Windows MSI installer
+
+### 1.1.0
+
+BREAKING CHANGES
+
+- fix incorrect stereo dynamic handling
+	- This fix will correct the previous incorrect stereo dynamic behavior. Please finish your current mixing session before updating if dynamic behavior is used.
+
+New Features
+
+- add extra dynamic parameters: RMS `Length`, RMS `Mix` and `Smooth`
+- add FFT analyzer stereo mode
+
+Bug fixes and Improvements
+
+- fix incorrect parallel bypass behavior
+- fix floating window overlapping issue
+- fix displayed values when they are close to zero
+- fix incorrect copy/paste filters from ZL Compressor
+
+### 1.0.3
+
+Bug fixes and Improvements
+
+- fix plugin crashes when it does not have UI preset folder permission
+- fix incorrect low/high shelf gain when added by double-clicking
+
+### 1.0.2
+
+Bug fixes and Improvements
+
+- improve EQ match stability
+
+### 1.0.1
+
+Compared with ZL Equalizer 0.6.2:
+
+New Features
+
+- add more side-chain filters controls (filter type & filer slope)
+- add right-click panel
+- add more controls to the floating window
+- add more shortcuts
+- add UI scaling control
+- add EQ Match drawing control
+
+Bug fixes
+
+- fix wrong octave notes
+- fix incorrect solo display
+- fix incorrect parallel processing in mid/side
+
+Improvements
+
+- improve `Matched Phase` and `Mixed Phase` performance
+- improve general DSP performance
+- improve dynamic processing
+- improve FFT analyzer display
+- improve EQ Match fitting speed
+
+Other Changes
+
+- increase frequency maximum value when the sample rate > 44.1 kHz
+- remove `RMS` & `Smooth` from dynamic parameters
+- remove `Zero Latency` as dynamic won't require extra 1ms latency
+- remove `High Quality` as dynamic always stays in high quality
+- remove EQ Match `Weight` & fitting algorithm control
+- support VST3 parameter context menu
+	- In hosts that support this feature, if you right-click on some sliders, a native parameter menu will pop up.
+- support VST3/AAX parameter index
+	- In hosts that support this feature, hosts can map screen locations to parameters, e.g., Cubase "AI Knob".

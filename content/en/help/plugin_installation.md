@@ -1,0 +1,125 @@
+---
+title: Plugin Installation
+linkTitle: Plugin Installation
+weight: 1
+---
+
+## Plugin Formats
+
+- VST(VST2): not included
+    - It is no longer possible to get permission from Steinberg. If you do need such format, you have to build it by yourself.
+- VST3: included in macOS, Windows and Linux installers
+- AU: included in macOS installers
+- LV2: included in Windows and Linux installers
+- AAX: included in macOS and Windows installers
+    - because AAX requires code-signing, some installers may not include/update this format
+- CLAP: not included, awaiting official support from JUCE
+- Standalone: included in macOS, Windows and Linux installers of some plugins
+    - can serve as an independent application. You have to set up routing properly to make it functional.
+
+<img src="/images/vst3.png" style="width: 120pt; max-width: 100%; height: auto"/>
+
+VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
+
+## Signing/Notarization
+
+All installers have not been notarized. You should decide whether to trust the installers. Alternatively, you can build the plugin from the project source code (except AAX format).
+
+## macOS Installation
+
+The macOS installer is packaged in a `.dmg` file. You need to open it to use the `.pkg` installer.
+
+If there are two `.dmg` files, the one with `x86-64` is for Intel-chip macOS machines and the one with `arm64` is for Apple-M-chip macOS machines. However, if you are using Rosetta Mode on Apple-M-chip macOS machines, you have to use the one with `x86-64`, which may cause degraded performance.
+
+On macOS, the plugin requires Metal support. The plugin is not compatible with macOS prior to macOS 10.13 and is not guaranteed to be compatible with macOS prior to macOS 13. Besides that, you may refer to [Safely open apps on your Mac](https://support.apple.com/en-us/102445) if you are confused by the alert given by your OS.
+
+If you cannot upgrade your system through official macOS support, you may upgrade it with [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) (use at your own risk).
+
+{{% alert title="Warning" color="warning" %}}
+In the foreseeable future (after the release of macOS 28), the `x86-64` version will be discontinued.
+{{% /alert %}}
+
+## Windows Installation
+
+The Windows installer file extension is `.msi`.
+
+If there are two `.msi` installers, the one with `x86-64` is for x86-64 architecture Windows machines. You may check it through `Setting` - `System` - `About` - `Device specifications` - `System Type`.
+
+If there are three `.msi` installers, the one with `x86-64-AVX2` is for x86-64 architecture Windows machines which support AVX2, see [AVX2 Support](#avx2-support) for more info.
+
+On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
+
+{{% alert title="Warning" color="warning" %}}
+For Windows on ARM Users, you need to choose the version that matches your DAW. The following information might be outdated. Please refer to your DAW official support documentation.
+
+Choose the one with `arm64` if your DAW is also ARM64, such as Fender Studio Pro (ARM64), Bitwig (ARM64). The plugin will have optimal performance.
+
+Choose the one with `x86-64` if your DAW is x86-64 or ARM64EC, such as Reaper (ARM64EC), Cubase (ARM64EC), FL Studio (x86_64), Ableton (x86_64). The plugin will have degraded performance because of emulation.
+{{% /alert %}}
+
+## Linux Installation
+
+The Linux plugins are compressed in a `.zip` file. You need to unzip it and manually move the `*.vst3` file to the correct folder, such as `~/.vst3`.
+
+If there are two `.zip` files, the one with `x86-64` is for x86-64 architecture Linux machines and the one with `arm64` is for ARM64 architecture Linux machines.
+
+If there are three `.zip` files, the one with `x86-64-AVX2` is for x86-64 architecture Linux machines which support AVX2, see [AVX2 Support](#avx2-support) for more info.
+
+On Linux, the plugin does not have hardware acceleration. The plugin is built on Ubuntu 22.04 with dynamic linked dependencies. Therefore, I cannot guarantee its compatibility with Linux distributions. I would recommend building the plugin from source code.
+
+{{% alert title="Warning" color="warning" %}}
+In the foreseeable future (after the release of Ubuntu 26.04), the plugin will be built on Ubuntu 24.04, which will make it incompatible with earlier Linux versions.
+{{% /alert %}}
+
+## AVX2 Support
+
+The following CPUs shall support AVX2:
+
+- Intel: Haswell processors (Q2 2013) and newer, excepting models branded as Celeron and Pentium (for Celeron and Pentium, please follow the [guidance](https://www.intel.com/content/www/us/en/support/articles/000090473/processors/intel-core-processors.html) to check AVX2 support)
+- AMD: Excavator processors (Q2 2015) and newer.
+
+On machines which support AVX2, the `x86-64-AVX2` version could use significantly less CPU (up to 50% less) compared to the `x86-64` version.
+
+On machines which does not support AVX2, the `x86-64-AVX2` version is highly likely to crash immediately.
+
+## Subscribe to Release Notifications
+
+> If you want to subscribe to release notifications of a plugin (including pre-releases):
+
+1. Register a GitHub account and set your email address.
+2. Go to the plugin's project page, e.g., https://github.com/ZL-Audio/ZLEqualizer.
+3. On the right-top corner, there is a `Watch` button. Click the button, select `Custom`, tick `Releases`, and click `Apply`.
+4. Done!
+
+> If you want to unsubscribe, do the opposite:
+
+1. Go to the plugin's project page, e.g., https://github.com/ZL-Audio/ZLEqualizer.
+2. On the right-top corner, there is a `Watch` button. Click the button and select `Ignore`.
+3. Done!
+
+## Legacy Guidance
+### macOS Installation
+
+The macOS installer is packaged in a `.dmg` file. You need to open it to use the `.pkg` installer.
+
+If there are two `.dmg` files, the one with `x86` is for Intel-chip macOS machines and the one with `arm` is for Apple-M-chip macOS machines. However, if you are using Rosetta Mode on Apple-M-chip macOS machines, you have to use the one with `x86`, which may cause degraded performance.
+
+On macOS, the plugin requires Metal support. The plugin is not compatible with macOS prior to macOS 10.13 and is not guaranteed to be compatible with macOS prior to macOS 13. Besides that, you may refer to [Safely open apps on your Mac](https://support.apple.com/en-us/102445) if you are confused by the alert given by your OS.
+
+If you cannot upgrade your system through official macOS support, you may upgrade it with [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) (use at your own risk).
+
+### Windows Installation
+
+The Windows installer file extension is `.exe`.
+
+If there are two `.exe` installers, the one with `x86` is for x86-64 architecture Windows machines. You may check it through `Setting` - `System` - `About` - `Device specifications` - `System Type`.
+
+On Windows, the plugin requires Direct2D support. The plugin is compatible with Windows 10 and later.
+
+### Linux Installation
+
+The Linux plugins are compressed in a `.zip` file. You need to unzip it and manually move the `*.vst3` file to the correct folder, such as `~/.vst3`.
+
+If there are two `.zip` files, the one with `x86` is for x86-64 architecture Linux machines and the one with `arm` is for ARM64 architecture Linux machines.
+
+On Linux, the plugin does not have hardware acceleration. The plugin is built on Ubuntu 22.04 with dynamic linked dependencies. Therefore, I cannot guarantee its compatibility with Linux distributions. I would recommend building the plugin from source code.

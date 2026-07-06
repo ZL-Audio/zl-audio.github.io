@@ -1,0 +1,156 @@
+---
+title: 安装说明
+description: 如何安装 ZL Equalizer
+weight: 1
+---
+
+## 简介视频
+
+{{< youtube "bC-mBDumzvU" >}}
+
+## 安装
+
+**如果有可能，请使用 ZL Equalizer 2**。ZL Equalizer 已经处于弃用状态，不会再得到修复或改进。
+
+您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的操作系统和架构对应的安装器。
+
+| 操作系统        | x86-64<br>Intel 芯片<br>AMD 芯片（大多数）                                                                                                        | ARM64<br>Apple M 芯片<br>Qualcomm 芯片                                                                                                       |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **macOS**   | [ZL.Equalizer-0.6.2-macOS-x86.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-macOS-x86.dmg)     | [ZL.Equalizer-0.6.2-macOS-arm.dmg](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-macOS-arm.dmg)     |
+| **Windows** | [ZL.Equalizer-0.6.2-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Windows-x86.exe) | [ZL.Equalizer-0.6.2-Windows-arm.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Windows-arm.exe) |
+| **Linux**   | [ZL.Equalizer-0.6.2-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-x86.zip)     | [ZL.Equalizer-0.6.2-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-arm.zip)     |
+
+更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
+
+ZL Equalizer 是**自由开源**的软件。除了 [ZL Audio 标志](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/zlaudio.svg) 和 [ZL Equalizer 标志](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/logo.svg)，ZL Equalizer 按照 [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) 进行许可。您可以在 https://github.com/ZL-Audio/ZLEqualizer 或者 https://gitee.com/ZL-Audio/ZLEqualizer 获得源码。
+
+以下提醒来自 [由 源译识 翻译的 AGPLv3](https://atomgit.com/translation/Contransus) 第九项条款。
+
+**您无需为了接收或运行本程序副本而接受本许可证。仅是因为使用点对点传输接收副本而发生的被覆盖作品的辅助传播，您也无需接受本许可证。然而，除了本许可证以外，没有任何其他文件授权您传播或修改任何被覆盖作品。如果您不接受本许可证，这些行为（传播和修改）即构成版权侵权。因此，如果您修改或传播被覆盖作品，就表示您接受了本许可证。**
+
+<img src="/images/vst3.png" style="width: 120pt; max-width: 100%; height: auto"/>
+
+VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
+
+## 更新日志
+
+### 0.6.2
+
+DSP
+
+- 提高 匹配相位、混合相位、线性相位 性能
+
+GUI
+
+- 更正 在部分宿主中重新打开窗口导致界面冻结（见#194）
+
+### 0.6.1
+
+DSP
+
+- 提高 左右/中侧 处理的性能
+
+GUI
+
+- 更改 顶部面板的样式（顶部面板在未打开时会变为半透明）
+- 增加 多频段 目标 增益/Q值 改变（见#187）
+- 增加 频率旋钮 音高输入支持
+- 增加 浮动窗口 频率输入支持
+- 更正 浮动窗口 显示问题（见#187）
+- 提高 浮动窗口 性能
+
+Multilingual
+
+- 更正 Italiano 翻译 由 [pms967](https://github.com/pms967) (already in 0.6.0, I forgot to mention it)
+- 更正 日本語 翻译 由 [ikumi90s](https://github.com/ikumi90s)
+
+### 0.6.0
+
+- 破坏性：使用 ZL Compressor 的新压缩器模型
+	- 动态滤波器会产生少许变化
+	- 动态滤波器（尤其如果在高质量模式下）会更加高效
+	- 动态滤波器在极端的膝宽设置下会产生符合预期的效果 (见#156）
+- 破坏性：平滑 滤波器 频率/增益/Q 的数值变化
+	- 频率/增益/Q 的 快速变化/自动化 会产生更少的噪声
+	- 滤波器参数自动化会占用更多 CPU 因为现在它会每个样本更新滤波器（见用户手册）
+- 更改 外部侧链 按钮的位置至右上角
+	- 由于该参数不属于每个频段，右上角应当是更好的位置
+- 更改 若干按钮的图标（见用户手册）
+	- 之前的图标不够直观
+- 增加 English 简体中文 繁體中文 Italiano 日本語 Deutsch Español 提示
+  - 日本語 Deutsch Español 提示由 ChatGPT 翻译。我无法保证翻译的正确性。如果您注意到翻译错误，请向我反馈或者提交 pull request。
+- 增加 FFT 分贝刻度尺选择 (见#147 和 用户手册）
+- 增加 响度匹配（见#154 和 用户手册）
+- 增加 监听快捷键（通过鼠标右键双击频段按钮）
+- 增加 侧链交换（见用户手册）
+- 更正 macOS 独立格式音频输入权限请求 (见#146）
+- 更正 曲线分贝刻度尺 (见#148）
+- 更正 多频段框选（见#149）
+- 提高 图形界面 的性能
+- 提高 信号处理 的性能（尤其是 高阶滤波器 和 动态滤波器）
+- 提高 稳定性
+
+### 0.5.0
+
+- 破坏性：更改 （默认）动态链接 至外观设置（该参数现在被所有插件实例共享）
+- 增加 均衡匹配
+- 增加 UI 设置导入/导出
+- 更正 错误的通道设置（见#138）
+- 更正 错误的监听显示（见#138）
+- 更正 鼠标双击行为（见#141）
+- 提高 监听显示效果
+- 提高 图形界面 的性能（尤其当您打开外观设置界面）
+
+### 0.4.5
+
+- 更正 0.4.4 版本中 nlopt 库的链接问题（该问题导致 Linux 和 macOS 插件无法加载）
+- 更正 安装器中错误的许可（许可已经变更为 AGPLv3）
+- 提高 信号处理的稳定性
+
+### 0.4.4
+
+- 更正 少数情况下未初始化的静态增益补偿
+- 更正 少数情况下可能的数据争用
+
+### 0.4.3
+
+- 改变 上方面板 布局（将 插件旁路 和 静态增益补偿 按钮移至外部）
+- 改版 外观设置面板 布局
+- 增加 UI 按钮的改变至默认窗口大小功能
+- 增加 默认 高通/低通滤波器斜率 和 旋钮双击 到 外观设置面板
+- 增加 色彩搭配 到 外观设置面板
+- 增加 FFT 分辨率 到 外观设置面板
+- 更正 在加载插件后采样率改变导致的错误延时
+- 更正 `Standalone`中无法打开弹出菜单的问题
+- 提高 高采样率下 匹配相位 和 混合相位 的效果
+- 提高 频谱分析高频精确度
+
+### 0.4.2
+
+- 增加并改变 滑块数值输入快捷键
+  - Ctrl/Command + 鼠标双击 打开数值编辑器
+- 更正 调整`Scale`时错误的曲线显示
+- 更正 macOS 兼容性问题（现在插件应当兼容 macOS 10.13 及以上版本）
+- 提高 混合相位模式的频移连续性
+
+### 0.4.1
+
+- 更正 一些测试代码
+
+### 0.4.0
+
+- 增加 平行 滤波器结构
+- 增加 匹配相位 滤波器结构
+- 增加 混合相位 滤波器结构
+- 增加 线性相位 滤波器结构
+- 增加并改变 快捷键
+  - 按下 Shift 精细拖拽按钮
+  - 按下 Shift 精细调整旋钮（之前为 Ctrl/Command）
+  - Ctrl/Command + 鼠标双击 添加动态频段
+  - Ctrl/Command + 鼠标双击频段按钮 开启/关闭动态该频段动态功能
+- 改变 实际滤波器曲线 为 理想滤波器曲线
+- 改变 默认 FFT 为 12 阶，以提高低频精细度
+- 增加 相位反转 按钮并改变 输出设置 面板布局
+- 增加 窗口大小调整的自由度
+- 提高 信号处理 和 图形界面 的稳定性
+- 提高 信号处理 和 图形界面 的性能
