@@ -509,18 +509,15 @@ Choose the target signal:
 
 ___
 
-**`Shif`**
+**`Shift`**
 
 Control the vertical shift of the difference curve.
 
 ___
 
-**`Smooth`**
+**`Scale`**
 
-Control the smoothness of the difference curve.
-
-- from 0.0 to 0.5: the difference curve becomes smoother as the smoothness increases
-- from 0.5 to 1.0: the difference curve scales down as the smoothness increases
+Control the scaling of the difference curve.
 
 ___
 
