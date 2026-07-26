@@ -16,9 +16,17 @@ ___
 
 **[ZL Equalizer 2](/plugins/zlequalizer2)**
 
-dynamic digital equalizer
+dynamic equalizer
 
 <img src="/images/zlequalizer2/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
+
+___
+
+**[ZL Spectrum Equalizer](/plugins/zlseq)**
+
+dynamic spectrum equalizer
+
+<img src="/images/zlseq/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 
 ___
 

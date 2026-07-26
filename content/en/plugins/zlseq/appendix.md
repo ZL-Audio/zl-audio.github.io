@@ -14,10 +14,7 @@ Thank all plugin users for their support, feedback, and suggestions.
 
 This plugin is inspired by other equalizer plugins, such as:
 
-- [FabFilter Pro-Q 3](https://www.fabfilter.com/products/pro-q-3-equalizer-plug-in)
-- [Three-Body Technology Kirchhoff-EQ](https://www.threebodytech.com/en/products/kirchhoffeq)
-- [ToneBoosters Equalizer Pro](https://www.toneboosters.com/tb_equalizer_pro.html)
-- [TDR Nova](https://www.tokyodawn.net/tdr-nova/)
+- [FabFilter Pro-Q Q](https://w4w.fabfilter.com/products/pro-q-4-equalizer-plug-in)
 
 The development of this plugin is assisted by the following software:
 
@@ -29,9 +26,9 @@ The development of this plugin is assisted by the following software:
 
 You have to register a GitHub account before sending feedback.
 
-If you have general suggestions or questions, you can open a discussion [here](https://github.com/ZL-Audio/ZLEqualizer/discussions).
+If you have general suggestions or questions, you can open a discussion [here](https://github.com/ZL-Audio/ZLSpectrumEqualizer/discussions).
 
-If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLEqualizer/issues).
+If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLSpectrumEqualizer/issues).
 
 ## Disclaimer
 
