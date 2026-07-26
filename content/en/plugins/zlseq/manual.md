@@ -12,8 +12,8 @@ To Be Announced.
 
 ZL Spectrum Equalizer is a dynamic spectrum equalizer plugin with the following key features:
 
-- **Unmatched Versatility**: Sculpt sound with 6 filter structures, 9 filter types, 5 stereo modes, 7 variable slopes, and up to 24 frequency bands.
-- **Spectrum Dynamics**: Experience precise frequency-domain dynamic processing that tracks and controls resonances across the spectrum.
+- **Unmatched Versatility**: Sculpt sound with 6 filter structures, 9 filter types, 5 stereo modes, 7 variable slopes, and up to 24 linear-phase frequency bands.
+- **Spectrum Dynamics**: Experience precise frequency-domain dynamic processing that tracks and controls resonances across the spectrum, with adjustable threshold, attack, release, and knee width.
 - **Powerful Engine**: Tailor behavior and latency with different spectrum resolution settings, side-chain smoothing, and frequency-dependent attack/release skewing, all powered by a high-performance FFT engine.
 - **Intuitive Workflow**: Achieve fast, fluid equalization with a carefully designed interface featuring an interactive spectrum graph, smart collision detection, and smooth animations.
 
