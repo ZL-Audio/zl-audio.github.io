@@ -118,17 +118,17 @@ When you double-click (with/without `Ctrl/Command` down) on the spectrum, a band
 
 The floating window is attached to the filter button of the selected band. You can control some filter parameters through this window.
 
-| Icon                                                         | Filter Type  | Icon                                                      | Stereo Placement |
-| ------------------------------------------------------------ | ------------ | --------------------------------------------------------- | ---------------- |
+| Icon                                                  | Filter Type  | Icon                                               | Stereo Placement |
+| ----------------------------------------------------- | ------------ | -------------------------------------------------- | ---------------- |
 | <img src="/images/zlseq/peak.svg" width="20pt"/>      | `Peak`       | <img src="/images/zlseq/stereo.svg" width="20pt"/> | `Stereo`         |
 | <img src="/images/zlseq/lowshelf.svg" width="20pt"/>  | `Low Shelf`  | <img src="/images/zlseq/left.svg" width="20pt"/>   | `Left`           |
 | <img src="/images/zlseq/lowpass.svg" width="20pt"/>   | `Low Pass`   | <img src="/images/zlseq/right.svg" width="20pt"/>  | `Right`          |
 | <img src="/images/zlseq/highshelf.svg" width="20pt"/> | `High Shelf` | <img src="/images/zlseq/mid.svg" width="20pt"/>    | `Mid`            |
 | <img src="/images/zlseq/highpass.svg" width="20pt"/>  | `High Pass`  | <img src="/images/zlseq/side.svg" width="20pt"/>   | `Side`           |
-| <img src="/images/zlseq/notch.svg" width="20pt"/>     | `Notch`      |                                                           |                  |
-| <img src="/images/zlseq/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                           |                  |
-| <img src="/images/zlseq/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                           |                  |
-| <img src="/images/zlseq/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                           |                  |
+| <img src="/images/zlseq/notch.svg" width="20pt"/>     | `Notch`      |                                                    |                  |
+| <img src="/images/zlseq/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                    |                  |
+| <img src="/images/zlseq/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                    |                  |
+| <img src="/images/zlseq/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                    |                  |
 
 #### Context Menu
 
