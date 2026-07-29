@@ -595,9 +595,9 @@ The **Spectrum Resolution** setting determines the FFT frame size used for spect
 
 - **Lower Resolutions** (`Extreme Low` to `Low`): Offer minimal processing latency (~12 ms to ~46 ms) and quick time-domain response, making them well-suited for live tracking or transient-heavy material.
 - **Medium Resolution** (`Medium`): Balances time and frequency resolution (~93 ms latency) for general mixing tasks.
-- **Higher Resolutions** (`High` to `Extreme High`): Provide exceptionally fine spectral resolution (~186 ms to ~743 ms latency) for isolated, surgical notch correction of narrow resonances.
+- **Higher Resolutions** (`High` to `Extreme High`): Provide exceptionally fine spectral resolution (~186 ms to ~743 ms latency) for exceptional low-frequency precision and surgical notch correction of narrow resonances.
 
-In general, if you do not process the low-frequency part, choose medium or lower resolutions to save processing power, reduce latency, and make dynamic processing more reactive.
+In general, if you do not process the low-frequency part heavily (e.g., a high-pass below 100Hz), choose medium or lower resolutions to save processing power, reduce latency, and make dynamic processing more reactive. However, if you want heavy & precise low-frequency control, you may need to choose higher resolutions. Please watch out potential pre-ringing & CPU-spikes when you choose higher resolution.
 
 #### Core Dynamic Behavior
 
