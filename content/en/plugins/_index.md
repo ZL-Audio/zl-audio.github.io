@@ -22,11 +22,11 @@ dynamic equalizer
 
 ___
 
-**[ZL Spectrum Equalizer](/plugins/zlseq)**
+**[ZL Spectrum Equalizer](/plugins/zlspeceq)**
 
 dynamic spectrum equalizer
 
-<img src="/images/zlseq/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
+<img src="/images/zlspeceq/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 
 ___
 
