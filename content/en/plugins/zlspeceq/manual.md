@@ -67,7 +67,7 @@ ___
 
 **Spectrum Smooth Value**
 
-Control the spectrum processing side-chain smooth value. A larger smooth values makes the dynamic spectrum processing smoother.
+Control the spectrum processing side-chain smooth value. See more info in [Spectrum Dynamic](#spectrum-dynamic).
 
 ___
 
@@ -288,25 +288,25 @@ ___
 
 **`Tilt`**
 
-Control the spectrum processing side-chain tilt slope.
+Control the spectrum processing side-chain tilt slope. See more info in [Spectrum Dynamic](#spectrum-dynamic).
 
 ___
 
 **`Attack Skew`**
 
-Control the spectrum processing side-chain attack skew. A higher skew makes the attack faster at high frequency.
+Control the spectrum processing side-chain attack skew. See more info in [Spectrum Dynamic](#spectrum-dynamic).
 
 ___
 
 **`Release Skew`**
 
-Control the spectrum processing side-chain release skew. A higher skew makes the release faster at high frequency.
+Control the spectrum processing side-chain release skew. See more info in [Spectrum Dynamic](#spectrum-dynamic).
 
 ___
 
 **`Gate`**
 
-Control the spectrum gate of relative loudness.
+Control the spectrum gate of relative loudness. See more info in [Spectrum Dynamic](#spectrum-dynamic).
 
 ___
 
@@ -520,7 +520,6 @@ For a better analyzer display, set this to 1/n of your monitor refresh rate. For
 - If your monitor refresh rate is 120 Hz, set it to 120 Hz, 60 Hz (1/2), or 30 (1/4) Hz. DO NOT set it to 90 Hz.
 - If your monitor refresh rate is 90 Hz, set it to 90 Hz or 30 Hz (1/3). DO NOT set it to 60 Hz.
 
-
 **FFT  Setting**
 
 - `Tilt`: the extra tilting slope of the FFT
@@ -541,18 +540,18 @@ Choose the font size mode.
 - `Scale`: the font size scales with the window size. Control the relative ratio.
 - `Static`: the font size is fixed. Control the actual font size.
 
-**Curve dB Scale**
+**`Curve dB Scale`**
 
 - `Min`: minimum decibel scale of magnitude response curves
 - `Default`: default decibel scale of magnitude response curves
 - `Max`: maximum decibel scale of magnitude response curves
 
-**Window Size Fix**
+**`Window Size Fix`**
 
 Choose whether to turn on Window Size Fix.
 
 - `Off`: plugin window size adjustment will be stored
-- `On`: plugin window size adjustment will NOT be stored
+- `On`: plugin window size adjustment will NOT be stored, but open as it is currently every time the plugin is opened. The size can still be changed, but the changes will not be stored.
 
 ## UI Controls
 
@@ -580,12 +579,20 @@ Generally, you can enable fine-adjustment with `Shift` and enable special adjust
 **Window Size**
 
 - You can drag a dragger at the bottom-right corner to adjust plugin window size.
+- Recommend way to set Windows Size
+	1. Set **Window Size Fix** to `OFF` and press the store button.
+	2. Adjust the plugin window to the size you prefer.
+	3. Close the plugin window.
+	4. Reopen the plugin window.
+	5. Set **Window Size Fix** to `ON` and press the store button.
+	6. Close the plugin window.
+	7. Then, the plugin will be opened with the window size set in the Step 2 every time.
 
 ## Spectrum Dynamic
 
 #### How Spectrum Dynamic Works
 
-Unlike ZL Equalizer that applies broad filter curves based on wide-band audio triggers, ZL Spectrum Equalizer operates directly in the frequency domain using Fast Fourier Transforms (FFT). Audio is split into discrete frequency bins, allowing dynamic gain adjustments to be applied independently to each bin based on the level of the corresponding side-chain bin.
+Unlike ZL Equalizer 2 that applies broad filter curves based on wide-band audio triggers, ZL Spectrum Equalizer operates directly in the frequency domain using Fast Fourier Transforms (FFT). Audio is split into discrete frequency bins, allowing dynamic gain adjustments to be applied independently to each bin based on the level of the corresponding side-chain bin.
 
 #### Spectrum Resolution
 
@@ -608,5 +615,23 @@ When dynamic behavior is enabled for a band, each FFT bin covered by the filter 
     * A **hard knee** (low value) acts strictly: gain modulation begins only after the side-chain bin level crosses the threshold.
     * A **soft knee** (high value) creates a gradual curve, smoothly transitioning toward the target gain as the side-chain bin level approaches the threshold for transparent, unobtrusive spectral shaping.
 
-
 > **Note**: Because processing occurs independently per FFT bin, parameters like **Threshold** and **Knee** operate on individual bin levels rather than the full-band signal envelope found in conventional dynamic processors.
+
+#### Dynamic Mode
+
+You can change how the threshold is calculated by selecting different dynamic modes:
+
+- **`Absolute`**: Dynamic processing uses a static threshold.
+- **`Band`**: Dynamic processing uses a dynamic threshold related to band side-chain loudness.
+- **`Relative`**: Dynamic processing uses a dynamic threshold related to total side-chain loudness.
+
+#### Spectrum Processing
+
+In addition to the per-band parameters, you can adjust the following parameters that affect the overall side-chain analysis to further customize dynamic behavior:
+
+- **Smooth Type**: Choose the spectrum processing side-chain smooth type.
+- **Smooth Value**: Control the spectrum processing side-chain smooth value. A higher value makes the dynamic processing smoother on the frequency domain.
+- **`Tilt`**: Control the spectrum processing side-chain tilt slope.
+- **`Attack Skew`**: Control the spectrum processing side-chain attack skew. A higher skew makes the attack faster at high frequency and slower at low frequency.
+- **`Release Skew`**: Control the spectrum processing side-chain release skew. A higher skew makes the release faster at high frequency and slower at low frequency.
+- **`Gate`**: Control the spectrum gate of relative loudness. Under `Band` mode, if band side-chain loudness is smaller than `Gate`, dynamic will NOT be triggered. Under `Relative` mode, if total side-chain loudness is smaller than `Gate`, dynamic will NOT be triggered.
