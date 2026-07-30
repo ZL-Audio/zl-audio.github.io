@@ -1,5 +1,5 @@
 ---
 title: ZL Spectrum Equalizer
-weight: 3
+weight: 2
 ---
 
