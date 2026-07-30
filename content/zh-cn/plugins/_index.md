@@ -16,9 +16,17 @@ ___
 
 **[ZL Equalizer 2](/plugins/zlequalizer2)**
 
-数字动态均衡器
+动态均衡器
 
 <img src="/images/zlequalizer2/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
+
+___
+
+**[ZL Spectrum Equalizer](/plugins/zlspeceq)**
+
+动态频谱均衡器
+
+<img src="/images/zlspeceq/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 
 ___
 
@@ -38,7 +46,7 @@ ___
 
 ___
 
-**[ZL Equalizer](/plugins/zlequalizer)**
+**[ZL Equalizer（过时）](/plugins/zlequalizer)**
 
 十六频段 动态数字均衡器
 

@@ -73,7 +73,7 @@ Control the spectrum processing side-chain smooth value. A larger smooth values 
 
 ___
 
-**Output Panel**
+**Output**
 
 You can open the [Output Setting Panel](#output-setting-panel) by clicking the text. It shows the current filter gain scale & total output gain.
 

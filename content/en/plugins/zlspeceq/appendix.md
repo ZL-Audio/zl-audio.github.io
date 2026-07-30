@@ -14,7 +14,7 @@ Thank all plugin users for their support, feedback, and suggestions.
 
 This plugin is inspired by other equalizer plugins, such as:
 
-- [FabFilter Pro-Q Q](https://w4w.fabfilter.com/products/pro-q-4-equalizer-plug-in)
+- [FabFilter Pro-Q 4](https://w4w.fabfilter.com/products/pro-q-4-equalizer-plug-in)
 
 The development of this plugin is assisted by the following software:
 
