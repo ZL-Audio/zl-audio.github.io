@@ -10,7 +10,7 @@ To Be Announced.
 
 ## Installation
 
-To Be Announced.
+{{< installers repo="ZL-Audio/ZLSpectrumEqualizer" plugin="ZL.Spectrum.Equalizer" version="0.0.1" >}}
 
 ZL Spectrum Equalizer is Free and Open-source. ZL Spectrum Equalizer is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html), except for the [logo of ZL Audio](https://github.com/ZL-Audio/ZLSpectrumEqualizer/blob/main/assets/zlaudio.svg) and the [logo of ZL Spectrum Equalizer](https://github.com/ZL-Audio/ZLSpectrumEqualizer/blob/main/assets/logo.svg). You can obtain the corresponding source code at https://github.com/ZL-Audio/ZLSpectrumEqualizer or https://gitee.com/ZL-Audio/ZLSpectrumEqualizer.
 

@@ -10,7 +10,7 @@ weight: 1
 
 ## 安装
 
-待公布
+{{< installers repo="ZL-Audio/ZLSpectrumEqualizer" plugin="ZL.Spectrum.Equalizer" version="0.0.1" >}}
 
 ZL Spectrum Equalizer 是**自由开源**的软件。除了 [ZL Audio 标志](https://github.com/ZL-Audio/ZLSpectrumEqualizer/blob/main/assets/zlaudio.svg) 和 [ZL Spectrum Equalizer 标志](https://github.com/ZL-Audio/ZLSpectrumEqualizer/blob/main/assets/logo.svg)，ZL Spectrum Equalizer 按照 [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) 进行许可。您可以在 https://github.com/ZL-Audio/ZLSpectrumEqualizer 或者 https://gitee.com/ZL-Audio/ZLSpectrumEqualizer 获得源码。
 
