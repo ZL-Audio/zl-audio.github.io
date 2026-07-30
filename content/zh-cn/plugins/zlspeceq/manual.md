@@ -4,9 +4,7 @@ description: 如何使用 ZL Spectrum Equalizer
 weight: 2
 ---
 
-## 教程视频
-
-待公布
+<img src="/images/zlspeceq/dark_crop.jpg" style="width:750px; max-width: 100%; height: auto" />
 
 ## 关于
 

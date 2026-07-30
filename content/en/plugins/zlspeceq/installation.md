@@ -6,9 +6,11 @@ weight: 1
 
 ## Introduction Video
 
-To Be Announced.
+{{< youtube "qp_mmVIGBcc" >}}
 
 ## Installation
+
+You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLSpectrumEqualizer/releases/latest) or use the direct download link below. Please download the installer that matches your chip/architecture:
 
 {{< installers repo="ZL-Audio/ZLSpectrumEqualizer" plugin="ZL.Spectrum.Equalizer" version="0.0.1" >}}
 
