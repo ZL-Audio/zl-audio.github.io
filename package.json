@@ -61,5 +61,8 @@
     "proseWrap": "always",
     "singleQuote": true
   },
-  "cSpell:ignore": ""
+  "cSpell:ignore": "",
+  "workspaces": [
+    "packages/hugoautogen"
+  ]
 }
