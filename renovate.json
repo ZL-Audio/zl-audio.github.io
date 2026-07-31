@@ -3,5 +3,11 @@
   "extends": [
     "config:recommended"
   ],
-  "schedule": "after 5am on Friday"
+  "schedule": "after 5am on Friday",
+  "packageRules": [
+    {
+      "matchPackageNames": ["@fortawesome/fontawesome-free"],
+      "allowedVersions": "<7.0.0"
+    }
+  ]
 }

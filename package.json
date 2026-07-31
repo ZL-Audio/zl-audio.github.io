@@ -43,6 +43,10 @@
     "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest",
     "update:packages": "npx npm-check-updates -u"
   },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "6.7.2",
+    "bootstrap": "5.3.8"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.22",
     "cross-env": "^10.1.0",

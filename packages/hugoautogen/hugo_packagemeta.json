@@ -1,10 +1,7 @@
 {
-  "sum": "a3bd194ab7bcf817",
+  "sum": "b0a6623c5a65ad73",
   "dependencySources": {
-    "dependencies": {
-      "@fortawesome/fontawesome-free": "github.com/google/docsy/theme",
-      "bootstrap": "github.com/google/docsy/theme"
-    },
+    "dependencies": {},
     "devDependencies": {}
   }
 }
