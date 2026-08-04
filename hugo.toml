@@ -90,8 +90,8 @@ enableGitInfo = true
 # Everything below this are Site Params
 
 # Comment out if you don't want the "print entire section" link enabled.
-# [outputs]
-# section = ["HTML", "RSS"]
+[outputs]
+  section = ["HTML"]
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
