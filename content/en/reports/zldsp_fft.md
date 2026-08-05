@@ -127,6 +127,7 @@ Included libraries are (they are subjected to their own licenses):
 
 - `IPP`: [Intel® Integrated Performance Primitives](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ipp.html)
 - `vDSP`: [Apple vDSP](https://developer.apple.com/documentation/accelerate/vdsp)
+- `ArmPL`: [Arm Performance Libraries](https://developer.arm.com/tools-and-software/arm-performance-libraries)
 - `FFTW3`: [FFTW 3.3.10 Mirror](https://github.com/zsliu98/fftw3-mirror/tree/14eea039281b8c5bd83a20314afb402538fd986c) with NEON support, take the better one from `FFTW_MEASURE` and `FFTW_ESTIMATE`
 - `KFR`: [KFR 7.0.0](https://github.com/kfrlib/kfr/tree/main)
 - `PFFFT`: [PFFFT 1.1.0](https://github.com/marton78/pffft)
@@ -183,6 +184,19 @@ The benchmarks shown below are Real FFT benchmarks from order 5 to order 25.
   <figure style="text-align: center; margin: 0;">
     <figcaption style="font-weight: bold; margin-bottom: 8px;">AVX2 float64</figcaption>
     <img src="/reports/2026-08-04/9v74_rfft_avx2_f64.svg" alt="Plot 2" style="width: 100%; max-width: 400px;">
+  </figure>
+</div>
+
+#### Ampere Altra Q80-30 (Oracle Cloud VM)
+
+<div style="display: flex; gap: 20px; justify-content: center;">
+  <figure style="text-align: center; margin: 0;">
+    <figcaption style="font-weight: bold; margin-bottom: 8px;">NEON float32</figcaption>
+    <img src="/reports/2026-08-04/q80_30_rfft_f32.svg" alt="Plot 1" style="width: 100%; max-width: 400px;">
+  </figure>
+  <figure style="text-align: center; margin: 0;">
+    <figcaption style="font-weight: bold; margin-bottom: 8px;">NEON float64</figcaption>
+    <img src="/reports/2026-08-04/q80_30_rfft_f64.svg" alt="Plot 2" style="width: 100%; max-width: 400px;">
   </figure>
 </div>
 
