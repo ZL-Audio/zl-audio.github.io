@@ -80,8 +80,9 @@ enableGitInfo = true
   [markup.highlight]
     # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
     style = "tango"
+    noClasses = false
     # Uncomment if you want your chosen highlight style used for code blocks without a specified language
-    # guessSyntax = "true"
+    guessSyntax = "true"
   [markup.tableOfContents]
     endLevel = 3
     ordered = false
