@@ -28,6 +28,38 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
+### 1.3.0
+
+破坏性更改
+
+- 提高滤波器频率调制速度的上限
+- 更改 `State Variable` 滤波器结构（Yuriy Ivantsov）
+  - 现在 `State Variable` 滤波器与 `Minimum Phase` 具有相同的幅值与相位响应，但具有不同的调制/动态行为
+- 更改 `Matched Phase`/`Mixed Phase`/`Zero Phase` 引入的延迟
+  - 现在无论是否使用 L/R/M/S，它们都将引入恒定的延迟
+  - 响应保持不变，性能得到进一步提升
+- 更改若干键盘快捷键
+  - 现在您可以在 `Control` 设置面板中调整不同操作的快捷键
+  - 现在监听状态的默认快捷键为 `Right Click`（右键单击）
+  - 现在右键面板的默认快捷键为 `Right Click` + `Alt/Option`
+
+修复
+
+- 修复 级联滤波器在奈奎斯特频率处的 FIR 校正
+- 修复 双精度单声道侧链可能导致的崩溃
+- 修复 相对动态开启且学习关闭时的错误阈值
+- 修复 重置或采样率更改后错误的 RMS 动态
+- 修复 全局旁通时仍应用相位翻转的问题
+- 修复 静态/动态高阶峰值不一致的问题
+- 修复 均衡匹配中错误的 FFT 插值
+- 修复 均衡匹配中次优的 FFT 优化过程
+- 修复 滑块数值编辑器的显示问题
+
+其他更改
+
+- 放宽窗口大小比例限制
+- 支持低至 10kHz 的采样率
+
 ### 1.2.2
 
 新功能
