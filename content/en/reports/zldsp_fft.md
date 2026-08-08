@@ -221,9 +221,9 @@ For high orders, `switch_order <= order`, `zldsp_fft` uses a hybrid Cooley–Tuk
 
 #### Switch Order
 
-The boundary between medium and high orders is derived from the detected L1 and L2 cache sizes. The implementation estimates the largest transform orders that fit its working sets and selects:
+The boundary between medium and high orders is derived from the detected L1 cache size. The implementation estimates the largest transform orders that fit its working sets and selects:
 
-`switch_order = max(maximum_L1_order + 4, maximum_L2_order)`
+`switch_order = maximum_L1_order + 4`
 
 ## Reference
 

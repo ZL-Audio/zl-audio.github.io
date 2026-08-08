@@ -221,9 +221,9 @@ cfft.backward({out_real.data(), out_imag.data()}, in_buffer.data());
 
 #### 切换阈值阶数
 
-中阶 与 高阶 之间的分界基于检测到的 L1 和 L2 缓存大小推导得出。实现会估算适合其工作集的最大变换阶数，并选取：
+中阶 与 高阶 之间的分界基于检测到的 L1 缓存大小推导得出。`zldsp_fft`会估算适合其工作集的最大变换阶数，并选取：
 
-`switch_order = max(maximum_L1_order + 4, maximum_L2_order)`
+`switch_order = maximum_L1_order + 4`
 
 ## 参考
 
