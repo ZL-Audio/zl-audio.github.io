@@ -12,7 +12,7 @@ weight: 1
 
 您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLSpectrumEqualizer/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的芯片/架构对应的安装器。
 
-{{< installers repo="ZL-Audio/ZLSpectrumEqualizer" plugin="ZL.Spectrum.Equalizer" version="0.0.1" >}}
+{{< installers repo="ZL-Audio/ZLSpectrumEqualizer" plugin="ZL.Spectrum.Equalizer" version="0.0.2" >}}
 
 ZL Spectrum Equalizer 是**自由开源**的软件。除了 [ZL Audio 标志](https://github.com/ZL-Audio/ZLSpectrumEqualizer/blob/main/assets/zlaudio.svg) 和 [ZL Spectrum Equalizer 标志](https://github.com/ZL-Audio/ZLSpectrumEqualizer/blob/main/assets/logo.svg)，ZL Spectrum Equalizer 按照 [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) 进行许可。您可以在 https://github.com/ZL-Audio/ZLSpectrumEqualizer 或者 https://gitee.com/ZL-Audio/ZLSpectrumEqualizer 获得源码。
 
@@ -29,6 +29,8 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 待公布。
 
 ## 更新日志
+
+### 0.0.2
 
 ### 0.0.1
 
