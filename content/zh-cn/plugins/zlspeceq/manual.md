@@ -226,7 +226,7 @@ ___
   <img src="/images/zlspeceq/dynamic.svg" width="20pt"/>
 </p>
 
-- 按下：开启动态行为。
+- 按下：开启频谱动态行为。
 
 ___
 
@@ -249,6 +249,14 @@ ___
 </p>
 
 - 释放：旁路动态处理。更多信息请参见 [频谱动态](#频谱动态)。
+
+___
+
+<p float="left">
+  <img src="/images/zlspeceq/delta.svg" width="20pt"/>
+</p>
+
+- 按下：输出动态差值信号
 
 ___
 

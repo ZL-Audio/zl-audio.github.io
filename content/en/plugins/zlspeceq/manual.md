@@ -226,7 +226,7 @@ ___
   <img src="/images/zlspeceq/dynamic.svg" width="20pt"/>
 </p>
 
-- Press: turn on the dynamic behavior of the band
+- Press: turn on the spectrum dynamic behavior of the band
 
 ___
 
@@ -243,12 +243,19 @@ ___
 
 ___
 
-
 <p float="left">
   <img src="/images/zlspeceq/bypass.svg" width="20pt"/>
 </p>
 
 - Release: bypass the dynamic behavior. See more info in [Spectrum Dynamic](#spectrum-dynamic).
+
+___
+
+<p float="left">
+  <img src="/images/zlspeceq/delta.svg" width="20pt"/>
+</p>
+
+- Press: output the dynamic delta signal.
 
 ___
 

@@ -1,5 +1,5 @@
 ---
-title: zldsp::fft
+title: High-performance FFT Library zldsp::fft
 date: 2026-08-04
 author: zsliu98
 tags:

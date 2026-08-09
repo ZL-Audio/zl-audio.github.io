@@ -1,5 +1,5 @@
 ---
-title: zldsp::fft
+title: 高性能 FFT 库 zldsp::fft
 date: 2026-08-04
 author: zsliu98
 tags:
@@ -84,7 +84,7 @@ rfft.forward_sqr_mag(real_in.data(), sqr_mag_out.data())
 
 #### 数据布局 (AoS/SoA)
 
-`CFFT` 和 `RFFT` 均支持复数的 AoS/SoA：
+`CFFT` 和 `RFFT` 均支持复数的 AoS/SoA 布局：
 
 AoS 将 real/imaginary 值交错存储在一个数组中：
 ```cpp
