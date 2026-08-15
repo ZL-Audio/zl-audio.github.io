@@ -556,6 +556,42 @@ Choose whether to turn on Window Size Fix.
 
 The preset manager panel let you manage(save/group/delete) presets.
 
+___
+
+**`Search Presets`**
+
+Input a preset name and search it.
+
+___
+
+**`New Group`**
+
+Input a new group name and press `Enter` to save it.
+
+___
+
+**`New Preset`**
+
+Input a new preset name and press `Enter` to save it.
+
+___
+
+<p float="left">
+  <img src="/images/zlspeceq/trash.svg" width="20pt"/>
+</p>
+
+- Press: delete the selected preset group (along with all presets in the group) or the selected preset
+
+___
+
+<p float="left">
+  <img src="/images/zlspeceq/folder_open.svg" width="20pt"/>
+</p>
+
+- Press: reveal the preset folder
+
+___
+
 ## UI Controls
 
 Generally, you can enable fine-adjustment with `Shift` and enable special adjustment with `Ctrl/Command`. If the direction of the mouse wheel is reversed when `Shift` is pressed, you can reverse it again (in the UI Setting Panel) to put it back to normal.
