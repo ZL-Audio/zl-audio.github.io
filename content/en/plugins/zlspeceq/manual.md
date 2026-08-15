@@ -36,7 +36,7 @@ You can open the [Preset Manager Panel](#preset-manager-panel) by clicking the i
 
 ___
 
-**Analyzer**
+**`Analyzer`**
 
 You can open the [Analyzer Setting Panel](#analyzer-setting-panel) by clicking the text.
 
@@ -79,7 +79,7 @@ Control the spectrum processing side-chain smooth value. See more info in [Spect
 
 ___
 
-**Output**
+**`Output`**
 
 You can open the [Output Setting Panel](#output-setting-panel) by clicking the text. It shows the current filter gain scale & total output gain.
 
@@ -140,31 +140,31 @@ The floating window is attached to the filter button of the selected band. You c
 
 ___
 
-**Invert Gain**
+**`Invert Gain`**
 
 - Click: invert gain of the selected band
 
 ___
 
-**Split L/R**
+**`Split L/R`**
 
 - Click: set selected band to `Left` and add a band with same parameters but in `Right`
 
 ___
 
-**Split M/S**
+**`Split M/S`**
 
 - Click: set selected band to `Mid` and add a band with same parameters but in `Side`
 
 ___
 
-**Copy**
+**`Copy`**
 
 - Click: copy all selected bands' filter parameters to the clipboard
 
 ___
 
-**Paste**
+**`Paste`**
 
 - Click: get filter parameters from the clipboard and create those bands
 
@@ -436,49 +436,49 @@ The UI setting panel controls analyzer colors, slider operations, etc. Component
 
 You can adjust the color by clicking on the left color block and change the transparency by dragging the right slider.
 
-**Text Color**
+**`Text Color`**
 
-**Background Color**
+**`Background Color`**
 
 For better accessibility, please set Text/Background to colors with high contrast.
 
-**Shadow Color**
+**`Shadow Color`**
 
-**Glow Color**
+**`Glow Color`**
 
-**Pre Color**
+**`Pre Color`**
 
-**Post Color**
+**`Post Color`**
 
-**Side Color**
+**`Side Color`**
 
-**Collision Color**
+**`Collision Color`**
 
-**Grid Color**
+**`Grid Color`**
 
-**Color Map 1**
+**`Color Map 1`**
 
 - The color map of the curves of each single filter.
 
-**Color Map 2**
+**`Color Map 2`**
 
 - The color map of the curves of Stereo/Left/Right/Mid/Side.
 
 #### Control
 
-**Wheel Sensitivity**
+**`Wheel Sensitivity`**
 
 - `Rough`: mouse-wheel sensitivity when `Shift` is not pressed
 - `Fine`: mouse-wheel sensitivity when `Shift` is pressed
 - `Menu`: mouse-wheel sensitivity when adjust combobox items
 - `Reverse`: whether to reverse the direction of mouse-wheel when `Shift` is pressed
 
-**Drag Sensitivity**
+**`Drag Sensitivity`**
 
 - `Rough`: mouse-drag sensitivity when `Shift` is not pressed
 - `Fine`: mouse-drag sensitivity when `Shift` is pressed
 
-**Rotary Slider Style**
+**`Rotary Slider Style`**
 
 - `Circular`: A rotary control that you move by dragging the mouse in a circular motion, like a knob
 - `Horizontal`: A rotary control that you move by dragging the mouse left-to-right
@@ -486,7 +486,7 @@ For better accessibility, please set Text/Background to colors with high contras
 - `Horiz + Vert`: A rotary control that you move by dragging the mouse up-and-down or left-to-right
 - `Distance`: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
 
-**Slider Double Click**
+**`Slider Double Click`**
 
 - `Return Default`: when you double-click the slider, it returns to the default value; when you double-click the slider with Ctrl/Command, it opens the value editor.
 - `Open Editor`: when you double-click the slider, it opens the value editor; when you double-click the slider with Ctrl/Command, it returns to the default value.
@@ -495,23 +495,23 @@ ___
 
 Short-cut settings for following actions:
 
-**Enter Solo**
+**`Enter Solo`**
 
-**Exit Solo**
+**`Exit Solo`**
 
-**Context Menu**
+**`Context Menu`**
 
-**Toggle Dynamic**
+**`Toggle Dynamic`**
 
-**Toggle Bypass**
+**`Toggle Bypass`**
 
-**Delete Band**
+**`Delete Band`**
 
 ___
 
 #### Other
 
-**Refresh Rate**
+**`Refresh Rate`**
 
 In general, 30 Hz is enough for an equalizer plugin.
 
@@ -519,20 +519,20 @@ For a better analyzer display, set this to 1/n of your monitor refresh rate. For
 - If your monitor refresh rate is 120 Hz, set it to 120 Hz, 60 Hz (1/2), or 30 (1/4) Hz. DO NOT set it to 90 Hz.
 - If your monitor refresh rate is 90 Hz, set it to 90 Hz or 30 Hz (1/3). DO NOT set it to 60 Hz.
 
-**FFT  Setting**
+**`FFT`**
 
 - `Tilt`: the extra tilting slope of the FFT
 - `Speed`: the extra decay speed of the FFT
 
-**Curve Thickness**
+**`Curve Thickness`**
 
 Control the thickness of the curve of each band & each stereo mode.
 
-**Tooltip**
+**`Tooltip`**
 
 Choose the tooltip language. It will take effect when the plugin window is reopened.
 
-**UI Scaling**
+**`UI Scaling`**
 
 Choose the font size mode.
 
@@ -551,6 +551,8 @@ Choose whether to turn on Window Size Fix.
 
 - `Off`: plugin window size adjustment will be stored
 - `On`: plugin window size adjustment will NOT be stored, but open as it is currently every time the plugin is opened. The size can still be changed, but the changes will not be stored.
+
+___
 
 ## Preset Manager Panel
 
@@ -654,7 +656,7 @@ When dynamic behavior is enabled for a band, each FFT bin covered by the filter 
     * A **hard knee** (low value) acts strictly: gain modulation begins only after the side-chain bin level crosses the threshold.
     * A **soft knee** (high value) creates a gradual curve, smoothly transitioning toward the target gain as the side-chain bin level approaches the threshold for transparent, unobtrusive spectral shaping.
 
-> **Note**: Because processing occurs independently per FFT bin, parameters like **Threshold** and **Knee** operate on individual bin levels rather than the full-band signal envelope found in conventional dynamic processors.
+> **Note**: Because processing occurs independently per FFT bin, parameters like `Threshold` and `Knee` operate on individual bin levels rather than the full-band signal envelope found in conventional dynamic processors.
 
 #### Dynamic Mode
 

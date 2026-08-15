@@ -3,7 +3,6 @@ title: 安装说明
 description: 如何安装 ZL Spectrum Equalizer
 weight: 1
 ---
-
 ## 简介视频
 
 {{< youtube "qp_mmVIGBcc" >}}
@@ -26,11 +25,51 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Nightly Release
 
-待公布。
+可在[此处](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLSpectrumEqualizer)获取。Nightly 版本包含新功能和修复，这些内容在正式发布前可能会发生变动。不建议用于关键的生产混音工作。如果您有具体的错误报告或功能请求，可以在[此处](https://github.com/ZL-Audio/ZLSpectrumEqualizer/issues)提交 issue。
 
 ## 更新日志
 
+### 0.0.3
+
+修复
+
+- 修复 Linux 下用户界面无响应的问题
+- 修复 声道模式改变时不正确的静态增益补偿
+- 修复 外部侧链按钮可能无法更新显示的问题
+- 修复 超过奈奎斯特频率的动态曲线显示
+- 修复 FFT 碰撞颜色潜在的数据争用问题
+- 修复 滑块/按钮/下拉框潜在的冗余数值通知
+- 修复 调整界面大小可能导致的潜在卡顿
+
+新功能
+
+- 增加 内置预设管理器（非常早期阶段）
+
+其他更改
+
+- 调整 界面设置面板
+  - 移除 导入/导出功能
+  - 增加 打开文件夹按钮
+- 调整 下拉框界面
+
 ### 0.0.2
+
+破坏性更改
+
+- 修复 `Relative`（相对）动态模式
+- 为滑块/拖拽使用独立的灵敏度控制
+
+新功能
+
+- 增加 动态差值（每个频段）
+
+修复
+
+- 修复 滑块数值编辑器的显示
+
+改进
+
+- 改进 信号处理性能（略微）
 
 ### 0.0.1
 
