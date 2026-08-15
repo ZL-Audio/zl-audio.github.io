@@ -26,11 +26,19 @@ ___
   <img src="/images/zlequalizer2/logo.svg" width="20pt" />
 </p>
 
-You can open the [UI Setting Panel](#ui-setting-panel) by double-clicking the logo.
+You can open the [UI Setting Panel](#ui-setting-panel) by clicking the logo.
 
 ___
 
-**Analyzer**
+<p float="left">
+  <img src="/images/zlspeceq/collections_bookmark.svg" width="20pt"/>
+</p>
+
+You can open the [Preset Manager Panel](#preset-manager-panel) by clicking the icon.
+
+___
+
+**`Analyzer`**
 
 You can open the [Analyzer Setting Panel](#analyzer-setting-panel) by clicking the text.
 
@@ -55,7 +63,7 @@ ___
 
 ___
 
-**Output Panel**
+**`Output`**
 
 You can open the [Output Setting Panel](#output-setting-panel) by clicking the text. It shows the current filter gain scale & total output gain.
 
@@ -117,31 +125,31 @@ The floating window is attached to the filter button of the selected band. You c
 
 ___
 
-**Invert Gain**
+**`Invert Gain`**
 
 - Click: invert gain of the selected band
 
 ___
 
-**Split L/R**
+**`Split L/R`**
 
 - Click: set selected band to `Left` and add a band with same parameters but in `Right`
 
 ___
 
-**Split M/S**
+**`Split M/S`**
 
 - Click: set selected band to `Mid` and add a band with same parameters but in `Side`
 
 ___
 
-**Copy**
+**`Copy`**
 
 - Click: copy all selected bands' filter parameters to the clipboard
 
 ___
 
-**Paste**
+**`Paste`**
 
 - Click: get filter parameters from the clipboard and create those bands
 
@@ -557,57 +565,49 @@ The UI setting panel controls analyzer colors, slider operations, etc. Component
 
 You can adjust the color by clicking on the left color block and change the transparency by dragging the right slider.
 
-**Text Color**
+**`Text Color`**
 
-**Background Color**
+**`Background Color`**
 
 For better accessibility, please set Text/Background to colors with high contrast.
 
-**Shadow Color**
+**`Shadow Color`**
 
-**Glow Color**
+**`Glow Color`**
 
-**Pre Color**
+**`Pre Color`**
 
-**Post Color**
+**`Post Color`**
 
-**Side Color**
+**`Side Color`**
 
-**Collision Color**
+**`Collision Color`**
 
-**Grid Color**
+**`Grid Color`**
 
-**Color Map 1**
+**`Color Map 1`**
 
 - The color map of the curves of each single filter.
 
-**Color Map 2**
+**`Color Map 2`**
 
 - The color map of the curves of Stereo/Left/Right/Mid/Side.
 
-**Import Colors**
-
-- Import color settings (`.xml` file)
-
-**Export Colors**
-
-- Export color settings (`.xml` file)
-
 #### Control
 
-**Wheel Sensitivity**
+**`Wheel Sensitivity`**
 
 - `Rough`: mouse-wheel sensitivity when `Shift` is not pressed
 - `Fine`: mouse-wheel sensitivity when `Shift` is pressed
 - `Menu`: mouse-wheel sensitivity when adjust combobox items
 - `Reverse`: whether to reverse the direction of mouse-wheel when `Shift` is pressed
 
-**Drag Sensitivity**
+**`Drag Sensitivity`**
 
 - `Rough`: mouse-drag sensitivity when `Shift` is not pressed
 - `Fine`: mouse-drag sensitivity when `Shift` is pressed
 
-**Rotary Slider Style**
+**`Rotary Slider Style`**
 
 - `Circular`: A rotary control that you move by dragging the mouse in a circular motion, like a knob
 - `Horizontal`: A rotary control that you move by dragging the mouse left-to-right
@@ -615,22 +615,14 @@ For better accessibility, please set Text/Background to colors with high contras
 - `Horiz + Vert`: A rotary control that you move by dragging the mouse up-and-down or left-to-right
 - `Distance`: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
 
-**Slider Double Click**
+**`Slider Double Click`**
 
 - `Return Default`: when you double-click the slider, it returns to the default value; when you double-click the slider with Ctrl/Command, it opens the value editor.
 - `Open Editor`: when you double-click the slider, it opens the value editor; when you double-click the slider with Ctrl/Command, it returns to the default value.
 
-**Import Controls**
-
-- Import control settings (`.xml` file)
-
-**Export Controls**
-
-- Export control settings (`.xml` file)
-
 #### Other
 
-**Refresh Rate**
+**`Refresh Rate`**
 
 In general, 30 Hz is enough for an equalizer plugin.
 
@@ -639,38 +631,80 @@ For a better analyzer display, set this to 1/n of your monitor refresh rate. For
 - If your monitor refresh rate is 90 Hz, set it to 90 Hz or 30 Hz (1/3). DO NOT set it to 60 Hz.
 
 
-**FFT  Setting**
+**`FFT`**
 
 - `Tilt`: the extra tilting slope of the FFT
 - `Speed`: the extra decay speed of the FFT
 
-**Curve Thickness**
+**`Curve Thickness`**
 
 Control the thickness of the curve of each band & each stereo mode.
 
-**Tooltip**
+**`Tooltip`**
 
 Choose the tooltip language. It will take effect when the plugin window is reopened.
 
-**UI Scaling**
+**`UI Scaling`**
 
 Choose the font size mode.
 
 - `Scale`: the font size scales with the window size. Control the relative ratio.
 - `Static`: the font size is fixed. Control the actual font size.
 
-**Curve dB Scale**
+**`Curve dB Scale`**
 
 - `Min`: minimum decibel scale of magnitude response curves
 - `Default`: default decibel scale of magnitude response curves
 - `Max`: maximum decibel scale of magnitude response curves
 
-**Window Size Fix**
+**`Window Size Fix`**
 
 Choose whether to turn on Window Size Fix.
 
 - `Off`: plugin window size adjustment will be stored
 - `On`: plugin window size adjustment will NOT be stored
+
+___
+
+## Preset Manager Panel
+
+The preset manager panel let you manage(save/group/delete) presets.
+
+___
+
+**`Search Presets`**
+
+Input a preset name and search it.
+
+___
+
+**`New Group`**
+
+Input a new group name and press `Enter` to save it.
+
+___
+
+**`New Preset`**
+
+Input a new preset name and press `Enter` to save it.
+
+___
+
+<p float="left">
+  <img src="/images/zlspeceq/trash.svg" width="20pt"/>
+</p>
+
+- Press: delete the selected preset group (along with all presets in the group) or the selected preset
+
+___
+
+<p float="left">
+  <img src="/images/zlspeceq/folder_open.svg" width="20pt"/>
+</p>
+
+- Press: reveal the preset folder
+
+___
 
 ## UI Controls
 
@@ -702,22 +736,22 @@ Generally, you can enable fine-adjustment with `Shift` and enable special adjust
 
 ## Filter Structure
 
-#### Minimum Phase
+#### `Minimum Phase`
 
 This is the **standard, classic digital EQ sound**. It's the most common filter type.
 
 * **Best For:** General EQ tasks.
 * **Pros:** Gentle 6 dB and 12 dB/oct slopes cause very little phase shift, making it safe to blend with your original signal (low risk of cancellation).
 * **Cons:** Aggressive automation of frequency or gain can sometimes cause audible clicks or instability.
-#### State Variable
+#### `State Variable`
 
 This is the filter type often used in **synth filters and crossovers**.
 
 * **Best For:** Creative effects and heavy automation.
 * **Pros:** Extremely stable, even with rapid, complex automation.
-* **Cons:** Causes a significant phase shift. **Avoid mixing this signal with the original** (or other correlated signals) as it will likely cause phase cancellation.
+* **Cons:** Slightly more CPU usage. Aggressive automation of frequency or gain can sometimes cause audible clicks or instability.
 
-#### Parallel
+#### `Parallel`
 
 This mode changes how filters work together. **Shelf** (<= 12 dB/oct) and **Peak** (<= 24 dB/oct) filters are processed in parallel.
 
@@ -725,33 +759,33 @@ This mode changes how filters work together. **Shelf** (<= 12 dB/oct) and **Peak
 * **Pros:** Offers a different character and is more CPU-efficient for dynamic tasks.
 * **Cons:** The parallel processing means the final EQ curve **will look different** from the curves shown on the display.
 
-#### Matched Phase
+#### `Matched Phase`
 
 This mode adds a special process to the `Minimum Phase` filters to **mimic analog prototype** magnitude & phase response.
 
 * **Best For:** Getting an **analog** phase and magnitude response.
-* **Latency:** Adds about 11 ms (up to 22 ms for L/R & M/S processing).
+* **Latency:** Adds about 11 ms.
 * **Cons**: Dynamic filters stay in `Minimum Phase`.
 
 > **Warning:** **Do not automate** filter parameters in this mode.
 
-#### Mixed Phase
+#### `Mixed Phase`
 
 This mode adds a special process to the `Minimum Phase` filters to **mimic analog prototype** magnitude response and clean up high-end phase.
 
 * **Best For:** Getting an **analog** magnitude response without the high-end phase shift (above 5 kHz).
-* **Latency:** Adds about 21 ms (up to 43 ms for L/R & M/S processing).
+* **Latency:** Adds about 21 ms.
 * **Cons**: Dynamic filters stay in `Minimum Phase`.
 
 > **Warning:** **Do not automate** filter parameters in this mode.
 
-#### Zero Phase
+#### `Zero Phase`
 
 This mode provides **almost zero phase response**.
 
 * **Best For:** Surgical mastering tasks where preserving phase relationships is critical.
 * **Pros:** No phase distortion at all for mid/high frequencies (above 200 Hz).
-* **Cons:** Adds a **very high latency** of about 171 ms (up to 342 ms for L/R & M/S processing). May cause audible pre-ringing. Dynamic filters stay in `Minimum Phase`.
+* **Cons:** Adds a **very high latency** of about 171 ms. May cause audible pre-ringing. Dynamic filters stay in `Minimum Phase`.
 
 > **Warning:** **Do not automate** filter parameters in this mode.
 
