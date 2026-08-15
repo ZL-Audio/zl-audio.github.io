@@ -11,7 +11,7 @@ weight: 1
 
 You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLSpectrumEqualizer/releases/latest) or use the direct download link below. Please download the installer that matches your chip/architecture:
 
-{{< installers repo="ZL-Audio/ZLSpectrumEqualizer" plugin="ZL.Spectrum.Equalizer" version="0.0.2" >}}
+{{< installers repo="ZL-Audio/ZLSpectrumEqualizer" plugin="ZL.Spectrum.Equalizer" version="0.0.3" >}}
 
 ZL Spectrum Equalizer is Free and Open-source. ZL Spectrum Equalizer is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html), except for the [logo of ZL Audio](https://github.com/ZL-Audio/ZLSpectrumEqualizer/blob/main/assets/zlaudio.svg) and the [logo of ZL Spectrum Equalizer](https://github.com/ZL-Audio/ZLSpectrumEqualizer/blob/main/assets/logo.svg). You can obtain the corresponding source code at https://github.com/ZL-Audio/ZLSpectrumEqualizer or https://gitee.com/ZL-Audio/ZLSpectrumEqualizer.
 
@@ -28,6 +28,29 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLSpectrumEqualizer). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLSpectrumEqualizer/issues).
 
 ## Changelog
+
+### 0.0.3
+
+Bug fixes
+
+- fix unresponsive Linux UI
+- fix incorrect static gain compensation when stereo mode changes
+- fix external side-chain button may not get updated display
+- fix dynamic curve display beyond Nyquist
+- fix potential race condition for FFT collision colour
+- fix potential redundant value notification of sliders/buttons/comboboxes
+- fix potential lagging caused by UI resizing
+
+New Features
+
+- add built-in preset manager (very early stage)
+
+Other Changes
+
+- adjust UI setting panel
+  - remove import/export functions
+  - add reveal folder button
+- adjust combobox UI
 
 ### 0.0.2
 

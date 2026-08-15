@@ -24,7 +24,15 @@ ___
   <img src="/images/zlspeceq/logo.svg" width="20pt" />
 </p>
 
-You can open the [UI Setting Panel](#ui-setting-panel) by double-clicking the logo.
+You can open the [UI Setting Panel](#ui-setting-panel) by clicking the logo.
+
+___
+
+<p float="left">
+  <img src="/images/zlspeceq/collections_bookmark.svg" width="20pt"/>
+</p>
+
+You can open the [Preset Manager Panel](#preset-manager-panel) by clicking the icon.
 
 ___
 
@@ -456,14 +464,6 @@ For better accessibility, please set Text/Background to colors with high contras
 
 - The color map of the curves of Stereo/Left/Right/Mid/Side.
 
-**Import Colors**
-
-- Import color settings (`.xml` file)
-
-**Export Colors**
-
-- Export color settings (`.xml` file)
-
 #### Control
 
 **Wheel Sensitivity**
@@ -509,14 +509,6 @@ Short-cut settings for following actions:
 
 ___
 
-**Import Controls**
-
-- Import control settings (`.xml` file)
-
-**Export Controls**
-
-- Export control settings (`.xml` file)
-
 #### Other
 
 **Refresh Rate**
@@ -559,6 +551,10 @@ Choose whether to turn on Window Size Fix.
 
 - `Off`: plugin window size adjustment will be stored
 - `On`: plugin window size adjustment will NOT be stored, but open as it is currently every time the plugin is opened. The size can still be changed, but the changes will not be stored.
+
+## Preset Manager Panel
+
+The preset manager panel let you manage(save/group/delete) presets.
 
 ## UI Controls
 
