@@ -129,7 +129,7 @@ cfft.backward({out_real.data(), out_imag.data()}, in_buffer.data());
 - `vDSP`: [Apple vDSP](https://developer.apple.com/documentation/accelerate/vdsp)
 - `ArmPL`: [Arm Performance Libraries](https://developer.arm.com/tools-and-software/arm-performance-libraries)
 - `FFTW3`: [FFTW 3.3.10 Mirror](https://github.com/zsliu98/fftw3-mirror/tree/14eea039281b8c5bd83a20314afb402538fd986c)（支持 NEON，取 `FFTW_MEASURE` 与 `FFTW_ESTIMATE` 中的更优结果）
-- `KFR`: [KFR 7.0.0](https://github.com/kfrlib/kfr/tree/main)
+- `KFR`: [KFR 7.1.0](https://github.com/kfrlib/kfr/tree/main)
 - `PFFFT`: [PFFFT 1.1.0](https://github.com/marton78/pffft)
 - `zldsp`: [zldsp::fft](https://github.com/ZL-Audio/zldsp_fft)
 

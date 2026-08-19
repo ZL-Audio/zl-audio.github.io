@@ -129,7 +129,7 @@ Included libraries are (they are subjected to their own licenses):
 - `vDSP`: [Apple vDSP](https://developer.apple.com/documentation/accelerate/vdsp)
 - `ArmPL`: [Arm Performance Libraries](https://developer.arm.com/tools-and-software/arm-performance-libraries)
 - `FFTW3`: [FFTW 3.3.10 Mirror](https://github.com/zsliu98/fftw3-mirror/tree/14eea039281b8c5bd83a20314afb402538fd986c) with NEON support, take the better one from `FFTW_MEASURE` and `FFTW_ESTIMATE`
-- `KFR`: [KFR 7.0.0](https://github.com/kfrlib/kfr/tree/main)
+- `KFR`: [KFR 7.1.0](https://github.com/kfrlib/kfr/tree/main)
 - `PFFFT`: [PFFFT 1.1.0](https://github.com/marton78/pffft)
 - `zldsp`: [zldsp::fft](https://github.com/ZL-Audio/zldsp_fft)
 
