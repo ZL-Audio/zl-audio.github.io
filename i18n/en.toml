@@ -1,3 +1,20 @@
+# Alert labels
+
+[caution]
+other = "Caution"
+
+[important]
+other = "Important"
+
+[note]
+other = "Note"
+
+[tip]
+other = "Tip"
+
+[warning]
+other = "Warning"
+
 # UI strings. Buttons and similar.
 
 [ui_pager_prev]
@@ -36,6 +53,10 @@ other = "Created"
 other = "Last modified"
 [post_edit_this]
 other = "Edit this page"
+
+[post_view_markdown]
+other = "View Markdown"
+
 [post_view_this]
 other = "View page source"
 [post_create_child_page]
@@ -89,6 +110,10 @@ other = "Yes"
 [feedback_negative]
 other = "No"
 
-# 404
-[error_404_message]
-other = "Sorry, this page doesn't exist."
+# Table of contents
+
+[toc_on_this_page]
+other = "On this page"
+
+[toc_top_of_page]
+other = "Top of page"

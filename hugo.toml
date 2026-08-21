@@ -65,7 +65,7 @@ enableGitInfo = true
 [languages.zh-cn]
   label ="简体中文"
   contentDir = "content/zh-cn"
-[languages.no.params]
+[languages.zh-cn.params]
   title = "Zl Audio"
   description = "ZL Audio 专注于音频插件和音频处理工具开发"
   time_format_default = "02.01.2006"

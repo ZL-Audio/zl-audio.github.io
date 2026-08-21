@@ -1,3 +1,20 @@
+# Alert labels
+
+[caution]
+other = "注意"
+
+[important]
+other = "重要"
+
+[note]
+other = "说明"
+
+[tip]
+other = "提示"
+
+[warning]
+other = "警告"
+
 # UI strings. Buttons and similar.
 
 [ui_pager_prev]
@@ -7,10 +24,10 @@ other = "上一页"
 other = "下一页"
 
 [ui_read_more]
-other = "更多"
+other = "阅读全文"
 
 [ui_search]
-other = "站内搜索…"
+other = "站内搜索……"
 
 # Used in sentences such as "Posted in News"
 [ui_in]
@@ -18,7 +35,7 @@ other = "在"
 
 # Used in sentences such as "All Tags"
 [ui_all]
-other = "所有"
+other = "全部"
 
 # Footer text
 [footer_all_rights_reserved]
@@ -30,56 +47,97 @@ other = "隐私政策"
 
 # Post (blog, articles etc.)
 [post_byline_by]
-other = "借由"
+other = "作者"
+
 [post_created]
 other = "创建"
+
 [post_last_mod]
-other = "最后修改"
+other = "最后修改于"
+
 [post_edit_this]
 other = "编辑此页"
+
+[post_view_markdown]
+other = "查看 Markdown"
+
 [post_view_this]
 other = "查看页面源码"
+
 [post_create_child_page]
-other = "添加子页面"
+other = "新建子页面"
+
 [post_create_issue]
 other = "提交文档问题"
+
 [post_create_project_issue]
 other = "提交项目问题"
+
 [post_posts_in]
-other = "撰写于"
+other = "文章发布于"
+
 [post_reading_time]
-other = "分钟阅读"
+other = "分钟可读完"
+
 [post_less_than_a_minute_read]
-other = "少于1分钟"
+other = "1 分钟内可读完"
 
 # Print support
 [print_printable_section]
-other = "这是本节的多页打印视图。"
+other = "这是本章节的多页打印视图。"
+
 [print_click_to_print]
 other = "点击此处打印"
+
 [print_show_regular]
-other = "返回本页常规视图"
+other = "返回此页面的普通视图"
+
 [print_entire_section]
-other = "整节打印"
+other = "打印整个章节"
 
 # Community
 [community_join]
 other = "加入 {{ .Site.Title }} 社区"
+
 [community_introduce]
-other = "{{ .Site.Title }} 是一个开源项目，社区中的任何人都可以使用、改善和尽情使用它。我们很期待你能加入我们！下面是如何查看最近更新以及参与我们的一些方式。"
+other = "{{ .Site.Title }} 是一个开源项目，社区中的任何人都可以使用、改进并从中受益。欢迎加入我们！你可以通过以下方式了解项目动态并参与其中。"
+
 [community_learn]
-other = "学习和沟通"
+other = "学习与交流"
+
 [community_using]
-other = "正在或打算使用 {{ .Site.Title }} ？获取更多信息："
+other = "正在使用或想要使用 {{ .Site.Title }}？在此了解更多信息："
+
 [community_develop]
-other = "开发和贡献"
+other = "开发与贡献"
+
 [community_contribute]
-other = "如果你想通过为 {{ .Site.Title }} 贡献更多参与，请在此处加入我们："
+other = "如果你想通过为 {{ .Site.Title }} 做贡献来深入参与，请从这里开始："
+
 [community_how_to]
-other = "你可以了解如何为 {{ .Site.Title }} 做出贡献，请参考我们的"
+other = "如需了解如何为 {{ .Site.Title }} 做贡献，请参阅我们的"
+
 [community_guideline]
 other = "贡献指南"
 
-# 404
-[error_404_message]
-other = "抱歉，该页面不存在。"
+# Feedback
+
+[feedback_title]
+other = "意见反馈"
+
+[feedback_question]
+other = "这个页面对您有帮助吗？"
+
+[feedback_positive]
+other = "有帮助"
+
+[feedback_negative]
+other = "没有帮助"
+
+# Table of contents
+
+[toc_on_this_page]
+other = "本页目录"
+
+[toc_top_of_page]
+other = "回到顶部"
