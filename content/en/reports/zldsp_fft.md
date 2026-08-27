@@ -19,105 +19,35 @@ weight: 10
 #include <hwy/highway.h>
 ```
 
-#### Compiler Flags
+### Static Dispatch
 
-To activate SIMD, you must set the correct compilation flags. Highway will automatically detect the target architecture from these flags.
+```cmake
+target_compile_definitions(my_static_target PRIVATE HWY_COMPILE_ONLY_STATIC)
+```
+
+Use the compiler's architecture option to select an SSE, AVX2, or NEON static
+target.
 
 | SIMD Target | GCC/Clang                         | MSVC             |
 | ----------- | --------------------------------- | ---------------- |
 | SSE2        | `-march=x86-64`                   | no flag required |
-| SSE4        | `-march=x86-64-v2 -mase -mpclmul` | not suported     |
+| SSE4        | `-march=x86-64-v2 -maes -mpclmul` | not supported    |
 | AVX2        | `-march=x86-64-v3 -maes -mpclmul` | `/arch:AVX2`     |
 | NEON        | `-march=armv8-a+simd`             | `/arch:armv8.0`  |
 
-#### API
+See [`static_dispatch_caller`](https://github.com/ZL-Audio/zldsp_fft_develop/tree/main/examples/static_dispatch_caller.cpp) for CFFT and RFFT static dispatch examples with AoS and SoA layouts.
 
-Include the relevant headers from the `/src` directory.
+### Caller-owned Dynamic Dispatch
 
-Both `CFFT` and `RFFT` are templated on the floating-point type (e.g., `float` or `double`) and are instantiated using the base-2 **order** of the FFT (where `size = 1 << order`).
+For example, an x86 application can enable only SSE2 and AVX2:
 
-#### Complex FFT (`CFFT`)
-
-```cpp
-#include "src/zldsp_fft_cfft.hpp"
-#include <vector>
-#include <complex>
-
-// a CFFT of size 1024 (2^10) using float
-constexpr size_t order = 10; 
-zldsp::fft::CFFT<float> cfft(order);
-
-std::vector<std::complex<float>> in_buffer(1 << order);
-std::vector<std::complex<float>> out_buffer(1 << order);
-
-// forward transform (AoS to AoS)
-cfft.forward(in_buffer.data(), out_buffer.data());
-
-// backward transform (AoS to AoS)
-cfft.backward(out_buffer.data(), in_buffer.data());
+```cmake
+target_compile_definitions(my_dynamic_target PRIVATE "HWY_DISABLED_TARGETS=~(HWY_SSE2|HWY_AVX2)")
 ```
 
-#### Real FFT (`RFFT`)
+Compile this target for the oldest supported baseline (for example, `-march=x86-64` for SSE2).
 
-```cpp
-#include "src/zldsp_fft_rfft.hpp"
-#include <vector>
-#include <complex>
-
-// a RFFT of size 1024 (2^10) using float
-constexpr size_t order = 10;
-zldsp::fft::RFFT<float> rfft(order);
-
-std::vector<float> real_in(1 << order);
-std::vector<std::complex<float>> complex_out((1 << order) / 2 + 1);
-std::vector<float> sqr_mag_out((1 << order) / 2 + 1);
-
-// forward transform (real to AoS)
-rfft.forward(real_in.data(), complex_out.data());
-
-// backward transform (AoS to real)
-rfft.backward(complex_out.data(), real_in.data());
-
-// forward transform (real to squared magnitude)
-rfft.forward_sqr_mag(real_in.data(), sqr_mag_out.data())
-```
-
-#### Data Layouts (AoS/SoA)
-
-Both `CFFT` and `RFFT` support AoS/SoA for complex numbers:
-
-AoS stores interleaved real/imaginary values in one array:
-```cpp
-std::vector<std::complex<float>> out_buffer(1 << order);
-```
-
-SoA stores continuous real/imaginary values in two arrays:
-
-```cpp
-std::vector<float> out_real(1 << order);
-std::vector<float> out_imag(1 << order);
-```
-
-Example using SoA:
-```cpp
-#include "src/zldsp_fft_cfft.hpp"
-#include <vector>
-#include <complex>
-
-// a CFFT of size 1024 (2^10) using float
-constexpr size_t order = 10; 
-zldsp::fft::CFFT<float> cfft(order);
-
-std::vector<std::complex<float>> in_buffer(1 << order);
-std::vector<float> out_real(1 << order);
-std::vector<float> out_imag(1 << order);
-
-// forward transform (AoS to SoA)
-cfft.forward(in_buffer.data(), {out_real.data(), out_imag.data()});
-
-// backward transform (SoA to AoS)
-cfft.backward({out_real.data(), out_imag.data()}, in_buffer.data());
-```
+See [`wrapper`](https://github.com/ZL-Audio/zldsp_fft_develop/tree/main/examples/dynamic_dispatch_wrapper.cpp), its [`interface`](https://github.com/ZL-Audio/zldsp_fft_develop/tree/main/examples/dynamic_dispatch_wrapper.hpp), and [`dynamic_dispatch_caller`](https://github.com/ZL-Audio/zldsp_fft_develop/tree/main/examples/dynamic_dispatch_caller.cpp) for CFFT and RFFT dynamic dispatch examples with AoS and SoA layouts.
 
 ## Benchmark
 
