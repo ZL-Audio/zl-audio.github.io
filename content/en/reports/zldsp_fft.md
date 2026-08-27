@@ -19,7 +19,7 @@ weight: 10
 #include <hwy/highway.h>
 ```
 
-### Static Dispatch
+#### Static Dispatch
 
 ```cmake
 target_compile_definitions(my_static_target PRIVATE HWY_COMPILE_ONLY_STATIC)
@@ -37,7 +37,7 @@ target.
 
 See [`static_dispatch_caller`](https://github.com/ZL-Audio/zldsp_fft_develop/tree/main/examples/static_dispatch_caller.cpp) for CFFT and RFFT static dispatch examples with AoS and SoA layouts.
 
-### Caller-owned Dynamic Dispatch
+#### Caller-owned Dynamic Dispatch
 
 For example, an x86 application can enable only SSE2 and AVX2:
 
