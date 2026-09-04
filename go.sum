@@ -9,4 +9,5 @@ github.com/google/docsy v0.16.0 h1:4apKd+riGQ+u804SoNdc3c8Q7lPHGOZQ4vqOBdnkz6A=
 github.com/google/docsy v0.16.0/go.mod h1:alhAPKceHP14eqO+nJEhYehHeNcPKV8QnduoauTBZhs=
 github.com/google/docsy/theme v0.16.0 h1:9uV9qEhk7UpJ8KYbSpTPQlq6htH+8hYskedgGZVnNsU=
 github.com/google/docsy/theme v0.16.0/go.mod h1:NX/JqXCbZBn9Q2Hj7ez9Xeh9z4XcLiwmDYZXhB4RhRM=
+github.com/google/docsy/theme v0.17.0/go.mod h1:NX/JqXCbZBn9Q2Hj7ez9Xeh9z4XcLiwmDYZXhB4RhRM=
 github.com/twbs/bootstrap v5.3.8+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
