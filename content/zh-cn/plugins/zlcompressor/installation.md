@@ -11,7 +11,7 @@ weight: 1
 
 您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLCompressor/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的芯片/架构对应的安装器。
 
-{{< installers repo="ZL-Audio/ZLCompressor" plugin="ZL.Compressor" version="0.5.0" >}}
+{{< installers repo="ZL-Audio/ZLCompressor" plugin="ZL.Compressor" version="0.6.0" >}}
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
 
@@ -25,7 +25,52 @@ ZL Compressor 是**自由开源**的软件。除了 [ZL Audio 标志](https://gi
 
 VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
+## Nightly Release
+
+可在[此处](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLCompressor)获取。Nightly 版本包含新功能和修复，这些内容在正式发布前可能会发生变动。不建议用于关键的生产混音工作。如果您有具体的错误报告或功能请求，可以在[此处](https://github.com/ZL-Audio/ZLCompressor/issues)提交 issue。
+
 ## 更新日志
+
+### 0.6.0
+
+破坏性更改
+
+- 更改滤波器去扭曲方法（由 Yuriy Ivantsov 提出）
+    - 截止频率在奈奎斯特附近的滤波器响应会略有不同
+- 更改若干键盘快捷键
+    - 现在您可以在 `Control`（控制）设置面板中调整不同操作的快捷键
+    - 现在独奏状态的默认快捷键为 `Right Click`（右键单击）
+    - 现在右键面板的默认快捷键为 `Right Click` + `Alt/Option`
+- 修复内部刷新处理器报告的不正确刷新率
+    - 修复后您可能会注意到 FFT 分析仪以不同的速度衰减
+    - 您可能需要在界面设置中重新调整 FFT `Speed`（衰减速度）
+- 增加新的幅值分析仪立体声模式 `MS`（作为默认模式）
+    - 之前的幅值分析仪立体声模式将会改变
+
+修复
+
+- 修复 macOS 上的预设文件夹权限问题
+- 修复 动态开启时浮动窗口的位置
+- 修复 与右键单击相关的独奏快捷键
+- 修复 插件窗口抢占键盘交互的问题（仅限 Linux，非官方修复）
+- 修复 处理方向改变时可能产生的爆音
+- 修复 44.1 kHz 采样率下潜在的幅值偏移
+
+新功能
+
+- 增加 内置预设管理器
+- 增加 对截止频率超过奈奎斯特的滤波器的支持（现在在采样率 44.1/48 kHz 下，频率最高可达 30 kHz）
+- 增加 侧链均衡器旁路
+- 增加 输入/输出/差值/侧链（pre/post/delta/side）曲线开关按钮
+- 增加 幅值最大分贝选择
+- 增加 幅值移动方式 `Slow` 和 `Roll`
+
+其他更改
+
+- 改进 用户界面性能
+- 改进 FFT 分析仪精度
+- 调整 界面设置面板
+- 调整 下拉框界面
 
 ### 0.5.0
 

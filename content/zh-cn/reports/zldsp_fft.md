@@ -19,105 +19,35 @@ weight: 10
 #include <hwy/highway.h>
 ```
 
-#### 编译选项
+#### 静态分发
 
-要启用 SIMD 加速，必须设置正确的编译器选项。Highway 将根据这些编译标志自动检测目标架构。
+```cmake
+target_compile_definitions(my_static_target PRIVATE HWY_COMPILE_ONLY_STATIC)
+```
+
+使用编译器的架构选项来选择 SSE、AVX2 或 NEON 静态目标架构。
 
 | SIMD 目标架构 | GCC/Clang                         | MSVC             |
 | ----------- | --------------------------------- | ---------------- |
 | SSE2        | `-march=x86-64`                   | 无需额外参数      |
-| SSE4        | `-march=x86-64-v2 -mase -mpclmul` | 不支持           |
+| SSE4        | `-march=x86-64-v2 -maes -mpclmul` | 不支持           |
 | AVX2        | `-march=x86-64-v3 -maes -mpclmul` | `/arch:AVX2`     |
 | NEON        | `-march=armv8-a+simd`             | `/arch:armv8.0`  |
 
-#### API
+关于采用 AoS 和 SoA 布局的 CFFT 与 RFFT 静态分发示例，请参阅 [`static_dispatch_caller`](https://github.com/ZL-Audio/zldsp_fft_develop/tree/main/examples/static_dispatch_caller.cpp)。
 
-引入 `/src` 目录下的相关头文件即可。
+#### 调用方管理的动态分发
 
-`CFFT` 与 `RFFT` 均以浮点类型（如 `float` 或 `double`）作为模板参数，并通过以 2 为底的 FFT 阶数 **order** 进行实例化（其中大小 `size = 1 << order`）。
+例如，一个 x86 应用程序可以仅启用 SSE2 和 AVX2：
 
-#### 复数 FFT (`CFFT`)
-
-```cpp
-#include "src/zldsp_fft_cfft.hpp"
-#include <vector>
-#include <complex>
-
-// 基于 float 类型的 1024 (2^10) 点 CFFT
-constexpr size_t order = 10; 
-zldsp::fft::CFFT<float> cfft(order);
-
-std::vector<std::complex<float>> in_buffer(1 << order);
-std::vector<std::complex<float>> out_buffer(1 << order);
-
-// 正向变换（AoS 到 AoS）
-cfft.forward(in_buffer.data(), out_buffer.data());
-
-// 逆向变换（AoS 到 AoS）
-cfft.backward(out_buffer.data(), in_buffer.data());
+```cmake
+target_compile_definitions(my_dynamic_target PRIVATE "HWY_DISABLED_TARGETS=~(HWY_SSE2|HWY_AVX2)")
 ```
 
-#### 实数 FFT (`RFFT`)
+针对所支持的最旧基准架构编译此目标（例如，针对 SSE2 使用 `-march=x86-64`）。
 
-```cpp
-#include "src/zldsp_fft_rfft.hpp"
-#include <vector>
-#include <complex>
+关于采用 AoS 和 SoA 布局的 CFFT 与 RFFT 动态分发示例，请参阅 [`wrapper`](https://github.com/ZL-Audio/zldsp_fft_develop/tree/main/examples/dynamic_dispatch_wrapper.cpp)、其头文件 [`interface`](https://github.com/ZL-Audio/zldsp_fft_develop/tree/main/examples/dynamic_dispatch_wrapper.hpp) 以及 [`dynamic_dispatch_caller`](https://github.com/ZL-Audio/zldsp_fft_develop/tree/main/examples/dynamic_dispatch_caller.cpp)。
 
-// 基于 float 类型的 1024 (2^10) 点 RFFT
-constexpr size_t order = 10;
-zldsp::fft::RFFT<float> rfft(order);
-
-std::vector<float> real_in(1 << order);
-std::vector<std::complex<float>> complex_out((1 << order) / 2 + 1);
-std::vector<float> sqr_mag_out((1 << order) / 2 + 1);
-
-// 正向变换（实数 到 AoS）
-rfft.forward(real_in.data(), complex_out.data());
-
-// 逆向变换（AoS 到 实数）
-rfft.backward(complex_out.data(), real_in.data());
-
-// 正向变换（实数 到 幅度平方）
-rfft.forward_sqr_mag(real_in.data(), sqr_mag_out.data());
-```
-
-#### 数据布局 (AoS/SoA)
-
-`CFFT` 与 `RFFT` 的复数运算均支持 AoS 和 SoA 布局：
-
-AoS 在单个数组中交错存储实部与虚部数值：
-```cpp
-std::vector<std::complex<float>> out_buffer(1 << order);
-```
-
-SoA 在两个独立的数组中分别连续存储实部与虚部数值：
-
-```cpp
-std::vector<float> out_real(1 << order);
-std::vector<float> out_imag(1 << order);
-```
-
-使用 SoA 的示例：
-```cpp
-#include "src/zldsp_fft_cfft.hpp"
-#include <vector>
-#include <complex>
-
-// 基于 float 类型的 1024 (2^10) 点 CFFT
-constexpr size_t order = 10; 
-zldsp::fft::CFFT<float> cfft(order);
-
-std::vector<std::complex<float>> in_buffer(1 << order);
-std::vector<float> out_real(1 << order);
-std::vector<float> out_imag(1 << order);
-
-// 正向变换（AoS 到 SoA）
-cfft.forward(in_buffer.data(), {out_real.data(), out_imag.data()});
-
-// 逆向变换（SoA 到 AoS）
-cfft.backward({out_real.data(), out_imag.data()}, in_buffer.data());
-```
 
 ## 基准测试
 
