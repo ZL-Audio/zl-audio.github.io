@@ -30,6 +30,7 @@
     "ci:test": "npm run ci:prepare && npm run fix:format && npm run test && npm run _diff:check",
     "clean": "rm -Rf public/* resources",
     "fix:format": "npm run _check:format -- --write",
+    "hugo": "hugo",
     "local": "npm run _local -- npm run",
     "make:public": "git init -b main public",
     "post_hugo": "npm run _fix:permissions",
@@ -44,7 +45,7 @@
     "update:packages": "npx npm-check-updates -u"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "6.7.2",
+    "@fortawesome/fontawesome-free": "7.3.1",
     "bootstrap": "5.3.8"
   },
   "devDependencies": {
@@ -52,7 +53,8 @@
     "cross-env": "^10.1.0",
     "hugo-extended": "0.164.0",
     "postcss-cli": "^12.0.0",
-    "rtlcss": "^4.3.0"
+    "rtlcss": "^4.3.0",
+    "sass-embedded": "1.102.0"
   },
   "optionalDependencies": {
     "npm-check-updates": "^23.0.0"
