@@ -12,7 +12,7 @@ weight: 1
 
 You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLCompressor/releases/latest) or use the direct download link below. Please download the installer that matches your chip/architecture:
 
-{{< installers repo="ZL-Audio/ZLCompressor" plugin="ZL.Compressor" version="0.5.0" >}}
+{{< installers repo="ZL-Audio/ZLCompressor" plugin="ZL.Compressor" version="0.6.0" >}}
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
@@ -31,6 +31,47 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLCompressor). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLCompressor/issues).
 
 ## Changelog
+
+### 0.6.0
+
+BREAKING CHANGES
+
+- change filter de-cramping method (proposed by Yuriy Ivantsov)
+    - the filter of which cutoff freq is near the Nyquist will have slightly different response
+- change several keyboard shortcuts
+    - now you can adjust the keyboard shortcuts for different actions in `Control` setting panel
+    - now the default shortcut for solo status is `Right Click`
+    - now the default shortcut for Right-click Panel is `Right Click` + `Alt/Option`
+- fix incorrect fresh rate reported by internal refresh handler
+    - you may notice the FFT analyzer decays in a different speed after the fix
+    - you may need to re-adjust FFT `Speed` in UI settings
+- add a new magnitude analyzer stereo-type `MS` (as the default)
+    - previous magnitude analyzer stereo-type will change
+
+Bug fixes
+
+- fix preset folder permission issue on macOS
+- fix floating window position when dynamic is ON
+- fix solo shortcuts regarding right-click
+- fix the issue where the plugin window would steal keyboard interactions (Linux only, not an official fix)
+- fix potential pops caused by processing direction changes
+- fix potential magnitude shift under 44.1 kHz
+
+New Features
+
+- add built-in preset manager
+- add support for filters with freq beyond Nyquist (now freq can go up to 30 kHz under sample rate 44.1/48 kHz)
+- add side-chain eq bypass
+- add pre/post/delta/side curve on/off buttons
+- add magnitude max db choice
+- add magnitude move type `Slow` and `Roll`
+
+Other Changes
+
+- improve GUI performance
+- improve FFT analyzer precision
+- adjust UI setting panel
+- adjust combobox UI
 
 ### 0.5.0
 

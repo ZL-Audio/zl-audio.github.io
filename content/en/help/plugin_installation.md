@@ -65,10 +65,10 @@ If there are two `.zip` files, the one with `x86-64` is for x86-64 architecture 
 
 If there are three `.zip` files, the one with `x86-64-AVX2` is for x86-64 architecture Linux machines which support AVX2, see [AVX2 Support](#avx2-support) for more info.
 
-On Linux, the plugin does not have hardware acceleration. The plugin is built on Ubuntu 22.04 with dynamic linked dependencies. Therefore, I cannot guarantee its compatibility with Linux distributions. I would recommend building the plugin from source code.
+On Linux, the plugin does not have hardware acceleration. The plugin is built on Ubuntu 24.04 with dynamic linked dependencies. Therefore, I cannot guarantee its compatibility with Linux distributions. I would recommend building the plugin from source code.
 
 {{% alert title="Warning" color="warning" %}}
-In the foreseeable future (after the release of Ubuntu 26.04), the plugin will be built on Ubuntu 24.04, which will make it incompatible with earlier Linux versions.
+In the foreseeable future (after the release of Ubuntu 28.04), the plugin will be built on Ubuntu 26.04, which will make it incompatible with earlier Linux versions.
 {{% /alert %}}
 
 ## AVX2 Support

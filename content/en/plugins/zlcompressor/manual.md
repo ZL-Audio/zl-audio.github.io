@@ -26,7 +26,15 @@ ___
   <img src="/images/zlcompressor/logo.svg" width="20pt" />
 </p>
 
-You can open the [UI setting panel](#ui-setting-panel) by double-clicking the logo.
+You can open the [UI Setting Panel](#ui-setting-panel) by clicking the logo.
+
+___
+
+<p float="left">
+  <img src="/images/zlspeceq/collections_bookmark.svg" width="20pt"/>
+</p>
+
+You can open the [Preset Manager Panel](#preset-manager-panel) by clicking the icon.
 
 ___
 
@@ -41,13 +49,13 @@ When you change it to `Inflate` or `Shape`, Clipper will be set to 100% to soft-
 
 ___
 
-**Clipper**
+**`Clipper`**
 
 Controls the relative drive of the clipper.
 
 ___
 
-**Oversample**
+**`Oversample`**
 
 There are four over-sampling options:
 
@@ -60,7 +68,7 @@ You may hear clicks/pops when you change this parameter. Please **DO NOT** autom
 
 ___
 
-**Lookahead**
+**`Lookahead`**
 
 Controls the delay of the main-chain signal (in millisecond). If PDC is supported (in almost all DAWs), it can be interpreted as the lookahead time of the side-chain signal.
 
@@ -88,6 +96,15 @@ ___
 
 
 ## Left Side Panel
+
+___
+
+<p float="left">
+  <img src="/images/zlcompressor/dline_magnitude.svg" width="20pt"/>
+</p>
+
+- Press: open the [analyzer setting panel](#analyzer-setting-panel)
+- Release: close the [analyzer setting panel](#analyzer-setting-panel)
 
 ___
 
@@ -127,6 +144,15 @@ ___
 
 ___
 
+<p float="left">
+  <img src="/images/zlcompressor/dline_meter.svg" width="20pt"/>
+</p>
+
+- Press: open the meter panel
+- Release: close the meter panel
+
+___
+
 ## Center Panel
 
 The center panel consists of a magnitude analyzer, a cumulative RMS analyzer and a computer display.
@@ -156,29 +182,29 @@ The computer display shows the curve that is used to calculate the gain reductio
 
 ___
 
-**Knee**
+**`Knee`**
 
 Controls the knee width of the gain reduction computer. A wider knee makes the transition between the uncompressed state and the compressed state smoother.
 
 ___
 
-**Curve**
+**`Curve`**
 
 Controls the non-linearity behavior of compressed state. Available for `Compress` and `Shape`.
 
 ___
 
-**Floor**
+**`Floor`**
 
 Controls the floor value where it becomes uncompressed state again. Available for `Inflate` and `Expand`.
 
 ___
 
-**Threshold**
+**`Threshold`**
 
 ___
 
-**Ratio**
+**`Ratio`**
 
 ___
 
@@ -193,23 +219,23 @@ ___
 
 ___
 
-**Pump**
+**`Pump`**
 
 Controls the behavior of the attack stage. Larger `Pump` makes the attack more aggressive, which introduces the pumping effect.
 
 ___
 
-**Smooth**
+**`Smooth`**
 
 Controls the behavior of the release stage.  Larger `Smooth` makes the start of the release stage slower.
 
 ___
 
-**Attack**
+**`Attack`**
 
 ___
 
-**Release**
+**`Release`**
 
 ___
 
@@ -233,19 +259,19 @@ ___
 
 ___
 
-**Range**
+**`Range`**
 
 Controls the gain reduction range. The actual value is affected by the **Wet**.
 
 ___
 
-**Hold**
+**`Hold`**
 
 Controls the minimum amount of time where gain reduction is prevented from decreasing. During this time, compression can react to new peaks but cannot release.
 
 ___
 
-**Makeup**
+**`Makeup`**
 
 Controls the makeup gain that is applied after the compression. The actual value is affected by the **Wet**.
 
@@ -261,7 +287,7 @@ ___
 
 ___
 
-**Wet**
+**`Wet`**
 
 Controls the percent of wet signal.
 
@@ -280,12 +306,15 @@ For example, if the reduction of Mid is -5 dB, the reduction of Side is -1 dB, a
 - Mid reduction: (-5) * 0.8 + (-1) * 0.2 = -4.2 dB
 - Side reduction: (-1) * 0.8 + (-5) * 0.2 = -1.8 dB
 
+___
 
 <p float="left">
   <img src="/images/zlcompressor/leftright.svg" width="20pt"/>
 </p>
 
 Set the stereo mode to Left/Right. Left/Right is linked with each other.
+
+___
 
 <p float="left">
   <img src="/images/zlcompressor/midside_max.svg" width="20pt"/>
@@ -315,7 +344,7 @@ ___
 
 ___
 
-**Link**
+**`Link`**
 
 Controls the link between two stereo channels.
 
@@ -327,7 +356,7 @@ Controls the percent of wet signal for each stereo channel. The actual value is 
 
 ___
 
-**Gain**
+**`Gain`**
 
 Controls the gain of the side-chain signal.
 
@@ -349,6 +378,16 @@ ___
 - Press: listen to the side-chain signal
 
 ___
+
+<p float="left">
+  <img src="/images/zlcompressor/bypass.svg" width="20pt"/>
+</p>
+
+- Release: bypass side-chain equalizer
+
+___
+
+
 ## Side-chain Equalizer
 
 The side-chain equalizer allows you to visually equalize the side-chain signal. It features a spectrum graph where you can add and manipulate filter bands.
@@ -384,24 +423,73 @@ When you right-click on a frequency band, the right-click menu will appear, thro
 
 ___
 
-**RMS Length**
+**`RMS Length`**
 
 Controls the RMS window length (in millisecond).
 
 ___
 
-**RMS Speed**
+**`RMS Speed`**
 
 Controls the relative attack/release speed of RMS compression.
 
 ___
 
-**RMS Mix**
+**`RMS Mix`**
 
 Controls the mix percent of RMS compression.
 
 ___
 
+## Analyzer Setting Panel
+
+___
+
+**Magnitude Type**
+
+Choose the magnitude measurement type:
+
+- `Peak`: use peak as the magnitude measurement type
+- `RMS`: use RMS as the magnitude measurement type
+
+___
+
+**Magnitude Stereo**
+
+Choose the magnitude measurement stereo setting
+
+___
+
+**Magnitude Move Type**
+
+Choose the magnitude move type:
+
+- `Sync`: the display moves to sync with the audio
+- `Slow`: the display alternates between slow/fast moving
+- `Roll`: the display re-writes the older content without moving
+
+___
+
+**`Pre/Post/Delta/Side`**
+
+- `Pre`: show input magnitude
+- `Post`: show output magnitude
+- `Delta`: show delta magnitude
+- `Side`: show side-chain magnitude
+
+___
+
+**Time Length**
+
+Choose the magnitude display time period.
+
+___
+
+**Decibles Range**
+
+Choose the magnitude display max/min decibles.
+
+___
 
 ## UI Setting Panel
 
@@ -411,136 +499,152 @@ The UI setting panel controls analyzer colours, slider operations, etc. Componen
 
 You can adjust the colour by clicking on the left colour block and change the transparency by dragging the right slider.
 
-**Text Colour**
+**`Text Colour`**
 
-**Background Colour**
+**`Background Colour`**
 
 For better accessibility, please set Text/Background to colours with high contrast.
 
-**Shadow Colour**
+**`Shadow Colour`**
 
-**Glow Colour**
+**`Glow Colour`**
 
-**Pre Colour**
+**`Pre Colour`**
 
-**Post Colour**
+**`Post Colour`**
 
-**Reduction Colour**
+**`Reduction Colour`**
 
-**Computer Colour**
+**`Sidechain Colour`**
 
-**Grid Colour**
+**`Computer Colour`**
 
-**Colour Map 1**
+**`Grid Colour`**
+
+**`Colour Map 1`**
 
 - The colour map of the curves of each single filter.
 
-**Colour Map 2**
+**`Colour Map 2`**
 
 - The colour map of the curves of Stereo/Left/Right/Mid/Side.
 
-**Import Colours**
-
-- import colour settings (`.xml` file)
-
-**Export Colours**
-
-- export colour settings (`.xml` file)
-
 #### Control
 
-**Wheel Sensitivity**
+**`Wheel Sensitivity`**
 
-- Rough: mouse-wheel sensitivity when Shift is not pressed
-- Fine: mouse-wheel sensitivity when Shift is pressed
-- Reverse: whether to reverse the direction of mouse-wheel when Shift is pressed
+- `Rough`: mouse-wheel sensitivity when `Shift` is not pressed
+- `Fine`: mouse-wheel sensitivity when `Shift` is pressed
+- `Menu`: mouse-wheel sensitivity when adjust combobox items
+- `Reverse`: whether to reverse the direction of mouse-wheel when `Shift` is pressed
 
-**Drag Sensitivity**
+**`Drag Sensitivity`**
 
-- Rough: mouse-drag sensitivity when Shift is not pressed
-- Fine: mouse-drag sensitivity when Shift is pressed
+- `Rough`: mouse-drag sensitivity when `Shift` is not pressed
+- `Fine`: mouse-drag sensitivity when `Shift` is pressed
 
-**Rotary Slider Style**
+**`Rotary Slider Style`**
 
 - `Circular`: A rotary control that you move by dragging the mouse in a circular motion, like a knob
 - `Horizontal`: A rotary control that you move by dragging the mouse left-to-right
 - `Vertical`: A rotary control that you move by dragging the mouse up-and-down
 - `Horiz + Vert`: A rotary control that you move by dragging the mouse up-and-down or left-to-right
-- Distance: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
+- `Distance`: the relative distance that the mouse has to move to drag the slider across the full extent of its range. It does not apply to the Circular style.
 
-**Slider Double Click**
+**`Slider Double Click`**
 
 - `Return Default`: when you double-click the slider, it returns to the default value; when you double-click the slider with Ctrl/Command, it opens the value editor.
 - `Open Editor`: when you double-click the slider, it opens the value editor; when you double-click the slider with Ctrl/Command, it returns to the default value.
 
-**Import Controls**
+___
 
-- import control settings (`.xml` file)
+Short-cut settings for following actions:
 
-**Export Controls**
+**`Enter Solo`**
 
-- export control settings (`.xml` file)
+**`Exit Solo`**
+
+___
 
 #### Other
 
-**Refresh Rate**
+**`Refresh Rate`**
 
 For better analyzer display, set this as 1/n of your monitor refresh rate. For example,
 - If your monitor refresh rate is 120 Hz, set it to 120 Hz, 60 Hz (1/2), or 30 (1/4) Hz. DO NOT set it to 90 Hz.
 - If your monitor refresh rate is 90 Hz, set it to 90 Hz or 30 Hz (1/3). DO NOT set it to 60 Hz.
 
 
-**FFT  Setting**
+**`FFT`**
 
 - Tilt: the extra tilting slope of the FFT
 - Speed: the extra decay speed of the FFT
 
-**Curve Thickness**
+**`Curve Thickness`**
 
 Controls thickness of the magnitude analyzer
 
-**Tooltip**
+**`Tooltip`**
 
 Choose the tooltip language. It will take effect when the plugin window is re-opened.
 
-**UI Scaling**
+**`UI Scaling`**
 
 Choose the font size mode.
 
 - `Scale`: the font size scales with the window size. Control the relative ratio.
 - `Static`: the font size is fixed. Control the actual font size.
 
+**`Window Size Fix`**
 
-#### Bottom Buttons
+Choose whether to turn on Window Size Fix.
 
+- `Off`: plugin window size adjustment will be stored
+- `On`: plugin window size adjustment will NOT be stored, but open as it is currently every time the plugin is opened. The size can still be changed, but the changes will not be stored.
+
+___
+
+## Preset Manager Panel
+
+The preset manager panel let you manage(save/group/delete) presets.
+
+___
+
+**`Search Presets`**
+
+Input a preset name and search it.
+
+___
+
+**`New Group`**
+
+Input a new group name and press `Enter` to save it.
+
+___
+
+**`New Preset`**
+
+Input a new preset name and press `Enter` to save it.
 
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/save.svg" width="18pt"/>
+  <img src="/images/zlspeceq/trash.svg" width="20pt"/>
 </p>
 
-- Save the current setting.
+- Press: delete the selected preset group (along with all presets in the group) or the selected preset
 
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/reset_settings.svg" width="18pt"/>
+  <img src="/images/zlspeceq/folder_open.svg" width="20pt"/>
 </p>
 
-- Load the default settings of some colours.
+- Press: reveal the preset folder
 
 ___
 
-<p float="left">
-  <img src="/images/zlcompressor/close.svg" width="18pt"/>
-</p>
-
-- Discard all unsaved settings and close the UI setting panel.
-
-___
-
-## Shortcuts
+## UI Controls
 
 Generally, you can enable fine-adjustment with Shift and enable special adjustment with Ctrl/Command. If the direction of the mouse wheel is reversed when Shift is pressed, you can reverse it again to put it back to normal.
 
