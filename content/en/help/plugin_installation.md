@@ -11,8 +11,7 @@ weight: 1
 - VST3: included in macOS, Windows and Linux installers
 - AU: included in macOS installers
 - LV2: included in Windows and Linux installers
-- AAX: included in macOS and Windows installers
-    - because AAX requires code-signing, some installers may not include/update this format
+- AAX: not included
 - CLAP: not included, awaiting official support from JUCE
 - Standalone: included in macOS, Windows and Linux installers of some plugins
     - can serve as an independent application. You have to set up routing properly to make it functional.

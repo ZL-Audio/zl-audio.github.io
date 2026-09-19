@@ -11,8 +11,7 @@ weight: 1
 - VST3：在 macOS、Windows 和 Linux 安装包中提供
 - AU：在 macOS 安装包中提供
 - LV2：在 Windows 和 Linux 安装包中提供
-- AAX：在 macOS 和 Windows 安装包中提供
-    - 因为该格式的插件需要额外的签名，部分安装包可能不包括/不更新该格式
+- AAX：不提供
 - CLAP：不提供，等待 JUCE 官方支持
 - Standalone：在部分插件的 macOS、Windows 和 Linux 安装包中提供
     - 该格式为独立运行的软件，需要设置音频路由以使其工作
