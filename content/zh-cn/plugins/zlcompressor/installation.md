@@ -11,7 +11,7 @@ weight: 1
 
 您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLCompressor/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的芯片/架构对应的安装器。
 
-{{< installers repo="ZL-Audio/ZLCompressor" plugin="ZL.Compressor" version="0.6.0" >}}
+{{< installers repo="ZL-Audio/ZLCompressor" plugin="ZL.Compressor" version="0.6.1" >}}
 
 更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
 
