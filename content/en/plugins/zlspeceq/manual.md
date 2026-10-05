@@ -10,7 +10,7 @@ weight: 2
 
 ZL Spectrum Equalizer is a dynamic spectrum equalizer plugin with the following key features:
 
-- **Unmatched Versatility**: Sculpt sound with 9 filter types, 5 stereo modes, 7 variable slopes, and up to 24 linear-phase frequency bands.
+- **Unmatched Versatility**: Sculpt sound with 10 filter types, 5 stereo modes, 7 variable slopes, and up to 24 linear-phase frequency bands.
 - **Spectrum Dynamics**: Experience precise frequency-domain dynamic processing that tracks and controls resonances across the spectrum, with adjustable threshold, attack, release, and knee width.
 - **Powerful Engine**: Tailor behavior and latency with different spectrum resolution settings, side-chain smoothing, and frequency-dependent attack/release skewing, all powered by a high-performance FFT engine.
 - **Intuitive Workflow**: Achieve fast, fluid equalization with a carefully designed interface featuring an interactive spectrum graph, smart collision detection, and smooth animations.
@@ -124,17 +124,18 @@ When you double-click (with/without `Ctrl/Command` down) on the spectrum, a band
 
 The floating window is attached to the filter button of the selected band. You can control some filter parameters through this window.
 
-| Icon                                                  | Filter Type  | Icon                                               | Stereo Placement |
-| ----------------------------------------------------- | ------------ | -------------------------------------------------- | ---------------- |
-| <img src="/images/zlspeceq/peak.svg" width="20pt"/>      | `Peak`       | <img src="/images/zlspeceq/stereo.svg" width="20pt"/> | `Stereo`         |
-| <img src="/images/zlspeceq/lowshelf.svg" width="20pt"/>  | `Low Shelf`  | <img src="/images/zlspeceq/left.svg" width="20pt"/>   | `Left`           |
-| <img src="/images/zlspeceq/lowpass.svg" width="20pt"/>   | `Low Pass`   | <img src="/images/zlspeceq/right.svg" width="20pt"/>  | `Right`          |
-| <img src="/images/zlspeceq/highshelf.svg" width="20pt"/> | `High Shelf` | <img src="/images/zlspeceq/mid.svg" width="20pt"/>    | `Mid`            |
-| <img src="/images/zlspeceq/highpass.svg" width="20pt"/>  | `High Pass`  | <img src="/images/zlspeceq/side.svg" width="20pt"/>   | `Side`           |
-| <img src="/images/zlspeceq/notch.svg" width="20pt"/>     | `Notch`      |                                                    |                  |
-| <img src="/images/zlspeceq/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                    |                  |
-| <img src="/images/zlspeceq/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                    |                  |
-| <img src="/images/zlspeceq/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                    |                  |
+| Icon                                                        | Filter Type  | Icon                                                  | Stereo Placement |
+| ----------------------------------------------------------- | ------------ | ----------------------------------------------------- | ---------------- |
+| <img src="/images/zlspeceq/peak.svg" width="20pt"/>         | `Peak`       | <img src="/images/zlspeceq/stereo.svg" width="20pt"/> | `Stereo`         |
+| <img src="/images/zlspeceq/lowshelf.svg" width="20pt"/>     | `Low Shelf`  | <img src="/images/zlspeceq/left.svg" width="20pt"/>   | `Left`           |
+| <img src="/images/zlspeceq/lowpass.svg" width="20pt"/>      | `Low Pass`   | <img src="/images/zlspeceq/right.svg" width="20pt"/>  | `Right`          |
+| <img src="/images/zlspeceq/highshelf.svg" width="20pt"/>    | `High Shelf` | <img src="/images/zlspeceq/mid.svg" width="20pt"/>    | `Mid`            |
+| <img src="/images/zlspeceq/highpass.svg" width="20pt"/>     | `High Pass`  | <img src="/images/zlspeceq/side.svg" width="20pt"/>   | `Side`           |
+| <img src="/images/zlspeceq/notch.svg" width="20pt"/>        | `Notch`      |                                                       |                  |
+| <img src="/images/zlspeceq/bandpass.svg" width="20pt"/>     | `Band Pass`  |                                                       |                  |
+| <img src="/images/zlspeceq/tiltshelf.svg" width="20pt"/>    | `Tilt Shelf` |                                                       |                  |
+| <img src="/images/zlspeceq/flattilt.svg" width="20pt"/>     | `Flat Tilt`  |                                                       |                  |
+| <img src="/images/zlequalizer2/flatgain.svg" width="20pt"/> | `Flat Gain`  |                                                       |                  |
 
 #### Context Menu
 
@@ -196,7 +197,7 @@ ___
 
 **Filter Type**
 
-Choose the filter type: `Peak`, `Low Shelf`, `Low Pass`, `High Shelf`, `High Pass`, `Notch`, `Band Pass`, `Tilt Shelf` and `Flat Tilt`.
+Choose the filter type: `Peak`, `Low Shelf`, `Low Pass`, `High Shelf`, `High Pass`, `Notch`, `Band Pass`, `Tilt Shelf`, `Flat Tilt`, and `Flat Gain`.
 
 ---
 
@@ -519,10 +520,21 @@ For a better analyzer display, set this to 1/n of your monitor refresh rate. For
 - If your monitor refresh rate is 120 Hz, set it to 120 Hz, 60 Hz (1/2), or 30 (1/4) Hz. DO NOT set it to 90 Hz.
 - If your monitor refresh rate is 90 Hz, set it to 90 Hz or 30 Hz (1/3). DO NOT set it to 60 Hz.
 
+**`FFT Quality`**
+
+- `Normal`: normal quality for FFT analyzer
+- `High`: high quality for FFT analyzer (consumes more CPU when UI is open)
+
 **`FFT`**
 
 - `Tilt`: the extra tilting slope of the FFT
 - `Speed`: the extra decay speed of the FFT
+
+**`Combobox Alignment`**
+
+- `Left`: combobox items are left-aligned
+- `Center`: combobox items are center-aligned
+- `Right`: combobox items are right-aligned
 
 **`Curve Thickness`**
 

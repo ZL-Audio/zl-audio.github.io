@@ -32,6 +32,25 @@ Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZL
 
 ## Changelog
 
+### 0.6.1
+
+Bug fixes
+
+- fix Linux combobox & text editor interaction issue
+
+New Features
+
+- add customized combobox alignment
+- add customized FFT quality
+
+Improvements
+
+- improve over-sampling performance
+
+Other Changes
+
+- change the default FFT quality to `Normal` to prevent lags
+
 ### 0.6.0
 
 BREAKING CHANGES

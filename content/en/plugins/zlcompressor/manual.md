@@ -574,11 +574,21 @@ For better analyzer display, set this as 1/n of your monitor refresh rate. For e
 - If your monitor refresh rate is 120 Hz, set it to 120 Hz, 60 Hz (1/2), or 30 (1/4) Hz. DO NOT set it to 90 Hz.
 - If your monitor refresh rate is 90 Hz, set it to 90 Hz or 30 Hz (1/3). DO NOT set it to 60 Hz.
 
+**`FFT Quality`**
+
+- `Normal`: normal quality for FFT analyzer
+- `High`: high quality for FFT analyzer (consumes more CPU when UI is open)
 
 **`FFT`**
 
-- Tilt: the extra tilting slope of the FFT
-- Speed: the extra decay speed of the FFT
+- `Tilt`: the extra tilting slope of the FFT
+- `Speed`: the extra decay speed of the FFT
+
+**`Combobox Alignment`**
+
+- `Left`: combobox items are left-aligned
+- `Center`: combobox items are center-aligned
+- `Right`: combobox items are right-aligned
 
 **`Curve Thickness`**
 

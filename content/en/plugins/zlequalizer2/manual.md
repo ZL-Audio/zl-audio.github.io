@@ -12,7 +12,7 @@ weight: 2
 
 ZL Equalizer 2 is a dynamic equalizer plugin with the following key features:
 
-- **Unmatched Versatility**: Sculpt your sound with 6 filter structures, 10 filter types, 5 stereo modes, 7 variable slopes, and up to 24 frequency bands.
+- **Unmatched Versatility**: Sculpt your sound with 6 filter structures, 11 filter types, 5 stereo modes, 7 variable slopes, and up to 24 frequency bands.
 - **Integrated Dynamic Control**: Go beyond static EQ with adjustable threshold, attack, release, and side-chain filters for powerful dynamic equalization.
 - **Pristine Precision**: 64-bit floating-point processing and advanced de-cramping technique deliver outstanding performance, ensuring exceptional clarity from the deepest lows to the highest highs.
 - **Intuitive Workflow**: A carefully designed interface with an interactive spectrum graph, smart collision detection, and smooth animations makes equalization fast and fluid.
@@ -120,6 +120,7 @@ The floating window is attached to the filter button of the selected band. You c
 | <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                           |                  |
 | <img src="/images/zlequalizer2/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                           |                  |
 | <img src="/images/zlequalizer2/allpass.svg" width="20pt"/>   | `All Pass`   |                                                           |                  |
+| <img src="/images/zlequalizer2/flatgain.svg" width="20pt"/>  | `Flat Gain`  |                                                           |                  |
 
 #### Right-click Panel
 
@@ -181,7 +182,7 @@ ___
 
 **Filter Type**
 
-Choose the filter type: `Peak`, `Low Shelf`, `Low Pass`, `High Shelf`, `High Pass`, `Notch`, `Band Pass`, `Tilt Shelf` and `Flat Tilt`.
+Choose the filter type: `Peak`, `Low Shelf`, `Low Pass`, `High Shelf`, `High Pass`, `Notch`, `Band Pass`, `Tilt Shelf`, `Flat Tilt`, `All Pass`, and `Flat Gain`.
 
 ---
 
@@ -630,11 +631,21 @@ For a better analyzer display, set this to 1/n of your monitor refresh rate. For
 - If your monitor refresh rate is 120 Hz, set it to 120 Hz, 60 Hz (1/2), or 30 (1/4) Hz. DO NOT set it to 90 Hz.
 - If your monitor refresh rate is 90 Hz, set it to 90 Hz or 30 Hz (1/3). DO NOT set it to 60 Hz.
 
+**`FFT Quality`**
+
+- `Normal`: normal quality for FFT analyzer
+- `High`: high quality for FFT analyzer (consumes more CPU when UI is open)
 
 **`FFT`**
 
 - `Tilt`: the extra tilting slope of the FFT
 - `Speed`: the extra decay speed of the FFT
+
+**`Combobox Alignment`**
+
+- `Left`: combobox items are left-aligned
+- `Center`: combobox items are center-aligned
+- `Right`: combobox items are right-aligned
 
 **`Curve Thickness`**
 
