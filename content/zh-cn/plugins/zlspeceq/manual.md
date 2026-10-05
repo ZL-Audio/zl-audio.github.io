@@ -10,7 +10,7 @@ weight: 2
 
 ZL Spectrum Equalizer 是一款动态频谱均衡器插件，具有以下主要特性：
 
-- **多功能性**：通过 9 种滤波器类型、5 种声道模式、7 种可变斜率，以及多达 24 个线性相位频段来塑造声音。
+- **多功能性**：通过 10 种滤波器类型、5 种声道模式、7 种可变斜率，以及多达 24 个线性相位频段来塑造声音。
 - **频谱动态**：体验精确的频域动态处理，追踪并控制整个频谱的谐振，具有可调节的阈值、启动时间、释放时间和拐点宽度。
 - **强大引擎**：通过不同的频谱分辨率设置、侧链平滑，以及随频率变化的启动/释放偏置来定制行为和延迟，所有这些均由高性能的 FFT 引擎提供支持。
 - **直观控制**：通过精心设计的界面（包含交互式频谱图、智能碰撞检测和流畅的动画）实现快速、流畅的均衡处理。
@@ -135,6 +135,7 @@ ___
 | <img src="/images/zlspeceq/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                    |                  |
 | <img src="/images/zlspeceq/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                    |                  |
 | <img src="/images/zlspeceq/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                    |                  |
+| <img src="/images/zlequalizer2/flatgain.svg" width="20pt"/> | `Flat Gain`  |                                                       |                  |
 
 #### 右键菜单
 
@@ -196,7 +197,7 @@ ___
 
 **滤波器类型**
 
-选择滤波器类型：`Peak`、`Low Shelf`、`Low Pass`、`High Shelf`、`High Pass`、`Notch`、`Band Pass`、`Tilt Shelf` 和 `Flat Tilt`。
+选择滤波器类型：`Peak`、`Low Shelf`、`Low Pass`、`High Shelf`、`High Pass`、`Notch`、`Band Pass`、`Tilt Shelf`、`Flat Tilt` 和 `Flat Gain`。
 
 ---
 
@@ -519,10 +520,21 @@ ___
 - 如果你的显示器刷新率是 120 Hz，将其设置为 120 Hz、60 Hz（1/2）或 30 Hz（1/4）。不要设置为 90 Hz。
 - 如果你的显示器刷新率是 90 Hz，将其设置为 90 Hz 或 30 Hz（1/3）。不要设置为 60 Hz。
 
+**`FFT Quality`（FFT 质量）**
+
+- `Normal`：FFT 分析仪的普通质量
+- `High`：FFT 分析仪的高质量（打开界面时会占用更多 CPU）
+
 **`FFT`（FFT 设置）**
 
 - `Tilt`：FFT 的额外倾斜斜率
 - `Speed`：FFT 的额外衰减速度
+
+**`Combobox Alignment`（下拉框对齐方式）**
+
+- `Left`：下拉框选项居左对齐
+- `Center`：下拉框选项居中对齐
+- `Right`：下拉框选项居右对齐
 
 **`Curve Thickness`（曲线粗细）**
 

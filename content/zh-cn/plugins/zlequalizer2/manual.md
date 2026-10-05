@@ -12,7 +12,7 @@ weight: 2
 
 ZL Equalizer 2 是一款动态均衡器插件，具有以下主要特性：
 
-- **多功能性**：通过 6 种滤波器结构、10 种滤波器类型、5 种声道模式、7 种可变斜率和多达 24 个频段来塑造声音。
+- **多功能性**：通过 6 种滤波器结构、11 种滤波器类型、5 种声道模式、7 种可变斜率和多达 24 个频段来塑造声音。
 - **集成动态**：除了静态 EQ，更具有可调节的阈值、启动时间、释放时间和侧链滤波器，实现强大的动态均衡。
 - **纯净精度**：64 位浮点处理和先进的去扭曲技术提供卓越的性能，确保从极低频到极高频都有出色的清晰度。
 - **直观控制**：精心设计的界面包含交互式频谱图、智能碰撞检测和流畅的动画，使均衡处理快速而流畅。
@@ -120,6 +120,7 @@ ___
 | <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                           |                  |
 | <img src="/images/zlequalizer2/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                           |                  |
 | <img src="/images/zlequalizer2/allpass.svg" width="20pt"/>   | `All Pass`   |                                                           |                  |
+| <img src="/images/zlequalizer2/flatgain.svg" width="20pt"/>  | `Flat Gain`  |                                                           |                  |
 
 #### 右键菜单
 
@@ -181,7 +182,7 @@ ___
 
 **滤波器类型**
 
-选择滤波器类型：`Peak`、`Low Shelf`、`Low Pass`、`High Shelf`、`High Pass`、`Notch`、`Band Pass`、`Tilt Shelf` 和 `Flat Tilt`。
+选择滤波器类型：`Peak`、`Low Shelf`、`Low Pass`、`High Shelf`、`High Pass`、`Notch`、`Band Pass`、`Tilt Shelf`、`Flat Tilt`、`All Pass` 和 `Flat Gain`。
 
 ---
 
@@ -630,11 +631,22 @@ ___
 - 如果你的显示器刷新率是 120 Hz，将其设置为 120 Hz、60 Hz（1/2）或 30 Hz（1/4）。不要设置为 90 Hz。
 - 如果你的显示器刷新率是 90 Hz，将其设置为 90 Hz 或 30 Hz（1/3）。不要设置为 60 Hz。
 
+**`FFT Quality`（FFT 质量）**
+
+- `Normal`：FFT 分析仪的普通质量
+- `High`：FFT 分析仪的高质量（打开界面时会占用更多 CPU）
+
 
 **`FFT`（FFT 设置）**
 
 - `Tilt`：FFT 的额外倾斜斜率
 - `Speed`：FFT 的额外衰减速度
+
+**`Combobox Alignment`（下拉框对齐方式）**
+
+- `Left`：下拉框选项居左对齐
+- `Center`：下拉框选项居中对齐
+- `Right`：下拉框选项居右对齐
 
 **`Curve Thickness`（曲线粗细）**
 

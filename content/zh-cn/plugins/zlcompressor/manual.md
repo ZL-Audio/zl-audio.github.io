@@ -577,10 +577,21 @@ ___
 - 如果你的显示器刷新率是 120 Hz，将其设置为 120 Hz、60 Hz（1/2）或 30 Hz（1/4）。不要设置为 90 Hz。
 - 如果你的显示器刷新率是 90 Hz，将其设置为 90 Hz 或 30 Hz（1/3）。不要设置为 60 Hz。
 
+**`FFT Quality`（FFT 质量）**
+
+- `Normal`：FFT 分析仪的普通质量
+- `High`：FFT 分析仪的高质量（打开界面时会占用更多 CPU）
+
 **`FFT`（FFT 设置）**
 
 - `Tilt`：FFT 的额外倾斜斜率
 - `Speed`：FFT 的额外衰减速度
+
+**`Combobox Alignment`（下拉框对齐方式）**
+
+- `Left`：下拉框选项居左对齐
+- `Center`：下拉框选项居中对齐
+- `Right`：下拉框选项居右对齐
 
 **`Curve Thickness`（曲线粗细）**
 

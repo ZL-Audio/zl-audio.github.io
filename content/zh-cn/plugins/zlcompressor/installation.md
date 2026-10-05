@@ -31,6 +31,25 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## 更新日志
 
+### 0.6.1
+
+修复
+
+- 修复 Linux 下下拉框与文本编辑器的交互问题
+
+新功能
+
+- 增加 自定义下拉框对齐方式
+- 增加 自定义 FFT 质量
+
+改进
+
+- 改进 过采样性能
+
+其他更改
+
+- 将默认 FFT 质量更改为 `Normal` 以防止卡顿
+
 ### 0.6.0
 
 破坏性更改
