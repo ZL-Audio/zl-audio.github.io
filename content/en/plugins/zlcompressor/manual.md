@@ -165,10 +165,6 @@ The magnitude analyzer occupies the whole center panel. It shows three curves:
 - the post curve: magnitude of the output main-chain signal
 - the reduction curve: magnitude of the gain reduction
 
-In the bottom-left corner, you can select the analyzer's time window length (`6 s`, `9 s`, `12 s`, and `18 s`). To ensure visual fluidity, the `6 s` and `9 s` settings perform best with a refresh rate of 60 Hz or higher.
-
-In the bottom-right corner, you can select the magnitude type (`Peak` and `RMS`) and the minimum decibel value of the analyzer (`-9`, `-18`, `-36`, `-54`, and `-72`).
-
 When you put the mouse above the magnitude analyzer, you can adjust the threshold via mouse wheel and adjust the ratio via Ctrl/Command + mouse wheel.
 ### Cumulative Analyzer
 

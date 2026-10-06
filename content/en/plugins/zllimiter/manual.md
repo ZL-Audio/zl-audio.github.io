@@ -10,9 +10,9 @@ weight: 2
 
 ZL Limiter is a limiter plugin with the following key features:
 
-- **Pristine Precision**: True Peak limiting and up to 32x over-sampling prevent inter-sample clipping and distortion, ensuring exceptional clarity and maximum loudness without harsh artifacts.
-- **Transparent Dynamic Control**: Protect transient punch while smoothly shaping sustained loudness with adjustable lookahead, adaptive recovery, and flexible attack and release settings.
-- **Stereo Field Integrity**: Preserve spatial width with customizable channel delta control.
+- **Pristine Precision**: True Peak limiting and up to 32x over-sampling prevent inter-sample clipping, ensuring exceptional clarity.
+- **Transient Control**: Protect and shape transient with adjustable lookahead, adaptive recovery, and flexible attack and release settings.
+- **Stereo Integrity**: Preserve spatial width with customizable channel delta control.
 - **Intuitive Workflow**: A carefully designed interface featuring a real-time scrolling waveform display and comprehensive loudness metering.
 
 ## Top Panel
@@ -148,6 +148,23 @@ ___
 Toggles visibility of the loudness and numeric readout panel.
 
 ___
+
+## Center Panel
+
+### Input Gain Slider
+
+The input gain slider is a vertical slider which lies at the left edge of the center panel.
+
+### Magnitude Analyzer
+
+The magnitude analyzer occupies the whole center panel. It shows three curves:
+
+- the pre curve: magnitude of the input main-chain signal
+- the post curve: magnitude of the output main-chain signal
+- the reduction curve: magnitude of the gain reduction
+
+## Bottom Panel
+
 
 
 ## UI Setting Panel
