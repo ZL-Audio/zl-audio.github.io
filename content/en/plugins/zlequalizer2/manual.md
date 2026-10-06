@@ -22,7 +22,7 @@ ZL Equalizer 2 is a dynamic equalizer plugin with the following key features:
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/zlaudio.svg" width="20pt" />
+  <img src="/images/pcommon/zlaudio.svg" width="20pt" />
   <img src="/images/zlequalizer2/logo.svg" width="20pt" />
 </p>
 
@@ -31,7 +31,7 @@ You can open the [UI Setting Panel](#ui-setting-panel) by clicking the logo.
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/collections_bookmark.svg" width="20pt"/>
+  <img src="/images/pcommon/collections_bookmark.svg" width="20pt"/>
 </p>
 
 You can open the [Preset Manager Panel](#preset-manager-panel) by clicking the icon.
@@ -70,7 +70,7 @@ You can open the [Output Setting Panel](#output-setting-panel) by clicking the t
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/external-side.svg" width="20pt"/>
+  <img src="/images/pcommon/external-side.svg" width="20pt"/>
 </p>
 
 - Press: use the external side-chain
@@ -79,7 +79,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
 - Release: bypass the plugin
@@ -110,17 +110,17 @@ The floating window is attached to the filter button of the selected band. You c
 
 | Icon                                                         | Filter Type  | Icon                                                      | Stereo Placement |
 | ------------------------------------------------------------ | ------------ | --------------------------------------------------------- | ---------------- |
-| <img src="/images/zlequalizer2/peak.svg" width="20pt"/>      | `Peak`       | <img src="/images/zlequalizer2/stereo.svg" width="20pt"/> | `Stereo`         |
-| <img src="/images/zlequalizer2/lowshelf.svg" width="20pt"/>  | `Low Shelf`  | <img src="/images/zlequalizer2/left.svg" width="20pt"/>   | `Left`           |
-| <img src="/images/zlequalizer2/lowpass.svg" width="20pt"/>   | `Low Pass`   | <img src="/images/zlequalizer2/right.svg" width="20pt"/>  | `Right`          |
-| <img src="/images/zlequalizer2/highshelf.svg" width="20pt"/> | `High Shelf` | <img src="/images/zlequalizer2/mid.svg" width="20pt"/>    | `Mid`            |
-| <img src="/images/zlequalizer2/highpass.svg" width="20pt"/>  | `High Pass`  | <img src="/images/zlequalizer2/side.svg" width="20pt"/>   | `Side`           |
-| <img src="/images/zlequalizer2/notch.svg" width="20pt"/>     | `Notch`      |                                                           |                  |
-| <img src="/images/zlequalizer2/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                           |                  |
-| <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                           |                  |
-| <img src="/images/zlequalizer2/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                           |                  |
-| <img src="/images/zlequalizer2/allpass.svg" width="20pt"/>   | `All Pass`   |                                                           |                  |
-| <img src="/images/zlequalizer2/flatgain.svg" width="20pt"/>  | `Flat Gain`  |                                                           |                  |
+| <img src="/images/pcommon/peak.svg" width="20pt"/>      | `Peak`       | <img src="/images/pcommon/stereo.svg" width="20pt"/> | `Stereo`         |
+| <img src="/images/pcommon/lowshelf.svg" width="20pt"/>  | `Low Shelf`  | <img src="/images/pcommon/left.svg" width="20pt"/>   | `Left`           |
+| <img src="/images/pcommon/lowpass.svg" width="20pt"/>   | `Low Pass`   | <img src="/images/pcommon/right.svg" width="20pt"/>  | `Right`          |
+| <img src="/images/pcommon/highshelf.svg" width="20pt"/> | `High Shelf` | <img src="/images/pcommon/mid.svg" width="20pt"/>    | `Mid`            |
+| <img src="/images/pcommon/highpass.svg" width="20pt"/>  | `High Pass`  | <img src="/images/pcommon/side.svg" width="20pt"/>   | `Side`           |
+| <img src="/images/pcommon/notch.svg" width="20pt"/>     | `Notch`      |                                                           |                  |
+| <img src="/images/pcommon/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                           |                  |
+| <img src="/images/pcommon/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                           |                  |
+| <img src="/images/pcommon/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                           |                  |
+| <img src="/images/pcommon/allpass.svg" width="20pt"/>   | `All Pass`   |                                                           |                  |
+| <img src="/images/pcommon/flatgain.svg" width="20pt"/>  | `Flat Gain`  |                                                           |                  |
 
 #### Right-click Panel
 
@@ -167,7 +167,7 @@ You can choose the decibel scale of magnitude response curves (through a combobo
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
 - Release: bypass the band.
@@ -217,7 +217,7 @@ Control the quality factor.
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/dynamic.svg" width="20pt"/>
+  <img src="/images/pcommon/dynamic.svg" width="20pt"/>
 </p>
 
 - Press: turn on the dynamic behavior of the band
@@ -226,7 +226,7 @@ ___
 
 
 <p float="left">
-  <img src="/images/zlequalizer2/close.svg" width="20pt"/>
+  <img src="/images/pcommon/close.svg" width="20pt"/>
 </p>
 
 - Click: turn off the band
@@ -239,7 +239,7 @@ ___
 
 
 <p float="left">
-  <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
 - Release: bypass the dynamic behavior. See more info in [Dynamic Filter](#dynamic-filter).
@@ -267,7 +267,7 @@ ___
 
 
 <p float="left">
-  <img src="/images/zlequalizer2/shuffle.svg" width="20pt"/>
+  <img src="/images/pcommon/shuffle.svg" width="20pt"/>
 </p>
 
 - Press: change the side-chain stereo mode. When pressed, if the band is in `Left`/`Right`/`Mid`/`Side`, the side-chain band will be in `Right`/`Left`/`Side`/`Mid`.
@@ -427,7 +427,7 @@ ___
 ---
 
 <p float="left">
-  <img src="/images/zlequalizer2/freeze.svg" width="20pt"/>
+  <img src="/images/pcommon/freeze.svg" width="20pt"/>
 </p>
 
 - Press: turn on the FFT freezing feature. When you hover the mouse over the analyzer for 2 seconds, the Post/Side analyzer will be frozen until you move the mouse.
@@ -438,16 +438,16 @@ ___
 
 | Icon                                                      | Stereo Placement |
 | --------------------------------------------------------- | ---------------- |
-| <img src="/images/zlequalizer2/stereo.svg" width="20pt"/> | `Stereo`         |
-| <img src="/images/zlequalizer2/left.svg" width="20pt"/>   | `Left`           |
-| <img src="/images/zlequalizer2/right.svg" width="20pt"/>  | `Right`          |
-| <img src="/images/zlequalizer2/mid.svg" width="20pt"/>    | `Mid`            |
-| <img src="/images/zlequalizer2/side.svg" width="20pt"/>   | `Side`           |
+| <img src="/images/pcommon/stereo.svg" width="20pt"/> | `Stereo`         |
+| <img src="/images/pcommon/left.svg" width="20pt"/>   | `Left`           |
+| <img src="/images/pcommon/right.svg" width="20pt"/>  | `Right`          |
+| <img src="/images/pcommon/mid.svg" width="20pt"/>    | `Mid`            |
+| <img src="/images/pcommon/side.svg" width="20pt"/>   | `Side`           |
 
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/collision.svg" width="20pt"/>
+  <img src="/images/pcommon/collision.svg" width="20pt"/>
 </p>
 
 - Press: turn on the collision detection.
@@ -491,7 +491,7 @@ When the difference curve drawing is enabled, you can:
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/save.svg" width="20pt"/>
+  <img src="/images/pcommon/save.svg" width="20pt"/>
 </p>
 
 - Click: save the target curve to a preset file
@@ -702,7 +702,7 @@ Input a new preset name and press `Enter` to save it.
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/trash.svg" width="20pt"/>
+  <img src="/images/pcommon/trash.svg" width="20pt"/>
 </p>
 
 - Press: delete the selected preset group (along with all presets in the group) or the selected preset
@@ -710,7 +710,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/folder_open.svg" width="20pt"/>
+  <img src="/images/pcommon/folder_open.svg" width="20pt"/>
 </p>
 
 - Press: reveal the preset folder

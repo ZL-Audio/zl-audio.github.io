@@ -20,7 +20,7 @@ ZL Limiter is a limiter plugin with the following key features:
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/zlaudio.svg" width="20pt" />
+  <img src="/images/pcommon/zlaudio.svg" width="20pt" />
   <img src="/images/zlspeceq/logo.svg" width="20pt" />
 </p>
 
@@ -29,7 +29,7 @@ You can open the [UI Setting Panel](#ui-setting-panel) by clicking the logo.
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/collections_bookmark.svg" width="20pt"/>
+  <img src="/images/pcommon/collections_bookmark.svg" width="20pt"/>
 </p>
 
 You can open the [Preset Manager Panel](#preset-manager-panel) by clicking the icon.
@@ -167,7 +167,7 @@ Input a new preset name and press `Enter` to save it.
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/trash.svg" width="20pt"/>
+  <img src="/images/pcommon/trash.svg" width="20pt"/>
 </p>
 
 - Press: delete the selected preset group (along with all presets in the group) or the selected preset
@@ -175,7 +175,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/folder_open.svg" width="20pt"/>
+  <img src="/images/pcommon/folder_open.svg" width="20pt"/>
 </p>
 
 - Press: reveal the preset folder

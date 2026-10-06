@@ -22,7 +22,7 @@ ZL Equalizer 2 是一款动态均衡器插件，具有以下主要特性：
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/zlaudio.svg" width="20pt" />
+  <img src="/images/pcommon/zlaudio.svg" width="20pt" />
   <img src="/images/zlequalizer2/logo.svg" width="20pt" />
 </p>
 
@@ -31,7 +31,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/collections_bookmark.svg" width="20pt"/>
+  <img src="/images/pcommon/collections_bookmark.svg" width="20pt"/>
 </p>
 
 你可以通过点击图标来打开 [预设管理器面板](#预设管理器面板)。
@@ -70,7 +70,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/external-side.svg" width="20pt"/>
+  <img src="/images/pcommon/external-side.svg" width="20pt"/>
 </p>
 
 - 按下：使用外部侧链
@@ -79,7 +79,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
 - 释放：旁路插件
@@ -110,17 +110,17 @@ ___
 
 | 图标                                                         | 滤波器类型  | 图标                                                      | 声道模式 |
 | ------------------------------------------------------------ | ------------ | --------------------------------------------------------- | ---------------- |
-| <img src="/images/zlequalizer2/peak.svg" width="20pt"/>      | `Peak`       | <img src="/images/zlequalizer2/stereo.svg" width="20pt"/> | `Stereo`         |
-| <img src="/images/zlequalizer2/lowshelf.svg" width="20pt"/>  | `Low Shelf`  | <img src="/images/zlequalizer2/left.svg" width="20pt"/>   | `Left`           |
-| <img src="/images/zlequalizer2/lowpass.svg" width="20pt"/>   | `Low Pass`   | <img src="/images/zlequalizer2/right.svg" width="20pt"/>  | `Right`          |
-| <img src="/images/zlequalizer2/highshelf.svg" width="20pt"/> | `High Shelf` | <img src="/images/zlequalizer2/mid.svg" width="20pt"/>    | `Mid`            |
-| <img src="/images/zlequalizer2/highpass.svg" width="20pt"/>  | `High Pass`  | <img src="/images/zlequalizer2/side.svg" width="20pt"/>   | `Side`           |
-| <img src="/images/zlequalizer2/notch.svg" width="20pt"/>     | `Notch`      |                                                           |                  |
-| <img src="/images/zlequalizer2/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                           |                  |
-| <img src="/images/zlequalizer2/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                           |                  |
-| <img src="/images/zlequalizer2/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                           |                  |
-| <img src="/images/zlequalizer2/allpass.svg" width="20pt"/>   | `All Pass`   |                                                           |                  |
-| <img src="/images/zlequalizer2/flatgain.svg" width="20pt"/>  | `Flat Gain`  |                                                           |                  |
+| <img src="/images/pcommon/peak.svg" width="20pt"/>      | `Peak`       | <img src="/images/pcommon/stereo.svg" width="20pt"/> | `Stereo`         |
+| <img src="/images/pcommon/lowshelf.svg" width="20pt"/>  | `Low Shelf`  | <img src="/images/pcommon/left.svg" width="20pt"/>   | `Left`           |
+| <img src="/images/pcommon/lowpass.svg" width="20pt"/>   | `Low Pass`   | <img src="/images/pcommon/right.svg" width="20pt"/>  | `Right`          |
+| <img src="/images/pcommon/highshelf.svg" width="20pt"/> | `High Shelf` | <img src="/images/pcommon/mid.svg" width="20pt"/>    | `Mid`            |
+| <img src="/images/pcommon/highpass.svg" width="20pt"/>  | `High Pass`  | <img src="/images/pcommon/side.svg" width="20pt"/>   | `Side`           |
+| <img src="/images/pcommon/notch.svg" width="20pt"/>     | `Notch`      |                                                           |                  |
+| <img src="/images/pcommon/bandpass.svg" width="20pt"/>  | `Band Pass`  |                                                           |                  |
+| <img src="/images/pcommon/tiltshelf.svg" width="20pt"/> | `Tilt Shelf` |                                                           |                  |
+| <img src="/images/pcommon/flattilt.svg" width="20pt"/>  | `Flat Tilt`  |                                                           |                  |
+| <img src="/images/pcommon/allpass.svg" width="20pt"/>   | `All Pass`   |                                                           |                  |
+| <img src="/images/pcommon/flatgain.svg" width="20pt"/>  | `Flat Gain`  |                                                           |                  |
 
 #### 右键菜单
 
@@ -167,7 +167,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
 - 释放：旁路该频段。
@@ -217,7 +217,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/dynamic.svg" width="20pt"/>
+  <img src="/images/pcommon/dynamic.svg" width="20pt"/>
 </p>
 
 - 按下：开启该频段的动态行为
@@ -226,7 +226,7 @@ ___
 
 
 <p float="left">
-  <img src="/images/zlequalizer2/close.svg" width="20pt"/>
+  <img src="/images/pcommon/close.svg" width="20pt"/>
 </p>
 
 - 点击：关闭该频段
@@ -239,7 +239,7 @@ ___
 
 
 <p float="left">
-  <img src="/images/zlequalizer2/bypass.svg" width="20pt"/>
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
 - 释放：旁路动态行为。更多信息请参见 [动态滤波器](#动态滤波器)。
@@ -267,7 +267,7 @@ ___
 
 
 <p float="left">
-  <img src="/images/zlequalizer2/shuffle.svg" width="20pt"/>
+  <img src="/images/pcommon/shuffle.svg" width="20pt"/>
 </p>
 
 - 按下：更改侧链声道模式。按下时，如果频段处于 `Left`/`Right`/`Mid`/`Side`，侧链频段将处于 `Right`/`Left`/`Side`/`Mid`。
@@ -427,7 +427,7 @@ ___
 ---
 
 <p float="left">
-  <img src="/images/zlequalizer2/freeze.svg" width="20pt"/>
+  <img src="/images/pcommon/freeze.svg" width="20pt"/>
 </p>
 
 - 按下：开启 FFT 冻结功能。将鼠标悬停在分析仪上 2 秒钟，输出/侧链分析仪将会被冻结，直到你移动鼠标。
@@ -438,16 +438,16 @@ ___
 
 | 图标                                                      | 声道模式 |
 | --------------------------------------------------------- | ---------------- |
-| <img src="/images/zlequalizer2/stereo.svg" width="20pt"/> | `Stereo`         |
-| <img src="/images/zlequalizer2/left.svg" width="20pt"/>   | `Left`           |
-| <img src="/images/zlequalizer2/right.svg" width="20pt"/>  | `Right`          |
-| <img src="/images/zlequalizer2/mid.svg" width="20pt"/>    | `Mid`            |
-| <img src="/images/zlequalizer2/side.svg" width="20pt"/>   | `Side`           |
+| <img src="/images/pcommon/stereo.svg" width="20pt"/> | `Stereo`         |
+| <img src="/images/pcommon/left.svg" width="20pt"/>   | `Left`           |
+| <img src="/images/pcommon/right.svg" width="20pt"/>  | `Right`          |
+| <img src="/images/pcommon/mid.svg" width="20pt"/>    | `Mid`            |
+| <img src="/images/pcommon/side.svg" width="20pt"/>   | `Side`           |
 
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/collision.svg" width="20pt"/>
+  <img src="/images/pcommon/collision.svg" width="20pt"/>
 </p>
 
 - 按下：开启碰撞检测。
@@ -491,7 +491,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlequalizer2/save.svg" width="20pt"/>
+  <img src="/images/pcommon/save.svg" width="20pt"/>
 </p>
 
 - 点击：将目标曲线保存为预设文件
@@ -703,7 +703,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/trash.svg" width="20pt"/>
+  <img src="/images/pcommon/trash.svg" width="20pt"/>
 </p>
 
 - 按下：删除选中的预设分组（以及该分组中的所有预设）或选中的预设
@@ -711,7 +711,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/folder_open.svg" width="20pt"/>
+  <img src="/images/pcommon/folder_open.svg" width="20pt"/>
 </p>
 
 - 按下：打开预设文件夹

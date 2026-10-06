@@ -22,7 +22,7 @@ ZL Compressor 是一款动态范围处理器，其主要特性有：
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/zlaudio.svg" width="20pt" />
+  <img src="/images/pcommon/zlaudio.svg" width="20pt" />
   <img src="/images/zlcompressor/logo.svg" width="20pt" />
 </p>
 
@@ -31,7 +31,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/collections_bookmark.svg" width="20pt"/>
+  <img src="/images/pcommon/collections_bookmark.svg" width="20pt"/>
 </p>
 
 你可以通过点击图标来打开 [预设管理器面板](#预设管理器面板)。
@@ -77,7 +77,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/delta.svg" width="20pt"/>
+  <img src="/images/pcommon/delta.svg" width="20pt"/>
 </p>
 
 - 按下：输出差值信号（未压缩主链信号 和 压缩后主链信号 的 差值）
@@ -85,7 +85,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/bypass.svg" width="20pt"/>
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
 - 释放：旁路插件
@@ -338,7 +338,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/shuffle.svg" width="20pt"/>
+  <img src="/images/pcommon/shuffle.svg" width="20pt"/>
 </p>
 
 - 按下：交换侧链立体声模式。
@@ -366,7 +366,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/external-side.svg" width="20pt"/>
+  <img src="/images/pcommon/external-side.svg" width="20pt"/>
 </p>
 
 - 按下：使用外部侧链信号
@@ -375,7 +375,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/solo.svg" width="20pt"/>
+  <img src="/images/pcommon/solo.svg" width="20pt"/>
 </p>
 
 - 按下：监听侧链信号
@@ -383,7 +383,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/bypass.svg" width="20pt"/>
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
 - 释放：旁路侧链均衡器
@@ -642,7 +642,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/trash.svg" width="20pt"/>
+  <img src="/images/pcommon/trash.svg" width="20pt"/>
 </p>
 
 - 按下：删除选中的预设分组（以及该分组中的所有预设）或选中的预设
@@ -650,7 +650,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/folder_open.svg" width="20pt"/>
+  <img src="/images/pcommon/folder_open.svg" width="20pt"/>
 </p>
 
 - 按下：打开预设文件夹

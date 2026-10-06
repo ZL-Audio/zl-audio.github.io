@@ -22,7 +22,7 @@ ZL Compressor is a dynamic range processor with the following key features:
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/zlaudio.svg" width="20pt" />
+  <img src="/images/pcommon/zlaudio.svg" width="20pt" />
   <img src="/images/zlcompressor/logo.svg" width="20pt" />
 </p>
 
@@ -31,7 +31,7 @@ You can open the [UI Setting Panel](#ui-setting-panel) by clicking the logo.
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/collections_bookmark.svg" width="20pt"/>
+  <img src="/images/pcommon/collections_bookmark.svg" width="20pt"/>
 </p>
 
 You can open the [Preset Manager Panel](#preset-manager-panel) by clicking the icon.
@@ -77,7 +77,7 @@ You may hear clicks/pops when you change this parameter. Please **DO NOT** autom
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/delta.svg" width="20pt"/>
+  <img src="/images/pcommon/delta.svg" width="20pt"/>
 </p>
 
 - Press: output delta signal (the difference between the uncompressed main signal and the compressed main signal)
@@ -85,7 +85,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/bypass.svg" width="20pt"/>
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
 - Release: bypass plugin
@@ -335,7 +335,7 @@ Set the stereo mode to Left/Right Max. Left/Right is linked with the maximum of 
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/shuffle.svg" width="20pt"/>
+  <img src="/images/pcommon/shuffle.svg" width="20pt"/>
 </p>
 
 - Press: swap the side-chain stereo mode
@@ -363,7 +363,7 @@ Controls the gain of the side-chain signal.
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/external-side.svg" width="20pt"/>
+  <img src="/images/pcommon/external-side.svg" width="20pt"/>
 </p>
 
 - Press: use external side-chain signal
@@ -372,7 +372,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/solo.svg" width="20pt"/>
+  <img src="/images/pcommon/solo.svg" width="20pt"/>
 </p>
 
 - Press: listen to the side-chain signal
@@ -380,7 +380,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlcompressor/bypass.svg" width="20pt"/>
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
 - Release: bypass side-chain equalizer
@@ -639,7 +639,7 @@ Input a new preset name and press `Enter` to save it.
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/trash.svg" width="20pt"/>
+  <img src="/images/pcommon/trash.svg" width="20pt"/>
 </p>
 
 - Press: delete the selected preset group (along with all presets in the group) or the selected preset
@@ -647,7 +647,7 @@ ___
 ___
 
 <p float="left">
-  <img src="/images/zlspeceq/folder_open.svg" width="20pt"/>
+  <img src="/images/pcommon/folder_open.svg" width="20pt"/>
 </p>
 
 - Press: reveal the preset folder
