@@ -21,7 +21,7 @@ ___
 
 <p float="left">
   <img src="/images/pcommon/zlaudio.svg" width="20pt" />
-  <img src="/images/zlspeceq/logo.svg" width="20pt" />
+  <img src="/images/zllimiter/logo.svg" width="20pt" />
 </p>
 
 You can open the [UI Setting Panel](#ui-setting-panel) by clicking the logo.
@@ -42,7 +42,112 @@ You can open the [Analyzer Setting Panel](#analyzer-setting-panel) by clicking t
 
 ___
 
+**`Ceiling`**
+
+Adjusts the maximum output ceiling level.
+
+___
+
+**`Oversample`**
+
+Selects the oversampling rate to reduce aliasing and inter-sample peaks. 
+
+___
+
+<p float="left">
+  <img src="/images/zllimiter/dline_tp.svg" width="20pt"/>
+</p>
+
+Toggles True Peak limiting to prevent inter-sample clipping.
+
+___
+
+
+<p float="left">
+  <img src="/images/pcommon/delta.svg" width="20pt"/>
+</p>
+
+Toggles delta audition.
+
+___
+
+<p float="left">
+  <img src="/images/pcommon/bypass.svg" width="20pt"/>
+</p>
+
+Toggles plugin bypass.
+
+___
+
+
 ## Analyzer Setting Panel
+
+___
+
+**Peak Mode**
+
+Selects peak detection mode for the analyzer.
+
+- `Peak`
+- `True Peak`
+
+___
+
+**Scrolling Mode**
+
+Selects the waveform scrolling mode.
+
+- `Sync`
+- `Slow`
+- `Roll`
+
+___
+
+`Pre`
+
+Toggles display of the input magnitude curve.
+
+___
+
+`Post`
+
+Toggles display of the output magnitude curve.
+
+___
+
+`Delta`
+
+Toggles display of the limiter gain reduction curve.
+
+___
+
+**Analyzer Time Duration**
+
+Selects the time duration displayed in the analyzer window.
+
+___
+
+**Analyzer Min DB**
+
+Selects the minimum decibel floor for the analyzer display.
+
+___
+
+<p float="left">
+  <img src="/images/zllimiter/dline_meter.svg" width="20pt"/>
+</p>
+
+Toggles visibility of the level meter panel.
+
+___
+
+<p float="left">
+  <img src="/images/zllimiter/dline_123.svg" width="20pt"/>
+</p>
+
+Toggles visibility of the loudness and numeric readout panel.
+
+___
 
 
 ## UI Setting Panel
@@ -71,9 +176,9 @@ For better accessibility, please set Text/Background to colors with high contras
 
 **`Grid Color`**
 
-**`Color Map 1
+**`Color Map 1`**
 
-**`Color Map 2
+**`Color Map 2`**
 
 #### Control
 
