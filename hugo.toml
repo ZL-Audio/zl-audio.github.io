@@ -119,7 +119,7 @@ url_latest_version = "https://github.com/ZL-Audio/zl-audio.github.io"
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 # github_repo = "https://github.com/ZL-Audio/zl-audio.github.io"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-# github_project_repo = "https://github.com/google/docsy"
+# github_project_repo = "https://github.com/docsy/docsy"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -195,5 +195,5 @@ prism_syntax_highlighting = false
     extended = true
     min = "0.160.1"
   [[module.imports]]
-    path = "github.com/google/docsy/theme"
+    path = "github.com/docsy/docsy/theme"
     disable = false

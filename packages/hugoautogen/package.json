@@ -2,5 +2,6 @@
   "dependencies": {},
   "devDependencies": {},
   "name": "website",
+  "private": true,
   "version": "0.1.0"
 }

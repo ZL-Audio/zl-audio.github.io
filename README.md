@@ -117,7 +117,7 @@ For more information see the [Docker Compose documentation][].
 
 ## Using a local Docsy clone
 
-Make sure your installed go version is `1.18` or higher.
+Make sure your installed go version is `1.19` or higher.
 
 Clone the latest version of the docsy theme into the parent folder of your
 project. The newly created repo should now reside in a sibling folder of your
@@ -125,7 +125,7 @@ site's root folder.
 
 ```shell
 cd root-of-your-site
-git clone --branch v0.12.0 https://github.com/google/docsy.git ../docsy
+git clone --branch v0.18.0 https://github.com/docsy/docsy.git ../docsy
 ```
 
 Now run:
@@ -173,7 +173,7 @@ Built in 27 ms
 ```
 
 This error occurs if you are running an outdated version of Hugo. As of docsy
-theme version `v0.12.0`, hugo version `0.146.0` or higher is required. See this
+theme version `v0.18.0`, hugo version `0.160.1` or higher is required. See this
 [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo)
 of the user guide for instructions on how to install Hugo.
 
@@ -209,7 +209,7 @@ of the user guide for instructions on how to install `go`.
 [alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
 [deploys]: https://app.netlify.com/sites/docsy-example/deploys
 [Docsy user guide]: https://docsy.dev/docs
-[Docsy]: https://github.com/google/docsy
+[Docsy]: https://github.com/docsy/docsy
 [example.docsy.dev]: https://example.docsy.dev
 [Hugo theme module]:
   https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
