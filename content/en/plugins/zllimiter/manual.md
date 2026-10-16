@@ -50,7 +50,10 @@ ___
 
 **`Oversample`**
 
-Selects the oversampling rate to reduce aliasing and inter-sample peaks. 
+Selects the oversampling rate to reduce aliasing and inter-sample peaks, up to `32x`.
+
+- `Off` is recommended as a the setting for safe-guardian
+- `4x` is recommended as the setting for fine-tuning and exporting/rendering
 
 ___
 
@@ -145,7 +148,7 @@ ___
   <img src="/images/zllimiter/dline_123.svg" width="20pt"/>
 </p>
 
-Toggles visibility of the loudness and numeric readout panel.
+Toggles visibility of the [Value Panel](#value-panel).
 
 ___
 
@@ -165,7 +168,80 @@ The magnitude analyzer occupies the whole center panel. It shows three curves:
 
 ## Bottom Panel
 
+___
 
+**`Lookahead`**
+
+Adjusts the lookahead time for the main envelope to anticipate transients.
+
+___
+
+**`Recovery`**
+
+Adjusts the adaptive recovery time (in percent) for the main envelope.
+
+___
+
+**`Attack`**
+
+Adjusts the attack time of the sustained support envelope.
+
+___
+
+**`Release`**
+
+Adjusts the release time of the sustained support envelope.
+
+___
+
+**`Delta`**
+
+Adjusts the maximum allowed gain reduction difference between channels.
+
+___
+
+
+## Value Panel
+
+The value panel displays loudness and numeric readouts.
+
+___
+
+**`True Peak`**
+
+Displays the maximum held True Peak level.
+
+___
+
+**`Correlation`**
+
+Displays current (left) and average (right) stereo phase correlation.
+
+___
+
+**`LUFS-M`**
+
+Displays current (left) and maximum (right) momentary loudness.
+
+___
+
+**`LUFS-S`**
+
+Displays current (left) and maximum (right) short-term loudness.
+
+___
+
+**`LRA`**
+
+Displays the loudness range. Brackets indicate a provisional measurement.
+
+___
+
+**`LUFS-I`**
+
+Displays the integrated loudness.
+
+___
 
 ## UI Setting Panel
 
