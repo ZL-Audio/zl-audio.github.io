@@ -63,72 +63,27 @@ Included libraries are (they are subjected to their own licenses):
 - `PFFFT`: [PFFFT 1.1.0](https://github.com/marton78/pffft)
 - `zldsp`: [zldsp::fft](https://github.com/ZL-Audio/zldsp_fft)
 
-The benchmarks shown below are Real FFT benchmarks from order 5 to order 25.
+The benchmarks shown below are Real FFT benchmarks from order 5 to order 25. The throughput is the average of the forward/backward Real FFT.
 
 #### Apple M4 Pro 14-core (local)
 
-<div style="display: flex; gap: 20px; justify-content: center;">
-  <figure style="text-align: center; margin: 0;">
-    <figcaption style="font-weight: bold; margin-bottom: 8px;">NEON float32</figcaption>
-    <img src="/reports/2026-08-04/m4pro_rfft_f32.svg" alt="Plot 1" style="width: 100%; max-width: 400px;">
-  </figure>
-  <figure style="text-align: center; margin: 0;">
-    <figcaption style="font-weight: bold; margin-bottom: 8px;">NEON float64</figcaption>
-    <img src="/reports/2026-08-04/m4pro_rfft_f64.svg" alt="Plot 2" style="width: 100%; max-width: 400px;">
-  </figure>
-</div>
+<img src="/reports/2026-08-04/APPLE_M4_PRO_rfft_neon_average.svg" alt="Apple M4 Pro" style="width: 100%;">
 
 #### Intel Core i7-8850H (local)
 
-<div style="display: flex; gap: 20px; justify-content: center;">
-  <figure style="text-align: center; margin: 0;">
-    <figcaption style="font-weight: bold; margin-bottom: 8px;">AVX2 float32</figcaption>
-    <img src="/reports/2026-08-04/8850_rfft_avx2_f32.svg" alt="Plot 1" style="width: 100%; max-width: 400px;">
-  </figure>
-  <figure style="text-align: center; margin: 0;">
-    <figcaption style="font-weight: bold; margin-bottom: 8px;">AVX2 float64</figcaption>
-    <img src="/reports/2026-08-04/8850_rfft_avx2_f64.svg" alt="Plot 2" style="width: 100%; max-width: 400px;">
-  </figure>
-</div>
+<img src="/reports/2026-08-04/INTEL_CORE_I7_8850H_rfft_avx2_average.svg" alt="Intel Core i7-8850H" style="width: 100%;">
 
-#### AMD EPYC 7763 (GitHub Actions runner images)
+#### Ampere Altra Q80-30 (Server)
 
-<div style="display: flex; gap: 20px; justify-content: center;">
-  <figure style="text-align: center; margin: 0;">
-    <figcaption style="font-weight: bold; margin-bottom: 8px;">AVX2 float32</figcaption>
-    <img src="/reports/2026-08-04/7763_rfft_avx2_f32.svg" alt="Plot 1" style="width: 100%; max-width: 400px;">
-  </figure>
-  <figure style="text-align: center; margin: 0;">
-    <figcaption style="font-weight: bold; margin-bottom: 8px;">AVX2 float64</figcaption>
-    <img src="/reports/2026-08-04/7763_rfft_avx2_f64.svg" alt="Plot 2" style="width: 100%; max-width: 400px;">
-  </figure>
-</div>
+<img src="/reports/2026-08-04/NEOVERSE_N1_rfft_neon_average.svg" alt="Ampere Altra Q80-30" style="width: 100%;">
 
-#### AMD AMD EPYC 9V74 (GitHub Actions runner images)
+#### AMD EPYC 9534 (Server)
 
-<div style="display: flex; gap: 20px; justify-content: center;">
-  <figure style="text-align: center; margin: 0;">
-    <figcaption style="font-weight: bold; margin-bottom: 8px;">AVX2 float32</figcaption>
-    <img src="/reports/2026-08-04/9v74_rfft_avx2_f32.svg" alt="Plot 1" style="width: 100%; max-width: 400px;">
-  </figure>
-  <figure style="text-align: center; margin: 0;">
-    <figcaption style="font-weight: bold; margin-bottom: 8px;">AVX2 float64</figcaption>
-    <img src="/reports/2026-08-04/9v74_rfft_avx2_f64.svg" alt="Plot 2" style="width: 100%; max-width: 400px;">
-  </figure>
-</div>
+<img src="/reports/2026-08-04/AMD_EPYC_9534_rfft_avx2_average.svg" alt="AMD EPYC 9534" style="width: 100%;">
 
-#### Ampere Altra Q80-30 (Oracle Cloud VM)
+#### Intel Xeon 6972P (Server)
 
-<div style="display: flex; gap: 20px; justify-content: center;">
-  <figure style="text-align: center; margin: 0;">
-    <figcaption style="font-weight: bold; margin-bottom: 8px;">NEON float32</figcaption>
-    <img src="/reports/2026-08-04/q80_30_rfft_f32.svg" alt="Plot 1" style="width: 100%; max-width: 400px;">
-  </figure>
-  <figure style="text-align: center; margin: 0;">
-    <figcaption style="font-weight: bold; margin-bottom: 8px;">NEON float64</figcaption>
-    <img src="/reports/2026-08-04/q80_30_rfft_f64.svg" alt="Plot 2" style="width: 100%; max-width: 400px;">
-  </figure>
-</div>
+<img src="/reports/2026-08-04/INTEL_XEON_6972P_rfft_avx2_average.svg" alt="Intel XEON 6972P" style="width: 100%;">
 
 ## Design
 
