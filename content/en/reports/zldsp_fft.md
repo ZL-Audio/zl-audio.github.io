@@ -65,11 +65,11 @@ Included libraries are (they are subjected to their own licenses):
 
 The benchmarks shown below are Real FFT benchmarks from order 5 to order 25. The throughput is the average of the forward/backward Real FFT.
 
-#### Apple M4 Pro 14-core (local)
+#### Apple M4 Pro 14-core (Local)
 
 <img src="/reports/2026-08-04/APPLE_M4_PRO_rfft_neon_average.svg" alt="Apple M4 Pro" style="width: 100%;">
 
-#### Intel Core i7-8850H (local)
+#### Intel Core i7-8850H (Local)
 
 <img src="/reports/2026-08-04/INTEL_CORE_I7_8850H_rfft_avx2_average.svg" alt="Intel Core i7-8850H" style="width: 100%;">
 
