@@ -159,7 +159,7 @@ ___
 
 ## Center Panel
 
-### Input Gain Slider
+#### Input Gain Slider
 
 The input gain slider is a vertical slider on the left edge of the center panel.
 
@@ -170,7 +170,7 @@ A combobox below lets you choose the input-output gain linking mode:
 - `Input`: Adjusts `Input Gain` without corresponding output compensation
 - `Linked`: For positive `Input Gain`, applies an equal amount of attenuation after the limiter
 
-### Magnitude Analyzer
+#### Magnitude Analyzer
 
 The magnitude analyzer occupies the whole center panel. It shows three curves:
 
