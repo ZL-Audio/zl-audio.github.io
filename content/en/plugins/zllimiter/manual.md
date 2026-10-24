@@ -10,8 +10,8 @@ weight: 2
 
 ZL Limiter is a limiter plugin with the following key features:
 
-- **Pristine Precision**: True Peak limiting and up to 32x over-sampling prevent inter-sample clipping, ensuring exceptional clarity.
-- **Transient Control**: Protect and shape transient with adjustable lookahead, adaptive recovery, and flexible attack and release settings.
+- **Pristine Precision**: True Peak limiting and oversampling up to 32x help control inter-sample peaks and reduce aliasing.
+- **Transient Control**: Protect and shape transients with adjustable lookahead, adaptive recovery, and flexible attack and release settings.
 - **Stereo Integrity**: Preserve spatial width with customizable channel delta control.
 - **Intuitive Workflow**: A carefully designed interface featuring a real-time scrolling waveform display and comprehensive loudness metering.
 
@@ -52,8 +52,13 @@ ___
 
 Selects the oversampling rate to reduce aliasing and inter-sample peaks, up to `32x`.
 
-- `Off` is recommended as a the setting for safe-guardian
+- `Off` is recommended for peak protection
 - `4x` is recommended as the setting for fine-tuning and exporting/rendering
+- `8x`, `16x`, `32x` is recommended if you can hear artifacts at `4x`
+
+Oversampling adds a low-pass filter around the Nyquist. As a result, you may observe gain reduction even if the signal peak is below the ceiling.
+
+Higher oversampling rates increase CPU use. If playback crackles or drops out, try a lower rate or a larger audio buffer in your host.
 
 ___
 
@@ -70,7 +75,7 @@ ___
   <img src="/images/pcommon/delta.svg" width="20pt"/>
 </p>
 
-Toggles delta audition.
+Toggles delta audition. This helps you hear what the gain reduction takes from the signal.
 
 ___
 
@@ -158,6 +163,13 @@ ___
 
 The input gain slider is a vertical slider which lies at the left edge of the center panel.
 
+Adjusts the level entering the limiter.
+
+A combobox below let you choose the input-output gain linking mode:
+
+- `Input`: Adjusts `Input Gain` without corresponding output compensation
+- `Linked`: For positive `Input Gain`, applies an equal amount of attenuation after the limiter
+
 ### Magnitude Analyzer
 
 The magnitude analyzer occupies the whole center panel. It shows three curves:
@@ -178,7 +190,7 @@ ___
 
 **`Recovery`**
 
-Adjusts the adaptive recovery time (in percent) for the main envelope.
+Adjusts the adaptive recovery time for the main envelope.
 
 ___
 
@@ -200,10 +212,19 @@ Adjusts the maximum allowed gain reduction difference between channels.
 
 ___
 
-
 ## Value Panel
 
 The value panel displays loudness and numeric readouts.
+
+- when the host supplies transport information, measurements pause when playback stops and reset when playback resumes
+- closing or hiding the whole editor interrupts measurement; opening or showing it again resets the meters
+
+| Controls                                            | Result                                                             |
+| --------------------------------------------------- | ------------------------------------------------------------------ |
+| Double-click the **True Peak** row                  | Resets its held peak                                               |
+| Double-click **Correlation**                        | Resets its correlation statistics                                  |
+| Double-click **LUFS-M, LUFS-S, LRA, or LUFS-I** row | Resets all loudness statistics and the loudness histogram together |
+| Double-click the vertical **level meter**           | Resets its held maximum reduction and output peak                  |
 
 ___
 
@@ -221,13 +242,13 @@ ___
 
 **`LUFS-M`**
 
-Displays current (left) and maximum (right) momentary loudness.
+Displays current (left) and maximum (right) momentary loudness (over a 400 ms window).
 
 ___
 
 **`LUFS-S`**
 
-Displays current (left) and maximum (right) short-term loudness.
+Displays current (left) and maximum (right) short-term loudness (over a 3 seconds window).
 
 ___
 
@@ -239,7 +260,7 @@ ___
 
 **`LUFS-I`**
 
-Displays the integrated loudness.
+Displays the integrated loudness for the current measurement period.
 
 ___
 
@@ -279,7 +300,7 @@ For better accessibility, please set Text/Background to colors with high contras
 
 - `Rough`: mouse-wheel sensitivity when `Shift` is not pressed
 - `Fine`: mouse-wheel sensitivity when `Shift` is pressed
-- `Menu`: mouse-wheel sensitivity when adjust combobox items
+- `Menu`: mouse-wheel sensitivity when changing menu selections
 - `Reverse`: whether to reverse the direction of mouse-wheel when `Shift` is pressed
 
 **`Slider Sensitivity`**
@@ -318,7 +339,7 @@ Set this to 1/n of your monitor refresh rate. For example,
 
 **`Curve Thickness`**
 
-Control the thickness of the curve of magnitude.
+Adjust the thickness of the magnitude curve.
 
 **`Tooltip`**
 
@@ -342,7 +363,7 @@ ___
 
 ## Preset Manager Panel
 
-The preset manager panel let you manage(save/group/delete) presets.
+The preset manager lets you save, organize, and delete presets
 
 ___
 
@@ -395,8 +416,8 @@ Generally, you can enable fine-adjustment with `Shift` and enable special adjust
 
 **Window Size**
 
-- You can drag a dragger at the bottom-right corner to adjust plugin window size.
-- Recommend way to set Windows Size
+- You can drag the resize handle at the bottom-right corner to adjust plugin window size.
+- Recommend way to set Window Size
 	1. Set **Window Size Fix** to `OFF` and press the store button.
 	2. Adjust the plugin window to the size you prefer.
 	3. Close the plugin window.
@@ -405,3 +426,37 @@ Generally, you can enable fine-adjustment with `Shift` and enable special adjust
 	6. Close the plugin window.
 	7. Then, the plugin will be opened with the window size set in the Step 2 every time.
 
+
+## Peak Limiting
+
+ZL Limiter utilizes a dual-envelope architecture consisting of a primary peak envelope, a secondary support envelope, variable stereo linking, and optional True Peak limiting.
+
+#### Main Limiting
+
+The main stage attenuates individual transient peaks. When oversampling is enabled, this stage also suppresses inter-sample peaks.
+
+**`Lookahead`** sets the analysis time prior to peak arrival. Higher values lengthen the lookahead window, initiating gain reduction earlier for smoother attenuation. Lower values shorten the lookahead window, delaying gain reduction until peak arrival to preserve transient punch.
+
+**`Recovery`** sets the minimum return time to unity gain following an isolated peak. The release rate automatically slows during heavy or continuous limiting to minimize distortion. Higher values lengthen the recovery time for cleaner, more transparent limiting. Lower values shorten the recovery time to maximize loudness between transients.
+
+#### Support Envelope
+
+The support envelope stabilizes macro loudness and dense peak sequences. By maintaining attenuation across closely spaced transients, it prevents rapid gain fluctuations and shares dynamic reduction with the main stage for cleaner overall processing.
+
+**`Attack`** sets the onset time required for sustained gain reduction to engage. Higher values lengthen the attack time, allowing initial transients to pass solely to the main stage and engaging support only during sustained loudness. Lower values shorten the attack time, applying sustained gain reduction immediately upon encountering high signal levels.
+
+> Individual peaks remain governed by the main limiting envelope regardless of the support **`Attack`** setting.
+
+**`Release`** sets the return time for sustained gain reduction to reach unity once signal levels decrease. Higher values lengthen the release time, providing a gradual return to unity gain. Lower values shorten the release time, restoring signal levels more rapidly following loud passages.
+
+> Use **`Recovery`** to control gain restoration following discrete transients, and use **`Release`** to govern sustained attenuation across dense, continuous program material.
+
+### Stereo Linking
+
+**`Delta`** sets the maximum allowable gain reduction difference between the left and right channels. At `0 dB`, channels are fully linked to preserve stereo balance. Higher values permit greater channel independence, increasing apparent loudness at the expense of potential shifts in the stereo image.
+
+### True Peak Limiting
+
+When enabled, an output stage suppresses inter-sample peaks that may cause clipping during digital-to-analog conversion or lossy encoding. This stage also catches reconstructed peaks introduced when downsampling to the project sample rate.
+
+True Peak limiting remains active when oversampling is set to `Off` and also stays independent of the visual peak metering modes.
