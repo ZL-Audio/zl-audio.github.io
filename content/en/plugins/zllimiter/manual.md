@@ -54,9 +54,9 @@ Selects the oversampling rate to reduce aliasing and inter-sample peaks, up to `
 
 - `Off` is recommended for peak protection
 - `4x` is recommended as the setting for fine-tuning and exporting/rendering
-- `8x`, `16x`, `32x` is recommended if you can hear artifacts at `4x`
+- `8x`, `16x`, `32x` are recommended if you can hear artifacts at `4x`
 
-Oversampling adds a low-pass filter around the Nyquist. As a result, you may observe gain reduction even if the signal peak is below the ceiling.
+Oversampling adds a low-pass filter around the Nyquist frequency. As a result, you may observe gain reduction even if the signal peak is below the ceiling.
 
 Higher oversampling rates increase CPU use. If playback crackles or drops out, try a lower rate or a larger audio buffer in your host.
 
@@ -66,7 +66,7 @@ ___
   <img src="/images/zllimiter/dline_tp.svg" width="20pt"/>
 </p>
 
-Toggles True Peak limiting to prevent inter-sample clipping.
+Toggles True Peak limiting to prevent inter-sample clipping. See details at [True Peak Limiting](#true-peak-limiting).
 
 ___
 
@@ -75,7 +75,7 @@ ___
   <img src="/images/pcommon/delta.svg" width="20pt"/>
 </p>
 
-Toggles delta audition. This helps you hear what the gain reduction takes from the signal.
+Toggles delta audition. This helps you hear what the gain reduction removes from the signal.
 
 ___
 
@@ -161,11 +161,11 @@ ___
 
 ### Input Gain Slider
 
-The input gain slider is a vertical slider which lies at the left edge of the center panel.
+The input gain slider is a vertical slider on the left edge of the center panel.
 
 Adjusts the level entering the limiter.
 
-A combobox below let you choose the input-output gain linking mode:
+A combobox below lets you choose the input-output gain linking mode:
 
 - `Input`: Adjusts `Input Gain` without corresponding output compensation
 - `Linked`: For positive `Input Gain`, applies an equal amount of attenuation after the limiter
@@ -184,31 +184,31 @@ ___
 
 **`Lookahead`**
 
-Adjusts the lookahead time for the main envelope to anticipate transients.
+Adjusts the lookahead time for the main envelope to anticipate transients. See details at [Main Limiting](#main-limiting).
 
 ___
 
 **`Recovery`**
 
-Adjusts the adaptive recovery time for the main envelope.
+Adjusts the adaptive recovery time for the main envelope. See details at [Main Limiting](#main-limiting).
 
 ___
 
 **`Attack`**
 
-Adjusts the attack time of the sustained support envelope.
+Adjusts the attack time of the sustained support envelope. See details at [Support Envelope](#support-envelope).
 
 ___
 
 **`Release`**
 
-Adjusts the release time of the sustained support envelope.
+Adjusts the release time of the sustained support envelope. See details at [Support Envelope](#support-envelope).
 
 ___
 
-**`Delta`**
+**`Stereo Delta`**
 
-Adjusts the maximum allowed gain reduction difference between channels.
+Adjusts the maximum allowed gain reduction difference between channels. See details at [Stereo Linking](#stereo-linking).
 
 ___
 
@@ -216,15 +216,15 @@ ___
 
 The value panel displays loudness and numeric readouts.
 
-- when the host supplies transport information, measurements pause when playback stops and reset when playback resumes
-- closing or hiding the whole editor interrupts measurement; opening or showing it again resets the meters
+- When the host supplies transport information, measurements pause when playback stops and reset when playback resumes
+- Closing or hiding the whole editor interrupts measurement; opening or showing it again resets the meters
 
-| Controls                                            | Result                                                             |
-| --------------------------------------------------- | ------------------------------------------------------------------ |
-| Double-click the **True Peak** row                  | Resets its held peak                                               |
-| Double-click **Correlation**                        | Resets its correlation statistics                                  |
-| Double-click **LUFS-M, LUFS-S, LRA, or LUFS-I** row | Resets all loudness statistics and the loudness histogram together |
-| Double-click the vertical **level meter**           | Resets its held maximum reduction and output peak                  |
+| Controls                                                | Result                                                             |
+| ------------------------------------------------------- | ------------------------------------------------------------------ |
+| Double-click the **True Peak** row                      | Resets its held peak                                               |
+| Double-click **Correlation**                            | Resets its correlation statistics                                  |
+| Double-click the **LUFS-M, LUFS-S, LRA, or LUFS-I** row | Resets all loudness statistics and the loudness histogram together |
+| Double-click the vertical **level meter**               | Resets its held maximum reduction and output peak                  |
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 **`LUFS-S`**
 
-Displays current (left) and maximum (right) short-term loudness (over a 3 seconds window).
+Displays current (left) and maximum (right) short-term loudness (over a 3-second window).
 
 ___
 
@@ -266,7 +266,7 @@ ___
 
 ## UI Setting Panel
 
-The UI setting panel controls analyzer colors, slider operations, etc. Components will be introduced in the order from top to bottom.
+The UI setting panel controls analyzer colors, slider operations, etc. Components will be introduced in order from top to bottom.
 
 #### Color
 
@@ -301,7 +301,7 @@ For better accessibility, please set Text/Background to colors with high contras
 - `Rough`: mouse-wheel sensitivity when `Shift` is not pressed
 - `Fine`: mouse-wheel sensitivity when `Shift` is pressed
 - `Menu`: mouse-wheel sensitivity when changing menu selections
-- `Reverse`: whether to reverse the direction of mouse-wheel when `Shift` is pressed
+- `Reverse`: whether to reverse the direction of the mouse wheel when `Shift` is pressed
 
 **`Slider Sensitivity`**
 
@@ -328,7 +328,7 @@ ___
 **`Refresh Rate`**
 
 Set this to 1/n of your monitor refresh rate. For example,
-- If your monitor refresh rate is 120 Hz, set it to 120 Hz, 60 Hz (1/2), or 30 (1/4) Hz. DO NOT set it to 90 Hz.
+- If your monitor refresh rate is 120 Hz, set it to 120 Hz, 60 Hz (1/2), or 30 Hz (1/4). DO NOT set it to 90 Hz.
 - If your monitor refresh rate is 90 Hz, set it to 90 Hz or 30 Hz (1/3). DO NOT set it to 60 Hz.
 
 **`Combobox Alignment`**
@@ -349,39 +349,39 @@ Choose the tooltip language. It will take effect when the plugin window is reope
 
 Choose the font size mode.
 
-- `Scale`: the font size scales with the window size. Control the relative ratio.
-- `Static`: the font size is fixed. Control the actual font size.
+- `Scale`: the font size scales with the window size. Controls the relative ratio.
+- `Static`: the font size is fixed. Controls the actual font size.
 
 **`Window Size Fix`**
 
 Choose whether to turn on Window Size Fix.
 
-- `Off`: plugin window size adjustment will be stored
-- `On`: plugin window size adjustment will NOT be stored, but open as it is currently every time the plugin is opened. The size can still be changed, but the changes will not be stored.
+- `Off`: plugin window size adjustments will be stored
+- `On`: plugin window size adjustments will NOT be stored; instead, the window will open at its current size each time the plugin is opened. The size can still be changed, but the changes will not be stored.
 
 ___
 
 ## Preset Manager Panel
 
-The preset manager lets you save, organize, and delete presets
+The preset manager lets you save, organize, and delete presets.
 
 ___
 
 **`Search Presets`**
 
-Input a preset name and search it.
+Enter a preset name and search.
 
 ___
 
 **`New Group`**
 
-Input a new group name and press `Enter` to save it.
+Enter a new group name and press `Enter` to save it.
 
 ___
 
 **`New Preset`**
 
-Input a new preset name and press `Enter` to save it.
+Enter a new preset name and press `Enter` to save it.
 
 ___
 
@@ -403,11 +403,11 @@ ___
 
 ## UI Controls
 
-Generally, you can enable fine-adjustment with `Shift` and enable special adjustment with `Ctrl/Command`. If the direction of the mouse wheel is reversed when `Shift` is pressed, you can reverse it again (in the UI Setting Panel) to put it back to normal.
+Generally, you can enable fine adjustment with `Shift` and enable special adjustment with `Ctrl/Command`. If the direction of the mouse wheel is reversed when `Shift` is pressed, you can reverse it again (in the UI Setting Panel) to put it back to normal.
 
 **Sliders**
 
-- You can enable fine-adjustment with `Shift` when using the mouse to drag / the mouse wheel to adjust sliders.
+- You can enable fine adjustment with `Shift` when using the mouse to drag / the mouse wheel to adjust sliders.
 - You can use the left/right mouse button to control the first/second value when there are two values on the slider.
 
 **Combobox**
@@ -416,16 +416,15 @@ Generally, you can enable fine-adjustment with `Shift` and enable special adjust
 
 **Window Size**
 
-- You can drag the resize handle at the bottom-right corner to adjust plugin window size.
-- Recommend way to set Window Size
+- You can drag the resize handle at the bottom-right corner to adjust the plugin window size.
+- Recommended way to set Window Size:
 	1. Set **Window Size Fix** to `OFF` and press the store button.
 	2. Adjust the plugin window to the size you prefer.
 	3. Close the plugin window.
 	4. Reopen the plugin window.
 	5. Set **Window Size Fix** to `ON` and press the store button.
 	6. Close the plugin window.
-	7. Then, the plugin will be opened with the window size set in the Step 2 every time.
-
+	7. Then, the plugin will open with the window size set in Step 2 every time.
 
 ## Peak Limiting
 
@@ -451,11 +450,11 @@ The support envelope stabilizes macro loudness and dense peak sequences. By main
 
 > Use **`Recovery`** to control gain restoration following discrete transients, and use **`Release`** to govern sustained attenuation across dense, continuous program material.
 
-### Stereo Linking
+#### Stereo Linking
 
-**`Delta`** sets the maximum allowable gain reduction difference between the left and right channels. At `0 dB`, channels are fully linked to preserve stereo balance. Higher values permit greater channel independence, increasing apparent loudness at the expense of potential shifts in the stereo image.
+**`Stereo Delta`** sets the maximum allowable gain reduction difference between the left and right channels. At `0 dB`, channels are fully linked to preserve stereo balance. Higher values permit greater channel independence, increasing apparent loudness at the expense of potential shifts in the stereo image.
 
-### True Peak Limiting
+#### True Peak Limiting
 
 When enabled, an output stage suppresses inter-sample peaks that may cause clipping during digital-to-analog conversion or lossy encoding. This stage also catches reconstructed peaks introduced when downsampling to the project sample rate.
 

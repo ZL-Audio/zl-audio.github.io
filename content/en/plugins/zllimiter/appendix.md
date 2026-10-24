@@ -10,7 +10,7 @@ Thank [JUCE](https://github.com/juce-framework/JUCE) framework and [JUCE Forum](
 
 Thank all plugin users for their support, feedback, and suggestions.
 
-This plugin is inspired by other equalizer plugins, such as:
+This plugin is inspired by other limiter plugins, such as:
 
 - [FabFilter Pro-L 2](https://www.fabfilter.com/products/pro-l-2-limiter-plug-in)
 - [ToneBoosters Barricade 4](https://www.toneboosters.com/tb_barricade_v4.html)
