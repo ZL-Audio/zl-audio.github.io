@@ -30,12 +30,12 @@ The macOS installer is packaged in a `.dmg` file. You need to open it to use the
 
 If there are two `.dmg` files, the one with `x86-64` is for Intel-chip macOS machines and the one with `arm64` is for Apple-M-chip macOS machines. However, if you are using Rosetta Mode on Apple-M-chip macOS machines, you have to use the one with `x86-64`, which may cause degraded performance.
 
-On macOS, the plugin requires Metal support. The plugin is not compatible with macOS prior to macOS 10.13 and is not guaranteed to be compatible with macOS prior to macOS 13. Besides that, you may refer to [Safely open apps on your Mac](https://support.apple.com/en-us/102445) if you are confused by the alert given by your OS.
+On macOS, the plugin requires Metal support. The plugin is not compatible with macOS prior to macOS 12. Besides that, you may refer to [Safely open apps on your Mac](https://support.apple.com/en-us/102445) if you are confused by the alert given by your OS.
 
 If you cannot upgrade your system through official macOS support, you may upgrade it with [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) (use at your own risk).
 
 {{% alert title="Warning" color="warning" %}}
-In the foreseeable future (after the release of macOS 28), the `x86-64` version will be discontinued.
+In the foreseeable future (after the release of macOS 28), the `x86-64` version might be discontinued.
 {{% /alert %}}
 
 ## Windows Installation

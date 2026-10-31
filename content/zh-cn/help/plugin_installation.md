@@ -30,12 +30,12 @@ macOS 安装器被封装在 `.dmg` 文件中。您需要打开它以使用 `.pkg
 
 如果有两个 `.dmg` 文件，文件名中含有 `x86-64` 的是为载有 Intel 芯片的 macOS 系统准备的，而文件名中含有 `arm64` 的是为载有 Apple M 芯片的 macOS 系统准备的。然而，如果您在载有 Apple M 芯片的 macOS 系统上使用 Rosetta 模式，您必须使用含有 `x86-64` 的安装器，但这可能会导致插件性能下降。
 
-在 macOS 系统上，插件需要 Metal 支持。插件无法在 macOS 10.13 之前的系统上运行，且不保证与 macOS 13 之前的系统兼容。除此以外，如果您对操作系统给出的警告信息感到困惑，请参阅[在 Mac 上安全地打开 App](https://support.apple.com/zh-cn/102445)。
+在 macOS 系统上，插件需要 Metal 支持。插件无法在 macOS 12 之前的系统上运行。除此以外，如果您对操作系统给出的警告信息感到困惑，请参阅[在 Mac 上安全地打开 App](https://support.apple.com/zh-cn/102445)。
 
 如果您无法通过官方 macOS 渠道更新系统，您可以尝试使用 [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) 进行升级（使用风险自负）。
 
 {{% alert title="Warning" color="warning" %}}
-在可以预见的未来（macOS 28 发布后），`x86-64` 版本将不再被提供。
+在可以预见的未来（macOS 28 发布后），`x86-64` 版本可能将不再被提供。
 {{% /alert %}}
 
 ## Windows 安装

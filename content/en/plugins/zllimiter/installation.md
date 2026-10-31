@@ -5,11 +5,13 @@ weight: 1
 ---
 ## Introduction Video
 
-TBA
+{{< youtube "Lego37TvBmA" >}}
 
 ## Installation
 
-TBA
+You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLLimiter/releases/latest) or use the direct download link below. Please download the installer that matches your chip/architecture:
+
+{{< installers repo="ZL-Audio/ZLLimiter" plugin="ZL.Limiter" version="0.0.1" >}}
 
 ZL Limiter is Free and Open-source. ZL Limiter is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html), except for the [logo of ZL Audio](https://github.com/ZL-Audio/ZLLimiter/blob/main/assets/zlaudio.svg) and the [logo of ZL Limiter](https://github.com/ZL-Audio/ZLLimiter/blob/main/assets/logo.svg). You can obtain the corresponding source code at https://github.com/ZL-Audio/ZLLimiter or https://gitee.com/ZL-Audio/ZLLimiter.
 
