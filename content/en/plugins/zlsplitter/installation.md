@@ -12,11 +12,7 @@ weight: 1
 
 You may download the installer at the [GitHub release page](https://github.com/ZL-Audio/ZLSplitter/releases/latest) or use the direct download link below. Please download the installer that matches your OS & architecture:
 
-| Operating System | x86-64<br>Intel Chip<br>AMD Chip (mostly)                                                                                             | ARM64<br>Apple M Chip<br>Qualcomm Chip                                                                                                |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **macOS**        | [ZL.Splitter-0.3.0-macOS-x86.dmg](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-macOS-x86.dmg)     | [ZL.Splitter-0.3.0-macOS-arm.dmg](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-macOS-arm.dmg)     |
-| **Windows**      | [ZL.Splitter-0.3.0-Windows-x86.msi](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Windows-x86.msi) | [ZL.Splitter-0.3.0-Windows-arm.msi](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Windows-arm.msi) |
-| **Linux**        | [ZL.Splitter-0.3.0-Linux-x86.zip](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Linux-x86.zip)     | [ZL.Splitter-0.3.0-Linux-arm.zip](https://github.com/ZL-Audio/ZLSplitter/releases/download/0.3.0/ZL.Splitter-0.3.0-Linux-arm.zip)     |
+{{< installers repo="ZL-Audio/ZLSplitter" plugin="ZL.Splitter" version="0.4.0" >}}
 
 For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
 
@@ -32,9 +28,36 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 
 ## Nightly Release
 
-Available at [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLSplitter). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLSplitter/issues).
+Available [here](https://github.com/ZL-Audio/ZLNightlyRelease/releases/tag/ZLSplitter). Nightly releases contain new features and fixes that may change before the formal release. Not recommended for critical production work. If you have specific bug reports or feature requests, you can open an issue [here](https://github.com/ZL-Audio/ZLSplitter/issues).
 
 ## Changelog
+
+### 0.4.0
+
+Breaking Changes
+
+- Low/High splitter `SVF` changes to `IIR` and the filters are now de-cramped
+- Low/High splitter `FIR` changes to the de-cramping method proposed by Yuriy Ivantsov
+- several FFT analyzer settings are removed
+
+Bug fixes and Improvements
+
+- fix old audio replaying when switching split modes
+- fix bypass delay continuity and latency updates when changing the Low/High `FIR` crossover frequency
+- fix processing of the highest frequency bins in the Transient/Steady split
+- fix magnitude and wave display history and scaling
+
+New Features
+
+- add built-in preset manager
+- add host parameter context menus on right-click in supported hosts
+- add `OCT` and `ERB` FFT analyzer smoothing modes
+- add `Sync`, `Slow`, and `Roll` magnitude analyzer display modes
+
+Improvements
+
+- improve splitter performance (especially for Low/High splitter `FIR` and Transient/Steady splitter)
+- improve analyzer performance
 
 ### 0.3.0
 

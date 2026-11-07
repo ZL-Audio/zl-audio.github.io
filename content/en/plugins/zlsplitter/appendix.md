@@ -18,7 +18,7 @@ The development of this plugin is assisted by the following software:
 
 ## Feedback
 
-You have to register a GitHub account before sending feedbacks.
+You have to register a GitHub account before sending feedback.
 
 If you have general suggestions or questions, you can open a discussion [here](https://github.com/ZL-Audio/ZLSplitter/discussions).
 
