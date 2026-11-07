@@ -40,7 +40,7 @@ VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe 
 - 低频/高频分离器 `FIR` 改为采用 Yuriy Ivantsov 提出的去扭曲方法
 - 移除数项 FFT 分析仪设置
 
-修复与改进
+修复
 
 - 修复切换分离模式时重新播放旧音频的问题
 - 修复更改低频/高频 `FIR` 分频点时的旁通延迟连续性及延迟报告更新

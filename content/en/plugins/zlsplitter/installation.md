@@ -40,7 +40,7 @@ Breaking Changes
 - Low/High splitter `FIR` changes to the de-cramping method proposed by Yuriy Ivantsov
 - several FFT analyzer settings are removed
 
-Bug fixes and Improvements
+Bug Fixes
 
 - fix old audio replaying when switching split modes
 - fix bypass delay continuity and latency updates when changing the Low/High `FIR` crossover frequency
