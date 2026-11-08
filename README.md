@@ -74,6 +74,42 @@ run:
 hugo server
 ```
 
+## Shared plugin documentation
+
+Repeated installation and appendix text lives in `assets/snippets/`, with
+separate `en/` and `zh-cn/` translations. Language-independent text, such as the
+VST trademark notice, lives in `shared/`. Include a snippet in a content page
+with the `include` shortcode:
+
+```go-html-template
+{{% include "agpl-disclaimer" %}}
+{{% include "vst3" %}}
+{{% include file="plugin-license" repo="ZL-Audio/ZLCompressor" plugin="ZL Compressor" %}}
+```
+
+Use the `{{% ... %}}` form so Hugo renders the included Markdown as part of the
+page and adds its headings to the table of contents. The shortcode chooses the
+page's language, then looks in `shared/` if there is no localized snippet. A
+missing snippet or required parameter fails the build with the source location.
+
+| Snippet | Parameters and content |
+| --- | --- |
+| `agpl-acceptance` | Section 9 quotation only; keep its introduction in the page. |
+| `agpl-disclaimer` | Disclaimer heading, attribution, and sections 15–16 quotations. |
+| `vst3` | VST logo and trademark notice, shared by both languages. |
+| `plugin-license` | Required `repo` and `plugin` (display name); license, logo exceptions, and source links. |
+| `download-intro` | Required `repo`; optional `platform="os"` for the OS/architecture wording instead of chip/architecture. |
+| `installation-help` | Link to the plugin installation help page. |
+| `nightly-release` | Required `repo`; the nightly tag is its repository name. Optional English `intro="Available"` preserves that wording instead of “Available at”. |
+| `development-tools` | Shared development software acknowledgments. |
+| `feedback-links` | Required `repo`; discussion and issue links. Keep legacy feedback notices in their pages. |
+
+To change shared text, edit its Markdown file in each language. To add a snippet,
+create matching `<name>.md` files under `en/` and `zh-cn/`, or a single file under
+`shared/` when the text is identical in every language. Snippets may use Hugo
+template expressions such as `{{ .Get "repo" }}` for shortcode parameters. Keep
+plugin-specific behavior and instructions in the individual content pages.
+
 ## Running a container locally
 
 You can run docsy-example inside a [Docker](https://docs.docker.com/) container,

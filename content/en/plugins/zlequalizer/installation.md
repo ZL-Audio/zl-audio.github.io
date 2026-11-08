@@ -20,17 +20,15 @@ Please download the installer that matches your OS & architecture:
 | **Windows**      | [ZL.Equalizer-0.6.2-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Windows-x86.exe) | [ZL.Equalizer-0.6.2-Windows-arm.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Windows-arm.exe) |
 | **Linux**        | [ZL.Equalizer-0.6.2-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-x86.zip)     | [ZL.Equalizer-0.6.2-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-arm.zip)     |
 
-For more information, please refer to the [Plugin Installation](../../help/plugin_installation) page.
+{{% include "installation-help" %}}
 
-ZL Equalizer is Free and Open-source. ZL Equalizer is licensed under [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html), except for the [logo of ZL Audio](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/zlaudio.svg) and the [logo of ZL Equalizer](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/logo.svg). You can obtain the corresponding source code at https://github.com/ZL-Audio/ZLEqualizer or https://gitee.com/ZL-Audio/ZLEqualizer.
+{{% include file="plugin-license" repo="ZL-Audio/ZLEqualizer" plugin="ZL Equalizer" %}}
 
 AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 
-**You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.**
+{{% include "agpl-acceptance" %}}
 
-<img src="/images/vst3.png" style="width: 120pt; max-width: 100%; height: auto"/>
-
-VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
+{{% include "vst3" %}}
 
 ## Changelog
 

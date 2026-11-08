@@ -1,0 +1,24 @@
+{{- /* Use {{% include ... %}} so Markdown and headings join the parent page. */ -}}
+{{- $name := "" -}}
+{{- if .IsNamedParams -}}
+  {{- $name = .Get "file" -}}
+{{- else -}}
+  {{- $name = .Get 0 -}}
+{{- end -}}
+{{- if not $name -}}
+  {{- errorf "include requires a snippet name: %s" .Position -}}
+{{- else -}}
+  {{- $path := printf "snippets/%s/%s.md" .Page.Language.Lang $name -}}
+  {{- $snippet := resources.Get $path -}}
+  {{- if not $snippet -}}
+    {{- $snippet = resources.Get (printf "snippets/shared/%s.md" $name) -}}
+  {{- end -}}
+  {{- with $snippet -}}
+    {{- /* Each invocation needs its own target to keep parameters page-specific. */ -}}
+    {{- $target := printf "snippets-rendered/%s/%d/%s.md" $.Page.File.UniqueID $.Ordinal $name -}}
+    {{- $rendered := resources.ExecuteAsTemplate $target $ . -}}
+    {{- $rendered.Content | safeHTML -}}
+  {{- else -}}
+    {{- errorf "include cannot find %q (or its shared fallback): %s" $path .Position -}}
+  {{- end -}}
+{{- end -}}

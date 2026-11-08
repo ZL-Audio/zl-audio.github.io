@@ -12,7 +12,7 @@ weight: 1
 
 **如果有可能，请使用 ZL Equalizer 2**。ZL Equalizer 已经处于弃用状态，不会再得到修复或改进。
 
-您可以在[GitHub发布页](https://github.com/ZL-Audio/ZLEqualizer/releases/latest)下载安装器或者使用下面的下载链接。请下载与您的操作系统和架构对应的安装器。
+{{% include file="download-intro" repo="ZL-Audio/ZLEqualizer" platform="os" %}}
 
 | 操作系统        | x86-64<br>Intel 芯片<br>AMD 芯片（大多数）                                                                                                        | ARM64<br>Apple M 芯片<br>Qualcomm 芯片                                                                                                       |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,17 +20,15 @@ weight: 1
 | **Windows** | [ZL.Equalizer-0.6.2-Windows-x86.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Windows-x86.exe) | [ZL.Equalizer-0.6.2-Windows-arm.exe](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Windows-arm.exe) |
 | **Linux**   | [ZL.Equalizer-0.6.2-Linux-x86.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-x86.zip)     | [ZL.Equalizer-0.6.2-Linux-arm.zip](https://github.com/ZL-Audio/ZLEqualizer/releases/download/0.6.2/ZL.Equalizer-0.6.2-Linux-arm.zip)     |
 
-更多信息请阅读帮助中的[插件安装](../../help/plugin_installation)页面。
+{{% include "installation-help" %}}
 
-ZL Equalizer 是**自由开源**的软件。除了 [ZL Audio 标志](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/zlaudio.svg) 和 [ZL Equalizer 标志](https://github.com/ZL-Audio/ZLEqualizer/blob/main/assets/logo.svg)，ZL Equalizer 按照 [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) 进行许可。您可以在 https://github.com/ZL-Audio/ZLEqualizer 或者 https://gitee.com/ZL-Audio/ZLEqualizer 获得源码。
+{{% include file="plugin-license" repo="ZL-Audio/ZLEqualizer" plugin="ZL Equalizer" %}}
 
 以下提醒来自 [由 源译识 翻译的 AGPLv3](https://atomgit.com/translation/Contransus) 第九项条款。
 
-**您无需为了接收或运行本程序副本而接受本许可证。仅是因为使用点对点传输接收副本而发生的被覆盖作品的辅助传播，您也无需接受本许可证。然而，除了本许可证以外，没有任何其他文件授权您传播或修改任何被覆盖作品。如果您不接受本许可证，这些行为（传播和修改）即构成版权侵权。因此，如果您修改或传播被覆盖作品，就表示您接受了本许可证。**
+{{% include "agpl-acceptance" %}}
 
-<img src="/images/vst3.png" style="width: 120pt; max-width: 100%; height: auto"/>
-
-VST® is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
+{{% include "vst3" %}}
 
 ## 更新日志
 
