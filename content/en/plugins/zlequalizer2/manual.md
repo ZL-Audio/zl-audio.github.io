@@ -57,7 +57,7 @@ ___
 Selects the filter structure.
 
 - [`Minimum Phase`](#minimum-phase): Standard classic digital structure. Not suitable for aggressive automation.
-- [`State Variable`](#state-variable): Stable structure used in synth filters and crossovers. Suitable for aggressive automation, but introduces a large phase shift.
+- [`State Variable`](#state-variable): Stable structure used in synth filters and crossovers. Suitable for aggressive automation.
 - [`Parallel`](#parallel): Processes gentle Shelf and Peak filters in parallel for efficient and natural dynamic processing.
 - [`Matched Phase`](#matched-phase): Emulates analog prototype magnitude and phase response. Do not automate filter parameters in this mode.
 - [`Mixed Phase`](#mixed-phase): Emulates analog prototype magnitude response and cleans up high-end phase. Do not automate filter parameters in this mode.
@@ -831,7 +831,7 @@ This is the filter type often used in **synth filters and crossovers**.
 
 * **Best For:** Creative effects and heavy automation.
 * **Pros:** Extremely stable, even with rapid, complex automation.
-* **Cons:** Slightly more CPU usage. Aggressive automation of frequency or gain can sometimes cause audible clicks or instability.
+* **Cons:** Slightly more CPU usage. Aggressive automation of frequency or gain can still sometimes cause audible artifacts
 
 #### `Parallel`
 
