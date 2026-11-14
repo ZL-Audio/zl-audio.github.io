@@ -26,7 +26,7 @@ ___
   <img src="/images/zlequalizer2/logo.svg" width="20pt" />
 </p>
 
-You can open the [UI Setting Panel](#ui-setting-panel) by clicking the logo.
+Toggles the [UI Setting panel](#ui-setting-panel).
 
 ___
 
@@ -34,13 +34,13 @@ ___
   <img src="/images/pcommon/collections_bookmark.svg" width="20pt"/>
 </p>
 
-You can open the [Preset Manager Panel](#preset-manager-panel) by clicking the icon.
+Toggles the [Preset Manager Panel](#preset-manager-panel).
 
 ___
 
 **`Analyzer`**
 
-You can open the [Analyzer Setting Panel](#analyzer-setting-panel) by clicking the text.
+Toggles the [Analyzer Setting Panel](#analyzer-setting-panel).
 
 ___
 
@@ -48,24 +48,26 @@ ___
   <img src="/images/zlequalizer2/match.svg" width="20pt"/>
 </p>
 
-You can open the [EQ Match Panel](#eq-match-panel) by clicking the icon.
+Toggles the [EQ Match Panel](#eq-match-panel).
 
 ___
 
 **Filter Structure**
 
-- `Minimum Phase`: [Minimum Phase](#minimum-phase)
-- `State Variable`: [State Variable](#state-variable)
-- `Parallel`: [Parallel](#parallel)
-- `Matched Phase`: [Matched Phase](#matched-phase)
-- `Mixed Phase`: [Mixed Phase](#mixed-phase)
-- `Zero Phase`: [Zero Phase](#zero-phase)
+Selects the filter structure.
+
+- [`Minimum Phase`](#minimum-phase): Standard classic digital structure. Not suitable for aggressive automation.
+- [`State Variable`](#state-variable): Stable structure used in synth filters and crossovers. Suitable for aggressive automation, but introduces a large phase shift.
+- [`Parallel`](#parallel): Processes gentle Shelf and Peak filters in parallel for efficient and natural dynamic processing.
+- [`Matched Phase`](#matched-phase): Emulates analog prototype magnitude and phase response. Do not automate filter parameters in this mode.
+- [`Mixed Phase`](#mixed-phase): Emulates analog prototype magnitude response and cleans up high-end phase. Do not automate filter parameters in this mode.
+- [`Zero Phase`](#zero-phase): Emulates analog prototype magnitude response and cleans up mid- and high-end phase. Do not automate filter parameters in this mode.
 
 ___
 
 **`Output`**
 
-You can open the [Output Setting Panel](#output-setting-panel) by clicking the text. It shows the current filter gain scale & total output gain.
+Toggles the [output settings panel](#output-setting-panel). It shows the current filter gain scale & total output gain.
 
 ___
 
@@ -73,8 +75,7 @@ ___
   <img src="/images/pcommon/external-side.svg" width="20pt"/>
 </p>
 
-- Press: use the external side-chain
-- Release: use the internal side-chain
+Toggles the external side-chain input.
 
 ___
 
@@ -82,7 +83,7 @@ ___
   <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
-- Release: bypass the plugin
+Toggles plugin bypass.
 
 ___
 
@@ -122,6 +123,10 @@ The floating window is attached to the filter button of the selected band. You c
 | <img src="/images/pcommon/allpass.svg" width="20pt"/>   | `All Pass`   |                                                           |                  |
 | <img src="/images/pcommon/flatgain.svg" width="20pt"/>  | `Flat Gain`  |                                                           |                  |
 
+- <img src="/images/pcommon/bypass.svg" width="20pt"/>: Toggles band bypass.
+- <img src="/images/pcommon/solo.svg" width="20pt"/>: Toggles band solo audition.
+- <img src="/images/pcommon/trash.svg" width="20pt"/>: Turns off this band.
+
 #### Right-click Panel
 
 ___
@@ -158,7 +163,23 @@ ___
 
 #### Decibel Scale
 
-You can choose the decibel scale of magnitude response curves (through a combobox at the top-right) and the decibel scale of the spectrum analyzer (through a combobox at the bottom-right).
+You can choose the decibel scale of magnitude response curves (through a combobox at the top-right) and the decibel scale of the spectrum analyzer (through comboboxes on the right):
+
+- Selects the decibel display range for the EQ response curve.
+- Selects the upper decibel ceiling for the spectrum analyzer display.
+- Selects the minimum decibel floor for the spectrum analyzer display.
+
+#### Piano Roll
+
+___
+
+<p float="left">
+  <img src="/images/pcommon/piano.svg" width="20pt"/>
+</p>
+
+Toggles visibility of the piano roll.
+
+___
 
 ## Bottom Panel
 
@@ -170,49 +191,59 @@ ___
   <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
-- Release: bypass the band.
+Toggles band bypass.
 
 ---
 
 **Band Selection**
 
-Select the current band.
+- Selects the previous band.
+- Selects the next band.
 
 ___
 
 **Filter Type**
 
-Choose the filter type: `Peak`, `Low Shelf`, `Low Pass`, `High Shelf`, `High Pass`, `Notch`, `Band Pass`, `Tilt Shelf`, `Flat Tilt`, `All Pass`, and `Flat Gain`.
+Selects the filter type: `Peak`, `Low Shelf`, `Low Pass`, `High Shelf`, `High Pass`, `Notch`, `Band Pass`, `Tilt Shelf`, `Flat Tilt`, `All Pass`, and `Flat Gain`.
 
 ---
 
 **Slope**
 
-Choose the filter slope: `6 dB/oct`, `12 dB/oct`, `24 dB/oct`, `36 dB/oct`, `48 dB/oct`, `72 dB/oct`, and `96 dB/oct`. A higher slope will make the filter’s response curve change more steeply. `Peak`, `Notch`, and `Band Pass` don’t support `6 dB/oct`. `Flat Tilt` doesn't support slope setting.
+Selects the filter slope. A higher slope produces a steeper frequency response curve.
+
+Available slopes: `6 dB/oct`, `12 dB/oct`, `24 dB/oct`, `36 dB/oct`, `48 dB/oct`, `72 dB/oct`, and `96 dB/oct`. `Peak`, `Notch`, and `Band Pass` don’t support `6 dB/oct`. `Flat Tilt` doesn't support slope setting.
 
 ---
 
 **Stereo Modes**
 
-Choose the stereo mode: `Stereo`, `Left`, `Right`, `Mid`, and `Side`.
+Selects the stereo channel mode: `Stereo`, `Left`, `Right`, `Mid`, and `Side`.
 
 ___
 
 **`FREQ`**
 
-Control the frequency. The maximum value of the frequency is affected by the sample rate.
+Adjusts the center or cutoff frequency. The maximum value of the frequency is affected by the sample rate.
 
 ___
 
 **`GAIN`**
 
-Control the base gain and the target gain. See more info in [Dynamic Filter](#dynamic-filter).
+Adjusts the base gain and dynamic target gain. See more info in [Dynamic Filter](#dynamic-filter).
+
+___
+
+**`SCALE`**
+
+- Toggles pass scaling for Low Pass and High Pass filters.
+- Adjusts the magnitude scale of the pass filter.
 
 ___
 
 **`Q`**
 
-Control the quality factor.
+Adjusts the Q factor. A higher Q narrows the bandwidth.
 
 ___
 
@@ -220,7 +251,7 @@ ___
   <img src="/images/pcommon/dynamic.svg" width="20pt"/>
 </p>
 
-- Press: turn on the dynamic behavior of the band
+Toggles dynamic EQ behavior for this band.
 
 ___
 
@@ -229,7 +260,7 @@ ___
   <img src="/images/pcommon/close.svg" width="20pt"/>
 </p>
 
-- Click: turn off the band
+Turns off this band.
 
 ___
 
@@ -242,7 +273,7 @@ ___
   <img src="/images/pcommon/bypass.svg" width="20pt"/>
 </p>
 
-- Release: bypass the dynamic behavior. See more info in [Dynamic Filter](#dynamic-filter).
+Toggles dynamic processing bypass for this band. See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
@@ -251,8 +282,7 @@ ___
   <img src="/images/zlequalizer2/circle_a.svg" width="20pt"/>
 </p>
 
-- Press: turn on the dynamic learning behavior. See more info in [Dynamic Filter](#dynamic-filter).
-- Release: turn off the dynamic learning behavior and set the `Threshold` and `Knee`
+Toggles dynamic threshold learning. Disabling it sets Threshold and Knee automatically. See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
@@ -261,7 +291,7 @@ ___
   <img src="/images/zlequalizer2/circle_r.svg" width="20pt"/>
 </p>
 
-- Press: turn on the dynamic relative behavior. See more info in [Dynamic Filter](#dynamic-filter).
+Toggles relative threshold mode for dynamic processing. See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
@@ -270,31 +300,41 @@ ___
   <img src="/images/pcommon/shuffle.svg" width="20pt"/>
 </p>
 
-- Press: change the side-chain stereo mode. When pressed, if the band is in `Left`/`Right`/`Mid`/`Side`, the side-chain band will be in `Right`/`Left`/`Side`/`Mid`.
+Toggles swapping of the side-chain stereo channels. When pressed, if the band is in `Left`/`Right`/`Mid`/`Side`, the side-chain band will be in `Right`/`Left`/`Side`/`Mid`.
+
+___
+
+**Extra Dynamic Detection Settings**
+
+Toggles extra dynamic detection settings.
+
+- **`Length`**: Adjusts the RMS integration window length for level detection.
+- **`Mix`**: Adjusts the mix between peak and RMS level detection.
+- **`Smooth`**: Adjusts the smoothing amount applied to the dynamic envelope.
 
 ___
 
 **`Threshold`**
 
-See more info in [Dynamic Filter](#dynamic-filter).
+Adjusts the dynamic processing threshold. See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
 **`Knee`**
 
-See more info in [Dynamic Filter](#dynamic-filter).
+Adjusts the dynamic processing knee width. See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
 **`Attack`**
 
-See more info in [Dynamic Filter](#dynamic-filter).
+Adjusts the dynamic processing attack time. See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
 **`Release`**
 
-See more info in [Dynamic Filter](#dynamic-filter).
+Adjusts the dynamic processing release time. See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
@@ -303,31 +343,31 @@ ___
   <img src="/images/zlequalizer2/link.svg" width="20pt"/>
 </p>
 
-- Press: link the band with the side-chain band. See more info in [Dynamic Filter](#dynamic-filter).
+Links the side-chain filter frequency and Q to this band. See more info in [Dynamic Filter](#dynamic-filter).
 
 ___
 
 **Side-chain Filter Type**
 
-Choose the side-chain filter type: `BP (Band Pass)`, `LP (Low Pass)`, and `HP (High Pass)`.
+Selects the side-chain filter type: `BP (Band Pass)`, `LP (Low Pass)`, and `HP (High Pass)`.
 
 ___
 
 **Side-chain Filter Slope**
 
-Choose the side-chain filter slope: `6 dB/oct`, `12 dB/oct`, `24 dB/oct`, `36 dB/oct`, `48 dB/oct`, `72 dB/oct`, and `96 dB/oct`.
+Selects the side-chain filter slope: `6 dB/oct`, `12 dB/oct`, `24 dB/oct`, `36 dB/oct`, `48 dB/oct`, `72 dB/oct`, and `96 dB/oct`.
 
 ___
 
 **`FREQ`**
 
-Control the side-chain filter frequency.
+Adjusts the side-chain filter frequency.
 
 ___
 
 **`Q`**
 
-Control the side-chain filter quality factor.
+Adjusts the side-chain filter Q factor.
 
 ___
 
@@ -337,13 +377,13 @@ ___
 
 **`GAIN`**
 
-Control the additional output gain.
+Adjusts the additional output gain.
 
 ___
 
 **`SCALE`**
 
-Control the scale of all filters' base & target gain.
+Adjusts the overall scale of all filters' base and target gain.
 
 ___
 
@@ -351,8 +391,7 @@ ___
   <img src="/images/zlequalizer2/dline_s.svg" width="20pt"/>
 </p>
 
-- Press: turn on Static Gain Compensation
-- Release: turn off Static Gain Compensation
+Toggles Static Gain Compensation (SGC). SGC is approximate, but does not affect dynamics.
 
 > SGC estimates the amount of compensation from the filters’ parameters. SGC is **inaccurate**. However, it **will NOT affect the dynamic of the main-chain signal**.
 
@@ -362,8 +401,7 @@ ___
   <img src="/images/zlequalizer2/dline_l.svg" width="20pt"/>
 </p>
 
-- Press: start to measure the integrated loudness of the input signal and the output signal
-- Release: turn AGC off and update the `Output Gain` to the difference between the two loudness values
+Toggles loudness gain matching. Enabling measures input and output loudness; disabling sets Output Gain to their difference.
 
 ___
 
@@ -371,8 +409,7 @@ ___
   <img src="/images/zlequalizer2/dline_a.svg" width="20pt"/>
 </p>
 
-- Press: turn on Auto Gain Compensation
-- Release: turn off Auto Gain Compensation
+Toggles Auto Gain Compensation (AGC). AGC is more accurate over time, but affects dynamics.
 
 > AGC calculates the difference between the loudness of the main-chain signal before/after filters and applies the corresponding gain. Therefore, **AGC will affect the dynamic of the main-chain signal**.
 > 
@@ -384,13 +421,13 @@ ___
   <img src="/images/zlequalizer2/phase.svg" width="20pt"/>
 </p>
 
-- Press: flip the phase of the output signal
+Toggles phase inversion of the output signal.
 
 ___
 
 **`Lookahead`**
 
-Control the lookahead of the side-chain signal.
+Adjusts the lookahead time for the side-chain signal.
 
 > **Warning:** **Do not automate** `Lookahead`.
 
@@ -400,16 +437,21 @@ ___
 
 **`Pre/Post/Side`**
 
-- Press: turn on the Pre/Post/Side analyzer
-- Release: turn off the Pre/Post/Side analyzer
+- `Pre`: Toggles display of the input signal spectrum.
+- `Post`: Toggles display of the output signal spectrum.
+- `Side`: Toggles display of the side-chain signal spectrum.
 
 ___
 
 **Decay Speed**
 
+Selects the decay speed of the spectrum analyzer.
+
 ___
 
 **Slope**
+
+Selects the tilt slope of the spectrum analyzer.
 
 - affects the spectrum display (not the actual signal)
 - `0 dB/oct`: no tilting, white noise displays as a horizon line
@@ -420,9 +462,10 @@ ___
 
 **Smoothing**
 
-- Control the smoothing value, larger value indicates more smooth spectrum
-- `OCT`: smooth the spectrum in octave
-- `ERB`: smooth the spectrum in ERB (Equivalent Rectangular Bandwidth)
+- Selects the frequency smoothing width of the spectrum analyzer.
+- Selects the frequency smoothing mode.
+  - `OCT`: constant fractional-octave smoothing.
+  - `ERB`: equivalent rectangular bandwidth smoothing.
 
 ---
 
@@ -430,11 +473,13 @@ ___
   <img src="/images/pcommon/freeze.svg" width="20pt"/>
 </p>
 
-- Press: turn on the FFT freezing feature. When you hover the mouse over the analyzer for 2 seconds, the Post/Side analyzer will be frozen until you move the mouse.
+Toggles spectrum freezing when hovering the pointer over the analyzer. When you hover the mouse over the analyzer for 2 seconds, the Post/Side analyzer will be frozen until you move the mouse.
 
 ___
 
 **FFT Analyzer Stereo Placement**
+
+Selects the stereo channel mode displayed by the spectrum analyzer.
 
 | Icon                                                      | Stereo Placement |
 | --------------------------------------------------------- | ---------------- |
@@ -450,13 +495,29 @@ ___
   <img src="/images/pcommon/collision.svg" width="20pt"/>
 </p>
 
-- Press: turn on the collision detection.
+Toggles frequency collision detection.
 
 ___
 
 **`Strength`**
 
-Control the collision detection strength.
+Adjusts the collision detection strength.
+
+___
+
+<p float="left">
+  <img src="/images/pcommon/dline_123.svg" width="20pt"/>
+</p>
+
+Toggles visibility of the numeric value readout.
+
+___
+
+<p float="left">
+  <img src="/images/pcommon/dline_meter.svg" width="20pt"/>
+</p>
+
+Toggles visibility of the level meter panel.
 
 ___
 
@@ -466,10 +527,10 @@ ___
 
 #### EQ Match Steps
 
-1. Open the EQ Match Panel. It will analyze the source signal and the target signal.
+1. Open the EQ Match Panel. Analyzing main-chain and side-chain signals. Select the target curve source and adjust the difference curve once it stabilizes before starting the fit.
 2. Choose the target signal. The source signal must be the main-chain input. You can choose the target signal from the side-chain input, a flat line, or a preset.
-3. Wait till the difference curve becomes stable. Then adjust the difference curve with `Shift`, `Smooth`, and `Slope`. You can also draw the difference curve if you want.
-4. Start the fitting. The fitting process should finish in several seconds. After that, you can adjust the number of bands.
+3. Wait till the difference curve becomes stable. Then adjust the difference curve with `Shift`, `Scale`, and `Slope`. You can also draw the difference curve if you want.
+4. Start the fitting. Fitting EQ bands to the difference curve. This may take a few seconds. Fitting complete. You can adjust the number of fitted bands if needed.
 
 #### EQ Match Analyzer
 
@@ -494,7 +555,7 @@ ___
   <img src="/images/pcommon/save.svg" width="20pt"/>
 </p>
 
-- Click: save the target curve to a preset file
+Saves the target curve to a preset file.
 
 ___
 
@@ -502,43 +563,43 @@ ___
   <img src="/images/zlequalizer2/draw.svg" width="20pt"/>
 </p>
 
-- Press: enable the difference curve drawing
+Toggles manual drawing on the difference curve.
 
 ___
 
 **Target Signal**
 
-Choose the target signal:
+Selects the target curve source:
 
-- `Side`: let the target curve be the average spectrum of the side-chain signal
-- `Preset`: load the target curve from a preset file
-- `Flat`: set the target curve as a flat line
-- `Balanced`: set the target curve as a balanced line
-- `Natural`: set the target curve as a natural line
+- `Side`: Learns the target curve from the side-chain signal.
+- `Preset`: Loads the target curve from a preset file.
+- `Flat`: Sets the target curve to a flat line.
+- `Balanced`: Sets the target curve to a balanced curve.
+- `Natural`: Sets the target curve to a natural curve.
 
 ___
 
 **`Shift`**
 
-Control the vertical shift of the difference curve.
+Adjusts the vertical offset of the difference curve.
 
 ___
 
 **`Scale`**
 
-Control the scaling of the difference curve.
+Adjusts the vertical scale of the difference curve.
 
 ___
 
 **`Slope`**
 
-Control the (additional) slope of the difference curve.
+Adjusts the tilt slope of the difference curve.
 
 ___
 
 **`Limit`**
 
-Choose the limitation of difference curve (applied when fitting).
+Selects the maximum allowed gain magnitude for EQ matching.
 
 ___
 
@@ -546,7 +607,7 @@ ___
   <img src="/images/zlequalizer2/start.svg" width="20pt"/>
 </p>
 
-- Click: start the fitting process.
+Starts fitting EQ bands to the difference curve.
 
 > **Warning:** Once you click this button, **ALL** bands will be deleted and then be set to fitted parameters.
 
@@ -554,7 +615,7 @@ ___
 
 **Number of Bands**
 
-Control the number of bands for fitting. You can control it after the fitting is completed.
+Adjusts the number of EQ bands used for fitting. You can control it after the fitting is completed.
 
 ___
 
@@ -705,7 +766,8 @@ ___
   <img src="/images/pcommon/trash.svg" width="20pt"/>
 </p>
 
-- Press: delete the selected preset group (along with all presets in the group) or the selected preset
+- Deletes the selected preset group (along with all presets in the group).
+- Deletes the selected preset.
 
 ___
 
@@ -713,7 +775,15 @@ ___
   <img src="/images/pcommon/folder_open.svg" width="20pt"/>
 </p>
 
-- Press: reveal the preset folder
+Opens the presets folder in the system file manager.
+
+___
+
+<p float="left">
+  <img src="/images/pcommon/close.svg" width="20pt"/>
+</p>
+
+Closes the preset browser.
 
 ___
 
@@ -734,7 +804,8 @@ Generally, you can enable fine-adjustment with `Shift` and enable special adjust
 - You can enable fine-adjustment with `Shift` when using the mouse to drag a button.
 - You can drag with the left mouse button + `Ctrl/Command` down while fixing the frequency.
 - You can drag with the right mouse button + `Ctrl/Command` down while fixing the gain.
-- You can double-click the button to enter/exit the solo status.
+- You can right-click the button to enter/exit the solo status.
+- You can drag with the right mouse button down to adjust solo gain.
 - You can double-click with `Ctrl/Command` to turn on/off the dynamic behavior.
 
 **Combobox**
