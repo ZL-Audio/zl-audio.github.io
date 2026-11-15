@@ -11,7 +11,7 @@ weight: 1
 
 {{% include file="download-intro" repo="ZL-Audio/ZLSpectrumEqualizer" %}}
 
-{{< installers repo="ZL-Audio/ZLSpectrumEqualizer" plugin="ZL.Spectrum.Equalizer" version="0.1.1" >}}
+{{< installers repo="ZL-Audio/ZLSpectrumEqualizer" plugin="ZL.Spectrum.Equalizer" version="0.1.2" >}}
 
 {{% include file="plugin-license" repo="ZL-Audio/ZLSpectrumEqualizer" plugin="ZL Spectrum Equalizer" %}}
 

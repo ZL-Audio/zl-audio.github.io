@@ -12,7 +12,7 @@ weight: 1
 
 {{% include file="download-intro" repo="ZL-Audio/ZLEqualizer" %}}
 
-{{< installers repo="ZL-Audio/ZLEqualizer" plugin="ZL.Equalizer.2" version="1.4.1" >}}
+{{< installers repo="ZL-Audio/ZLEqualizer" plugin="ZL.Equalizer.2" version="1.4.2" >}}
 
 {{% include "installation-help" %}}
 
