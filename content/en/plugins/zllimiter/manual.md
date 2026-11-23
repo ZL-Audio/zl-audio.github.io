@@ -62,6 +62,12 @@ Higher oversampling rates increase CPU use. If playback crackles or drops out, t
 
 ___
 
+`16 bit`/`24 bit`
+
+You can open the [Dither Setting Panel](#dither-setting-panel) by clicking the text. The text shows the dither bit depth. The text color indicates whether dither is on.
+
+___
+
 <p float="left">
   <img src="/images/zllimiter/dline_tp.svg" width="20pt"/>
 </p>
@@ -154,6 +160,26 @@ ___
 </p>
 
 Toggles visibility of the [Value Panel](#value-panel).
+
+___
+
+## Dither Setting Panel
+
+___
+
+`Dither`
+
+Selects dither mode.
+
+- `Off`: disables dither.
+- `Flat`: applies unshaped TPDF dither.
+- `Shaped`: shifts noise to less audible frequencies.
+
+___
+
+`Depth`
+
+Selects dither bit depth.
 
 ___
 
@@ -428,7 +454,7 @@ Generally, you can enable fine adjustment with `Shift` and enable special adjust
 
 ## Peak Limiting
 
-ZL Limiter utilizes a dual-envelope architecture consisting of a primary peak envelope, a secondary support envelope, variable stereo linking, and optional True Peak limiting.
+ZL Limiter utilizes a dual-envelope architecture consisting of a primary peak envelope, a secondary support envelope, variable stereo linking, an optional True Peak limiting, and an optional dither process.
 
 #### Main Limiting
 
@@ -459,3 +485,12 @@ The support envelope stabilizes macro loudness and dense peak sequences. By main
 When enabled, an output stage suppresses inter-sample peaks that may cause clipping during digital-to-analog conversion or lossy encoding. This stage also catches reconstructed peaks introduced when downsampling to the project sample rate.
 
 True Peak limiting remains active when oversampling is set to `Off` and also stays independent of the visual peak metering modes.
+
+#### Dither Process
+
+The dither process is to use steady noise floor to replace quantization distortion caused by the floating-point rounding process. Here are some notes regarding it:
+
+- You should only enable dither if the output format is 16-bit/24-bit uncompressed or lossless-compressed fixed-point output (e.g., WAV, AIFF, FLAC, ALAC). Never enable it for 32-bit/64-bit floating-point output. Never enable it for lossy-compressed output (e.g., MP3, AAC).
+- You should match the dither depth with the output format bit depth.
+- You should not apply any other effects, including gain control, after the dither process.
+- You should not apply any dither after the dither process, i.e., you should only apply it once.

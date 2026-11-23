@@ -11,7 +11,7 @@ weight: 1
 
 {{% include file="download-intro" repo="ZL-Audio/ZLLimiter" %}}
 
-{{< installers repo="ZL-Audio/ZLLimiter" plugin="ZL.Limiter" version="0.0.1" >}}
+{{< installers repo="ZL-Audio/ZLLimiter" plugin="ZL.Limiter" version="0.1.0" >}}
 
 {{% include file="plugin-license" repo="ZL-Audio/ZLLimiter" plugin="ZL Limiter" %}}
 
@@ -26,3 +26,16 @@ AGPLv3 Section 9 *Acceptance Not Required for Having Copies*:
 {{% include file="nightly-release" repo="ZL-Audio/ZLLimiter" intro="Available" %}}
 
 ## Changelog
+
+Bug fixes
+
+- fix gain value dragging issue
+- fix bypass button display
+- fix UI setting reset button
+- fix several color gradient display
+
+New Features
+
+- add dithering options
+- add output ceiling display
+- add reduction curve/meter dimming when bypass
